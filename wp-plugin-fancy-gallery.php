@@ -4,7 +4,7 @@
 
 Plugin Name: Fancy Gallery
 Description: Will bring your galleries as valid XHTML blocks on screen and associate linked images with Fancybox. 
-Version: 1.0
+Version: 1.0.0
 Author: Dennis Hoppe
 Author URI: http://DennisHoppe.de
 
@@ -56,9 +56,9 @@ Class wp_plugin_fancy_gallery {
   Function include_fancy_image_box(){
     ?>
     <link type="text/css" rel="stylesheet" href="<?php echo $this->base_url?>/jquery.fancybox-1.2.6.css" />
-    <script type="text/javascript" src="<?php echo $this->base_url?>/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="<?php echo $this->base_url?>/jquery.fancybox-1.2.6.pack.js"></script>
-    <script type="text/javascript" src="<?php echo $this->base_url?>/fancy.js"></script>
+    <script type="text/javascript" src="<?php echo $this->base_url ?>/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="<?php echo $this->base_url ?>/jquery.fancybox-1.2.6.pack.js"></script>
+    <script type="text/javascript" src="<?php echo $this->base_url ?>/fancy.js"></script>
     <?php
   }
 
@@ -66,5 +66,5 @@ Class wp_plugin_fancy_gallery {
 
 } /* End of the Class */
 New wp_plugin_fancy_gallery();
-} /* End of the If-Class-Exists Condition */
+} /* End of the If-Class-Exists-Condition */
 /* End of File */
