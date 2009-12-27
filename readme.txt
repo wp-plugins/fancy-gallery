@@ -1,7 +1,7 @@
 === Fancy Gallery ===
 Contributors: dhoppe
 Tags: image, images, picture, pictures, photo, photos, gallery, galleries, photo-albums, Post, admin, media, fancy, fancybox, thickbox, lightbox, jquery, 
-Requires at least: 2.7.0
+Requires at least: 2.8.1
 Tested up to: 2.9
 Stable tag: trunk
 
@@ -10,6 +10,8 @@ Will bring your galleries as valid XHTML blocks on screen and associate linked i
 == Description ==
 
 The Fancy Gallery Plugin overloads the default function behind the "[GALLERY]" Shortcode. Fancy Gallery generates fully valid XHTML and associates linked images with [Fancy Image Box](http://fancybox.net).
+
+Of course you can use 'exclude' and 'include' parameters in your [gallery] shortcode. 
 
 == Installation ==
 

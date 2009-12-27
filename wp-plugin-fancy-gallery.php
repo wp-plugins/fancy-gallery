@@ -4,7 +4,7 @@
 
 Plugin Name: Fancy Gallery
 Description: Will bring your galleries as valid XHTML blocks on screen and associate linked images with Fancybox. 
-Version: 1.0.0
+Version: 1.1
 Author: Dennis Hoppe
 Author URI: http://DennisHoppe.de
 
@@ -22,35 +22,68 @@ Class wp_plugin_fancy_gallery {
     // Set Hooks
     Add_Action ('wp_head', Array($this, 'include_fancy_image_box'));
     Add_Filter ('post_gallery', Array($this, 'filter_gallery_shortcode'), 10, 2 );
-    Add_Action ('admin_head', Array($this, 'add_admin_stylesheet'));
+    Add_Action ('admin_head', Array($this, 'remove_gallery_settings'));
     
-    // Add jquery to every page
+    // Add jQuery
     wp_enqueue_script('jquery');
   }
 
   Function filter_gallery_shortcode ($_, $attr){
     GLOBAL $post;
-
-  	$attachments = get_children(Array(
-      'post_parent' => $post->ID,
-      'post_status' => 'inherit',
-      'post_type' => 'attachment',
+    
+    $attr = Array_Merge(Array(
+      'post_parent'    => $post->ID,
+      'post_status'    => 'inherit',
+      'post_type'      => 'attachment',
       'post_mime_type' => 'image',
-      'order' => 'ASC',
-      'orderby' => 'menu_order' ));
+      'order'          => 'ASC',
+      'orderby'        => 'menu_order',
+      'size'           => 'thumbnail',
+      'link'           => 'file', // nothing else make sense
+      'include'        => '',
+      'exclude'        => '' ),
+      $attr);
+
+  	// get attachments
+    If (!Empty($attr['include']))
+      // this gallery only includes images
+      $attachments = get_posts(Array(
+        'include'        => $attr['include'],
+        'post_status'    => $attr['post_status'],
+        'post_type'      => $attr['post_type'],
+        'post_mime_type' => $attr['post_mime_type'],
+        'order'          => $attr['order'],
+        'orderby'        => $attr['orderby'] )); 
+  	Else
+  	  // this gallery uses the post attachments
+      $attachments = get_children(Array(
+        'post_parent'    => $attr['post_parent'],
+        'exclude'        => $attr['exclude'],
+        'post_status'    => $attr['post_status'],
+        'post_type'      => $attr['post_type'],
+        'post_mime_type' => $attr['post_mime_type'],
+        'order'          => $attr['order'],
+        'orderby'        => $attr['orderby'] ));
+  	
+  	// There are no attachments
+  	If (Empty($attachments)) return False;
 
   	$code = '<div class="gallery" id="gallery_'.$post->ID.'">';
   	
     ForEach ($attachments AS $id => $attachment)
-      $code .= wp_get_attachment_link($attachment->ID, 'thumbnail');
+      $code .= wp_get_attachment_link($attachment->ID, $attr['size']);
       
     $code .= '</div>';
     
   	return $code;
   }
   
-  Function add_admin_stylesheet(){
-    Echo '<link rel="stylesheet" type="text/css" href="'.$this->base_url.'/admin.css" />';
+  Function remove_gallery_settings(){
+    ?><script type="text/javascript">jQuery(function(){
+    
+    jQuery('table#basic tr:eq(0), table#basic tr:eq(3)').hide();
+    
+    });</script><?php
   }
   
   Function include_fancy_image_box(){
