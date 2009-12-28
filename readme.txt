@@ -21,3 +21,14 @@ Installation as usual.
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. Open a post or page which contains a gallery
 1. You like what you see?
+
+== Changelog ==
+
+= 1.1.1 =
+* Bug Fix: In some cases (No attributes) you got an error "array_merge(): Argument #2 is not an array [...]"
+
+= 1.1 =
+* Now you can use exclude="x,y,z" and include="a,b,c" attributes in your tag.
+
+= 1.0 =
+* Everything works fine.
