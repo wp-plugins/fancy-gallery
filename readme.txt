@@ -11,18 +11,22 @@ Will bring your galleries as valid XHTML blocks on screen and associate linked i
 
 The Fancy Gallery Plugin overloads the default function behind the "[GALLERY]" Shortcode. Fancy Gallery generates fully valid XHTML and associates linked images with [Fancy Image Box](http://fancybox.net).
 
-Of course you can use 'exclude' and 'include' parameters in your [gallery] shortcode. 
+Of course you can use 'exclude' and 'include' parameters in your [GALLERY] shortcode. 
 
 == Installation ==
 
 Installation as usual.
 
-1. Unzip and Upload Fancy Gallery to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Open a post or page which contains a gallery
+1. Unzip and Upload all files to a sub directory in "/wp-content/plugins/".
+1. Activate the plugin through the 'Plugins' menu in WordPress.
+1. View a post or page which contains a gallery.
 1. You like what you see?
 
 == Changelog ==
+
+= 1.1.2 =
+* added a url to the plugin page
+* Bug Fix: FancyGallery didn't work if you have the blog installed in a different directory.
 
 = 1.1.1 =
 * Bug Fix: In some cases (No attributes) you got an error "array_merge(): Argument #2 is not an array [...]"
