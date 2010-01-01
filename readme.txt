@@ -25,7 +25,7 @@ Installation as usual.
 == Changelog ==
 
 = 1.1.2 =
-* added a url to the plugin page
+* added the url to the plugin page
 * Bug Fix: FancyGallery didn't work if you have the blog installed in a different directory.
 
 = 1.1.1 =
