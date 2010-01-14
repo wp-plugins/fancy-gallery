@@ -1,5 +1,6 @@
 === Fancy Gallery ===
 Contributors: dhoppe
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=1220480
 Tags: image, images, picture, pictures, photo, photos, gallery, galleries, photo-albums, Post, admin, media, fancy, fancybox, thickbox, lightbox, jquery, 
 Requires at least: 2.8.1
 Tested up to: 2.9.1
