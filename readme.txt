@@ -3,7 +3,7 @@ Contributors: dhoppe
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=1220480
 Tags: image, images, picture, pictures, photo, photos, gallery, galleries, photo-albums, Post, admin, media, fancy, fancybox, thickbox, lightbox, jquery, 
 Requires at least: 2.8.1
-Tested up to: 2.9.1
+Tested up to: 2.9.2
 Stable tag: trunk
 
 Will bring your galleries as valid XHTML blocks on screen and associate linked images with Fancybox.
@@ -24,6 +24,9 @@ Installation as usual.
 1. You like what you see?
 
 == Changelog ==
+
+= 1.2.1 =
+* Added necessary javascript files
 
 = 1.2 =
 * updated the fancy gallery to 1.3.1
