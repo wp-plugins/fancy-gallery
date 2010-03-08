@@ -27,10 +27,12 @@ jQuery(function(){
   
   jQuery('a.fancybox')
   .unbind('click')
-  .fancybox({ 'zoomSpeedIn':  800,
-              'zoomSpeedOut': 800,
-              'easingIn':     'easeOutBack',
-              'easingOut':    'easeInBack',
-              'zoomOpacity':  true });
+  .fancybox({ 'speedIn'    : 500,
+              'speedOut'   : 500,
+              'transitionIn'   : 'elastic',
+              'transitionOut'  : 'elastic',
+              'titlePosition'	: 'over'
+               
+              });
 
 });
