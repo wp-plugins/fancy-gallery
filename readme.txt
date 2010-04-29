@@ -25,8 +25,11 @@ Installation as usual.
 
 == Changelog ==
 
+= 1.2.2 =
+* Chage BaseUrl function. Now the plugin should even work if the wp folder is diffrent from your blog url. 
+
 = 1.2.1 =
-* Added necessary javascript files
+* Added necessary javascript files (Sorry)
 
 = 1.2 =
 * updated the fancy gallery to 1.3.1
