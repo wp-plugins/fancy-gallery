@@ -1,0 +1,137 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Fancy Gallery Plugin for WordPress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-05-12 23:14+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Dennis Hoppe\n"
+"Language-Team: Dennis Hoppe\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: t;t:2c,1\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../wp-plugin-fancy-gallery.php:143
+msgid "Fancy Gallery Settings"
+msgstr "Fancy Gallery Einstellungen"
+
+#: ../wp-plugin-fancy-gallery.php:144
+msgid "Fancy Gallery"
+msgstr "Fancy Gallery"
+
+#: ../wp-plugin-fancy-gallery.php:174
+msgid "Loop mode"
+msgstr "Schleifenmodus"
+
+#: ../wp-plugin-fancy-gallery.php:177
+msgid "Will enable the user to get from the last image to the first one with the next button."
+msgstr "Ermöglicht es dem Benutzer vom letzten zum ersten Bild durch den \"Weiter\" Button zu gelangen."
+
+#: ../wp-plugin-fancy-gallery.php:182
+msgid "Scrollbars"
+msgstr "Scroll-Leisten"
+
+#: ../wp-plugin-fancy-gallery.php:185
+msgid "Automatic"
+msgstr "Automatisch"
+
+#: ../wp-plugin-fancy-gallery.php:189
+msgid "\"Automatic\" means scrollbars will be visibly if necessary. \"Yes\" and \"No\" should be clear."
+msgstr "\"Automatisch\" bedeutet die Scroll-Leisten werden eingeblendet wenn nötig. \"Ja\" und \"Nein\" sollten klar sein."
+
+#: ../wp-plugin-fancy-gallery.php:194
+msgid "Center on scroll"
+msgstr "Zentrieren beim Scrollen"
+
+#: ../wp-plugin-fancy-gallery.php:197
+msgid "Keep the FancyBox always in the center of the screen while scrolling the page."
+msgstr "Die FancyBox, auch wärend des Scrollens, immer in der Bildschirmmitte halten."
+
+#: ../wp-plugin-fancy-gallery.php:202
+msgid "Overlay opacity"
+msgstr "Milchglas-Hintergrund Transparenzgrad"
+
+#: ../wp-plugin-fancy-gallery.php:205
+msgid "Percentaged opacity of the background of the FancyBox. Should be a value from 0 to 100. (Default is 30)"
+msgstr "Prozentualer Transparenzgrad für die \"Milchglasscheibe\" hinter der FancyBox. Es sollte ein Wert zwischen 0 und 100 sein. (Standard ist 30)"
+
+#: ../wp-plugin-fancy-gallery.php:210
+msgid "Overlay color"
+msgstr "Milchglas-Hintergrund Grundfarbe"
+
+#: ../wp-plugin-fancy-gallery.php:214
+msgid "Please choose the color of the \"darker\" background."
+msgstr "Bitte wählen Sie eine Farbe für das Milchglas hinter der FancyBox."
+
+#: ../wp-plugin-fancy-gallery.php:219
+msgid "Image title"
+msgstr "Bildtitel"
+
+#: ../wp-plugin-fancy-gallery.php:222
+msgid "Tick this box if the image title should be visible to the user."
+msgstr "Bildtitel zu jedem Bild einblenden."
+
+#: ../wp-plugin-fancy-gallery.php:227
+msgid "Title position"
+msgstr "Bildtitelposition"
+
+#: ../wp-plugin-fancy-gallery.php:230
+msgid "Inside the FancyBox"
+msgstr "In der FancyBox"
+
+#: ../wp-plugin-fancy-gallery.php:231
+msgid "Outside the FancyBox"
+msgstr "Außerhalb der FancyBox"
+
+#: ../wp-plugin-fancy-gallery.php:232
+msgid "Over the image"
+msgstr "Auf dem Bild"
+
+#: ../wp-plugin-fancy-gallery.php:238
+msgid "Opening transition"
+msgstr "Einblendeffekt"
+
+#: ../wp-plugin-fancy-gallery.php:241
+#: ../wp-plugin-fancy-gallery.php:260
+msgid "Elastic"
+msgstr "Elastisch"
+
+#: ../wp-plugin-fancy-gallery.php:242
+#: ../wp-plugin-fancy-gallery.php:261
+msgid "Fade"
+msgstr "Aufblenden"
+
+#: ../wp-plugin-fancy-gallery.php:243
+#: ../wp-plugin-fancy-gallery.php:262
+msgid "No transition"
+msgstr "Kein Effekt"
+
+#: ../wp-plugin-fancy-gallery.php:249
+msgid "Opening speed"
+msgstr "Einblendverzögerung"
+
+#: ../wp-plugin-fancy-gallery.php:252
+#: ../wp-plugin-fancy-gallery.php:271
+msgid "Speed of the fade and elastic transitions. (in milliseconds)"
+msgstr "Laufzeit des Überblend-Effektes. (in Millisekunden)"
+
+#: ../wp-plugin-fancy-gallery.php:257
+msgid "Closing transition"
+msgstr "Ausblendeffekt"
+
+#: ../wp-plugin-fancy-gallery.php:268
+msgid "Closing speed"
+msgstr "Ausblendverzögerung"
+
+#: ../wp-plugin-fancy-gallery.php:276
+msgid "Image resizing speed"
+msgstr "Zeit der Bildgrößenanpassung"
+
+#: ../wp-plugin-fancy-gallery.php:279
+msgid "Speed of resizing when changing gallery items. (in milliseconds)"
+msgstr "Laufzeit in der sich die FancyBox an die Größe eines Bild anpassen soll. (in Millisekunden)"
+

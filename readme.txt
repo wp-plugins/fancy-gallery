@@ -2,7 +2,7 @@
 Contributors: dhoppe
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=1220480
 Tags: image, images, picture, pictures, photo, photos, gallery, galleries, photo-albums, Post, admin, media, fancy, fancybox, thickbox, lightbox, jquery, 
-Requires at least: 2.8.1
+Requires at least: 2.9
 Tested up to: 3.0
 Stable tag: trunk
 
@@ -12,7 +12,7 @@ Will bring your galleries as valid XHTML blocks on screen and associate linked i
 
 The Fancy Gallery Plugin overloads the default function behind the "[GALLERY]" Shortcode. Fancy Gallery generates fully valid XHTML and associates linked images with [Fancy Image Box](http://fancybox.net).
 
-Of course you can use 'exclude' and 'include' parameters in your [GALLERY] shortcode. 
+Of course you can use 'exclude' and 'include' parameters in your [GALLERY] shortcode.
 
 == Installation ==
 
@@ -24,6 +24,14 @@ Installation as usual.
 1. You like what you see?
 
 == Changelog ==
+
+= 1.3 =
+* Upon now FancyGallery runs only in PHP5 and higher!
+* There is a new admin panel in Settings > Fancy Gallery
+* Added my new "Please donate" Plugin ;) 
+
+= 1.2.4 =
+* You can use the "id" parameter to sepcify the gallery that should be shown.
 
 = 1.2.3 =
 * Modified FancyBoy CSS. Should now also work in IE6 and IE7.
