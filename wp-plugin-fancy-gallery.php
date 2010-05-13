@@ -161,7 +161,7 @@ Class wp_plugin_fancy_gallery {
 
     <div class="wrap">
       <?php screen_icon(); ?>
-      <h2><?php _e('Fancy Gallery Settings', 'theme') ?></h2>
+      <h2><?php Echo $this->t('Fancy Gallery Settings') ?></h2>
       
       <form method="post" action="">
         
@@ -249,7 +249,7 @@ Class wp_plugin_fancy_gallery {
         <tr valign="top">
           <th scope="row"><?php Echo $this->t('Opening speed') ?></th>
           <td>
-            <input type="text" name="speed_in" value="<?php Echo $this->LoadSetting('speed_in') ?>" size="3" /><br />            
+            <input type="text" name="speed_in" value="<?php Echo $this->LoadSetting('speed_in') ?>" size="3" /><?php Echo $this->t('msec', 'Abbr. Milliseconds') ?><br />            
             <small><?php Echo $this->t('Speed of the fade and elastic transitions. (in milliseconds)') ?></small>
           </td>
         </tr>
@@ -268,7 +268,7 @@ Class wp_plugin_fancy_gallery {
         <tr valign="top">
           <th scope="row"><?php Echo $this->t('Closing speed') ?></th>
           <td>
-            <input type="text" name="speed_out" value="<?php Echo $this->LoadSetting('speed_out') ?>" size="3" /><br />            
+            <input type="text" name="speed_out" value="<?php Echo $this->LoadSetting('speed_out') ?>" size="3" /><?php Echo $this->t('msec', 'Abbr. Milliseconds') ?><br />            
             <small><?php Echo $this->t('Speed of the fade and elastic transitions. (in milliseconds)') ?></small>
           </td>
         </tr>
@@ -276,7 +276,7 @@ Class wp_plugin_fancy_gallery {
         <tr valign="top">
           <th scope="row"><?php Echo $this->t('Image resizing speed') ?></th>
           <td>
-            <input type="text" name="change_speed" value="<?php Echo $this->LoadSetting('change_speed') ?>" size="3" /><br />            
+            <input type="text" name="change_speed" value="<?php Echo $this->LoadSetting('change_speed') ?>" size="3" /><?php Echo $this->t('msec', 'Abbr. Milliseconds') ?><br />            
             <small><?php Echo $this->t('Speed of resizing when changing gallery items. (in milliseconds)') ?></small>
           </td>
         </tr>
