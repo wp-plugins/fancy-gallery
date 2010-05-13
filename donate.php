@@ -80,7 +80,10 @@ Class wp_plugin_donation_to_dennis_hoppe {
       
     <ul>
       <li>&raquo; <a href="http://www.amazon.de/wishlist/2AG0R8BHEOJOL" target="_blank"><?php Echo $this->t('Make a gift of the Amazon Wishlist.') ?></a></li>
-      <li>&raquo; <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=1220480" target="_blank"><?php Echo $this->t('Make a donation via PayPal.') ?></a></li>
+      <li>&raquo; <?php Echo $this->t('Make a donation via PayPal:') ?>
+                  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=1220480" target="_blank"><?php Echo $this->t('U$ Dollars') ?></a> |
+                  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HECSPGLPTQL24" target="_blank"><?php Echo $this->t('&euro;uro') ?></a>
+      </li>
     </ul>
     
     <div class="clear"></div><?php
