@@ -25,8 +25,11 @@ Installation as usual.
 
 == Changelog ==
 
+= 1.3.1 =
+* Some small translation, CSS, JS, XHTML fixes
+
 = 1.3 =
-* Upon now FancyGallery runs only in PHP5 and higher!
+* Upon now FancyGallery runs only with PHP5 and higher!
 * There is a new admin panel in Settings > Fancy Gallery
 * Added my new "Please donate" Plugin ;) 
 

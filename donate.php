@@ -141,7 +141,7 @@ Class wp_plugin_donation_to_dennis_hoppe {
       11 => $this->t('eleven'),
       12 => $this->t('twelve'),
       13 => $this->t('thirteen'),
-      14 => $this->t('fouteen'),
+      14 => $this->t('fourteen'),
       15 => $this->t('fifteen'),
       16 => $this->t('sixteen'),
       17 => $this->t('seventeen'),
