@@ -25,6 +25,9 @@ Installation as usual.
 
 == Changelog ==
 
+= 1.3.2 =
+* New version of the donation plugin
+
 = 1.3.1 =
 * Some small translation, CSS, JS, XHTML fixes
 
