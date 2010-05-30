@@ -171,13 +171,13 @@ Class wp_plugin_donation_to_dennis_hoppe {
             <input type="hidden" class="dennis_hoppe_donation_currency" value="USD" />
             <select class="dennis_hoppe_donation_amount">
               <option value="" disabled="disabled" selected="selected"><?php Echo $this->t('Amount in USD') ?></option>
-              <option value="52.26">$52.26</option>
-              <option value="41.87">$41.87</option>
-              <option value="31.48">$31.48</option>
-              <option value="21.09">$21.09</option>
-              <option value="15.90">$15.90</option>
-              <option value="10.70">$10.70</option>
-              <option value="5.51">$5.51</option>
+              <option value="52.34">$52.34</option>
+              <option value="41.94">$41.94</option>
+              <option value="31.53">$31.53</option>
+              <option value="21.12">$21.12</option>
+              <option value="15.92">$15.92</option>
+              <option value="10.72">$10.72</option>
+              <option value="5.52">$5.52</option>
               <option value="">&raquo; <?php Echo $this->t('other amount') ?></option>
             </select>
             <input type="button" class="dennis_hoppe_donation_button button-primary" value="<?php Echo $this->t('Proceed to PayPal') ?> &rarr;" disabled="disabled" />
@@ -186,11 +186,11 @@ Class wp_plugin_donation_to_dennis_hoppe {
             <input type="hidden" class="dennis_hoppe_donation_currency" value="EUR" />
             <select class="dennis_hoppe_donation_amount">
               <option value="" disabled="disabled" selected="selected"><?php Echo $this->t('Amount in EUR') ?></option>
-              <option value="51.31">51,31 &euro;</option>
-              <option value="41.12">41,12 &euro;</option>
-              <option value="30.93">30,93 &euro;</option>
+              <option value="51.33">51,33 &euro;</option>
+              <option value="41.13">41,13 &euro;</option>
+              <option value="30.94">30,94 &euro;</option>
               <option value="20.74">20,74 &euro;</option>
-              <option value="15.64">15,64 &euro;</option>
+              <option value="15.65">15,65 &euro;</option>
               <option value="10.55">10,55 &euro;</option>
               <option value="5.45">5,45 &euro;</option>
               <option value="">&raquo; <?php Echo $this->t('other amount') ?></option>
