@@ -154,23 +154,30 @@ Class wp_plugin_donation_to_dennis_hoppe {
     </div>
     
     <ul>
-      <li>&raquo; <a href="http://amzn.com/w/1A45MS7KY75CY" target="_blank"><?php Echo $this->t('Make a gift of the Amazon Wish List.') ?></a></li>
-      <li class="hide_if_js">&raquo; <?php Echo $this->t('Make a donation via PayPal:') ?>
-        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=1220480" target="_blank"><?php Echo $this->t('U$ Dollars') ?></a> |
-        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HECSPGLPTQL24" target="_blank"><?php Echo $this->t('&euro;uro') ?></a>
+      <li><?php Echo $this->t('Make a gift of the Amazon Wish List') ?>:
+        <ul>
+          <li>&raquo; <a href="http://amzn.com/w/1A45MS7KY75CY" target="_blank"><?php Echo $this->t('Amazon USA') ?></a></li>
+          <li>&raquo; <a href="http://www.amazon.de/wishlist/2AG0R8BHEOJOL" target="_blank"><?php Echo $this->t('Amazon Germany') ?></a></li>
+        </ul>
       </li>
-      <li class="show_if_js" style="display:none"><?php Echo $this->t('Make a donation via PayPal:') ?>
+      
+      <li class="hide_if_js">&raquo; <?php Echo $this->t('Make a donation via PayPal:') ?>
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=1220480" target="_blank"><?php Echo $this->t('U$ Dollars') ?></a> |
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=HECSPGLPTQL24" target="_blank"><?php Echo $this->t('&euro;uro') ?></a>
+      </li>
+      <li class="show_if_js" style="display:none"><?php Echo $this->t('Make a donation via PayPal') ?>:
         <ul>
           <li>&raquo; U$ Dollar:
             <input type="hidden" class="dennis_hoppe_donation_currency" value="USD" />
             <select class="dennis_hoppe_donation_amount">
               <option value="" disabled="disabled" selected="selected"><?php Echo $this->t('Amount in USD') ?></option>
-              <option value="52.25">$52.25</option>
-              <option value="31.47">$31.47</option>
-              <option value="21.08">$21.08</option>
-              <option value="15.89">$15.89</option>
-              <option value="10.69">$10.69</option>
-              <option value="5.50">$5.50</option>
+              <option value="52.26">$52.26</option>
+              <option value="41.87">$41.87</option>
+              <option value="31.48">$31.48</option>
+              <option value="21.09">$21.09</option>
+              <option value="15.90">$15.90</option>
+              <option value="10.70">$10.70</option>
+              <option value="5.51">$5.51</option>
               <option value="">&raquo; <?php Echo $this->t('other amount') ?></option>
             </select>
             <input type="button" class="dennis_hoppe_donation_button button-primary" value="<?php Echo $this->t('Proceed to PayPal') ?> &rarr;" disabled="disabled" />
@@ -179,11 +186,12 @@ Class wp_plugin_donation_to_dennis_hoppe {
             <input type="hidden" class="dennis_hoppe_donation_currency" value="EUR" />
             <select class="dennis_hoppe_donation_amount">
               <option value="" disabled="disabled" selected="selected"><?php Echo $this->t('Amount in EUR') ?></option>
-              <option value="51.30">51,30 &euro;</option>
-              <option value="30.92">30,92 &euro;</option>
-              <option value="20.73">20,73 &euro;</option>
+              <option value="51.31">51,31 &euro;</option>
+              <option value="41.12">41,12 &euro;</option>
+              <option value="30.93">30,93 &euro;</option>
+              <option value="20.74">20,74 &euro;</option>
               <option value="15.64">15,64 &euro;</option>
-              <option value="10.54">10,54 &euro;</option>
+              <option value="10.55">10,55 &euro;</option>
               <option value="5.45">5,45 &euro;</option>
               <option value="">&raquo; <?php Echo $this->t('other amount') ?></option>
             </select>
@@ -200,28 +208,22 @@ Class wp_plugin_donation_to_dennis_hoppe {
   
   Function add_settings_field (){
     // Register the option field
-    register_setting( 'misc', 'donated_to_dennis_hoppe' );
+    register_setting( 'general', 'donated_to_dennis_hoppe' );
     
     // Add Settings Field
-    add_settings_section(
+    add_settings_field(
       get_class($this),
       $this->t('Donation to Dennis Hoppe'),
       Array($this, 'print_settings_field'),
-      'misc'
+      'general'
     );
   }
 
   Function print_settings_field(){    
     ?>    
-    <div style="max-width:600px"><?php do_action('donation_message') ?></div>    
-    <table class="form-table">
-    <tr>
-      <th scope="row" colspan="2" class="th-full">
-        <input type="checkbox" name="donated_to_dennis_hoppe" value="yes" <?php checked(get_option('donated_to_dennis_hoppe'), 'yes') ?>/>
-        <?php Echo $this->t('I give the affidavit that I have sent a donation to Dennis Hoppe or paid him a fee for his job.'); ?>
-      </th>
-    </tr>
-    </table>
+    <input type="checkbox" name="donated_to_dennis_hoppe" value="yes" <?php checked(get_option('donated_to_dennis_hoppe'), 'yes') ?>/>
+    <label for="donated_to_dennis_hoppe"><?php Echo $this->t('I give the affidavit that I have sent a donation to Dennis Hoppe or paid him a fee for his job.'); ?>
+    <div style="max-width:600px"><?php do_action('donation_message') ?></div>
     <?php
   }
   

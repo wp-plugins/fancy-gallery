@@ -25,6 +25,9 @@ Installation as usual.
 
 == Changelog ==
 
+= 1.3.3 =
+* optimized settings handling in fancy-js.php
+
 = 1.3.2 =
 * New version of the donation plugin
 
