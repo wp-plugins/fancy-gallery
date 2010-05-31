@@ -5,7 +5,7 @@
 Plugin Name: Fancy Gallery
 Description: Will bring your galleries as valid XHTML blocks on screen and associate linked images with Fancybox.
 Plugin URI: http://dennishoppe.de/wordpress-plugins/fancy-gallery 
-Version: 1.3.3
+Version: 1.3.4
 Author: Dennis Hoppe
 Author URI: http://DennisHoppe.de
 
@@ -35,7 +35,7 @@ Class wp_plugin_fancy_gallery {
     }
     Else {
       Add_Action ('wp_head', Array($this, 'print_header'));
-      Add_Filter ('post_gallery', Array($this, 'gallery_shortcode'));
+      Add_ShortCode ('gallery', Array($this, 'gallery_shortcode'));
     }
     
     // Add jQuery
@@ -285,17 +285,7 @@ Class wp_plugin_fancy_gallery {
       (array) $attr);
 
   	// get attachments
-    If (!Empty($attr['include']))
-      // this gallery only includes images
-      $attachments = get_posts(Array(
-        'include'        => $attr['include'],
-        'post_status'    => $attr['post_status'],
-        'post_type'      => $attr['post_type'],
-        'post_mime_type' => $attr['post_mime_type'],
-        'order'          => $attr['order'],
-        'orderby'        => $attr['orderby'] )); 
-  	Else
-  	  // this gallery uses the post attachments
+    If (Empty($attr['include'])) // this gallery uses the post attachments
       $attachments = get_children(Array(
         'post_parent'    => $attr['id'],
         'exclude'        => $attr['exclude'],
@@ -304,6 +294,15 @@ Class wp_plugin_fancy_gallery {
         'post_mime_type' => $attr['post_mime_type'],
         'order'          => $attr['order'],
         'orderby'        => $attr['orderby'] ));
+
+  	Else // this gallery only includes images
+      $attachments = get_posts(Array(
+        'include'        => $attr['include'],
+        'post_status'    => $attr['post_status'],
+        'post_type'      => $attr['post_type'],
+        'post_mime_type' => $attr['post_mime_type'],
+        'order'          => $attr['order'],
+        'orderby'        => $attr['orderby'] )); 
   	
   	// There are no attachments
   	If (Empty($attachments)) return False;

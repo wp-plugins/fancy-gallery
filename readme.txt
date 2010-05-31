@@ -25,6 +25,10 @@ Installation as usual.
 
 == Changelog ==
 
+= 1.3.4 =
+* fancy-js.php does not define Functions or Classes anymore
+* Fixed the exclude bug
+
 = 1.3.3 =
 * optimized settings handling in fancy-js.php
 
