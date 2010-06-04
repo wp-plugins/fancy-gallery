@@ -6,11 +6,11 @@ Requires at least: 2.9
 Tested up to: 3.0
 Stable tag: trunk
 
-Fancy Gallery converts your WordPress galleries to valid XHTML blocks and associate linked images with the Fancybox.
+Fancy Gallery converts associate linked images with the Fancybox.
 
 == Description ==
 
-The Fancy Gallery Plugin overwrites the default function behind the "[GALLERY]" Shortcode. Fancy Gallery generates fully valid XHTML and associates linked images with [Fancy Image Box](http://fancybox.net).
+Fancy Gallery integrates the [Fancy Image Box](http://fancybox.net) in your WordPress. All links pointing to an image will automaticly opened in the FancyBox. If you use the [Gallery] ShortCode the images will get a navigation and the gallery itself will converted into a valid XHTML block.
 
 Of course you can use 'exclude' and 'include' parameters in your [GALLERY] shortcode.
 
