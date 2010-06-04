@@ -5,15 +5,15 @@
 Plugin Name: Fancy Gallery
 Description: Will bring your galleries as valid XHTML blocks on screen and associate linked images with Fancybox.
 Plugin URI: http://dennishoppe.de/wordpress-plugins/fancy-gallery 
-Version: 1.3.4
+Version: 1.3.5
 Author: Dennis Hoppe
 Author URI: http://DennisHoppe.de
 
 */
 
 
-// Include Donate Plugin
-Require_Once DirName(__FILE__).'/donate.php';
+// Please think about a donation
+If (Is_File(DirName(__FILE__).'/donate.php')) Include DirName(__FILE__).'/donate.php';
     
 
 If (!Class_Exists('wp_plugin_fancy_gallery')){
@@ -153,6 +153,14 @@ Class wp_plugin_fancy_gallery {
         </tr>
 
         <tr valign="top">
+          <th scope="row"><?php Echo $this->t('Border width') ?></th>
+          <td>
+            <input type="text" name="border_width" value="<?php Echo IntVal($this->Load_Setting('border_width', 10)) ?>" size="4" /><?php Echo $this->t('px', 'Abbr. Pixels') ?><br />            
+            <small><?php Echo $this->t('Width of the image frame border. (in pixels)') ?></small>
+          </td>
+        </tr>
+
+        <tr valign="top">
           <th scope="row"><?php Echo $this->t('Image title') ?></th>
           <td>
             <input type="checkbox" name="hide_image_title" value="yes" <?php Checked ($this->Load_Setting('hide_image_title'), 'yes') ?>/>            
@@ -216,6 +224,15 @@ Class wp_plugin_fancy_gallery {
             <small><?php Echo $this->t('Speed of resizing when changing gallery items. (in milliseconds)') ?></small>
           </td>
         </tr>
+
+        <tr valign="top">
+          <th scope="row"><?php Echo $this->t('Appearance problems') ?></th>
+          <td>
+            <input type="checkbox" name="img_block_fix" value="yes" <?php Checked ($this->Load_Setting('img_block_fix'), 'yes') ?> />            
+            <?php Echo $this->t('Convert gallery images to inline elements. (Tick this box if your galleries have only one column.)') ?><br />            
+            <small><?php Echo $this->t('Some themes let images appear as block elements. This effects that your image galleries have only one column.') ?></small>
+          </td>
+        </tr>
         
         </table>
         
@@ -263,7 +280,7 @@ Class wp_plugin_fancy_gallery {
     <link type="text/css" rel="stylesheet" href="<?php echo $this->base_url?>/fancybox/jquery.fancybox-1.3.1.css" />
     <script type="text/javascript" src="<?php echo $this->base_url ?>/fancybox/jquery.fancybox-1.3.1.pack.js"></script>
     
-    <script type="text/javascript" src="<?php echo $this->base_url ?>/fancy-js.php?class=<?php echo get_class($this) ?>"></script>
+    <script type="text/javascript" src="<?php echo $this->base_url ?>/fancy-js.php"></script>    
     <!-- End of Fancy Gallery Components -->
     <?php
   }
@@ -306,8 +323,8 @@ Class wp_plugin_fancy_gallery {
   	
   	// There are no attachments
   	If (Empty($attachments)) return False;
-
-  	$code = '<div class="gallery" id="gallery_'.$post->ID.'">';
+  	
+  	$code = '<div class="fancy gallery" id="gallery_'.$post->ID.'">';
   	
     ForEach ($attachments AS $id => $attachment)
       $code .= wp_get_attachment_link($attachment->ID, $attr['size']);
