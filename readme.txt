@@ -2,7 +2,7 @@
 Contributors: dhoppe
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=1220480
 Tags: image, images, picture, pictures, photo, photos, gallery, galleries, photo-albums, Post, admin, media, fancy, fancybox, thickbox, lightbox, jquery, 
-Requires at least: 2.9
+Requires at least: 2.8
 Tested up to: 3.0
 Stable tag: trunk
 
@@ -14,7 +14,15 @@ Fancy Gallery integrates the [Fancy Image Box](http://fancybox.net) in your Word
 
 Of course you can use 'exclude' and 'include' parameters in your [GALLERY] shortcode.
 
-If you have any questions or advices please leave a comment in my blog.
+= Requirements =
+* **Fancy Gallery requires PHP5!**
+* WordPress 2.8 or higher
+
+= Settings =
+You can find the settings page in WP Admin Panel -> Settings -> Fancy Gallery.
+
+= Questions =
+If you have any questions you can leave a comment in my blog. But please think about this: I will not add features, write customizations or write tutorials for free. Please think about a donation. I'm a human and to write code is hard work.
 
 == Installation ==
 
