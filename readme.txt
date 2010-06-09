@@ -26,7 +26,7 @@ If you have any questions you can leave a comment in my blog. But please think a
 
 = Language =
 * This Plugin is available in English.
-* Dieses Plugin ist in Deutsch verfügbar. ([Dennis Hoppe](http://dennishoppe.de/))
+* Dieses Plugin ist in Deutsch verfÃ¼gbar. ([Dennis Hoppe](http://dennishoppe.de/))
 
 If you translated this plugin in your language feel free to send me the language file (.po file) via E-Mail with your name and this translated sentence: "This plugin is available in %YOUR_LANGUAGE_NAME%." So i can add it to the plugin.
 
