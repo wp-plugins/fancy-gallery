@@ -24,6 +24,23 @@ You can find the settings page in WP Admin Panel -> Settings -> Fancy Gallery.
 = Questions =
 If you have any questions you can leave a comment in my blog. But please think about this: I will not add features, write customizations or write tutorials for free. Please think about a donation. I'm a human and to write code is hard work.
 
+= Language =
+* This Plugin is available in English.
+* Dieses Plugin ist in Deutsch verfügbar. ([Dennis Hoppe](http://dennishoppe.de/))
+
+If you translated this plugin in your language feel free to send me the language file (.po file) via E-Mail with your name and this translated sentence: "This plugin is available in %YOUR_LANGUAGE_NAME%." So i can add it to the plugin.
+
+You can find the *FancyGallery.pot* file in the *language/* folder in the plugin directory.
+
+* Copy it
+* Rename it
+* Change it
+* Send it via E-Mail to mail@DennisHoppe.de
+* Thats it. Thank you =)
+
+The translation file contains 36 strings.
+
+
 == Installation ==
 
 Installation as usual.
@@ -34,6 +51,10 @@ Installation as usual.
 1. You like what you see?
 
 == Changelog ==
+
+= 1.3.6 =
+* Fixed German translation.
+* Added .pot file to language folder
 
 = 1.3.5 =
 * fixed a problem in the fancy-js.php does not need parameters anymore.

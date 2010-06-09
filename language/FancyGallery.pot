@@ -2,15 +2,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fancy Gallery Plugin for WordPress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-09 10:04+0100\n"
+"POT-Creation-Date: 2010-06-09 10:16+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe\n"
-"Language-Team: Dennis Hoppe\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: German\n"
-"X-Poedit-Country: GERMANY\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-KeywordsList: t;t:2c,1\n"
 "X-Poedit-SearchPath-0: ..\n"
@@ -18,156 +16,153 @@ msgstr ""
 #: ../wp-plugin-fancy-gallery.php:62
 #: ../wp-plugin-fancy-gallery.php:100
 msgid "Fancy Gallery Settings"
-msgstr "Fancy Gallery Einstellungen"
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:63
 msgid "Fancy Gallery"
-msgstr "Fancy Gallery"
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:111
 msgid "Loop mode"
-msgstr "Schleifenmodus"
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:114
 msgid "Will enable the user to get from the last image to the first one with the next button."
-msgstr "Ermöglicht es dem Benutzer vom letzten zum ersten Bild durch den \"Weiter\" Button zu gelangen."
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:119
 msgid "Scrollbars"
-msgstr "Scroll-Leisten"
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:122
 msgid "Automatic"
-msgstr "Automatisch"
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:126
 msgid "\"Automatic\" means scrollbars will be visibly if necessary. \"Yes\" and \"No\" should be clear."
-msgstr "\"Automatisch\" bedeutet die Scroll-Leisten werden eingeblendet wenn nötig. \"Ja\" und \"Nein\" sollten klar sein."
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:131
 msgid "Center on scroll"
-msgstr "Zentrieren beim Scrollen"
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:134
 msgid "Keep the FancyBox always in the center of the screen while scrolling the page."
-msgstr "Die FancyBox, auch wärend des Scrollens, immer in der Bildschirmmitte halten."
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:139
 msgid "Overlay opacity"
-msgstr "Milchglas-Hintergrund Transparenzgrad"
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:142
 msgid "Percentaged opacity of the background of the FancyBox. Should be a value from 0 (invisible) to 100 (opaque). (Default is 30)"
-msgstr "Prozentualer Sichtbarkeitsgrad für die \"Milchglasscheibe\" hinter der FancyBox. Es sollte ein Wert zwischen 0 (unsichtbar) und 100 (undurchschaubar) sein. (Standard ist 30)"
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:147
 msgid "Overlay color"
-msgstr "Milchglas-Hintergrund Grundfarbe"
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:151
 msgid "Please choose the color of the \"darker\" background."
-msgstr "Bitte wählen Sie eine Farbe für das Milchglas hinter der FancyBox."
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:156
 msgid "Border width"
-msgstr "Rahmenbreite"
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:158
 msgctxt "Abbr. Pixels"
 msgid "px"
-msgstr "px"
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:159
 msgid "Width of the image frame border. (in pixels)"
-msgstr "Breite des Bildrahmens. (In Pixeln)"
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:164
 msgid "Image title"
-msgstr "Bildtitel"
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:167
 msgid "Do not shot image titles."
-msgstr "Keine Bilduntertitel zeigen."
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:172
 msgid "Title position"
-msgstr "Bildtitelposition"
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:175
 msgid "Outside the FancyBox"
-msgstr "Außerhalb der FancyBox"
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:176
 msgid "Inside the FancyBox"
-msgstr "In der FancyBox"
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:177
 msgid "Over the image"
-msgstr "Auf dem Bild"
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:183
 msgid "Opening transition"
-msgstr "Einblendeffekt"
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:186
 #: ../wp-plugin-fancy-gallery.php:205
 msgid "Fade"
-msgstr "Aufblenden"
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:187
 #: ../wp-plugin-fancy-gallery.php:206
 msgid "Elastic"
-msgstr "Elastisch"
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:188
 #: ../wp-plugin-fancy-gallery.php:207
 msgid "No transition"
-msgstr "Kein Effekt"
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:194
 msgid "Opening speed"
-msgstr "Einblendverzögerung"
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:196
 #: ../wp-plugin-fancy-gallery.php:215
 #: ../wp-plugin-fancy-gallery.php:223
 msgctxt "Abbr. Milliseconds"
 msgid "msec"
-msgstr "ms"
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:197
 #: ../wp-plugin-fancy-gallery.php:216
 msgid "Speed of the fade and elastic transitions. (in milliseconds)"
-msgstr "Laufzeit des Überblend-Effektes. (in Millisekunden)"
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:202
 msgid "Closing transition"
-msgstr "Ausblendeffekt"
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:213
 msgid "Closing speed"
-msgstr "Ausblendverzögerung"
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:221
 msgid "Image resizing speed"
-msgstr "Zeit der Bildgrößenanpassung"
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:224
 msgid "Speed of resizing when changing gallery items. (in milliseconds)"
-msgstr "Laufzeit in der sich die FancyBox an die Größe eines Bild anpassen soll. (in Millisekunden)"
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:229
 msgid "Appearance problems"
-msgstr "Darstellungsprobleme"
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:232
 msgid "Convert gallery images to inline elements. (Tick this box if your galleries have only one column.)"
-msgstr "Konvertiert Galeriebilder in \"Inline\"-Elemente. (Aktivieren Sie dieses Feld wenn Ihre Galerien mit nur einer Spalte dargestellt werden.)"
+msgstr ""
 
 #: ../wp-plugin-fancy-gallery.php:233
 msgid "Some themes let images appear as block elements. This effects that your image galleries have only one column."
-msgstr "Einige Themes zeigen Bilder als Block-Elemente, was darin resultiert dass Ihre Galerien einspaltig dargestellt werden."
-
-#~ msgid "Tick this box if the image title should be visible to the user."
-#~ msgstr "Bildtitel zu jedem Bild einblenden."
+msgstr ""
 
