@@ -1,0 +1,170 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Fancy Gallery Plugin for WordPress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-09 10:16+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Dennis Hoppe\n"
+"Language-Team: Charles Alain\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: t;t:2c,1\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../wp-plugin-fancy-gallery.php:62
+#: ../wp-plugin-fancy-gallery.php:100
+msgid "Fancy Gallery Settings"
+msgstr "Paramètres Fancy Gallery"
+
+#: ../wp-plugin-fancy-gallery.php:63
+msgid "Fancy Gallery"
+msgstr "Fancy Gallery"
+
+#: ../wp-plugin-fancy-gallery.php:111
+msgid "Loop mode"
+msgstr "Afficher en boucle"
+
+#: ../wp-plugin-fancy-gallery.php:114
+msgid "Will enable the user to get from the last image to the first one with the next button."
+msgstr "Permettra à l'utilisateur de passer de la dernière image à la première avec le bouton \"suivant\""
+
+#: ../wp-plugin-fancy-gallery.php:119
+msgid "Scrollbars"
+msgstr "Barres de défilement"
+
+#: ../wp-plugin-fancy-gallery.php:122
+msgid "Automatic"
+msgstr "Automatique"
+
+#: ../wp-plugin-fancy-gallery.php:126
+msgid "\"Automatic\" means scrollbars will be visibly if necessary. \"Yes\" and \"No\" should be clear."
+msgstr "\"Automatique\" signifie que les barres de défilement seront visibles seulement si nécessaire. \"Oui\" et \"Non\" doivent être décochés."
+
+#: ../wp-plugin-fancy-gallery.php:131
+msgid "Center on scroll"
+msgstr "Centrer pendant le défilement"
+
+#: ../wp-plugin-fancy-gallery.php:134
+msgid "Keep the FancyBox always in the center of the screen while scrolling the page."
+msgstr "Conserve la FancyBox au milieu de l'écran pendant le défilement de la page."
+
+#: ../wp-plugin-fancy-gallery.php:139
+msgid "Overlay opacity"
+msgstr "Opacité de la sur-impression"
+
+#: ../wp-plugin-fancy-gallery.php:142
+msgid "Percentaged opacity of the background of the FancyBox. Should be a value from 0 (invisible) to 100 (opaque). (Default is 30)"
+msgstr "Pourcentage d'opacité de l'arrière plan de la FancyBox. Doit être une valeur de 0 (invisible) à 100 (opaque). (Defaut : 30)"
+
+#: ../wp-plugin-fancy-gallery.php:147
+msgid "Overlay color"
+msgstr "Couleur de la sur-impression"
+
+#: ../wp-plugin-fancy-gallery.php:151
+msgid "Please choose the color of the \"darker\" background."
+msgstr "Choisissez la couleur du fond \"plus sombre\"."
+
+#: ../wp-plugin-fancy-gallery.php:156
+msgid "Border width"
+msgstr "Epaisseur de la bordure"
+
+#: ../wp-plugin-fancy-gallery.php:158
+msgctxt "Abbr. Pixels"
+msgid "px"
+msgstr "px"
+
+#: ../wp-plugin-fancy-gallery.php:159
+msgid "Width of the image frame border. (in pixels)"
+msgstr "Largeur de la bordure du cadre de l'image. (en pixels)"
+
+#: ../wp-plugin-fancy-gallery.php:164
+msgid "Image title"
+msgstr "Titre de l'image"
+
+#: ../wp-plugin-fancy-gallery.php:167
+msgid "Do not shot image titles."
+msgstr "Ne pas afficher les titres d'images."
+
+#: ../wp-plugin-fancy-gallery.php:172
+msgid "Title position"
+msgstr "Position du titre"
+
+#: ../wp-plugin-fancy-gallery.php:175
+msgid "Outside the FancyBox"
+msgstr "En dehors de la FancyBox"
+
+#: ../wp-plugin-fancy-gallery.php:176
+msgid "Inside the FancyBox"
+msgstr "A l'intérieur de la FancyBox"
+
+#: ../wp-plugin-fancy-gallery.php:177
+msgid "Over the image"
+msgstr "Au dessus de l'image."
+
+#: ../wp-plugin-fancy-gallery.php:183
+msgid "Opening transition"
+msgstr "Transition d'ouverture"
+
+#: ../wp-plugin-fancy-gallery.php:186
+#: ../wp-plugin-fancy-gallery.php:205
+msgid "Fade"
+msgstr "Fusion"
+
+#: ../wp-plugin-fancy-gallery.php:187
+#: ../wp-plugin-fancy-gallery.php:206
+msgid "Elastic"
+msgstr "Elastique"
+
+#: ../wp-plugin-fancy-gallery.php:188
+#: ../wp-plugin-fancy-gallery.php:207
+msgid "No transition"
+msgstr "Pas de transition"
+
+#: ../wp-plugin-fancy-gallery.php:194
+msgid "Opening speed"
+msgstr "Vitesse d'ouverture"
+
+#: ../wp-plugin-fancy-gallery.php:196
+#: ../wp-plugin-fancy-gallery.php:215
+#: ../wp-plugin-fancy-gallery.php:223
+msgctxt "Abbr. Milliseconds"
+msgid "msec"
+msgstr "msec"
+
+#: ../wp-plugin-fancy-gallery.php:197
+#: ../wp-plugin-fancy-gallery.php:216
+msgid "Speed of the fade and elastic transitions. (in milliseconds)"
+msgstr "Vitesse des transitions fusion et elastique. (en millisecondes)"
+
+#: ../wp-plugin-fancy-gallery.php:202
+msgid "Closing transition"
+msgstr "Transition de fermeture"
+
+#: ../wp-plugin-fancy-gallery.php:213
+msgid "Closing speed"
+msgstr "Vitesse de fermeture"
+
+#: ../wp-plugin-fancy-gallery.php:221
+msgid "Image resizing speed"
+msgstr "Vitesse de mise à l'échelle de l'image"
+
+#: ../wp-plugin-fancy-gallery.php:224
+msgid "Speed of resizing when changing gallery items. (in milliseconds)"
+msgstr "Vitesse de mise à l'échelle au moment du changement d'items dans la galerie. (en millisecondes)"
+
+#: ../wp-plugin-fancy-gallery.php:229
+msgid "Appearance problems"
+msgstr "Problèmes d'affichage"
+
+#: ../wp-plugin-fancy-gallery.php:232
+msgid "Convert gallery images to inline elements. (Tick this box if your galleries have only one column.)"
+msgstr "Convertir les images de la galerie en éléments \"inline\". (Cocher cette case si vos galeries ont seulement une colomne.)"
+
+#: ../wp-plugin-fancy-gallery.php:233
+msgid "Some themes let images appear as block elements. This effects that your image galleries have only one column."
+msgstr "Certains thèmes permettent aux images de s'afficher en éléments \"blocks\". Ceci a de l'effet si vos galeries ont seulement une colomne."
+

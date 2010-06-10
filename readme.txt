@@ -6,7 +6,7 @@ Requires at least: 2.8
 Tested up to: 3.0
 Stable tag: trunk
 
-Fancy Gallery converts associate linked images with the Fancybox.
+Fancy Gallery associate linked images and galleries with the jQuery Fancybox.
 
 == Description ==
 
@@ -28,6 +28,7 @@ If you have any questions you can leave a comment in my blog. But please think a
 * This Plugin is available in English.
 * Dieses Plugin ist in Deutsch verfügbar. ([Dennis Hoppe](http://dennishoppe.de/))
 * Este plugin está disponível em Português do Brasil. ([Rafael Sirotheau](http://rsirotheau.wordpress.com/))
+* Cette extension est traduite en français. ([Charles Alain](http://www.domarin-tt.com/))
 
 If you translated this plugin in your language feel free to send me the language file (.po file) via E-Mail with your name and this translated sentence: "This plugin is available in %YOUR_LANGUAGE_NAME%." So i can add it to the plugin.
 
@@ -52,6 +53,10 @@ Installation as usual.
 1. You like what you see?
 
 == Changelog ==
+
+= 1.3.8 =
+* Added French translation by [Charles Alain](http://www.domarin-tt.com/).
+
 
 = 1.3.7 = 
 * Added Portuguese (Brasil) translation by [Rafael Sirotheau](http://rsirotheau.wordpress.com/).
