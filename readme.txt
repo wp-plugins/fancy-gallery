@@ -30,15 +30,15 @@ If you have any questions you can leave a comment in my blog. But please think a
 * Este plugin está disponível em Português do Brasil. ([Rafael Sirotheau](http://rsirotheau.wordpress.com/))
 * Cette extension est traduite en français. ([Charles Alain](http://www.domarin-tt.com/))
 
-If you translated this plugin in your language feel free to send me the language file (.po file) via E-Mail with your name and this translated sentence: "This plugin is available in %YOUR_LANGUAGE_NAME%." So i can add it to the plugin.
+If you have translated this plugin in your language feel free to send me the language file (.po file) via E-Mail with your name and this translated sentence: "This plugin is available in %YOUR_LANGUAGE_NAME%." So i can add it to the plugin.
 
 You can find the *FancyGallery.pot* file in the *language/* folder in the plugin directory.
 
-* Copy it
-* Rename it
-* Change it
-* Send it via E-Mail to mail@DennisHoppe.de
-* Thats it. Thank you =)
+* Copy it.
+* Rename it (to your language code).
+* Translate everything.
+* Send it via E-Mail to mail@DennisHoppe.de.
+* Thats it. Thank you! =)
 
 The translation file contains 36 strings.
 
