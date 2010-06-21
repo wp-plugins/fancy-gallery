@@ -54,6 +54,12 @@ Installation as usual.
 
 == Changelog ==
 
+= 1.3.9 =
+* Fixed the farbtastic incompatibility bug
+* Added transparency fix for the navigation buttons in IE6
+* Fixed: Remove senseless settings from gallery insert box
+* tidied up the code
+
 = 1.3.8 =
 * Added French translation by [Charles Alain](http://www.domarin-tt.com/).
 

@@ -107,21 +107,29 @@ Class wp_plugin_donation_to_dennis_hoppe {
       <input type="hidden" name="no_shipping" value="1" />
       <input type="hidden" name="tax" value="0" />
       <input type="hidden" name="no_note" value="0" />
-      <input type="hidden" name="item_name" value="<?php Echo $this->t('Support the Open Source Community with a donation') ?>" />
+      <input type="hidden" name="item_name" value="<?php Echo $this->t('Donation to the Open Source Community') ?>" />
+      <input type="hidden" name="on0" value="<?php Echo $this->t('Reference') ?>" />
+      <input type="hidden" name="os0" value="<?php Echo $this->t('WordPress extensions') ?>" />
+      <?php ForEach ($this->get_current_extensions() AS $index => $extension) : ?>
+      <input type="hidden" name="on<?php Echo ($index+1) ?>" value="<?php Echo $this->t('Plugin') ?>" />
+      <input type="hidden" name="os<?php Echo ($index+1) ?>" value="<?php Echo HTMLSpecialChars(Strip_Tags($extension)) ?>" />
+      <?php EndForEach ?>
       <input type="hidden" name="currency_code" value="" />
       <input type="hidden" name="amount" value="" />
     </form>
     <!-- End of PayPal Donation Form for Dennis Hoppe -->
 
     </div><?php
-  }  
+  }
   
-  Function print_message(){
-    // Read current user
-    Global $current_user; get_currentuserinfo();
-    
+  Function get_current_extensions(){
     // Array which contains all my extensions
-    $arr_extension = Array();
+    Static $arr_extension;
+    
+    If (IsSet($arr_extension))
+      return $arr_extension;
+    Else
+      $arr_extension = Array();
     
     // Read the active plugins
     ForEach (get_option('active_plugins') AS $plugin){
@@ -131,9 +139,21 @@ Class wp_plugin_donation_to_dennis_hoppe {
     }
     
     // Read the current theme
-    If ( StrPos(StrToLower(current_theme_info()->author), 'dennis hoppe') !== False )
-      $arr_extension[] = $this->t('the theme') . ' ' . current_theme_info()->title;
+    $current_theme_info = current_theme_info();
+    If ( $current_theme_info && StrPos(StrToLower($current_theme_info->author), 'dennis hoppe') !== False )
+      $arr_extension[] = $this->t('the theme') . ' ' . $current_theme_info->title;
     
+    // return
+    return $arr_extension;
+  }
+  
+  Function print_message(){
+    // Read current user
+    Global $current_user; get_currentuserinfo();
+    
+    // Get current plugins
+    $arr_extension = $this->get_current_extensions();
+
     // Write the Dashboard message
     ?><img src="http://www.gravatar.com/avatar/d50a70b7a2e91bb31e8f00c13149f059?s=100" class="alignright" alt="Dennis Hoppe" height="100" width="100" style="margin:0 0 3px 10px;" />
     
