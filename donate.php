@@ -75,8 +75,8 @@ Class wp_plugin_donation_to_dennis_hoppe {
       var $this = jQuery(this).parent();
       
       // Read currency and amount
-      var currency = $this.find('input.dennis_hoppe_donation_currency').val();
-      var amount = $this.find('select.dennis_hoppe_donation_amount').val();
+      var currency = $this.find('.dennis_hoppe_donation_currency').val();
+      var amount = $this.find('.dennis_hoppe_donation_amount').val();
       
       // Put the values in the form
       $form
@@ -87,12 +87,11 @@ Class wp_plugin_donation_to_dennis_hoppe {
     // End of the catch routine of the donation button
     
     // Catch the donation select amount change
-    jQuery('select.dennis_hoppe_donation_amount').change(function(){
+    jQuery('.dennis_hoppe_donation_currency, .dennis_hoppe_donation_amount').change(function(){
       jQuery(this).parent().find('input.dennis_hoppe_donation_button').removeAttr('disabled');
     });
     // End of the catch of the select amount change
     
-
     // End of the DOM Ready sequence
     });/* ]]> */</script><?php
   }
@@ -194,8 +193,8 @@ Class wp_plugin_donation_to_dennis_hoppe {
               <!--
               <option value="104.37">$104.37</option>
               <option value="83.56">$83.56</option>
-              <option value="62.75">$62.75</option>
               -->
+              <option value="62.75">$62.75</option>
               <option value="52.34">$52.34</option>
               <option value="41.94">$41.94</option>
               <option value="31.53">$31.53</option>
@@ -214,8 +213,8 @@ Class wp_plugin_donation_to_dennis_hoppe {
               <!--
               <option value="102.29">102,29 &euro;</option>
               <option value="81.91">81,91 &euro;</option>
-              <option value="61.52">61,52 &euro;</option>
               -->
+              <option value="61.52">61,52 &euro;</option>
               <option value="51.33">51,33 &euro;</option>
               <option value="41.13">41,13 &euro;</option>
               <option value="30.94">30,94 &euro;</option>
@@ -224,6 +223,31 @@ Class wp_plugin_donation_to_dennis_hoppe {
               <option value="10.55">10,55 &euro;</option>
               <option value="5.45">5,45 &euro;</option>
               <option value="">&raquo; <?php Echo $this->t('other amount') ?></option>
+            </select>
+            <input type="button" class="dennis_hoppe_donation_button button-primary" value="<?php Echo $this->t('Proceed to PayPal') ?> &rarr;" disabled="disabled" />
+          </li>
+          <li>&raquo; <?php Echo $this->t('Other currency') ?>:
+            <input type="hidden" class="dennis_hoppe_donation_amount" value="" />
+            <select class="dennis_hoppe_donation_currency">
+              <option value="" disabled="disabled" selected="selected"><?php Echo $this->t('International currency') ?></option>
+              <option value="GBP">Pound sterling (&pound;)</option>
+              <option value="CAD">Dollar canadien (C$)</option>
+              <option value="JPY">Yen (&yen;)</option>
+              <option value="AUD">Australian dollar (A$)</option>
+              <option value="CHF">Franken (SFr)</option>
+              <option value="NOK">Norsk krone (kr)</option>
+              <option value="SEK">Svensk krona (kr)</option>
+              <option value="DKK">Dansk krone (kr)</option>
+              <option value="PLN">Polski zloty</option>
+              <option value="HUF">Magyar forint (Ft)</option>
+              <option value="CZK">koruna česká (Kč)</option>
+              <option value="SGD">Ringgit Singapura (S$)</option>
+              <option value="HKD">Hong Kong dollar (HK$)</option>
+              <option value="ILS">שקל חדש (₪)</option>
+              <option value="MXN">Peso mexicano (Mex$)</option>
+              <option value="NZD">Tāra o Aotearoa (NZ$)</option>
+              <option value="PHP">Piso ng Pilipinas (piso)</option>
+              <option value="TWD">New Taiwan dollar (NT$)</option>
             </select>
             <input type="button" class="dennis_hoppe_donation_button button-primary" value="<?php Echo $this->t('Proceed to PayPal') ?> &rarr;" disabled="disabled" />
           </li>
