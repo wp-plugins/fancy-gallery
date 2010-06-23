@@ -190,11 +190,6 @@ Class wp_plugin_donation_to_dennis_hoppe {
             <input type="hidden" class="dennis_hoppe_donation_currency" value="USD" />
             <select class="dennis_hoppe_donation_amount">
               <option value="" disabled="disabled" selected="selected"><?php Echo $this->t('Amount in USD') ?></option>
-              <!--
-              <option value="104.37">$104.37</option>
-              <option value="83.56">$83.56</option>
-              -->
-              <option value="62.75">$62.75</option>
               <option value="52.34">$52.34</option>
               <option value="41.94">$41.94</option>
               <option value="31.53">$31.53</option>
@@ -210,11 +205,6 @@ Class wp_plugin_donation_to_dennis_hoppe {
             <input type="hidden" class="dennis_hoppe_donation_currency" value="EUR" />
             <select class="dennis_hoppe_donation_amount">
               <option value="" disabled="disabled" selected="selected"><?php Echo $this->t('Amount in EUR') ?></option>
-              <!--
-              <option value="102.29">102,29 &euro;</option>
-              <option value="81.91">81,91 &euro;</option>
-              -->
-              <option value="61.52">61,52 &euro;</option>
               <option value="51.33">51,33 &euro;</option>
               <option value="41.13">41,13 &euro;</option>
               <option value="30.94">30,94 &euro;</option>
