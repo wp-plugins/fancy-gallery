@@ -58,7 +58,6 @@ Class wp_plugin_donation_to_dennis_hoppe {
   Function print_donation_js(){
     ?><script type="text/javascript">/* <![CDATA[ */jQuery(function($){
     // Start of the DOM ready sequence
-
     
     // Hide all fields we do not want show to the cool js users.
     jQuery('.hide_if_js').hide();
@@ -108,7 +107,7 @@ Class wp_plugin_donation_to_dennis_hoppe {
       <input type="hidden" name="no_note" value="0" />
       <input type="hidden" name="item_name" value="<?php Echo $this->t('Donation to the Open Source Community') ?>" />
       <input type="hidden" name="on0" value="<?php Echo $this->t('Reference') ?>" />
-      <input type="hidden" name="os0" value="<?php Echo $this->t('WordPress extensions') ?>" />
+      <input type="hidden" name="os0" value="<?php Echo $this->t('WordPress') ?>" />
       <?php ForEach ($this->get_current_extensions() AS $index => $extension) : ?>
       <input type="hidden" name="on<?php Echo ($index+1) ?>" value="<?php Echo $this->t('Plugin') ?>" />
       <input type="hidden" name="os<?php Echo ($index+1) ?>" value="<?php Echo HTMLSpecialChars(Strip_Tags($extension)) ?>" />
@@ -131,7 +130,7 @@ Class wp_plugin_donation_to_dennis_hoppe {
       $arr_extension = Array();
     
     // Read the active plugins
-    ForEach (get_option('active_plugins') AS $plugin){
+    ForEach ( (Array) get_option('active_plugins') AS $plugin){
       $plugin_data = get_plugin_data(WP_PLUGIN_DIR . '/' . $plugin);
       If ( StrPos(StrToLower($plugin_data['Author']), 'dennis hoppe') !== False )
         $arr_extension[] = $plugin_data['Title'];
@@ -184,6 +183,7 @@ Class wp_plugin_donation_to_dennis_hoppe {
         <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=1220480" target="_blank"><?php Echo $this->t('U$ Dollars') ?></a> |
         <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=HECSPGLPTQL24" target="_blank"><?php Echo $this->t('&euro;uro') ?></a>
       </li>
+
       <li class="show_if_js" style="display:none"><?php Echo $this->t('Make a donation via PayPal') ?>:
         <ul>
           <li>&raquo; U$ Dollar:
@@ -216,6 +216,8 @@ Class wp_plugin_donation_to_dennis_hoppe {
             </select>
             <input type="button" class="dennis_hoppe_donation_button button-primary" value="<?php Echo $this->t('Proceed to PayPal') ?> &rarr;" disabled="disabled" />
           </li>
+          
+          <!--
           <li>&raquo; <?php Echo $this->t('Other currency') ?>:
             <input type="hidden" class="dennis_hoppe_donation_amount" value="" />
             <select class="dennis_hoppe_donation_currency">
@@ -241,6 +243,8 @@ Class wp_plugin_donation_to_dennis_hoppe {
             </select>
             <input type="button" class="dennis_hoppe_donation_button button-primary" value="<?php Echo $this->t('Proceed to PayPal') ?> &rarr;" disabled="disabled" />
           </li>
+          -->
+          
         </ul>
       </li>
     </ul>
@@ -282,7 +286,7 @@ Class wp_plugin_donation_to_dennis_hoppe {
   
   Function Number_to_Word ($number){
     $arr_word = Array(
-      0 => '',
+      0 => $this->t('none'),
       1 => $this->t('one'),
       2 => $this->t('two'),
       3 => $this->t('three'),
@@ -338,6 +342,15 @@ Class wp_plugin_donation_to_dennis_hoppe {
       49 => $this->t('fourty-nine'),
       
       50 => $this->t('fifty'),
+      51 => $this->t('fifty-one'),
+      52 => $this->t('fifty-two'),
+      53 => $this->t('fifty-three'),
+      54 => $this->t('fifty-four'),
+      55 => $this->t('fifty-five'),
+      56 => $this->t('fifty-six'),
+      57 => $this->t('fifty-seven'),
+      58 => $this->t('fifty-eight'),
+      59 => $this->t('fifty-nine'),
       
       60 => $this->t('sixty'),
       
@@ -353,7 +366,7 @@ Class wp_plugin_donation_to_dennis_hoppe {
     If (IsSet($arr_word[$number]))
       return $arr_word[$number];
     Else
-      return False;
+      return $number;
   }
   
 

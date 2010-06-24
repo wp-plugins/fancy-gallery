@@ -19,7 +19,7 @@ Of course you can use 'exclude' and 'include' parameters in your [GALLERY] short
 * WordPress 2.8 or higher
 
 = Settings =
-You can find the settings page in WP Admin Panel -> Settings -> Fancy Gallery.
+You can find the settings page in WP Admin Panel &raquo; Settings &raquo; Fancy Gallery.
 
 = Questions =
 If you have any questions you can leave a comment in my blog. But please think about this: I will not add features, write customizations or write tutorials for free. Please think about a donation. I'm a human and to write code is hard work.
