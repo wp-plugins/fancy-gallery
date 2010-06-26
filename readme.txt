@@ -10,9 +10,9 @@ Fancy Gallery associate linked images and galleries with the jQuery Fancybox.
 
 == Description ==
 
-Fancy Gallery integrates the [Fancy Image Box](http://fancybox.net) in your WordPress. All links pointing to an image will automaticly opened in the FancyBox. If you use the [Gallery] ShortCode the images will get a navigation and the gallery itself will converted into a valid XHTML block.
+Fancy Gallery integrates the [Fancy Image Box](http://fancybox.net) in your WordPress. All links pointing to an image will automatically opened in the FancyBox. If you use the [Gallery] Short-code the images will get a navigation and the gallery itself will converted into a valid XHTML block.
 
-Of course you can use 'exclude' and 'include' parameters in your [GALLERY] shortcode.
+Of course you can use 'exclude' and 'include' parameters in your [GALLERY] short-code.
 
 = Requirements =
 * **Fancy Gallery requires PHP5!**
@@ -25,14 +25,14 @@ You can find the settings page in WP Admin Panel &raquo; Settings &raquo; Fancy 
 If you have any questions you can leave a comment in my blog. But please think about this: I will not add features, write customizations or write tutorials for free. Please think about a donation. I'm a human and to write code is hard work.
 
 = Language =
-* This Plugin is available in English.
-* Dieses Plugin ist in Deutsch verfügbar. ([Dennis Hoppe](http://dennishoppe.de/))
+* This Plug-in is available in English.
+* Dieses Plug-in ist in Deutsch verfügbar. ([Dennis Hoppe](http://dennishoppe.de/))
 * Este plugin está disponível em Português do Brasil. ([Rafael Sirotheau](http://rsirotheau.wordpress.com/))
 * Cette extension est traduite en français. ([Charles Alain](http://www.domarin-tt.com/))
 
-If you have translated this plugin in your language feel free to send me the language file (.po file) via E-Mail with your name and this translated sentence: "This plugin is available in %YOUR_LANGUAGE_NAME%." So i can add it to the plugin.
+If you have translated this plug-in in your language feel free to send me the language file (.po file) via E-Mail with your name and this translated sentence: "This plug-in is available in %YOUR_LANGUAGE_NAME%." So i can add it to the plug-in.
 
-You can find the *FancyGallery.pot* file in the *language/* folder in the plugin directory.
+You can find the *FancyGallery.pot* file in the *language/* folder in the plug-in directory.
 
 * Copy it.
 * Rename it (to your language code).
