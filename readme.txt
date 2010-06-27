@@ -32,7 +32,7 @@ If you have any questions you can leave a comment in my blog. But please think a
 
 If you have translated this plug-in in your language feel free to send me the language file (.po file) via E-Mail with your name and this translated sentence: "This plug-in is available in %YOUR_LANGUAGE_NAME%." So i can add it to the plug-in.
 
-You can find the *FancyGallery.pot* file in the *language/* folder in the plug-in directory.
+You can find the *Translation.pot* file in the *language/* folder in the plug-in directory.
 
 * Copy it.
 * Rename it (to your language code).

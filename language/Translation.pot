@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fancy Gallery Plugin for WordPress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-09 10:16+0100\n"
+"POT-Creation-Date: 2010-06-27 08:54+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe\n"
 "Language-Team: \n"
@@ -13,156 +13,156 @@ msgstr ""
 "X-Poedit-KeywordsList: t;t:2c,1\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../wp-plugin-fancy-gallery.php:62
-#: ../wp-plugin-fancy-gallery.php:100
-msgid "Fancy Gallery Settings"
-msgstr ""
-
-#: ../wp-plugin-fancy-gallery.php:63
-msgid "Fancy Gallery"
-msgstr ""
-
-#: ../wp-plugin-fancy-gallery.php:111
+#: ../options_page.php:3
 msgid "Loop mode"
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:114
+#: ../options_page.php:6
 msgid "Will enable the user to get from the last image to the first one with the next button."
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:119
+#: ../options_page.php:11
 msgid "Scrollbars"
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:122
+#: ../options_page.php:14
 msgid "Automatic"
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:126
+#: ../options_page.php:18
 msgid "\"Automatic\" means scrollbars will be visibly if necessary. \"Yes\" and \"No\" should be clear."
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:131
+#: ../options_page.php:23
 msgid "Center on scroll"
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:134
+#: ../options_page.php:26
 msgid "Keep the FancyBox always in the center of the screen while scrolling the page."
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:139
+#: ../options_page.php:31
 msgid "Overlay opacity"
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:142
+#: ../options_page.php:34
 msgid "Percentaged opacity of the background of the FancyBox. Should be a value from 0 (invisible) to 100 (opaque). (Default is 30)"
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:147
+#: ../options_page.php:39
 msgid "Overlay color"
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:151
+#: ../options_page.php:43
 msgid "Please choose the color of the \"darker\" background."
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:156
+#: ../options_page.php:48
 msgid "Border width"
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:158
+#: ../options_page.php:50
 msgctxt "Abbr. Pixels"
 msgid "px"
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:159
+#: ../options_page.php:51
 msgid "Width of the image frame border. (in pixels)"
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:164
+#: ../options_page.php:56
 msgid "Image title"
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:167
+#: ../options_page.php:59
 msgid "Do not shot image titles."
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:172
+#: ../options_page.php:64
 msgid "Title position"
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:175
+#: ../options_page.php:67
 msgid "Outside the FancyBox"
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:176
+#: ../options_page.php:68
 msgid "Inside the FancyBox"
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:177
+#: ../options_page.php:69
 msgid "Over the image"
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:183
+#: ../options_page.php:75
 msgid "Opening transition"
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:186
-#: ../wp-plugin-fancy-gallery.php:205
+#: ../options_page.php:78
+#: ../options_page.php:97
 msgid "Fade"
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:187
-#: ../wp-plugin-fancy-gallery.php:206
+#: ../options_page.php:79
+#: ../options_page.php:98
 msgid "Elastic"
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:188
-#: ../wp-plugin-fancy-gallery.php:207
+#: ../options_page.php:80
+#: ../options_page.php:99
 msgid "No transition"
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:194
+#: ../options_page.php:86
 msgid "Opening speed"
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:196
-#: ../wp-plugin-fancy-gallery.php:215
-#: ../wp-plugin-fancy-gallery.php:223
+#: ../options_page.php:88
+#: ../options_page.php:107
+#: ../options_page.php:115
 msgctxt "Abbr. Milliseconds"
 msgid "msec"
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:197
-#: ../wp-plugin-fancy-gallery.php:216
+#: ../options_page.php:89
+#: ../options_page.php:108
 msgid "Speed of the fade and elastic transitions. (in milliseconds)"
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:202
+#: ../options_page.php:94
 msgid "Closing transition"
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:213
+#: ../options_page.php:105
 msgid "Closing speed"
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:221
+#: ../options_page.php:113
 msgid "Image resizing speed"
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:224
+#: ../options_page.php:116
 msgid "Speed of resizing when changing gallery items. (in milliseconds)"
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:229
+#: ../options_page.php:121
 msgid "Appearance problems"
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:232
+#: ../options_page.php:124
 msgid "Convert gallery images to inline elements. (Tick this box if your galleries have only one column.)"
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:233
+#: ../options_page.php:125
 msgid "Some themes let images appear as block elements. This effects that your image galleries have only one column."
+msgstr ""
+
+#: ../wp-plugin-fancy-gallery.php:60
+#: ../wp-plugin-fancy-gallery.php:81
+msgid "Fancy Gallery Settings"
+msgstr ""
+
+#: ../wp-plugin-fancy-gallery.php:61
+msgid "Fancy Gallery"
 msgstr ""
 
