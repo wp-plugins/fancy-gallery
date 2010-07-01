@@ -38,8 +38,8 @@
 <tr valign="top">
   <th scope="row"><?php Echo $this->t('Overlay color') ?></th>
   <td>
-    <div id="colorpicker"></div>
     <input type="text" name="overlay_color" value="<?php Echo $this->Load_Setting('overlay_color', '#666') ?>" class="color" /><br />            
+    <div class="colorpicker"></div>
     <small><?php Echo $this->t('Please choose the color of the "darker" background.') ?></small>
   </td>
 </tr>

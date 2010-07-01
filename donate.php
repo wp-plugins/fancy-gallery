@@ -14,10 +14,8 @@ Class wp_plugin_donation_to_dennis_hoppe {
     // Register the Misc Setting if a user donated
     Add_Action('admin_menu', Array($this, 'add_settings_field'));
     
-
     // Check if the user has already donated
-    If (get_option('donated_to_dennis_hoppe') == 'yes') return False;
-
+    If (get_option('donated_to_dennis_hoppe')) return False;
     
     // Add some Js for the donation buttons to the admin header
     Add_Action('admin_head', Array($this, 'print_donation_js'));

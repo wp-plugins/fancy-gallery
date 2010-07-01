@@ -59,6 +59,11 @@ Installation as usual.
 
 == Changelog ==
 
+= 1.3.10 =
+* added index files which create 403s to void directory listing
+* added hideable colorpicker
+* fixed german translation
+
 = 1.3.9 =
 * Fixed the farbtastic incompatibility bug
 * Added transparency fix for the navigation buttons in IE6

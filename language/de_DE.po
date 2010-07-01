@@ -162,7 +162,7 @@ msgstr "Darstellungsprobleme"
 
 #: ../wp-plugin-fancy-gallery.php:232
 msgid "Convert gallery images to inline elements. (Tick this box if your galleries have only one column.)"
-msgstr "Konvertiert Galeriebilder in \"Inline\"-Elemente. (Aktivieren Sie dieses Feld wenn Ihre Galerien mit nur einer Spalte dargestellt werden.)"
+msgstr "Konvertiere Galeriebilder in \"Inline\"-Elemente. (Aktivieren Sie dieses Feld wenn Ihre Galerien mit nur einer Spalte dargestellt werden.)"
 
 #: ../wp-plugin-fancy-gallery.php:233
 msgid "Some themes let images appear as block elements. This effects that your image galleries have only one column."

@@ -48,4 +48,10 @@
   overflow: hidden; 
   background: url(marker.png) no-repeat;
 }
-
+span.show_colorpicker {
+  display: inline-block;
+  height: 19px;
+  width: 19px;
+  background-image: url(picker.png);
+  cursor: pointer;
+}
