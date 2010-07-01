@@ -6,7 +6,7 @@ Requires at least: 2.8
 Tested up to: 3.0
 Stable tag: trunk
 
-Fancy Gallery associate linked images and galleries with the jQuery Fancybox.
+Fancy Gallery associates linked images and galleries with the jQuery Fancybox.
 
 == Description ==
 
