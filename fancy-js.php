@@ -24,9 +24,9 @@ If (!Class_exists('wp_plugin_fancy_gallery')) Die ('Could not find the Fancy Gal
  * $setting = $load_setting($key, $default)
  *    
 */
-$load_setting = Create_Function(
+$get_option = Create_Function(
   '$key, $default = False',
-  'return call_user_func(Array(\'wp_plugin_fancy_gallery\', \'load_setting\'), $key, $default);'
+  'return call_user_func(Array(\'wp_plugin_fancy_gallery\', \'get_option\'), $key, $default);'
 );
 
 
@@ -43,7 +43,7 @@ $arr_type = Array( 'jpg', 'jpeg', 'png', 'gif', 'bmp', 'wbmp', 'ico' );
     $this.attr('rel', $this.parent().attr('id'));
   });
 
-  <?php If($load_setting('img_block_fix')) : ?>
+  <?php If($get_option('img_block_fix')) : ?>
   jQuery('div.fancy.gallery a img').addClass('alignleft');
   jQuery('div.fancy.gallery').append('<div style="clear:both"></div>')
   <?php EndIf; ?>
@@ -74,19 +74,20 @@ $arr_type = Array( 'jpg', 'jpeg', 'png', 'gif', 'bmp', 'wbmp', 'ico' );
   .unbind('click')
   .fancybox({
   
-    padding        :  <?php Echo IntVal($load_setting('border_width', 10)) ?>,
-    cyclic         :  <?php Echo $load_setting('cyclic') ? 'true' : 'false' ?>,
-    scrolling      : '<?php Echo $load_setting('scrolling', 'auto') ?>',
-    centerOnScroll :  <?php Echo $load_setting('center_on_scroll') ? 'true' : 'false' ?>,
-    overlayOpacity :  <?php Echo Round($load_setting('overlay_opacity', 30)) / 100 ?>,
-    overlayColor   : '<?php Echo $load_setting('overlay_color', '#666') ?>',
-    titleShow      :  <?php Echo $load_setting('hide_image_title') ? 'false' : 'true' ?>,
-    titlePosition  : '<?php Echo $load_setting('title_position', 'outside') ?>',
-    transitionIn   : '<?php Echo $load_setting('transition_in', 'fade') ?>',
-    transitionOut  : '<?php Echo $load_setting('transition_out', 'fade') ?>',    
-    speedIn        :  <?php Echo IntVal($load_setting('speed_in', 300)) ?>,
-    speedOut       :  <?php Echo IntVal($load_setting('speed_out', 300)) ?>,
-    changeSpeed    :  <?php Echo IntVal($load_setting('change_speed', 300)) ?>
+    padding        :  <?php Echo IntVal($get_option('border_width', 10)) ?>,
+    cyclic         :  <?php Echo $get_option('cyclic') ? 'true' : 'false' ?>,
+    scrolling      : '<?php Echo $get_option('scrolling', 'auto') ?>',
+    centerOnScroll :  <?php Echo $get_option('center_on_scroll') ? 'true' : 'false' ?>,
+    overlayOpacity :  <?php Echo Round($get_option('overlay_opacity', 30)) / 100 ?>,
+    overlayColor   : '<?php Echo $get_option('overlay_color', '#666') ?>',
+    titleShow      :  <?php Echo $get_option('hide_image_title') ? 'false' : 'true' ?>,
+    titlePosition  : '<?php Echo $get_option('title_position', 'outside') ?>',
+    transitionIn   : '<?php Echo $get_option('transition_in', 'fade') ?>',
+    transitionOut  : '<?php Echo $get_option('transition_out', 'fade') ?>',    
+    speedIn        :  <?php Echo IntVal($get_option('speed_in', 300)) ?>,
+    speedOut       :  <?php Echo IntVal($get_option('speed_out', 300)) ?>,
+    changeSpeed    :  <?php Echo IntVal($get_option('change_speed', 300)) ?>,
+    showCloseButton:  <?php Echo $get_option('hide_close_button') ? 'false' : 'true' ?>
         
 
   });

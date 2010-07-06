@@ -45,8 +45,6 @@ You can find the *Translation.pot* file in the *language/* folder in the plug-in
 * Send it via E-Mail to mail@DennisHoppe.de.
 * Thats it. Thank you! =)
 
-The translation file contains 36 strings.
-
 
 == Installation ==
 
@@ -58,6 +56,10 @@ Installation as usual.
 1. You like what you see?
 
 == Changelog ==
+
+= 1.3.11 =
+* Added the "hide close button" option
+* renamed the "load_setting()" function to "get_option()"
 
 = 1.3.10 =
 * added index files which create 403s to void directory listing

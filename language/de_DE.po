@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fancy Gallery Plugin for WordPress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-09 10:04+0100\n"
+"POT-Creation-Date: 2010-07-06 17:08+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe\n"
 "Language-Team: Dennis Hoppe\n"
@@ -15,158 +15,169 @@ msgstr ""
 "X-Poedit-KeywordsList: t;t:2c,1\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../wp-plugin-fancy-gallery.php:62
-#: ../wp-plugin-fancy-gallery.php:100
-msgid "Fancy Gallery Settings"
-msgstr "Fancy Gallery Einstellungen"
-
-#: ../wp-plugin-fancy-gallery.php:63
-msgid "Fancy Gallery"
-msgstr "Fancy Gallery"
-
-#: ../wp-plugin-fancy-gallery.php:111
+#: ../options_page.php:3
 msgid "Loop mode"
 msgstr "Schleifenmodus"
 
-#: ../wp-plugin-fancy-gallery.php:114
+#: ../options_page.php:6
 msgid "Will enable the user to get from the last image to the first one with the next button."
 msgstr "Ermöglicht es dem Benutzer vom letzten zum ersten Bild durch den \"Weiter\" Button zu gelangen."
 
-#: ../wp-plugin-fancy-gallery.php:119
+#: ../options_page.php:11
 msgid "Scrollbars"
 msgstr "Scroll-Leisten"
 
-#: ../wp-plugin-fancy-gallery.php:122
+#: ../options_page.php:14
 msgid "Automatic"
 msgstr "Automatisch"
 
-#: ../wp-plugin-fancy-gallery.php:126
+#: ../options_page.php:18
 msgid "\"Automatic\" means scrollbars will be visibly if necessary. \"Yes\" and \"No\" should be clear."
 msgstr "\"Automatisch\" bedeutet die Scroll-Leisten werden eingeblendet wenn nötig. \"Ja\" und \"Nein\" sollten klar sein."
 
-#: ../wp-plugin-fancy-gallery.php:131
+#: ../options_page.php:23
 msgid "Center on scroll"
 msgstr "Zentrieren beim Scrollen"
 
-#: ../wp-plugin-fancy-gallery.php:134
+#: ../options_page.php:26
 msgid "Keep the FancyBox always in the center of the screen while scrolling the page."
 msgstr "Die FancyBox, auch wärend des Scrollens, immer in der Bildschirmmitte halten."
 
-#: ../wp-plugin-fancy-gallery.php:139
+#: ../options_page.php:31
+msgid "Close button"
+msgstr "Schließen-Knopf"
+
+#: ../options_page.php:34
+msgid "Hide the close button."
+msgstr "Den Schließen-Knopf verstecken."
+
+#: ../options_page.php:39
 msgid "Overlay opacity"
 msgstr "Milchglas-Hintergrund Transparenzgrad"
 
-#: ../wp-plugin-fancy-gallery.php:142
+#: ../options_page.php:42
 msgid "Percentaged opacity of the background of the FancyBox. Should be a value from 0 (invisible) to 100 (opaque). (Default is 30)"
 msgstr "Prozentualer Sichtbarkeitsgrad für die \"Milchglasscheibe\" hinter der FancyBox. Es sollte ein Wert zwischen 0 (unsichtbar) und 100 (undurchschaubar) sein. (Standard ist 30)"
 
-#: ../wp-plugin-fancy-gallery.php:147
+#: ../options_page.php:47
 msgid "Overlay color"
 msgstr "Milchglas-Hintergrund Grundfarbe"
 
-#: ../wp-plugin-fancy-gallery.php:151
+#: ../options_page.php:51
 msgid "Please choose the color of the \"darker\" background."
 msgstr "Bitte wählen Sie eine Farbe für das Milchglas hinter der FancyBox."
 
-#: ../wp-plugin-fancy-gallery.php:156
+#: ../options_page.php:56
 msgid "Border width"
 msgstr "Rahmenbreite"
 
-#: ../wp-plugin-fancy-gallery.php:158
+#: ../options_page.php:58
 msgctxt "Abbr. Pixels"
 msgid "px"
 msgstr "px"
 
-#: ../wp-plugin-fancy-gallery.php:159
+#: ../options_page.php:59
 msgid "Width of the image frame border. (in pixels)"
 msgstr "Breite des Bildrahmens. (In Pixeln)"
 
-#: ../wp-plugin-fancy-gallery.php:164
+#: ../options_page.php:64
 msgid "Image title"
 msgstr "Bildtitel"
 
-#: ../wp-plugin-fancy-gallery.php:167
+#: ../options_page.php:67
 msgid "Do not shot image titles."
 msgstr "Keine Bilduntertitel zeigen."
 
-#: ../wp-plugin-fancy-gallery.php:172
+#: ../options_page.php:72
 msgid "Title position"
 msgstr "Bildtitelposition"
 
-#: ../wp-plugin-fancy-gallery.php:175
+#: ../options_page.php:75
 msgid "Outside the FancyBox"
 msgstr "Außerhalb der FancyBox"
 
-#: ../wp-plugin-fancy-gallery.php:176
+#: ../options_page.php:76
 msgid "Inside the FancyBox"
 msgstr "In der FancyBox"
 
-#: ../wp-plugin-fancy-gallery.php:177
+#: ../options_page.php:77
 msgid "Over the image"
 msgstr "Auf dem Bild"
 
-#: ../wp-plugin-fancy-gallery.php:183
+#: ../options_page.php:83
 msgid "Opening transition"
 msgstr "Einblendeffekt"
 
-#: ../wp-plugin-fancy-gallery.php:186
-#: ../wp-plugin-fancy-gallery.php:205
+#: ../options_page.php:86
+#: ../options_page.php:105
 msgid "Fade"
 msgstr "Aufblenden"
 
-#: ../wp-plugin-fancy-gallery.php:187
-#: ../wp-plugin-fancy-gallery.php:206
+#: ../options_page.php:87
+#: ../options_page.php:106
 msgid "Elastic"
 msgstr "Elastisch"
 
-#: ../wp-plugin-fancy-gallery.php:188
-#: ../wp-plugin-fancy-gallery.php:207
+#: ../options_page.php:88
+#: ../options_page.php:107
 msgid "No transition"
 msgstr "Kein Effekt"
 
-#: ../wp-plugin-fancy-gallery.php:194
+#: ../options_page.php:94
 msgid "Opening speed"
 msgstr "Einblendverzögerung"
 
-#: ../wp-plugin-fancy-gallery.php:196
-#: ../wp-plugin-fancy-gallery.php:215
-#: ../wp-plugin-fancy-gallery.php:223
+#: ../options_page.php:96
+#: ../options_page.php:115
+#: ../options_page.php:123
 msgctxt "Abbr. Milliseconds"
 msgid "msec"
 msgstr "ms"
 
-#: ../wp-plugin-fancy-gallery.php:197
-#: ../wp-plugin-fancy-gallery.php:216
+#: ../options_page.php:97
+#: ../options_page.php:116
 msgid "Speed of the fade and elastic transitions. (in milliseconds)"
 msgstr "Laufzeit des Überblend-Effektes. (in Millisekunden)"
 
-#: ../wp-plugin-fancy-gallery.php:202
+#: ../options_page.php:102
 msgid "Closing transition"
 msgstr "Ausblendeffekt"
 
-#: ../wp-plugin-fancy-gallery.php:213
+#: ../options_page.php:113
 msgid "Closing speed"
 msgstr "Ausblendverzögerung"
 
-#: ../wp-plugin-fancy-gallery.php:221
+#: ../options_page.php:121
 msgid "Image resizing speed"
 msgstr "Zeit der Bildgrößenanpassung"
 
-#: ../wp-plugin-fancy-gallery.php:224
+#: ../options_page.php:124
 msgid "Speed of resizing when changing gallery items. (in milliseconds)"
 msgstr "Laufzeit in der sich die FancyBox an die Größe eines Bild anpassen soll. (in Millisekunden)"
 
-#: ../wp-plugin-fancy-gallery.php:229
+#: ../options_page.php:129
 msgid "Appearance problems"
 msgstr "Darstellungsprobleme"
 
-#: ../wp-plugin-fancy-gallery.php:232
+#: ../options_page.php:132
 msgid "Convert gallery images to inline elements. (Tick this box if your galleries have only one column.)"
 msgstr "Konvertiere Galeriebilder in \"Inline\"-Elemente. (Aktivieren Sie dieses Feld wenn Ihre Galerien mit nur einer Spalte dargestellt werden.)"
 
-#: ../wp-plugin-fancy-gallery.php:233
+#: ../options_page.php:133
 msgid "Some themes let images appear as block elements. This effects that your image galleries have only one column."
 msgstr "Einige Themes zeigen Bilder als Block-Elemente, was darin resultiert dass Ihre Galerien einspaltig dargestellt werden."
+
+#: ../wp-plugin-fancy-gallery.php:60
+msgid "Fancy Gallery Settings"
+msgstr "Fancy Gallery Einstellungen"
+
+#: ../wp-plugin-fancy-gallery.php:61
+msgid "Fancy Gallery"
+msgstr "Fancy Gallery"
+
+#: ../wp-plugin-fancy-gallery.php:81
+msgid "Fancy Gallery Options"
+msgstr "Fancy Gallery Einstellungen"
 
 #~ msgid "Tick this box if the image title should be visible to the user."
 #~ msgstr "Bildtitel zu jedem Bild einblenden."

@@ -5,7 +5,7 @@
 Plugin Name: Fancy Gallery
 Description: Will bring your galleries as valid XHTML blocks on screen and associate linked images with Fancybox.
 Plugin URI: http://dennishoppe.de/wordpress-plugins/fancy-gallery 
-Version: 1.3.10
+Version: 1.3.11
 Author: Dennis Hoppe
 Author URI: http://DennisHoppe.de
 
@@ -60,7 +60,7 @@ Class wp_plugin_fancy_gallery {
       $this->t('Fancy Gallery Settings'),
       $this->t('Fancy Gallery'),
       8,
-      get_class($this),
+      __CLASS__,
       Array($this, 'print_options_page_body')
     );
 
@@ -75,14 +75,14 @@ Class wp_plugin_fancy_gallery {
     <?php
   }
   
-  Function print_options_page_body(){ ?>
-    <div class="wrap">
+  Function print_options_page_body(){
+    ?><div class="wrap">
       <?php screen_icon(); ?>
-      <h2><?php Echo $this->t('Fancy Gallery Settings') ?></h2>
+      <h2><?php Echo $this->t('Fancy Gallery Options') ?></h2>
       
       <form method="post" action="">
         
-        <?php If (!Empty($_POST) && $this->Save_Settings()) : ?>
+        <?php If (!Empty($_POST) && $this->Save_Options()) : ?>
           <div id="message" class="updated fade"><p><strong><?php _e('Settings saved.') ?></strong></p></div>
         <?php EndIf; ?>
         
@@ -100,7 +100,7 @@ Class wp_plugin_fancy_gallery {
     </div><?php
   }
 
-  Function Save_Settings(){
+  Function Save_Options(){
     // If there is no post data we bail out
     If (Empty($_POST)) return False;
     
@@ -111,7 +111,7 @@ Class wp_plugin_fancy_gallery {
     return True;
   }
 
-  Function Load_Setting ($key = Null, $default = False){
+  Function get_option ($key = Null, $default = False){
     Static $settings;
     If (!IsSet($settings)) $settings = (Array) get_option(self::setting_key());
     
@@ -149,10 +149,8 @@ Class wp_plugin_fancy_gallery {
   }
 
   Function gallery_shortcode ($attr){
-    GLOBAL $post;
-    
     $attr = Array_Merge(Array(
-      'id'             => $post->ID,
+      'id'             => $GLOBALS['post']->ID,
       'post_status'    => 'inherit',
       'post_type'      => 'attachment',
       'post_mime_type' => 'image',
@@ -187,7 +185,7 @@ Class wp_plugin_fancy_gallery {
   	// There are no attachments
   	If (Empty($attachments)) return False;
   	
-  	$code = '<div class="fancy gallery" id="gallery_'.$post->ID.'">';
+  	$code = '<div class="fancy gallery" id="gallery_'.$GLOBALS['post']->ID.'">';
   	
     ForEach ($attachments AS $id => $attachment)
       $code .= wp_get_attachment_link($attachment->ID, $attr['size']);
