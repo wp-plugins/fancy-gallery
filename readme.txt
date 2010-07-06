@@ -31,7 +31,7 @@ If you have any questions you can leave a comment in my blog. But please think a
 
 = Language =
 * This Plug-in is available in English.
-* Dieses Plug-in ist in Deutsch verfügbar. ([Dennis Hoppe](http://dennishoppe.de/))
+* Diese Erweiterung ist in Deutsch verfügbar. ([Dennis Hoppe](http://dennishoppe.de/))
 * Este plugin está disponível em Português do Brasil. ([Rafael Sirotheau](http://rsirotheau.wordpress.com/))
 * Cette extension est traduite en français. ([Charles Alain](http://www.domarin-tt.com/))
 
