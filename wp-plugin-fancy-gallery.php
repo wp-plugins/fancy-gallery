@@ -5,7 +5,7 @@
 Plugin Name: Fancy Gallery
 Description: Will bring your galleries as valid XHTML blocks on screen and associate linked images with Fancybox.
 Plugin URI: http://dennishoppe.de/wordpress-plugins/fancy-gallery 
-Version: 1.3.11
+Version: 1.3.12
 Author: Dennis Hoppe
 Author URI: http://DennisHoppe.de
 
@@ -20,6 +20,13 @@ If (!Class_Exists('wp_plugin_fancy_gallery')){
 Class wp_plugin_fancy_gallery {
   var $base_url;
   var $text_domain;
+  
+  Function wp_plugin_fancy_gallery(){
+    // PHP4 Constructor, show PHP4 Warning message to user
+    Add_Action('admin_notices', Create_Function('','
+      Echo "<div class=\"error\"><p><b>Error: Fancy Gallery requires PHP5. Your WordPress runs with PHP4.</b></p></div>";
+    '));
+  }
   
   Function __construct(){
     // Read base
