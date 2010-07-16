@@ -6,12 +6,12 @@ Requires at least: 2.8
 Tested up to: 3.0
 Stable tag: trunk
 
-Fancy Gallery associates linked images and galleries with the jQuery Fancybox. This Plugin has been granted the Famous Software Award!
+Fancy Gallery associates linked images and galleries with the jQuery Fancybox. This Plugin has been granted the "Famous Software" Award!
 
 == Description ==
 
 = LATEST NEWS! =
-* Fancy Gallery has been granted the Famous Software Award! [To the post &raquo;](http://download.famouswhy.com/fancy_gallery/)
+* Fancy Gallery has been granted the "Famous Software" Award! [To the post &raquo;](http://download.famouswhy.com/fancy_gallery/)
 
 = Description =
 Fancy Gallery integrates the [Fancy Image Box](http://fancybox.net) in your WordPress. All links pointing to an image will automatically opened in the FancyBox. If you use the [Gallery] Short-code the images will get a navigation and the gallery itself will converted into a valid XHTML block.
@@ -30,7 +30,7 @@ If you have any questions you can leave a comment in my blog. But please think a
 
 
 = In the Press =
-* Fancy Gallery has been granted the Famous Software Award. [To the post &raquo;](http://download.famouswhy.com/fancy_gallery/)
+* Fancy Gallery has been granted the "Famous Software" Award. [To the post &raquo;](http://download.famouswhy.com/fancy_gallery/)
 * 17 Most Used WordPress Jquery Plugins @ [Skyje.com](http://skyje.com/). [To the post &raquo;](http://skyje.com/2010/04/wordpress-jquery-plugins/)
 * "Awesome and easy to use Wordpress gallery plugin" [To the post &raquo;](http://topsy.com/trackback?utm_source=pingback&utm_campaign=L2&url=http://dennishoppe.de/wordpress-plugins/fancy-gallery)
 
