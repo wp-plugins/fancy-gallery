@@ -1,0 +1,214 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Fancy Gallery Plugin for WordPress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-07-19 19:46+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Dennis Hoppe\n"
+"Language-Team: Semasping <ya@semasping.info>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: t;t:2c,1\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-Country: RUSSIAN FEDERATION\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../options_page.php:3
+msgid "Loop mode"
+msgstr "Цикличный режим"
+
+#: ../options_page.php:6
+msgid "Will enable the user to get from the last image to the first one with the \"Next &raquo;\" button."
+msgstr "Если отмечено, то пользователь сможет переходить с последней к первой фотографии через кнопку \"Далее\"."
+
+#: ../options_page.php:11
+msgid "Scrollbars"
+msgstr "Полосы прокрутки"
+
+#: ../options_page.php:14
+msgid "Automatic"
+msgstr "Автоматический"
+
+#: ../options_page.php:18
+msgid "\"Automatic\" means scrollbars will be visibly if necessary. \"Yes\" and \"No\" should be clear."
+msgstr "&quot;Автоматический&quot; означает что полосы прокрутки появятся в случае необходимости. &quot;Да&quot; и &quot;Нет&quot; должно быть ясно."
+
+#: ../options_page.php:19
+msgid "This option controls the appearance of the scrollbars inside the fancy box."
+msgstr "Этот параметр определяет внешний вид полосы прокрутки в окне Fancy."
+
+#: ../options_page.php:24
+msgid "Center on scroll"
+msgstr "В центре при прокрутке"
+
+#: ../options_page.php:27
+msgid "Keep the FancyBox always in the center of the screen while scrolling the page."
+msgstr "Держать FancyBox всегда в центре экрана при прокрутке страницы."
+
+#: ../options_page.php:32
+msgid "Close button"
+msgstr "Кнопка &quot;Закрыть&quot;"
+
+#: ../options_page.php:35
+msgid "Hide the close button."
+msgstr "Скрыть кнопку &quot;Закрыть&quot;."
+
+#: ../options_page.php:40
+msgid "Overlay opacity"
+msgstr "Наложение непрозрачности"
+
+#: ../options_page.php:43
+msgid "Percentaged opacity of the background of the FancyBox. Should be a value from 0 (invisible) to 100 (opaque). (Default is 30)"
+msgstr "Процент прозрачности фона FancyBox. Должен принимать значение от 0 (невидимый) до 100 (непрозрачный). (По умолчанию 30)"
+
+#: ../options_page.php:48
+msgid "Overlay color"
+msgstr "Наложение цветов"
+
+#: ../options_page.php:52
+msgid "Please choose the color of the \"darker\" background."
+msgstr "Пожалуйста, выберите цвет &quot;затемнения&quot; фона."
+
+#: ../options_page.php:57
+msgid "Border width"
+msgstr "Ширина каймы"
+
+#: ../options_page.php:59
+msgctxt "Abbr. Pixels"
+msgid "px"
+msgstr "px"
+
+#: ../options_page.php:60
+msgid "Width of the image frame border. (in pixels)"
+msgstr "Ширина границы кадра изображения. (В пикселях)"
+
+#: ../options_page.php:65
+msgid "Image title"
+msgstr "Заголовок изображения"
+
+#: ../options_page.php:67
+msgid "Use the title of the image as title of the fancy box."
+msgstr "Использовать названия изображений в качестве заголовка окна FancyBox."
+
+#: ../options_page.php:68
+msgid "Use the alternative text of the image as title of the fancy box."
+msgstr "Использовать альтернативный текста изображений в качестве заголовка окна FancyBox."
+
+#: ../options_page.php:69
+msgid "Use the image caption as title of the fancy box."
+msgstr "Использовать подпись изображений в качестве заголовка окна FancyBox."
+
+#: ../options_page.php:70
+msgid "Use the image description as title of the fancy box."
+msgstr "Использовать описания изображений в качестве заголовка окна FancyBox."
+
+#: ../options_page.php:71
+msgid "Do not show image titles."
+msgstr "Не показывать заголовок изображения"
+
+#: ../options_page.php:76
+msgid "Title position"
+msgstr "Позиция заголовка"
+
+#: ../options_page.php:79
+msgid "Outside the FancyBox"
+msgstr "Вне FancyBox"
+
+#: ../options_page.php:79
+msgid "Does not work with multiline titles."
+msgstr "Не показывать заголовок изображения"
+
+#: ../options_page.php:80
+msgid "Inside the FancyBox"
+msgstr "Внутри FancyBox"
+
+#: ../options_page.php:80
+msgid "Does not work blameless with multiline titles."
+msgstr "Не безупречно работает с многострочными названиями."
+
+#: ../options_page.php:81
+msgid "Over the image"
+msgstr "На изображение"
+
+#: ../options_page.php:81
+msgid "Works fine with multiline titles."
+msgstr "Отлично работает с многострочным названиями."
+
+#: ../options_page.php:87
+msgid "Opening transition"
+msgstr "Открытие перехода"
+
+#: ../options_page.php:90
+#: ../options_page.php:109
+msgid "Fade"
+msgstr "Пропадать"
+
+#: ../options_page.php:91
+#: ../options_page.php:110
+msgid "Elastic"
+msgstr "Эластичный"
+
+#: ../options_page.php:92
+#: ../options_page.php:111
+msgid "No transition"
+msgstr "Нет перехода"
+
+#: ../options_page.php:98
+msgid "Opening speed"
+msgstr "Скорость открытия"
+
+#: ../options_page.php:100
+#: ../options_page.php:119
+#: ../options_page.php:127
+msgctxt "Abbr. Milliseconds"
+msgid "msec"
+msgstr "msec"
+
+#: ../options_page.php:101
+#: ../options_page.php:120
+msgid "Speed of the fade and elastic transitions. (in milliseconds)"
+msgstr "Скорость пропадания и эластичных переходов. (В миллисекундах)"
+
+#: ../options_page.php:106
+msgid "Closing transition"
+msgstr "Закрытие перехода"
+
+#: ../options_page.php:117
+msgid "Closing speed"
+msgstr "Скорость закрытия"
+
+#: ../options_page.php:125
+msgid "Image resizing speed"
+msgstr "Скорость изменения размера "
+
+#: ../options_page.php:128
+msgid "Speed of resizing when changing gallery items. (in milliseconds)"
+msgstr "Скорость изменения размеров при изменении пунктов галереи. (В миллисекундах)"
+
+#: ../options_page.php:133
+msgid "Appearance problems"
+msgstr "Проблемы внешнего вида"
+
+#: ../options_page.php:136
+msgid "Convert gallery images to inline elements. (Tick this box if your galleries have only one column.)"
+msgstr "Преобразование изображения в галерее в строку. (Отметьте этот флажок, если ваши галереи имеют только один столбец.)"
+
+#: ../options_page.php:137
+msgid "Some themes let images appear as block elements. This effects that your image galleries have only one column."
+msgstr "В некоторых темах изображения представлены как элементы блока. This effects that your image galleries have only one column."
+
+#: ../wp-plugin-fancy-gallery.php:67
+msgid "Fancy Gallery Settings"
+msgstr "Настройки Fancy Галереи"
+
+#: ../wp-plugin-fancy-gallery.php:68
+msgid "Fancy Gallery"
+msgstr "Fancy Галерея"
+
+#: ../wp-plugin-fancy-gallery.php:88
+msgid "Fancy Gallery Options"
+msgstr "Функции Fancy Галереи"
+

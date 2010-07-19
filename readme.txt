@@ -39,6 +39,7 @@ If you have any questions you can leave a comment in my blog. But please think a
 * Diese Erweiterung ist in Deutsch verfügbar. ([Dennis Hoppe](http://dennishoppe.de/))
 * Este plugin está disponível em Português do Brasil. ([Rafael Sirotheau](http://rsirotheau.wordpress.com/))
 * Cette extension est traduite en français. ([Charles Alain](http://www.domarin-tt.com/))
+* Этот плагин доступен на Русском языке. ([Семен Пинигин](http://semasping.info/))
 
 If you have translated this plug-in in your language feel free to send me the language file (.po file) via E-Mail with your name and this translated sentence: "This plug-in is available in %YOUR_LANGUAGE_NAME%." So i can add it to the plug-in.
 
@@ -65,6 +66,7 @@ Installation as usual.
 = 1.3.13 =
 * New: User can choose which meta data should be used as fancybox title.
 * Added some magic with image descriptions. ;)
+* Added Russian translation by [Семен Пинигин](http://semasping.info/).
 
 = 1.3.12 =
 * Fancy Gallery can detect PHP4 now.
