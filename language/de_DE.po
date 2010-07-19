@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fancy Gallery Plugin for WordPress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-06 17:08+0100\n"
+"POT-Creation-Date: 2010-07-19 15:39+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe\n"
 "Language-Team: Dennis Hoppe\n"
@@ -20,8 +20,8 @@ msgid "Loop mode"
 msgstr "Schleifenmodus"
 
 #: ../options_page.php:6
-msgid "Will enable the user to get from the last image to the first one with the next button."
-msgstr "Ermöglicht es dem Benutzer vom letzten zum ersten Bild durch den \"Weiter\" Button zu gelangen."
+msgid "Will enable the user to get from the last image to the first one with the \"Next &raquo;\" button."
+msgstr "Ermöglicht es dem Benutzer vom letzten zum ersten Bild durch den \"Weiter &raquo;\" Button zu gelangen."
 
 #: ../options_page.php:11
 msgid "Scrollbars"
@@ -35,147 +35,179 @@ msgstr "Automatisch"
 msgid "\"Automatic\" means scrollbars will be visibly if necessary. \"Yes\" and \"No\" should be clear."
 msgstr "\"Automatisch\" bedeutet die Scroll-Leisten werden eingeblendet wenn nötig. \"Ja\" und \"Nein\" sollten klar sein."
 
-#: ../options_page.php:23
+#: ../options_page.php:19
+msgid "This option controls the appearance of the scrollbars inside the fancy box."
+msgstr "Diese Option steuert die Darstellung der Scroll-Leisten in der FancyBox."
+
+#: ../options_page.php:24
 msgid "Center on scroll"
 msgstr "Zentrieren beim Scrollen"
 
-#: ../options_page.php:26
+#: ../options_page.php:27
 msgid "Keep the FancyBox always in the center of the screen while scrolling the page."
 msgstr "Die FancyBox, auch wärend des Scrollens, immer in der Bildschirmmitte halten."
 
-#: ../options_page.php:31
+#: ../options_page.php:32
 msgid "Close button"
 msgstr "Schließen-Knopf"
 
-#: ../options_page.php:34
+#: ../options_page.php:35
 msgid "Hide the close button."
 msgstr "Den Schließen-Knopf verstecken."
 
-#: ../options_page.php:39
+#: ../options_page.php:40
 msgid "Overlay opacity"
 msgstr "Milchglas-Hintergrund Transparenzgrad"
 
-#: ../options_page.php:42
+#: ../options_page.php:43
 msgid "Percentaged opacity of the background of the FancyBox. Should be a value from 0 (invisible) to 100 (opaque). (Default is 30)"
 msgstr "Prozentualer Sichtbarkeitsgrad für die \"Milchglasscheibe\" hinter der FancyBox. Es sollte ein Wert zwischen 0 (unsichtbar) und 100 (undurchschaubar) sein. (Standard ist 30)"
 
-#: ../options_page.php:47
+#: ../options_page.php:48
 msgid "Overlay color"
 msgstr "Milchglas-Hintergrund Grundfarbe"
 
-#: ../options_page.php:51
+#: ../options_page.php:52
 msgid "Please choose the color of the \"darker\" background."
 msgstr "Bitte wählen Sie eine Farbe für das Milchglas hinter der FancyBox."
 
-#: ../options_page.php:56
+#: ../options_page.php:57
 msgid "Border width"
 msgstr "Rahmenbreite"
 
-#: ../options_page.php:58
+#: ../options_page.php:59
 msgctxt "Abbr. Pixels"
 msgid "px"
 msgstr "px"
 
-#: ../options_page.php:59
+#: ../options_page.php:60
 msgid "Width of the image frame border. (in pixels)"
 msgstr "Breite des Bildrahmens. (In Pixeln)"
 
-#: ../options_page.php:64
+#: ../options_page.php:65
 msgid "Image title"
 msgstr "Bildtitel"
 
 #: ../options_page.php:67
-msgid "Do not shot image titles."
+msgid "Use the title of the image as title of the fancy box."
+msgstr "Benutze den Bildtitel als Titel für die FancyBox."
+
+#: ../options_page.php:68
+msgid "Use the alternative text of the image as title of the fancy box."
+msgstr "Benutze den alternativen Bildtext als Titel für die FancyBox."
+
+#: ../options_page.php:69
+msgid "Use the image caption as title of the fancy box."
+msgstr "Benutze die Bildbeschriftung als Titel für die FancyBox."
+
+#: ../options_page.php:70
+msgid "Use the image description as title of the fancy box."
+msgstr "Benutze die Bildbeschreibung als Titel für die FancyBox."
+
+#: ../options_page.php:71
+msgid "Do not show image titles."
 msgstr "Keine Bilduntertitel zeigen."
 
-#: ../options_page.php:72
+#: ../options_page.php:76
 msgid "Title position"
 msgstr "Bildtitelposition"
 
-#: ../options_page.php:75
+#: ../options_page.php:79
 msgid "Outside the FancyBox"
 msgstr "Außerhalb der FancyBox"
 
-#: ../options_page.php:76
+#: ../options_page.php:79
+msgid "Does not work with multiline titles."
+msgstr "Funktioniert nicht mit mehrzeiligen Bilduntertiteln."
+
+#: ../options_page.php:80
 msgid "Inside the FancyBox"
 msgstr "In der FancyBox"
 
-#: ../options_page.php:77
+#: ../options_page.php:80
+msgid "Does not work blameless with multiline titles."
+msgstr "Funktioniert nur teilweise mit mehrzeiligen Bildtiteln."
+
+#: ../options_page.php:81
 msgid "Over the image"
 msgstr "Auf dem Bild"
 
-#: ../options_page.php:83
+#: ../options_page.php:81
+msgid "Works fine with multiline titles."
+msgstr "Funktioniert auch mit mehrzeiligen Bildtiteln."
+
+#: ../options_page.php:87
 msgid "Opening transition"
 msgstr "Einblendeffekt"
 
-#: ../options_page.php:86
-#: ../options_page.php:105
+#: ../options_page.php:90
+#: ../options_page.php:109
 msgid "Fade"
 msgstr "Aufblenden"
 
-#: ../options_page.php:87
-#: ../options_page.php:106
+#: ../options_page.php:91
+#: ../options_page.php:110
 msgid "Elastic"
 msgstr "Elastisch"
 
-#: ../options_page.php:88
-#: ../options_page.php:107
+#: ../options_page.php:92
+#: ../options_page.php:111
 msgid "No transition"
 msgstr "Kein Effekt"
 
-#: ../options_page.php:94
+#: ../options_page.php:98
 msgid "Opening speed"
 msgstr "Einblendverzögerung"
 
-#: ../options_page.php:96
-#: ../options_page.php:115
-#: ../options_page.php:123
+#: ../options_page.php:100
+#: ../options_page.php:119
+#: ../options_page.php:127
 msgctxt "Abbr. Milliseconds"
 msgid "msec"
 msgstr "ms"
 
-#: ../options_page.php:97
-#: ../options_page.php:116
+#: ../options_page.php:101
+#: ../options_page.php:120
 msgid "Speed of the fade and elastic transitions. (in milliseconds)"
 msgstr "Laufzeit des Überblend-Effektes. (in Millisekunden)"
 
-#: ../options_page.php:102
+#: ../options_page.php:106
 msgid "Closing transition"
 msgstr "Ausblendeffekt"
 
-#: ../options_page.php:113
+#: ../options_page.php:117
 msgid "Closing speed"
 msgstr "Ausblendverzögerung"
 
-#: ../options_page.php:121
+#: ../options_page.php:125
 msgid "Image resizing speed"
 msgstr "Zeit der Bildgrößenanpassung"
 
-#: ../options_page.php:124
+#: ../options_page.php:128
 msgid "Speed of resizing when changing gallery items. (in milliseconds)"
-msgstr "Laufzeit in der sich die FancyBox an die Größe eines Bild anpassen soll. (in Millisekunden)"
+msgstr "Laufzeit in der sich die FancyBox an die Größe eines Bildes anpassen soll. (in Millisekunden)"
 
-#: ../options_page.php:129
+#: ../options_page.php:133
 msgid "Appearance problems"
 msgstr "Darstellungsprobleme"
 
-#: ../options_page.php:132
+#: ../options_page.php:136
 msgid "Convert gallery images to inline elements. (Tick this box if your galleries have only one column.)"
 msgstr "Konvertiere Galeriebilder in \"Inline\"-Elemente. (Aktivieren Sie dieses Feld wenn Ihre Galerien mit nur einer Spalte dargestellt werden.)"
 
-#: ../options_page.php:133
+#: ../options_page.php:137
 msgid "Some themes let images appear as block elements. This effects that your image galleries have only one column."
 msgstr "Einige Themes zeigen Bilder als Block-Elemente, was darin resultiert dass Ihre Galerien einspaltig dargestellt werden."
 
-#: ../wp-plugin-fancy-gallery.php:60
+#: ../wp-plugin-fancy-gallery.php:67
 msgid "Fancy Gallery Settings"
 msgstr "Fancy Gallery Einstellungen"
 
-#: ../wp-plugin-fancy-gallery.php:61
+#: ../wp-plugin-fancy-gallery.php:68
 msgid "Fancy Gallery"
 msgstr "Fancy Gallery"
 
-#: ../wp-plugin-fancy-gallery.php:81
+#: ../wp-plugin-fancy-gallery.php:88
 msgid "Fancy Gallery Options"
 msgstr "Fancy Gallery Einstellungen"
 

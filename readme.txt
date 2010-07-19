@@ -31,7 +31,7 @@ If you have any questions you can leave a comment in my blog. But please think a
 
 = In the Press =
 * Fancy Gallery has been granted the "Famous Software" Award. [To the post &raquo;](http://download.famouswhy.com/fancy_gallery/)
-* 17 Most Used WordPress Jquery Plugins @ [Skyje.com](http://skyje.com/). [To the post &raquo;](http://skyje.com/2010/04/wordpress-jquery-plugins/)
+* 17 Most Used WordPress jQuery Plugins @ [Skyje.com](http://skyje.com/). [To the post &raquo;](http://skyje.com/2010/04/wordpress-jquery-plugins/)
 * "Awesome and easy to use Wordpress gallery plugin" [To the post &raquo;](http://topsy.com/trackback?utm_source=pingback&utm_campaign=L2&url=http://dennishoppe.de/wordpress-plugins/fancy-gallery)
 
 = Language =
@@ -61,6 +61,10 @@ Installation as usual.
 1. You like what you see?
 
 == Changelog ==
+
+= 1.3.13 =
+* New: User can choose which meta data should be used as fancybox title.
+* Added some magic with image descriptions. ;)
 
 = 1.3.12 =
 * Fancy Gallery can detect PHP4 now.

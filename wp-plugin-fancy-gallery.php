@@ -3,9 +3,9 @@
 /*
 
 Plugin Name: Fancy Gallery
-Description: Will bring your galleries as valid XHTML blocks on screen and associate linked images with Fancybox.
+Description: Fancy Gallery converts your galleries to valid XHTML blocks and associates linked images with the Fancy Light Box.
 Plugin URI: http://dennishoppe.de/wordpress-plugins/fancy-gallery 
-Version: 1.3.12
+Version: 1.3.13
 Author: Dennis Hoppe
 Author URI: http://DennisHoppe.de
 
@@ -112,7 +112,7 @@ Class wp_plugin_fancy_gallery {
     If (Empty($_POST)) return False;
     
     // Save options
-    Update_Option (self::setting_key(), stripslashes_deep($_POST));
+    Update_Option ($this->setting_key(), stripslashes_deep($_POST));
     
     // Everything is ok =)
     return True;
@@ -132,7 +132,11 @@ Class wp_plugin_fancy_gallery {
   
   Function print_admin_header(){
     ?>
+    
+    <!-- Fancy Gallery (WordPress Plugin by Dennis Hoppe) Components -->
     <script type="text/javascript" src="<?php echo $this->base_url ?>/admin.js"></script>
+    <!-- End of Fancy Gallery Components -->
+    
     <?php
   }
   
@@ -153,6 +157,36 @@ Class wp_plugin_fancy_gallery {
     <!-- End of Fancy Gallery Components -->
     
     <?php
+  }
+  
+  Function get_image_title($attachment){
+    If (!Is_Object($attachment)) return False;
+    
+    // Image title
+    $image_title = $attachment->post_title;
+    
+    // Alternative Text
+    $alternative_text = Get_Post_Meta($attachment->ID, '_wp_attachment_image_alt', True);
+    If (Empty($alternative_text)) $alternative_text = $image_title;
+    
+    // Image caption
+    $caption = $attachment->post_excerpt;
+    If (Empty($caption)) $caption = $image_title;
+    
+    // Image description
+    $description = nl2br($attachment->post_content);
+    $description = Str_Replace ("\n", '', $description);
+    $description = Str_Replace ("\r", '', $description);
+    If (Empty($description)) $description = $caption;
+    
+    // return Title
+    Switch (self::get_option('use_as_image_title')){
+      Case 'none': return False;
+      Case 'alt_text': return $alternative_text;
+      Case 'caption': return $caption;
+      Case 'description': return $description;
+      Default: return $image_title;
+    }
   }
 
   Function gallery_shortcode ($attr){
@@ -192,11 +226,37 @@ Class wp_plugin_fancy_gallery {
   	// There are no attachments
   	If (Empty($attachments)) return False;
   	
-  	$code = '<div class="fancy gallery" id="gallery_'.$GLOBALS['post']->ID.'">';
+  	// Gallery box
+  	$code = '<div class="fancy gallery" id="gallery_' . $GLOBALS['post']->ID. '">';
   	
-    ForEach ($attachments AS $id => $attachment)
-      $code .= wp_get_attachment_link($attachment->ID, $attr['size']);
+  	// Build the HTML Code
+    ForEach ($attachments AS $id => $attachment){
+      // Thumb URL, width, height
+      List($src, $width, $height) =  wp_get_attachment_image_src($attachment->ID, $attr['size']);
       
+      // Image title
+      $title = HTMLSpecialChars($this->get_image_title($attachment));
+      
+      // CSS Class
+      $class = 'attachment-' . $attr['size'];
+      
+      // Run filter
+      $html_attributes = Apply_Filters( 'wp_get_attachment_image_attributes', Array(
+        'src' => $src,
+        'width' => $width,
+        'height' => $height,
+        'class' => $class,
+        'alt' => $title,
+        'title' => $title
+      ), $attachment );
+      
+      // Buld IMG HTML Code
+      $code .= '<a href="' . wp_get_attachment_url($attachment->ID) . '" title="' . $title . '"><img ';
+      ForEach ((ARRAY)$html_attributes AS $attribute => $value) $code .= $attribute . '="' . $value . '" ';      
+      $code .= '/></a>';
+    }
+    
+    // End of the gallery box
     $code .= '</div>';
     
   	return $code;

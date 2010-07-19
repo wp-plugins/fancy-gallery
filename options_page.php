@@ -3,7 +3,7 @@
   <th scope="row"><?php Echo $this->t('Loop mode') ?></th>
   <td>
     <input type="checkbox" name="cyclic" value="yes" <?php Checked ($this->get_option('cyclic'), 'yes') ?>/>            
-    <?php Echo $this->t('Will enable the user to get from the last image to the first one with the next button.') ?>
+    <?php Echo $this->t('Will enable the user to get from the last image to the first one with the "Next &raquo;" button.') ?>
   </td>
 </tr>
 
@@ -15,7 +15,8 @@
       <option value="yes" <?php Selected ($this->get_option('scrolling'), 'yes') ?> ><?php _e('Yes') ?></option>
       <option value="no" <?php Selected ($this->get_option('scrolling'), 'no') ?> ><?php _e('No') ?></option>
     </select>
-    (<?php Echo $this->t('"Automatic" means scrollbars will be visibly if necessary. "Yes" and "No" should be clear.') ?>)
+    (<?php Echo $this->t('"Automatic" means scrollbars will be visibly if necessary. "Yes" and "No" should be clear.') ?>)<br />
+    <small><?php Echo $this->t('This option controls the appearance of the scrollbars inside the fancy box.') ?></small>
   </td>
 </tr>
 
@@ -63,8 +64,11 @@
 <tr valign="top">
   <th scope="row"><?php Echo $this->t('Image title') ?></th>
   <td>
-    <input type="checkbox" name="hide_image_title" value="yes" <?php Checked ($this->get_option('hide_image_title'), 'yes') ?>/>            
-    <?php Echo $this->t('Do not shot image titles.') ?>
+    <input type="radio" name="use_as_image_title" value="title" <?php Checked ($this->get_option('use_as_image_title', 'title'), 'title') ?>/> <?php Echo $this->t('Use the title of the image as title of the fancy box.') ?><br />
+    <input type="radio" name="use_as_image_title" value="alt_text" <?php Checked ($this->get_option('use_as_image_title'), 'alt_text') ?>/> <?php Echo $this->t('Use the alternative text of the image as title of the fancy box.') ?><br />
+    <input type="radio" name="use_as_image_title" value="caption" <?php Checked ($this->get_option('use_as_image_title'), 'caption') ?>/> <?php Echo $this->t('Use the image caption as title of the fancy box.') ?><br />
+    <input type="radio" name="use_as_image_title" value="description" <?php Checked ($this->get_option('use_as_image_title'), 'description') ?>/> <?php Echo $this->t('Use the image description as title of the fancy box.') ?><br />
+    <input type="radio" name="use_as_image_title" value="none" <?php Checked ($this->get_option('use_as_image_title'), 'none') ?>/> <?php Echo $this->t('Do not show image titles.') ?>
   </td>
 </tr>
 
@@ -72,9 +76,9 @@
   <th scope="row"><?php Echo $this->t('Title position') ?></th>
   <td>
     <select name="title_position">
-      <option value="outside" <?php Selected ($this->get_option('title_position'), 'outside') ?> ><?php Echo $this->t('Outside the FancyBox') ?></option>
-      <option value="inside" <?php Selected ($this->get_option('title_position'), 'inside') ?> ><?php Echo $this->t('Inside the FancyBox') ?></option>
-      <option value="over" <?php Selected ($this->get_option('title_position'), 'over') ?> ><?php Echo $this->t('Over the image') ?></option>
+      <option value="outside" <?php Selected ($this->get_option('title_position'), 'outside') ?> ><?php Echo $this->t('Outside the FancyBox') ?> (<?php Echo $this->t('Does not work with multiline titles.') ?>)</option>
+      <option value="inside" <?php Selected ($this->get_option('title_position'), 'inside') ?> ><?php Echo $this->t('Inside the FancyBox') ?> (<?php Echo $this->t('Does not work blameless with multiline titles.') ?>)</option>
+      <option value="over" <?php Selected ($this->get_option('title_position'), 'over') ?> ><?php Echo $this->t('Over the image') ?> (<?php Echo $this->t('Works fine with multiline titles.') ?>)</option>
     </select>
   </td>
 </tr>
