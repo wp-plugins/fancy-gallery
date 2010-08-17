@@ -3,7 +3,7 @@ Contributors: dhoppe
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=1220480
 Tags: image, images, picture, pictures, photo, photos, gallery, galleries, photo-albums, Post, admin, media, fancy, fancybox, thickbox, lightbox, jquery, 
 Requires at least: 2.8
-Tested up to: 3.0
+Tested up to: 3.1
 Stable tag: trunk
 
 Fancy Gallery associates linked images and galleries with the jQuery Fancybox. This Plugin has been granted the "Famous Software" Award!
@@ -62,6 +62,9 @@ Installation as usual.
 1. You like what you see?
 
 == Changelog ==
+
+= 1.3.14 =
+* Fix: Different galleries on the same post/page are not associated via the navigation anymore.
 
 = 1.3.13 =
 * New: User can choose which meta data should be used as fancybox title.

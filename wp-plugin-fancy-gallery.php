@@ -5,7 +5,7 @@
 Plugin Name: Fancy Gallery
 Description: Fancy Gallery converts your galleries to valid XHTML blocks and associates linked images with the Fancy Light Box.
 Plugin URI: http://dennishoppe.de/wordpress-plugins/fancy-gallery 
-Version: 1.3.13
+Version: 1.3.14
 Author: Dennis Hoppe
 Author URI: http://DennisHoppe.de
 
@@ -227,7 +227,7 @@ Class wp_plugin_fancy_gallery {
   	If (Empty($attachments)) return False;
   	
   	// Gallery box
-  	$code = '<div class="fancy gallery" id="gallery_' . $GLOBALS['post']->ID. '">';
+  	$code = '<div class="fancy gallery" id="gallery_' . $attr['id'] . '">';
   	
   	// Build the HTML Code
     ForEach ($attachments AS $id => $attachment){
