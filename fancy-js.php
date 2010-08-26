@@ -68,11 +68,13 @@ $arr_type = Array( 'jpg', 'jpeg', 'png', 'gif', 'bmp', 'wbmp', 'ico' );
   <?php EndForEach; } ?>
   
   <?php If($get_option('img_block_fix')) : ?>
-  jQuery('div.fancy.gallery a img').css({
-    display: 'inline',
-    clear: 'none',
-    float: 'none'
-  });
+  jQuery('div.fancy.gallery a img')
+    .addClass('alignleft')
+    .css({
+      display: 'inline',
+      clear: 'none',
+      float: 'none'
+    });
   <?php EndIf; ?>
 
   // Add Fancy Classes to single items:
