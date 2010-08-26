@@ -63,6 +63,9 @@ Installation as usual.
 
 == Changelog ==
 
+= 1.3.15 =
+* Added more solutions to fix appearance problems.
+
 = 1.3.14 =
 * Fix: Different galleries on the same post/page are not associated via the navigation anymore.
 
