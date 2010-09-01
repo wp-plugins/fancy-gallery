@@ -11,7 +11,7 @@ Class wp_plugin_donation_to_dennis_hoppe {
     // Load Text Domain
     $this->Load_TextDomain();
     
-    // Register the Misc Setting if a user donated
+    // Register the setting if a user donated
     Add_Action('admin_menu', Array($this, 'add_settings_field'));
     
     // Check if the user has already donated
@@ -20,7 +20,7 @@ Class wp_plugin_donation_to_dennis_hoppe {
     // Add some Js for the donation buttons to the admin header
     Add_Action('admin_head', Array($this, 'print_donation_js'));
     
-    // Hide the donation form to the footer
+    // Add the donation form (hidden)
     Add_Action('admin_notices', Array($this, 'print_donation_form'), 1);
     
     // Register the Dashboard Widget
@@ -200,13 +200,15 @@ Class wp_plugin_donation_to_dennis_hoppe {
               <input type="hidden" class="dennis_hoppe_donation_currency" value="USD" />
               <select class="dennis_hoppe_donation_amount">
                 <option value="" disabled="disabled" selected="selected"><?php Echo $this->t('Amount in USD') ?></option>
-                <option value="52.34">$52.34</option>
-                <option value="41.94">$41.94</option>
-                <option value="31.53">$31.53</option>
-                <option value="21.12">$21.12</option>
-                <option value="15.92">$15.92</option>
-                <option value="10.72">$10.72</option>
-                <option value="5.52">$5.52</option>
+                <option value="81.40">$81.40</option>
+                <option value="67.88">$67.88</option>
+                <option value="54.37">$54.37</option>
+                <option value="40.85">$40.85</option>
+                <option value="34.10">$34.10</option>
+                <option value="27.34">$27.34</option>
+                <option value="20.58">$20.58</option>
+                <option value="13.83">$13.83</option>
+                <option value="7.07">$7.07</option>
                 <option value="">&raquo; <?php Echo $this->t('other amount') ?></option>
               </select>
               <input type="button" class="dennis_hoppe_donation_button button-primary" value="<?php Echo $this->t('Proceed to PayPal') ?> &rarr;" title="<?php Echo $this->t('Proceed to PayPal') ?>" disabled="disabled" />
@@ -219,6 +221,7 @@ Class wp_plugin_donation_to_dennis_hoppe {
               <input type="hidden" class="dennis_hoppe_donation_currency" value="GBP" />
               <select class="dennis_hoppe_donation_amount">
                 <option value="" disabled="disabled" selected="selected"><?php Echo $this->t('Amount in GBP') ?></option>
+                <option value="62.64">&pound;62.64</option>
                 <option value="52.24">&pound;52.24</option>
                 <option value="41.83">&pound;41.83</option>
                 <option value="31.43">&pound;31.43</option>
@@ -238,6 +241,7 @@ Class wp_plugin_donation_to_dennis_hoppe {
               <input type="hidden" class="dennis_hoppe_donation_currency" value="EUR" />
               <select class="dennis_hoppe_donation_amount">
                 <option value="" disabled="disabled" selected="selected"><?php Echo $this->t('Amount in EUR') ?></option>
+                <option value="61.52">61,52 &euro;</option>
                 <option value="51.33">51,33 &euro;</option>
                 <option value="41.13">41,13 &euro;</option>
                 <option value="30.94">30,94 &euro;</option>
