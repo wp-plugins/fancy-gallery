@@ -33,6 +33,7 @@ If you have any questions you can leave a comment in my blog. But please think a
 * Fancy Gallery has been granted the "Famous Software" Award. [To the post &raquo;](http://download.famouswhy.com/fancy_gallery/)
 * 17 Most Used WordPress jQuery Plugins @ [Skyje.com](http://skyje.com/). [To the post &raquo;](http://skyje.com/2010/04/wordpress-jquery-plugins/)
 * "Awesome and easy to use Wordpress gallery plugin" [To the post &raquo;](http://topsy.com/trackback?utm_source=pingback&utm_campaign=L2&url=http://dennishoppe.de/wordpress-plugins/fancy-gallery)
+* WordPress Series #2 – The essential plug-ins @ [Inscope](http://www.inscope.net/). [To the post &raquo;](http://www.inscope.net/post/755)
 
 = Language =
 * This Plug-in is available in English.
