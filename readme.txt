@@ -41,6 +41,7 @@ If you have any questions you can leave a comment in my blog. But please think a
 * Este plugin está disponível em Português do Brasil. ([Rafael Sirotheau](http://rsirotheau.wordpress.com/))
 * Cette extension est traduite en français. ([Charles Alain](http://www.domarin-tt.com/))
 * Этот плагин доступен на Русском языке. ([Семен Пинигин](http://semasping.info/))
+* Deze plugin is beschikbaar in het Nederlands. ([WordPress Webshop](http://wpwebshop.com))
 
 If you have translated this plug-in in your language feel free to send me the language file (.po file) via E-Mail with your name and this translated sentence: "This plug-in is available in %YOUR_LANGUAGE_NAME%." So i can add it to the plug-in.
 
@@ -63,6 +64,9 @@ Installation as usual.
 1. You like what you see?
 
 == Changelog ==
+
+= 1.3.16 =
+* Added Dutch translation by [WordPress Webshop](http://wpwebshop.com).
 
 = 1.3.15 =
 * Added more solutions to fix appearance problems.

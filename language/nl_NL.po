@@ -1,0 +1,217 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Fancy Gallery Plugin v1.3.16\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-12-09 09:50+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Dennis Hoppe\n"
+"Language-Team: Translation by WordPressWebshop.com <info@wpwebshop.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Dutch\n"
+"X-Poedit-Country: NETHERLANDS\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: t;t:2c,1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../options_page.php:3
+msgid "Loop mode"
+msgstr "Lus modus"
+
+#: ../options_page.php:6
+msgid "Will enable the user to get from the last image to the first one with the \"Next &raquo;\" button."
+msgstr "Stelt de gebruiker in staat om van de laatste naar de eerste afbeelding te gaan met de \"Volgende &raquo;\" knop."
+
+#: ../options_page.php:11
+msgid "Scrollbars"
+msgstr "Scrollbalken"
+
+#: ../options_page.php:14
+msgid "Automatic"
+msgstr "Automatisch"
+
+#: ../options_page.php:18
+msgid "\"Automatic\" means scrollbars will be visibly if necessary. \"Yes\" and \"No\" should be clear."
+msgstr "\"Automatisch\" betekent dat scrollbalken zichtbaar zullen zijn indien nodig. \"Ja\" en \"Nee\" moeten duidelijk zijn."
+
+#: ../options_page.php:19
+msgid "This option controls the appearance of the scrollbars inside the fancy box."
+msgstr "Deze optie bepaalt het uiterlijk van de scrollbalken in de Fancy Box."
+
+#: ../options_page.php:24
+msgid "Center on scroll"
+msgstr "Centreer bij scrollen"
+
+#: ../options_page.php:27
+msgid "Keep the FancyBox always in the center of the screen while scrolling the page."
+msgstr "Houd altijd de Fancy Box in het midden van het scherm tijdens het scrollen van de pagina."
+
+#: ../options_page.php:32
+msgid "Close button"
+msgstr "Sluit knop"
+
+#: ../options_page.php:35
+msgid "Hide the close button."
+msgstr "Verberg de sluitknop."
+
+#: ../options_page.php:40
+msgid "Overlay opacity"
+msgstr "Overlay opaciteit"
+
+#: ../options_page.php:43
+msgid "Percentaged opacity of the background of the FancyBox. Should be a value from 0 (invisible) to 100 (opaque). (Default is 30)"
+msgstr "Percentage opaciteit van de achtergrond van de Fancy Box. Moet een waarde van 0 (onzichtbaar) tot 100 (dekkend) zijn. (Standaard is 30)"
+
+#: ../options_page.php:48
+msgid "Overlay color"
+msgstr "Overlay kleur."
+
+#: ../options_page.php:52
+msgid "Please choose the color of the \"darker\" background."
+msgstr "Kies de kleur van de \"donkere\" achtergrond."
+
+#: ../options_page.php:57
+msgid "Border width"
+msgstr "Randbreedte"
+
+#: ../options_page.php:59
+msgctxt "Abbr. Pixels"
+msgid "px"
+msgstr "px"
+
+#: ../options_page.php:60
+msgid "Width of the image frame border. (in pixels)"
+msgstr "Breedte van de afbeelding framerand. (in pixels)"
+
+#: ../options_page.php:65
+msgid "Image title"
+msgstr "Titel afbeelding"
+
+#: ../options_page.php:67
+msgid "Use the title of the image as title of the fancy box."
+msgstr "Gebruik de titel van het beeld als titel van de Fancy Box."
+
+#: ../options_page.php:68
+msgid "Use the alternative text of the image as title of the fancy box."
+msgstr "Maak gebruik van de alternatieve tekst van de afbeelding als titel van de Fancy Box."
+
+#: ../options_page.php:69
+msgid "Use the image caption as title of the fancy box."
+msgstr "Gebruik het afbeeldingsbijschrift als titel van de Fancy Box."
+
+#: ../options_page.php:70
+msgid "Use the image description as title of the fancy box."
+msgstr "Gebruik de afbeeldingsomschrijving als titel van de Fancy Box."
+
+#: ../options_page.php:71
+msgid "Do not show image titles."
+msgstr "Geef geen afbeeldingstitels weer."
+
+#: ../options_page.php:76
+msgid "Title position"
+msgstr "Titel positie"
+
+#: ../options_page.php:79
+msgid "Outside the FancyBox"
+msgstr "Buiten de Fancy Box"
+
+#: ../options_page.php:79
+msgid "Does not work with multiline titles."
+msgstr "Werkt niet met meerdere-regels titels."
+
+#: ../options_page.php:80
+msgid "Inside the FancyBox"
+msgstr "In de Fancy Box"
+
+#: ../options_page.php:80
+msgid "Does not work blameless with multiline titles."
+msgstr "Werkt niet perfect met meerdere-regels titels."
+
+#: ../options_page.php:81
+msgid "Over the image"
+msgstr "Op de afbeelding"
+
+#: ../options_page.php:81
+msgid "Works fine with multiline titles."
+msgstr "Werkt prima met meerdere-regels titels."
+
+#: ../options_page.php:87
+msgid "Opening transition"
+msgstr "Openingsovergang"
+
+#: ../options_page.php:90
+#: ../options_page.php:109
+msgid "Fade"
+msgstr "Vervagen"
+
+#: ../options_page.php:91
+#: ../options_page.php:110
+msgid "Elastic"
+msgstr "Elastisch"
+
+#: ../options_page.php:92
+#: ../options_page.php:111
+msgid "No transition"
+msgstr "Geen effect"
+
+#: ../options_page.php:98
+msgid "Opening speed"
+msgstr "Openingssnelheid"
+
+#: ../options_page.php:100
+#: ../options_page.php:119
+#: ../options_page.php:127
+msgctxt "Abbr. Milliseconds"
+msgid "msec"
+msgstr "ms"
+
+#: ../options_page.php:101
+#: ../options_page.php:120
+msgid "Speed of the fade and elastic transitions. (in milliseconds)"
+msgstr "Snelheid van de vervaging en elastische overgangen. (In milliseconden)"
+
+#: ../options_page.php:106
+msgid "Closing transition"
+msgstr "Sluitingsovergang"
+
+#: ../options_page.php:117
+msgid "Closing speed"
+msgstr "Sluitsnelheid"
+
+#: ../options_page.php:125
+msgid "Image resizing speed"
+msgstr "Snelheid resizen afbeelding"
+
+#: ../options_page.php:128
+msgid "Speed of resizing when changing gallery items. (in milliseconds)"
+msgstr "Snelheid van resizen tijdens het veranderen van gallerij items. (in milliseconden)"
+
+#: ../options_page.php:133
+msgid "Appearance problems"
+msgstr "Weergave problemen"
+
+#: ../options_page.php:136
+msgid "Convert gallery images to inline elements. (Tick this box if your galleries have only one column.)"
+msgstr "Converteren gallerij afbeeldingen naar inline elementen. (Vink dit vakje aan als je gallerijen slechts één kolom hebben.)"
+
+#: ../options_page.php:137
+msgid "Some themes let images appear as block elements. This effects that your image galleries have only one column."
+msgstr "Sommige thema's laat beelden verschijnen als blok elementen. Dit heeft het effect dat je afbeelding gallerijen slechts één kolom hebben."
+
+#: ../wp-plugin-fancy-gallery.php:67
+msgid "Fancy Gallery Settings"
+msgstr "Fancy Gallery Instellingen"
+
+#: ../wp-plugin-fancy-gallery.php:68
+msgid "Fancy Gallery"
+msgstr "Fancy Gallery"
+
+#: ../wp-plugin-fancy-gallery.php:88
+msgid "Fancy Gallery Options"
+msgstr "Fancy Gallery Opties"
+
+#~ msgid "Tick this box if the image title should be visible to the user."
+#~ msgstr "Bildtitel zu jedem Bild einblenden."
+

@@ -5,7 +5,6 @@ Header ('Content-Type: text/javascript');
 
 
 // Load WordPress
-$wp_load = 'wp-load.php';
 While (!Is_File ('wp-load.php')){
   If (Is_Dir('../')) ChDir('../');
   Else Die('Could not find WordPress.');
