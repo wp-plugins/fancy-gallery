@@ -76,7 +76,7 @@
   <th scope="row"><?php Echo $this->t('Title position') ?></th>
   <td>
     <select name="title_position">
-      <option value="outside" <?php Selected ($this->get_option('title_position'), 'outside') ?> ><?php Echo $this->t('Outside the FancyBox') ?> (<?php Echo $this->t('Does not work with multiline titles.') ?>)</option>
+      <option value="float" <?php Selected ($this->get_option('title_position'), 'float') ?> ><?php Echo $this->t('Outside the FancyBox') ?> (<?php Echo $this->t('Does not work with multiline titles.') ?>)</option>
       <option value="inside" <?php Selected ($this->get_option('title_position'), 'inside') ?> ><?php Echo $this->t('Inside the FancyBox') ?> (<?php Echo $this->t('Does not work blameless with multiline titles.') ?>)</option>
       <option value="over" <?php Selected ($this->get_option('title_position'), 'over') ?> ><?php Echo $this->t('Over the image') ?> (<?php Echo $this->t('Works fine with multiline titles.') ?>)</option>
     </select>

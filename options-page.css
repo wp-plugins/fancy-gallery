@@ -1,0 +1,7 @@
+span.show_colorpicker {
+  display: inline-block;
+  height: 19px;
+  width: 19px;
+  background-image: url(image/picker.png);
+  cursor: pointer;
+}

@@ -66,6 +66,11 @@ Installation as usual.
 
 == Changelog ==
 
+= 1.3.18 =
+* Upgrade to FancyBox 1.3.4
+* Fixed hard encoded Script & Style integrations
+* Added plugin pointer to $GLOBALS 
+
 = 1.3.17 =
 * Added Spanish translation by [Redywebs](http://www.redywebs.com/).
 

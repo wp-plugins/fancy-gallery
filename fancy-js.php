@@ -116,14 +116,13 @@ $arr_type = Array( 'jpg', 'jpeg', 'png', 'gif', 'bmp', 'wbmp', 'ico' );
     overlayOpacity :  <?php Echo Round($get_option('overlay_opacity', 30)) / 100 ?>,
     overlayColor   : '<?php Echo $get_option('overlay_color', '#666') ?>',
     titleShow      :  <?php Echo ($get_option('use_as_image_title')=='none') ? 'false' : 'true' ?>,
-    titlePosition  : '<?php Echo $get_option('title_position', 'outside') ?>',
+    titlePosition  : '<?php Echo $get_option('title_position', 'float') ?>',
     transitionIn   : '<?php Echo $get_option('transition_in', 'fade') ?>',
     transitionOut  : '<?php Echo $get_option('transition_out', 'fade') ?>',    
     speedIn        :  <?php Echo IntVal($get_option('speed_in', 300)) ?>,
     speedOut       :  <?php Echo IntVal($get_option('speed_out', 300)) ?>,
     changeSpeed    :  <?php Echo IntVal($get_option('change_speed', 300)) ?>,
-    showCloseButton:  <?php Echo $get_option('hide_close_button') ? 'false' : 'true' ?>
-        
+    showCloseButton:  <?php Echo $get_option('hide_close_button') ? 'false' : 'true' ?>        
 
   });
 
