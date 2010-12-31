@@ -43,6 +43,7 @@ If you have any questions you can leave a comment in my blog. But please think a
 * Этот плагин доступен на Русском языке. ([Семен Пинигин](http://semasping.info/))
 * Deze plugin is beschikbaar in het Nederlands. ([WordPress Webshop](http://wpwebshop.com))
 * Este plugin está disponible en Español. ([Redywebs](http://www.redywebs.com/))
+* Tento plugin je dostupný v Češtině. (Luke)
 
 If you have translated this plug-in in your language feel free to send me the language file (.po file) via E-Mail with your name and this translated sentence: "This plug-in is available in %YOUR_LANGUAGE_NAME%." So i can add it to the plug-in.
 
@@ -65,6 +66,9 @@ Installation as usual.
 1. You like what you see?
 
 == Changelog ==
+
+= 1.3.19 =
+* Added Czech translation by Luke.
 
 = 1.3.18 =
 * Upgrade to FancyBox 1.3.4
