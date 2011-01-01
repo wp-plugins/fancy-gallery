@@ -1,4 +1,4 @@
-=== Fancy Gallery ===
+﻿=== Fancy Gallery ===
 Contributors: dhoppe
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=1220480
 Tags: image, images, picture, pictures, photo, photos, gallery, galleries, photo-albums, Post, admin, media, fancy, fancybox, thickbox, lightbox, jquery, 
@@ -44,6 +44,7 @@ If you have any questions you can leave a comment in my blog. But please think a
 * Deze plugin is beschikbaar in het Nederlands. ([WordPress Webshop](http://wpwebshop.com))
 * Este plugin está disponible en Español. ([Redywebs](http://www.redywebs.com/))
 * Tento plugin je dostupný v Češtině. (Luke)
+* Questo plugin è disponibile in italiano. (Marco Cavallo)
 
 If you have translated this plug-in in your language feel free to send me the language file (.po file) via E-Mail with your name and this translated sentence: "This plug-in is available in %YOUR_LANGUAGE_NAME%." So i can add it to the plug-in.
 
@@ -66,6 +67,9 @@ Installation as usual.
 1. You like what you see?
 
 == Changelog ==
+
+= 1.3.20 =
+* Added Italian translation by Marco Cavallo.
 
 = 1.3.19 =
 * Added Czech translation by Luke.
