@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fancy Gallery Plugin v1.3.16\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-12-25 11:26+0100\n"
+"POT-Creation-Date: 2011-01-07 07:38+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe\n"
 "Language-Team: Translation by WordPressWebshop.com <info@wpwebshop.com>\n"
@@ -189,14 +189,26 @@ msgid "Speed of resizing when changing gallery items. (in milliseconds)"
 msgstr "Snelheid van resizen tijdens het veranderen van gallerij items. (in milliseconden)"
 
 #: ../options-page.php:133
+msgid "Single images"
+msgstr ""
+
+#: ../options-page.php:136
+msgid "Consolidate single images in a post to one group so the user can navigate through them."
+msgstr ""
+
+#: ../options-page.php:137
+msgid "So you will have an image navigation for all images."
+msgstr ""
+
+#: ../options-page.php:142
 msgid "Appearance problems"
 msgstr "Weergave problemen"
 
-#: ../options-page.php:136
+#: ../options-page.php:145
 msgid "Convert gallery images to inline elements. (Tick this box if your galleries have only one column.)"
 msgstr "Converteren gallerij afbeeldingen naar inline elementen. (Vink dit vakje aan als je gallerijen slechts één kolom hebben.)"
 
-#: ../options-page.php:137
+#: ../options-page.php:146
 msgid "Some themes let images appear as block elements. This effects that your image galleries have only one column."
 msgstr "Sommige thema's laat beelden verschijnen als blok elementen. Dit heeft het effect dat je afbeelding gallerijen slechts één kolom hebben."
 

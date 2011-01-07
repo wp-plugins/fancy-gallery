@@ -130,6 +130,15 @@
 </tr>
 
 <tr valign="top">
+  <th scope="row"><?php Echo $this->t('Single images') ?></th>
+  <td>
+    <input type="checkbox" name="associate_single_images" value="yes" <?php Checked ($this->get_option('associate_single_images'), 'yes') ?> />            
+    <?php Echo $this->t('Consolidate single images in a post to one group so the user can navigate through them.') ?><br />            
+    <small><?php Echo $this->t('So you will have an image navigation for all images.') ?></small>
+  </td>
+</tr>
+
+<tr valign="top">
   <th scope="row"><?php Echo $this->t('Appearance problems') ?></th>
   <td>
     <input type="checkbox" name="img_block_fix" value="yes" <?php Checked ($this->get_option('img_block_fix'), 'yes') ?> />            

@@ -1,4 +1,4 @@
-﻿=== Fancy Gallery ===
+=== Fancy Gallery ===
 Contributors: dhoppe
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=1220480
 Tags: image, images, picture, pictures, photo, photos, gallery, galleries, photo-albums, Post, admin, media, fancy, fancybox, thickbox, lightbox, jquery, 
@@ -14,7 +14,7 @@ Fancy Gallery associates linked images and galleries with the jQuery Fancybox. T
 * Fancy Gallery has been granted the "Famous Software" Award! [To the post &raquo;](http://download.famouswhy.com/fancy_gallery/)
 
 = Description =
-Fancy Gallery integrates the [Fancy Image Box](http://fancybox.net) in your WordPress. All links pointing to an image will automatically opened in the FancyBox. If you use the [Gallery] Short-code the images will get a navigation and the gallery itself will converted into a valid XHTML block.
+Fancy Gallery integrates the [Fancy Image Box](http://fancybox.net) in your WordPress. All links pointing to an image will automatically open in the FancyBox. If you use the [Gallery] Short-code the images will get a navigation bar and the gallery itself will be converted into a valid XHTML block.
 
 Of course you can use 'exclude' and 'include' parameters in your [GALLERY] short-code.
 
@@ -68,6 +68,9 @@ Installation as usual.
 
 == Changelog ==
 
+= 1.3.21 =
+* New Feature: Single image can get a navigation.
+
 = 1.3.20 =
 * Added Italian translation by Marco Cavallo.
 
@@ -106,7 +109,7 @@ Installation as usual.
 = 1.3.10 =
 * added index files which create 403s to void directory listing
 * added hideable colorpicker
-* fixed german translation
+* fixed German translation
 
 = 1.3.9 =
 * Fixed the farbtastic incompatibility bug
@@ -190,3 +193,4 @@ Installation as usual.
 
 = 1.0 =
 * Everything works fine.
+

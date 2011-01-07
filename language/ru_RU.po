@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fancy Gallery Plugin for WordPress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-12-25 11:26+0100\n"
+"POT-Creation-Date: 2011-01-07 07:38+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe\n"
 "Language-Team: Semasping <ya@semasping.info>\n"
@@ -189,14 +189,26 @@ msgid "Speed of resizing when changing gallery items. (in milliseconds)"
 msgstr "Скорость изменения размеров при изменении пунктов галереи. (В миллисекундах)"
 
 #: ../options-page.php:133
+msgid "Single images"
+msgstr ""
+
+#: ../options-page.php:136
+msgid "Consolidate single images in a post to one group so the user can navigate through them."
+msgstr ""
+
+#: ../options-page.php:137
+msgid "So you will have an image navigation for all images."
+msgstr ""
+
+#: ../options-page.php:142
 msgid "Appearance problems"
 msgstr "Проблемы внешнего вида"
 
-#: ../options-page.php:136
+#: ../options-page.php:145
 msgid "Convert gallery images to inline elements. (Tick this box if your galleries have only one column.)"
 msgstr "Преобразование изображения в галерее в строку. (Отметьте этот флажок, если ваши галереи имеют только один столбец.)"
 
-#: ../options-page.php:137
+#: ../options-page.php:146
 msgid "Some themes let images appear as block elements. This effects that your image galleries have only one column."
 msgstr "В некоторых темах изображения представлены как элементы блока. This effects that your image galleries have only one column."
 

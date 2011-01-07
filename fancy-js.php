@@ -92,14 +92,17 @@ $arr_type = Array( 'jpg', 'jpeg', 'png', 'gif', 'bmp', 'wbmp', 'ico' );
     // Add the fancybox class
     $lnk.addClass('fancybox');
     
-    <?php
-    If($get_option('use_as_image_title') == 'alt_text'){ // Copy the alternate texts ?>    
+    <?php If ($get_option('associate_single_images')) : // Give em a rel attribute ?>
+    if ($lnk.attr('rel') == '')
+      $lnk.attr('rel', 'single-image');
+    <?php EndIf; ?>
+    
+    <?php If ($get_option('use_as_image_title') == 'alt_text') : // Copy the alternate texts ?>    
     $img.attr('title', $img.attr('alt'));
-    <?php }
-    ElseIf($get_option('use_as_image_title') == 'caption'){ // Copy the captions ?>
+    <?php ElseIf ($get_option('use_as_image_title') == 'caption') : // Copy the captions ?>
     if (caption = $lnk.parent('.wp-caption').find('.wp-caption-text').html())
       $img.attr('title', caption);
-    <?php } ?>
+    <?php EndIf; ?>
     
     // Copy the title tag from link to img
     $lnk.attr('title', $img.attr('title'));

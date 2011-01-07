@@ -2,8 +2,7 @@
 
 If (!Class_Exists('wp_plugin_donation_to_dennis_hoppe')){
 Class wp_plugin_donation_to_dennis_hoppe {
-  var $text_domain;
-  
+
   Function __construct(){
     // If we are not in admin panel. We bail out.
     If (!Is_Admin()) return False;
@@ -12,7 +11,7 @@ Class wp_plugin_donation_to_dennis_hoppe {
     $this->Load_TextDomain();
     
     // Register the setting if a user donated
-    Add_Action('admin_menu', Array($this, 'add_settings_field'));
+    Add_Action('admin_init', Array($this, 'add_settings_field'));
     
     // Check if the user has already donated
     If (get_option('donated_to_dennis_hoppe')) return False;
@@ -31,18 +30,17 @@ Class wp_plugin_donation_to_dennis_hoppe {
   }
 
   Function Load_TextDomain(){
-    $this->text_domain = get_class($this);
-    $lang_file = DirName(__FILE__) . '/donate_' . get_locale() . '.mo';
-    If (Is_File ($lang_file)) load_textdomain ($this->text_domain, $lang_file);
+    $locale = Apply_Filters( 'plugin_locale', get_locale(), __CLASS__ );
+    load_textdomain (__CLASS__, DirName(__FILE__).'/language/' . $locale . '.mo');
   }
   
   Function t ($text, $context = ''){
     // Translates the string $text with context $context
     If ($context == '')
-      return __($text, $this->text_domain);
+      return __ ($text, __CLASS__);
     Else
-      return _x($text, $context, $this->text_domain);
-  }  
+      return _x ($text, $context, __CLASS__);
+  }
   
   Function register_widget(){    
     // Setup the Dashboard Widget
@@ -129,7 +127,7 @@ Class wp_plugin_donation_to_dennis_hoppe {
     // Array which contains all my extensions
     Static $arr_extension;
     
-    If (IsSet($arr_extension))
+    If ( IsSet($arr_extension) && !Empty($arr_extension) )
       return $arr_extension;
     Else
       $arr_extension = Array();
@@ -165,12 +163,12 @@ Class wp_plugin_donation_to_dennis_hoppe {
       
       <p>
         <?php Echo $this->t('My name is Dennis Hoppe and I am a computer science student working and living in Berlin, Germany.') ?>
-        <?php PrintF ($this->t('Beside other plugins and themes I developed %1$s.'), $this->Extended_Implode ($arr_extension, ', ', ' ' . $this->t('and') . ' ')) ?>
+        <?php If (!Empty($arr_extension)) PrintF ($this->t('Beside other plugins and themes I developed %1$s.'), $this->Extended_Implode ($arr_extension, ', ', ' ' . $this->t('and') . ' ')) ?>
         <?php Echo $this->t('I love the spirit of the open source movement, to write and share code and knowledge, but I think the system can work only if everyone contributes one\'s part properly.') ?>      
       </p>
       
       <p>
-        <?php PrintF ($this->t('Because you are using %1$s of my WordPress extensions I hope you will appreciate my job.'), $this->Number_to_Word(Count($arr_extension))) ?>
+        <?php If (!Empty($arr_extension)) PrintF ($this->t('Because you are using %1$s of my WordPress extensions I hope you will appreciate my job.'), $this->Number_to_Word(Count($arr_extension))) ?>
         <?php Echo $this->t('So please think about a donation. You would also help to keep alive and growing the community.') ?>
       </p>
 
@@ -293,11 +291,11 @@ Class wp_plugin_donation_to_dennis_hoppe {
   
   Function add_settings_field (){
     // Register the option field
-    register_setting( 'general', 'donated_to_dennis_hoppe' );
-    
+    Register_Setting( 'general', 'donated_to_dennis_hoppe' );    
+
     // Add Settings Field
     add_settings_field(
-      get_class($this),
+      __CLASS__,
       $this->t('Donation to Dennis Hoppe'),
       Array($this, 'print_settings_field'),
       'general'
