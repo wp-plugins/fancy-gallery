@@ -68,6 +68,9 @@ Installation as usual.
 
 == Changelog ==
 
+= 1.3.22 =
+* Updated Czesh translation.
+
 = 1.3.21 =
 * New Feature: Single image can get a navigation.
 

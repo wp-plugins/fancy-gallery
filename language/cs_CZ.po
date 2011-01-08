@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fancy Gallery Plugin for WordPress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-01-07 07:37+0100\n"
+"POT-Creation-Date: 2011-01-08 19:48+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe\n"
 "Language-Team: Luke <N3s4@seznam.cz>\n"
@@ -189,15 +189,15 @@ msgstr "Rychlost změny velikosti při přechodu na další obrázek. (v milisek
 
 #: ../options-page.php:133
 msgid "Single images"
-msgstr ""
+msgstr "Samostatné obrázky"
 
 #: ../options-page.php:136
 msgid "Consolidate single images in a post to one group so the user can navigate through them."
-msgstr ""
+msgstr "Spojit jednotlivé obrázky v příspěvku do jedné skupiny. Díky tomu je uživatel může procházet všechny."
 
 #: ../options-page.php:137
 msgid "So you will have an image navigation for all images."
-msgstr ""
+msgstr "Tímto budete mít navigaci mezi samostatnými obrázky na stránce jako u galerie s více obrázky."
 
 #: ../options-page.php:142
 msgid "Appearance problems"
