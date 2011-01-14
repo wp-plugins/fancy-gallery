@@ -45,6 +45,7 @@ If you have any questions you can leave a comment in my blog. But please think a
 * Este plugin está disponible en Español. ([Redywebs](http://www.redywebs.com/))
 * Tento plugin je dostupný v Češtině. (Luke)
 * Questo plugin è disponibile in italiano. (Marco Cavallo)
+* এই প্লাগইনটি এখন বাংলাতে পাওয়া যাচ্ছে।. ([S.M. Mehdi Akram](http://mehdiakram.wordpress.com/))
 
 If you have translated this plug-in in your language feel free to send me the language file (.po file) via E-Mail with your name and this translated sentence: "This plug-in is available in %YOUR_LANGUAGE_NAME%." So i can add it to the plug-in.
 
@@ -67,6 +68,9 @@ Installation as usual.
 1. You like what you see?
 
 == Changelog ==
+
+= 1.3.23 =
+* Added Bengali translation.
 
 = 1.3.22 =
 * Updated Czesh translation.
