@@ -39,7 +39,7 @@ If you have any questions you can leave a comment in my blog. But please think a
 * This Plug-in is available in English.
 * Diese Erweiterung ist in Deutsch verfügbar. ([Dennis Hoppe](http://dennishoppe.de/))
 * Este plugin está disponível em Português do Brasil. ([Rafael Sirotheau](http://rsirotheau.wordpress.com/))
-* Cette extension est traduite en français. ([Charles Alain](http://www.domarin-tt.com/))
+* Cette extension est traduite en français. ([Charles Alain](http://www.domarin-tt.com/), [Liryk Lautre](http://liryk.lautre.net/))
 * Этот плагин доступен на Русском языке. ([Семен Пинигин](http://semasping.info/))
 * Deze plugin is beschikbaar in het Nederlands. ([WordPress Webshop](http://wpwebshop.com))
 * Este plugin está disponible en Español. ([Redywebs](http://www.redywebs.com/))
@@ -68,6 +68,9 @@ Installation as usual.
 1. You like what you see?
 
 == Changelog ==
+
+= 1.3.23 =
+* Updated French translation.
 
 = 1.3.23 =
 * Added Bengali translation.
