@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Fancy Gallery Plugin for WordPress\n"
+"Project-Id-Version: Fancy Gallery 1.3.24\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-01-07 07:38+0100\n"
+"POT-Creation-Date: 2011-01-18 23:38+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe\n"
-"Language-Team: Rafael Sirotheau\n"
+"Language-Team: Rafael Sirotheau <rsirotheau@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -37,7 +37,7 @@ msgstr "\"Automático\" significa que as barras de rolagem serão visíveis se n
 
 #: ../options-page.php:19
 msgid "This option controls the appearance of the scrollbars inside the fancy box."
-msgstr ""
+msgstr "Esta opção controla a aparência das barras de rolagem dentro do fancy box."
 
 #: ../options-page.php:24
 msgid "Center on scroll"
@@ -48,13 +48,12 @@ msgid "Keep the FancyBox always in the center of the screen while scrolling the 
 msgstr "Mantém a FancyBox sempre no centro da tela ao rolar a página."
 
 #: ../options-page.php:32
-#, fuzzy
 msgid "Close button"
-msgstr "Efeito ao fechar"
+msgstr "Botão fechar"
 
 #: ../options-page.php:35
 msgid "Hide the close button."
-msgstr ""
+msgstr "Esconder o botão fechar."
 
 #: ../options-page.php:40
 msgid "Overlay opacity"
@@ -91,19 +90,19 @@ msgstr "Título da imagem"
 
 #: ../options-page.php:67
 msgid "Use the title of the image as title of the fancy box."
-msgstr ""
+msgstr "Usar o título da imagem como o título da fancy box."
 
 #: ../options-page.php:68
 msgid "Use the alternative text of the image as title of the fancy box."
-msgstr ""
+msgstr "Usar o texto alternativo da imagem como o título da fancy box."
 
 #: ../options-page.php:69
 msgid "Use the image caption as title of the fancy box."
-msgstr ""
+msgstr "Usar a legenda da imagem como o título da fancy box."
 
 #: ../options-page.php:70
 msgid "Use the image description as title of the fancy box."
-msgstr ""
+msgstr "Usar a descrição da imagem como o título da fancy box."
 
 #: ../options-page.php:71
 msgid "Do not show image titles."
@@ -118,9 +117,8 @@ msgid "Outside the FancyBox"
 msgstr "Fora da FancyBox"
 
 #: ../options-page.php:79
-#, fuzzy
 msgid "Does not work with multiline titles."
-msgstr "Não mostrar título da imagem."
+msgstr "Não funciona com títulos de várias linhas."
 
 #: ../options-page.php:80
 msgid "Inside the FancyBox"
@@ -128,7 +126,7 @@ msgstr "Dentro da FancyBox"
 
 #: ../options-page.php:80
 msgid "Does not work blameless with multiline titles."
-msgstr ""
+msgstr "Não funciona muito bem com títulos de várias linhas."
 
 #: ../options-page.php:81
 msgid "Over the image"
@@ -136,7 +134,7 @@ msgstr "Sobre a imagem"
 
 #: ../options-page.php:81
 msgid "Works fine with multiline titles."
-msgstr ""
+msgstr "Funciona bem com títulos de várias linhas."
 
 #: ../options-page.php:87
 msgid "Opening transition"
@@ -191,15 +189,15 @@ msgstr "Velocidade de redimensionamento quando mudar os itens da galeria. (Em mi
 
 #: ../options-page.php:133
 msgid "Single images"
-msgstr ""
+msgstr "Agrupar imagens"
 
 #: ../options-page.php:136
 msgid "Consolidate single images in a post to one group so the user can navigate through them."
-msgstr ""
+msgstr "Consolidar imagens do post em um grupo para que o usuário possa navegar entre elas."
 
 #: ../options-page.php:137
 msgid "So you will have an image navigation for all images."
-msgstr ""
+msgstr "Dessa forma, você pode navegar entre todas as imagens a partir de qualquer imagem."
 
 #: ../options-page.php:142
 msgid "Appearance problems"

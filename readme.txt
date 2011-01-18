@@ -69,6 +69,9 @@ Installation as usual.
 
 == Changelog ==
 
+= 1.3.24 =
+* Updated Portuguese translation.
+
 = 1.3.23 =
 * Updated French translation.
 
