@@ -69,6 +69,9 @@ Installation as usual.
 
 == Changelog ==
 
+= 1.3.25 =
+* Workaround the chrome inline bug. Chrome cannot reset the float property via css. 
+
 = 1.3.24 =
 * Updated Portuguese translation.
 
