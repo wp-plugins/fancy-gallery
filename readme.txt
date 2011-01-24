@@ -69,6 +69,10 @@ Installation as usual.
 
 == Changelog ==
 
+= 1.3.26 =
+* New style sheet for fancy gallery.
+* General style appearance problem fix.
+
 = 1.3.25 =
 * Workaround the chrome inline bug. Chrome cannot reset the float property via css. 
 

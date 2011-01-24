@@ -138,13 +138,4 @@
   </td>
 </tr>
 
-<tr valign="top">
-  <th scope="row"><?php Echo $this->t('Appearance problems') ?></th>
-  <td>
-    <input type="checkbox" name="img_block_fix" value="yes" <?php Checked ($this->get_option('img_block_fix'), 'yes') ?> />            
-    <?php Echo $this->t('Convert gallery images to inline elements. (Tick this box if your galleries have only one column.)') ?><br />            
-    <small><?php Echo $this->t('Some themes let images appear as block elements. This effects that your image galleries have only one column.') ?></small>
-  </td>
-</tr>
-
 </table>

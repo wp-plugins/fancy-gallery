@@ -1,0 +1,16 @@
+div.fancy-gallery {
+  text-align: center;
+}
+
+div.fancy-gallery a {
+}
+
+div.fancy-gallery a img {
+  display: inline;
+  float: none;
+  clear: none;
+}
+
+div.fancy-gallery div.clear {
+  clear: both;
+}

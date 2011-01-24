@@ -48,7 +48,7 @@ $arr_type = Array( 'jpg', 'jpeg', 'png', 'gif', 'bmp', 'wbmp', 'ico' );
 ?>jQuery(function(){
 
   // group gallery items
-  jQuery('div.fancy.gallery a')
+  jQuery('div.fancy-gallery a')
   .each(function(){
     var $this = jQuery(this); 
     $this.attr('rel', $this.parent().attr('id'));
@@ -66,10 +66,6 @@ $arr_type = Array( 'jpg', 'jpeg', 'png', 'gif', 'bmp', 'wbmp', 'ico' );
     ?>jQuery('img.wp-image-<?php Echo $image->ID ?>').attr('title', '<?php Echo AddSlashes($get_image_title($image)); ?>');
   <?php EndForEach; } ?>
   
-  <?php If($get_option('img_block_fix')) : ?>
-  jQuery('div.fancy.gallery a img').addClass('alignleft');
-  <?php EndIf; ?>
-
   // Add Fancy Classes to single items:
   jQuery('a').each(function(){
     // filter items

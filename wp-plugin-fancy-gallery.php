@@ -5,7 +5,7 @@
 Plugin Name: Fancy Gallery
 Description: Fancy Gallery converts your galleries to valid XHTML blocks and associates linked images with the Fancy Light Box.
 Plugin URI: http://dennishoppe.de/wordpress-plugins/fancy-gallery 
-Version: 1.3.25
+Version: 1.3.26
 Author: Dennis Hoppe
 Author URI: http://DennisHoppe.de
 
@@ -42,7 +42,8 @@ Class wp_plugin_fancy_gallery {
       WP_Enqueue_Script('jquery.mousewheel', $this->base_url . '/jquery.mousewheel-3.0.4.pack.js', Array('jquery'), '3.0.4' );
       WP_Enqueue_Script('fancygallery', $this->base_url . '/fancy-js.php', Array('jquery', 'fancybox') );
       WP_Enqueue_Style('fancybox', $this->base_url . '/fancybox/jquery.fancybox-1.3.4.css', Array(), '1.3.4');
-      WP_Enqueue_Style('fancybox-ie-fix', $this->base_url . '/fancybox/jquery.fancybox-1.3.4.css-png-fix.php');      
+      WP_Enqueue_Style('fancybox-ie-fix', $this->base_url . '/fancybox/jquery.fancybox-1.3.4.css-png-fix.php');
+      WP_Enqueue_Style('fancygallery', $this->base_url . '/fancy-gallery.css');      
     }
     
     // Add this to GLOBALS
@@ -200,7 +201,7 @@ Class wp_plugin_fancy_gallery {
   	If (Empty($attachments)) return False;
   	
   	// Gallery box
-  	$code = '<div class="fancy gallery" id="gallery_' . $attr['id'] . '">';
+  	$code = '<div class="fancy-gallery gallery" id="gallery_' . $attr['id'] . '">';
   	
   	// Build the HTML Code
     ForEach ($attachments AS $id => $attachment){
@@ -211,14 +212,14 @@ Class wp_plugin_fancy_gallery {
       $title = HTMLSpecialChars($this->get_image_title($attachment));
       
       // CSS Class
-      $class = 'attachment-' . $attr['size'];
+      $class = Array('attachment-' . $attr['size']);
       
       // Run filter
       $html_attributes = Apply_Filters( 'wp_get_attachment_image_attributes', Array(
         'src' => $src,
         'width' => $width,
         'height' => $height,
-        'class' => $class,
+        'class' => Implode(' ', $class),
         'alt' => $title,
         'title' => $title
       ), $attachment );
@@ -230,6 +231,7 @@ Class wp_plugin_fancy_gallery {
     }
     
     // End of the gallery box
+    $code .= '<div class="clear"></div>';
     $code .= '</div>';
     
   	return $code;
