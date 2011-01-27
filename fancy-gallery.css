@@ -9,6 +9,7 @@ div.fancy-gallery a img {
   display: inline;
   float: none;
   clear: none;
+  margin: 0 5px 5px 0;
 }
 
 div.fancy-gallery div.clear {

@@ -69,6 +69,9 @@ Installation as usual.
 
 == Changelog ==
 
+= 1.3.27 =
+* Added some margin to the gallery images
+
 = 1.3.26 =
 * New style sheet for fancy gallery.
 * General style appearance problem fix.
