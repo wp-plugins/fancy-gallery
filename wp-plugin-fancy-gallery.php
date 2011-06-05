@@ -5,16 +5,12 @@
 Plugin Name: Fancy Gallery
 Description: Fancy Gallery converts your galleries to valid XHTML blocks and associates linked images with the Fancy Light Box.
 Plugin URI: http://dennishoppe.de/wordpress-plugins/fancy-gallery 
-Version: 1.3.27
+Version: 1.3.28
 Author: Dennis Hoppe
 Author URI: http://DennisHoppe.de
 
 */
 
-
-// Please think about a donation
-If (Is_File(DirName(__FILE__).'/donate.php')) Include DirName(__FILE__).'/donate.php';
-    
 
 If (!Class_Exists('wp_plugin_fancy_gallery')){
 Class wp_plugin_fancy_gallery {
@@ -22,13 +18,13 @@ Class wp_plugin_fancy_gallery {
   
   Function __construct(){
     // Read base
-    $this->base_url = $this->get_base_url();
+    $this->base_url = get_bloginfo('wpurl').'/'.Str_Replace("\\", '/', SubStr(RealPath(DirName(__FILE__)), Strlen(ABSPATH)));
     
     // Get ready to translate
-    $this->Load_TextDomain();
+    Add_Action ('init', Array($this, 'Load_TextDomain'));
     
     // Set Hooks
-    Add_Action ('admin_menu', Array($this, 'add_options_page'));
+    Add_Action ('admin_menu', Array($this, 'Add_Options_Page'));
     Add_ShortCode ('gallery', Array($this, 'gallery_shortcode'));
         
     // Add Scripts & Styles
@@ -36,11 +32,10 @@ Class wp_plugin_fancy_gallery {
       WP_Enqueue_Script('fancygallery-admin', $this->base_url . '/admin.js', Array('jquery') );
     }
     Else {
-      WP_Enqueue_Script('jquery');
       WP_Enqueue_Script('fancybox', $this->base_url . '/fancybox/jquery.fancybox-1.3.4.pack.js', Array('jquery'), '1.3.4' );
       WP_Enqueue_Script('jquery.easing', $this->base_url . '/jquery.easing.1.3.js', Array('jquery'), '1.3' );
       WP_Enqueue_Script('jquery.mousewheel', $this->base_url . '/jquery.mousewheel-3.0.4.pack.js', Array('jquery'), '3.0.4' );
-      WP_Enqueue_Script('fancy-gallery', $this->base_url . '/fancy-js.php', Array('jquery', 'fancybox') );
+      WP_Enqueue_Script('fancy-gallery', $this->base_url . '/fancy-js.php', Array('jquery', 'fancybox'), Null, True );
       WP_Enqueue_Style('fancybox', $this->base_url . '/fancybox/jquery.fancybox-1.3.4.css', Array(), '1.3.4');
       WP_Enqueue_Style('fancybox-ie-fix', $this->base_url . '/fancybox/jquery.fancybox-1.3.4.css-png-fix.php');
       WP_Enqueue_Style('fancy-gallery', $this->base_url . '/fancy-gallery.css');      
@@ -52,40 +47,38 @@ Class wp_plugin_fancy_gallery {
 
   Function Load_TextDomain(){
     $locale = Apply_Filters( 'plugin_locale', get_locale(), __CLASS__ );
-    load_textdomain (__CLASS__, DirName(__FILE__).'/language/' . $locale . '.mo');
+    Load_TextDomain (__CLASS__, DirName(__FILE__).'/language/' . $locale . '.mo');
   }
   
   Function t ($text, $context = ''){
     // Translates the string $text with context $context
     If ($context == '')
-      return __ ($text, __CLASS__);
+      return Translate ($text, __CLASS__);
     Else
-      return _x ($text, $context, __CLASS__);
+      return Translate_With_GetText_Context ($text, $context, __CLASS__);
   }
   
-  Function get_base_url(){ return get_bloginfo('wpurl').'/'.Str_Replace("\\", '/', SubStr(RealPath(DirName(__FILE__)), Strlen(ABSPATH))); }
-  
-  Function add_options_page(){
+  Function Add_Options_Page(){
     $handle = Add_Options_Page(
       $this->t('Fancy Gallery Settings'),
       $this->t('Fancy Gallery'),
       'manage_options',
       __CLASS__,
-      Array($this, 'print_options_page_body')
+      Array($this, 'Print_Options_Page')
     );
 
-    Add_Action ('load-' . $handle, Array($this, 'load_options_page'));
+    Add_Action ('load-' . $handle, Array($this, 'Load_Options_Page'));
   }
 
-  Function load_options_page(){
+  Function Load_Options_Page(){
     WP_Enqueue_Script('farbtastic');
     WP_Enqueue_Style('farbtastic');        
 
-    WP_Enqueue_Script('fancygallery-options-page', $this->base_url . '/options-page.js', Array('jquery') );
-    WP_Enqueue_Style('fancygallery-options-page', $this->base_url . '/options-page.css' );
+    WP_Enqueue_Script('fancy-gallery-options-page', $this->base_url . '/options-page.js', Array('jquery') );
+    WP_Enqueue_Style('fancy-gallery-options-page', $this->base_url . '/options-page.css' );
   }
   
-  Function print_options_page_body(){
+  Function Print_Options_Page(){
     ?><div class="wrap">
       <?php screen_icon(); ?>
       <h2><?php Echo $this->t('Fancy Gallery Options') ?></h2>
@@ -99,7 +92,7 @@ Class wp_plugin_fancy_gallery {
         <?php Include DirName(__FILE__).'/options-page.php' ?>
         
         <div style="max-width:600px">
-          <?php do_action('donation_message') ?>
+          <?php do_action('dh_contribution_message') ?>
         </div>
         
         <p class="submit">
@@ -239,5 +232,6 @@ Class wp_plugin_fancy_gallery {
   
 } /* End of the Class */
 New wp_plugin_fancy_gallery();
+Require_Once DirName(__FILE__).'/contribution.php';
 } /* End of the If-Class-Exists-Condition */
 /* End of File */

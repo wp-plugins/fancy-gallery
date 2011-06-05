@@ -17,7 +17,7 @@ If (!Class_exists('wp_plugin_fancy_gallery')) Die ('Could not find the Fancy Gal
 
 // I use an anonymous function because we are in the global NameSpace.
 $base_url = Create_Function(
-  '', 'Echo HTMLSpecialChars(call_user_func(Array(\'wp_plugin_fancy_gallery\', \'get_base_url\')));'
+  '', 'Echo HTMLSpecialChars($GLOBALS[\'wp_plugin_fancy_gallery\']->base_url);'
 );
 
 ?>

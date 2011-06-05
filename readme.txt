@@ -3,7 +3,7 @@ Contributors: dhoppe
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=1220480
 Tags: image, images, picture, pictures, photo, photos, gallery, galleries, photo-albums, Post, admin, media, fancy, fancybox, thickbox, lightbox, jquery, 
 Requires at least: 2.8
-Tested up to: 3.1
+Tested up to: 3.2
 Stable tag: trunk
 
 Fancy Gallery associates linked images and galleries with the jQuery Fancybox. This Plugin has been granted the "Famous Software" Award!
@@ -46,6 +46,7 @@ If you have any questions you can leave a comment in my blog. But please think a
 * Tento plugin je dostupný v Češtině. (Luke)
 * Questo plugin è disponibile in italiano. (Marco Cavallo)
 * এই প্লাগইনটি এখন বাংলাতে পাওয়া যাচ্ছে।. ([S.M. Mehdi Akram](http://mehdiakram.wordpress.com/))
+* Acest plugin este disponibil în limba Română. ([Anunturi Jibo](http://www.jibo.ro/))
 
 If you have translated this plug-in in your language feel free to send me the language file (.po file) via E-Mail with your name and this translated sentence: "This plug-in is available in %YOUR_LANGUAGE_NAME%." So i can add it to the plug-in.
 
@@ -68,6 +69,10 @@ Installation as usual.
 1. You like what you see?
 
 == Changelog ==
+
+= 1.3.28 =
+* Cleaned up code
+* Added the dynamic Javascript file linkes to the footer. So your website will become faster.
 
 = 1.3.27 =
 * Added some margin to the gallery images

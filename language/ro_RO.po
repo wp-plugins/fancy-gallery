@@ -1,0 +1,214 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Fancy Gallery Plugin for WordPress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-02-24 13:39+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Dennis Hoppe\n"
+"Language-Team: Anunturi Jibo <contact@jibo.ro>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: t;t:2c,1\n"
+"X-Poedit-Language: Romanian\n"
+"X-Poedit-Country: ROMANIA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../options-page.php:3
+msgid "Loop mode"
+msgstr "Mod bucla"
+
+#: ../options-page.php:6
+msgid "Will enable the user to get from the last image to the first one with the \"Next &raquo;\" button."
+msgstr "Iti da posibilitatea de a trece de la ultima imagine la prima cu ajutorul butonului \"Urmatoarea &raquo;\"."
+
+#: ../options-page.php:11
+msgid "Scrollbars"
+msgstr "Bari de derulare"
+
+#: ../options-page.php:14
+msgid "Automatic"
+msgstr "Automat"
+
+#: ../options-page.php:18
+msgid "\"Automatic\" means scrollbars will be visibly if necessary. \"Yes\" and \"No\" should be clear."
+msgstr "\"Automat\" inseamna ca barile de derulare vor fi vizibile daca este necesar. \"Da\" si \"Nu\" ar trebui sa fie clar."
+
+#: ../options-page.php:19
+msgid "This option controls the appearance of the scrollbars inside the fancy box."
+msgstr "Aceasta optiune controleaza aparitia barilor de derulare in interiorul fancy box."
+
+#: ../options-page.php:24
+msgid "Center on scroll"
+msgstr "Centreaza la derulare"
+
+#: ../options-page.php:27
+msgid "Keep the FancyBox always in the center of the screen while scrolling the page."
+msgstr "Pastreaza FancyBox tot timpul in mijllocul ecranului in timp ce se deruleaza pagina."
+
+#: ../options-page.php:32
+msgid "Close button"
+msgstr "Buton Inchide"
+
+#: ../options-page.php:35
+msgid "Hide the close button."
+msgstr "Ascunde butonul de inchidere."
+
+#: ../options-page.php:40
+msgid "Overlay opacity"
+msgstr "Opacitate overlay"
+
+#: ../options-page.php:43
+msgid "Percentaged opacity of the background of the FancyBox. Should be a value from 0 (invisible) to 100 (opaque). (Default is 30)"
+msgstr "Procentaj opacitate a fundalului FancyBox"
+
+#: ../options-page.php:48
+msgid "Overlay color"
+msgstr "Culoare overlay"
+
+#: ../options-page.php:52
+msgid "Please choose the color of the \"darker\" background."
+msgstr "Te rog sa alegi culoarea fundalului \"mai inchis\" "
+
+#: ../options-page.php:57
+msgid "Border width"
+msgstr "Latime chenar"
+
+#: ../options-page.php:59
+msgctxt "Abbr. Pixels"
+msgid "px"
+msgstr "pixeli"
+
+#: ../options-page.php:60
+msgid "Width of the image frame border. (in pixels)"
+msgstr "Latimea chenarului imaginii. (in pixeli)"
+
+#: ../options-page.php:65
+msgid "Image title"
+msgstr "Titlu imagine"
+
+#: ../options-page.php:67
+msgid "Use the title of the image as title of the fancy box."
+msgstr "Foloseste titlul imaginii ca titlu al fancy box."
+
+#: ../options-page.php:68
+msgid "Use the alternative text of the image as title of the fancy box."
+msgstr "Foloseste textul alternativ al imaginii ca titlu al fancy box."
+
+#: ../options-page.php:69
+msgid "Use the image caption as title of the fancy box."
+msgstr "Foloseste legenda imaginii ca titlu al fancy box."
+
+#: ../options-page.php:70
+msgid "Use the image description as title of the fancy box."
+msgstr "Foloseste descrierea imaginii ca titlu al fancy box."
+
+#: ../options-page.php:71
+msgid "Do not show image titles."
+msgstr "Nu afisa titlul imaginilor."
+
+#: ../options-page.php:76
+msgid "Title position"
+msgstr "Pozitie titlu"
+
+#: ../options-page.php:79
+msgid "Outside the FancyBox"
+msgstr "In afara FancyBox"
+
+#: ../options-page.php:79
+msgid "Does not work with multiline titles."
+msgstr "Nu functioneaza cu titlu format din linii multiple."
+
+#: ../options-page.php:80
+msgid "Inside the FancyBox"
+msgstr "In interiorul FancyBox"
+
+#: ../options-page.php:80
+msgid "Does not work blameless with multiline titles."
+msgstr "Nu functioneaza cu titlu format din linii multiple."
+
+#: ../options-page.php:81
+msgid "Over the image"
+msgstr "Deasupra imaginii"
+
+#: ../options-page.php:81
+msgid "Works fine with multiline titles."
+msgstr "Functioneaza cu titluri din formate din linii multiple."
+
+#: ../options-page.php:87
+msgid "Opening transition"
+msgstr "Tranzitia de deschidere"
+
+#: ../options-page.php:90
+#: ../options-page.php:109
+msgid "Fade"
+msgstr "Fade"
+
+#: ../options-page.php:91
+#: ../options-page.php:110
+msgid "Elastic"
+msgstr "Elastic"
+
+#: ../options-page.php:92
+#: ../options-page.php:111
+msgid "No transition"
+msgstr "Nicio tranzitie"
+
+#: ../options-page.php:98
+msgid "Opening speed"
+msgstr "Viteza deschidere"
+
+#: ../options-page.php:100
+#: ../options-page.php:119
+#: ../options-page.php:127
+msgctxt "Abbr. Milliseconds"
+msgid "msec"
+msgstr "msec"
+
+#: ../options-page.php:101
+#: ../options-page.php:120
+msgid "Speed of the fade and elastic transitions. (in milliseconds)"
+msgstr "Viteza tranzitiei fade si elastic. (in milisecunde)"
+
+#: ../options-page.php:106
+msgid "Closing transition"
+msgstr "Tranzitia de inchidere"
+
+#: ../options-page.php:117
+msgid "Closing speed"
+msgstr "Viteza de inchidere"
+
+#: ../options-page.php:125
+msgid "Image resizing speed"
+msgstr "Viteza redimensionare imagine"
+
+#: ../options-page.php:128
+msgid "Speed of resizing when changing gallery items. (in milliseconds)"
+msgstr "Viteza redimensionarii in momentul schimbarii imaginilor. (in milisecunde)"
+
+#: ../options-page.php:133
+msgid "Single images"
+msgstr "Imagini unice"
+
+#: ../options-page.php:136
+msgid "Consolidate single images in a post to one group so the user can navigate through them."
+msgstr "Consolideaza imaginile unice grupate intr-un articol pentru ca utilizatorul sa poata naviga prin ele."
+
+#: ../options-page.php:137
+msgid "So you will have an image navigation for all images."
+msgstr "Deci vei avea o singura imagine pentru a naviga prin toate imaginile."
+
+#: ../wp-plugin-fancy-gallery.php:70
+msgid "Fancy Gallery Settings"
+msgstr "Setari Fancy Gallery"
+
+#: ../wp-plugin-fancy-gallery.php:71
+msgid "Fancy Gallery"
+msgstr "Fancy Gallery"
+
+#: ../wp-plugin-fancy-gallery.php:91
+msgid "Fancy Gallery Options"
+msgstr "Optiuni Fancy Gallery"
+

@@ -1,11 +1,8 @@
-div.fancy-gallery {
+.fancy-gallery {
   text-align: center;
 }
 
-div.fancy-gallery a {
-}
-
-div.fancy-gallery a img {
+.gallery img {
   display: inline;
   float: none;
   clear: none;

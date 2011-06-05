@@ -25,7 +25,7 @@ If (!Class_exists('wp_plugin_fancy_gallery')) Die ('Could not find the Fancy Gal
 */
 $get_option = Create_Function(
   '$key, $default = False',
-  'return call_user_func(Array(\'wp_plugin_fancy_gallery\', \'get_option\'), $key, $default);'
+  'return call_user_func(Array($GLOBALS[\'wp_plugin_fancy_gallery\'], \'get_option\'), $key, $default);'
 );
 
 /*
@@ -37,7 +37,7 @@ $get_option = Create_Function(
 */
 $get_image_title = Create_Function(
   '$attachment',
-  'return call_user_func(Array(\'wp_plugin_fancy_gallery\', \'get_image_title\'), $attachment);'
+  'return call_user_func(Array($GLOBALS[\'wp_plugin_fancy_gallery\'], \'get_image_title\'), $attachment);'
 );
 
 
