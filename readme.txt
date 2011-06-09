@@ -2,7 +2,7 @@
 Contributors: dhoppe
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=1220480
 Tags: image, images, picture, pictures, photo, photos, gallery, galleries, photo-albums, Post, admin, media, fancy, fancybox, thickbox, lightbox, jquery, 
-Requires at least: 2.8
+Requires at least: 3.0
 Tested up to: 3.2
 Stable tag: trunk
 
@@ -20,7 +20,7 @@ Of course you can use 'exclude' and 'include' parameters in your [GALLERY] short
 
 = Requirements =
 * **Fancy Gallery requires PHP5!**
-* WordPress 2.8 or higher
+* WordPress 3.0 or higher
 
 = Settings =
 You can find the settings page in WP Admin Panel &raquo; Settings &raquo; Fancy Gallery.
