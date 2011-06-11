@@ -100,23 +100,38 @@ $arr_type = Array( 'jpg', 'jpeg', 'png', 'gif', 'bmp', 'wbmp', 'ico' );
   
   jQuery('a.fancybox')
   .unbind('click')
-  .fancybox({
-  
-    padding        :  <?php Echo IntVal($get_option('border_width', 10)) ?>,
-    cyclic         :  <?php Echo $get_option('cyclic') ? 'true' : 'false' ?>,
-    scrolling      : '<?php Echo $get_option('scrolling', 'auto') ?>',
-    centerOnScroll :  <?php Echo $get_option('center_on_scroll') ? 'true' : 'false' ?>,
-    overlayOpacity :  <?php Echo Round($get_option('overlay_opacity', 30)) / 100 ?>,
-    overlayColor   : '<?php Echo $get_option('overlay_color', '#666') ?>',
-    titleShow      :  <?php Echo ($get_option('use_as_image_title')=='none') ? 'false' : 'true' ?>,
-    titlePosition  : '<?php Echo $get_option('title_position', 'float') ?>',
-    transitionIn   : '<?php Echo $get_option('transition_in', 'fade') ?>',
-    transitionOut  : '<?php Echo $get_option('transition_out', 'fade') ?>',    
-    speedIn        :  <?php Echo IntVal($get_option('speed_in', 300)) ?>,
-    speedOut       :  <?php Echo IntVal($get_option('speed_out', 300)) ?>,
-    changeSpeed    :  <?php Echo IntVal($get_option('change_speed', 300)) ?>,
-    showCloseButton:  <?php Echo $get_option('hide_close_button') ? 'false' : 'true' ?>        
+  .fancybox({  
+    padding         :  <?php Echo IntVal($get_option('border_width', 10)) ?>,
+    cyclic          :  <?php Echo $get_option('cyclic') ? 'true' : 'false' ?>,
+    scrolling       : '<?php Echo $get_option('scrolling', 'auto') ?>',
+    centerOnScroll  :  <?php Echo $get_option('center_on_scroll') ? 'true' : 'false' ?>,
+    overlayOpacity  :  <?php Echo Round($get_option('overlay_opacity', 30)) / 100 ?>,
+    overlayColor    : '<?php Echo $get_option('overlay_color', '#666') ?>',
+    titleShow       :  <?php Echo ($get_option('use_as_image_title')=='none') ? 'false' : 'true' ?>,
+    titlePosition   : '<?php Echo $get_option('title_position', 'float') ?>',
+    transitionIn    : '<?php Echo $get_option('transition_in', 'fade') ?>',
+    transitionOut   : '<?php Echo $get_option('transition_out', 'fade') ?>',    
+    speedIn         :  <?php Echo IntVal($get_option('speed_in', 300)) ?>,
+    speedOut        :  <?php Echo IntVal($get_option('speed_out', 300)) ?>,
+    changeSpeed     :  <?php Echo IntVal($get_option('change_speed', 300)) ?>,
+    showCloseButton :  <?php Echo $get_option('hide_close_button') ? 'false' : 'true' ?>    
+  });
 
+  jQuery('a.fancyframe')
+  .unbind('click')
+  .fancybox({
+    padding         :  <?php Echo IntVal($get_option('border_width', 10)) ?>,
+    cyclic          :  <?php Echo $get_option('cyclic') ? 'true' : 'false' ?>,
+    scrolling       : '<?php Echo $get_option('scrolling', 'auto') ?>',
+    centerOnScroll  :  <?php Echo $get_option('center_on_scroll') ? 'true' : 'false' ?>,
+    overlayOpacity  :  <?php Echo Round($get_option('overlay_opacity', 30)) / 100 ?>,
+    overlayColor    : '<?php Echo $get_option('overlay_color', '#666') ?>',
+    speedIn         :  <?php Echo IntVal($get_option('speed_in', 300)) ?>,
+    speedOut        :  <?php Echo IntVal($get_option('speed_out', 300)) ?>,
+    showCloseButton :  <?php Echo $get_option('hide_close_button') ? 'false' : 'true' ?>,
+    height          : '75%',    
+    width           : '75%',
+    type            : 'iframe'    
   });
 
 });

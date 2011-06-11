@@ -18,8 +18,10 @@ Fancy Gallery integrates the [Fancy Image Box](http://fancybox.net) in your Word
 
 Of course you can use 'exclude' and 'include' parameters in your [GALLERY] short-code.
 
+If you want to display links in the fancybox add the class "fancyframe" to them! ;)
+
 = Requirements =
-* **Fancy Gallery requires PHP5!**
+* **Fancy Gallery requires PHP5.2!**
 * WordPress 3.0 or higher
 
 = Settings =
@@ -58,6 +60,12 @@ You can find the *Translation.pot* file in the *language/* folder in the plug-in
 * Send it via E-Mail to mail@DennisHoppe.de.
 * Thats it. Thank you! =)
 
+== Screenshots ==
+
+1. Gallery with active image Fancybox
+2. FancyFrame with http://google.com
+3. Options Page 
+
 
 == Installation ==
 
@@ -69,6 +77,9 @@ Installation as usual.
 1. You like what you see?
 
 == Changelog ==
+
+= 1.3.29 =
+* Added the "fancyframe" class.
 
 = 1.3.28 =
 * Cleaned up code
