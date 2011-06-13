@@ -290,7 +290,7 @@ Class wp_plugin_contribution_to_dennis_hoppe {
       </p>
       
       <p>
-        (<small><?php PrintF($this->t('If you have already donated and lost your voucher please %sdrop me a line%s.'), '<a href="http://dennishoppe.de/contribution-voucher-code" target="_blank">', '</a>') ?></small>)
+        (<small><?php PrintF($this->t('If you have already donated in the past and lost your voucher please %sdrop me a line%s.'), '<a href="http://dennishoppe.de/contribution-voucher-code" target="_blank">', '</a>') ?></small>)
       </p>
 
     </div>
@@ -348,7 +348,7 @@ Class wp_plugin_contribution_to_dennis_hoppe {
               <select class="dennis_hoppe_contribution_amount">
                 <option value="" disabled="disabled" selected="selected"><?php Echo $this->t('Amount in EUR') ?></option>
                 <?php For($amount = 5.95; $amount < 100; $amount *= 1.3) : ?>
-                <option value="<?php Echo Number_Format($amount, 2, '.', '') ?>">&euro;<?php Echo Number_Format($amount, 2, ',', '') ?></option>
+                <option value="<?php Echo Number_Format($amount, 2, '.', '') ?>"><?php Echo Number_Format($amount, 2, ',', '') ?>&euro;</option>
                 <?php EndFor ?>
               </select>
               <input type="button" class="dennis_hoppe_contribution_button button-primary" value="<?php Echo $this->t('Proceed to PayPal') ?> &rarr;" title="<?php Echo $this->t('Proceed to PayPal') ?>" disabled="disabled" />            

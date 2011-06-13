@@ -14,9 +14,9 @@ Fancy Gallery associates linked images and galleries with the jQuery Fancybox. T
 * Fancy Gallery has been granted the "Famous Software" Award! [To the post &raquo;](http://download.famouswhy.com/fancy_gallery/)
 
 = Description =
-Fancy Gallery integrates the [Fancy Image Box](http://fancybox.net) in your WordPress. All links pointing to an image will automatically open in the FancyBox. If you use the [Gallery] Short-code the images will get a navigation bar and the gallery itself will be converted into a valid XHTML block.
+Fancy Gallery integrates the [Fancy Image Box](http://fancybox.net) in your WordPress. All links pointing to an image will automatically open in the FancyBox. If you use the [gallery] Short-code the images will get a navigation bar and the gallery itself will be converted into a valid XHTML block.
 
-Of course you can use 'exclude' and 'include' parameters in your [GALLERY] short-code.
+Of course you can use 'exclude' and 'include' parameters in your [gallery] short-code.
 
 If you want to display links in the fancybox add the class "fancyframe" to them! ;)
 
