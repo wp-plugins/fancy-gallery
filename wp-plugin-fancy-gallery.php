@@ -5,7 +5,7 @@
 Plugin Name: Fancy Gallery
 Description: Fancy Gallery converts your galleries to valid XHTML blocks and associates linked images with the Fancy Light Box.
 Plugin URI: http://dennishoppe.de/wordpress-plugins/fancy-gallery 
-Version: 1.3.29
+Version: 1.3.30
 Author: Dennis Hoppe
 Author URI: http://DennisHoppe.de
 
@@ -15,6 +15,7 @@ Author URI: http://DennisHoppe.de
 If (!Class_Exists('wp_plugin_fancy_gallery')){
 Class wp_plugin_fancy_gallery {
   var $base_url;
+  var $version = '1.3.30';
   
   Function __construct(){
     // Read base
@@ -29,13 +30,13 @@ Class wp_plugin_fancy_gallery {
         
     // Add Scripts & Styles
     If (Is_Admin()) {
-      WP_Enqueue_Script('fancygallery-admin', $this->base_url . '/admin.js', Array('jquery') );
+      Add_Action ('media_upload_gallery', Array($this, 'Media_Upload_Tab'));
     }
     Else {
       WP_Enqueue_Script('fancybox', $this->base_url . '/fancybox/jquery.fancybox-1.3.4.pack.js', Array('jquery'), '1.3.4' );
       WP_Enqueue_Script('jquery.easing', $this->base_url . '/jquery.easing.1.3.js', Array('jquery'), '1.3' );
       WP_Enqueue_Script('jquery.mousewheel', $this->base_url . '/jquery.mousewheel-3.0.4.pack.js', Array('jquery'), '3.0.4' );
-      WP_Enqueue_Script('fancy-gallery', $this->base_url . '/fancy-js.php', Array('jquery', 'fancybox'), Null, True );
+      WP_Enqueue_Script('fancy-gallery', $this->base_url . '/fancy-js.php', Array('jquery', 'fancybox'), $this->version, ($this->get_option('script_position') != 'header') );
       WP_Enqueue_Style('fancybox', $this->base_url . '/fancybox/jquery.fancybox-1.3.4.css', Array(), '1.3.4');
       WP_Enqueue_Style('fancybox-ie-fix', $this->base_url . '/fancybox/jquery.fancybox-1.3.4.css-png-fix.php');
       WP_Enqueue_Style('fancy-gallery', $this->base_url . '/fancy-gallery.css');      
@@ -56,6 +57,10 @@ Class wp_plugin_fancy_gallery {
       return Translate ($text, __CLASS__);
     Else
       return Translate_With_GetText_Context ($text, $context, __CLASS__);
+  }
+  
+  Function Media_Upload_Tab(){
+    WP_Enqueue_Script('fancy-gallery-media-upload', $this->base_url . '/media-upload.js', Array('jquery') );
   }
   
   Function Add_Options_Page(){

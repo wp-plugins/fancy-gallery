@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fancy Gallery Plugin for WordPress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-01-07 07:37+0100\n"
+"POT-Creation-Date: 2011-06-15 22:53+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe\n"
 "Language-Team: Dennis Hoppe\n"
@@ -200,26 +200,58 @@ msgid "So you will have an image navigation for all images."
 msgstr "Dadurch bekommenalle Bilder eine Navigation."
 
 #: ../options-page.php:142
-msgid "Appearance problems"
-msgstr "Darstellungsprobleme"
+msgid "Script position"
+msgstr "Skriptposition"
 
 #: ../options-page.php:145
-msgid "Convert gallery images to inline elements. (Tick this box if your galleries have only one column.)"
-msgstr "Konvertiere Galeriebilder in \"Inline\"-Elemente. (Aktivieren Sie dieses Feld wenn Ihre Galerien mit nur einer Spalte dargestellt werden.)"
+msgid "Footer of the website"
+msgstr "Fußbereich der Webseite"
 
 #: ../options-page.php:146
-msgid "Some themes let images appear as block elements. This effects that your image galleries have only one column."
-msgstr "Einige Themes zeigen Bilder als Block-Elemente, was darin resultiert dass Ihre Galerien einspaltig dargestellt werden."
+msgid "Header of the website"
+msgstr "Kopfbereich der Webseite"
 
-#: ../wp-plugin-fancy-gallery.php:69
+#: ../options-page.php:148
+msgid "Please choose the position of the javascript. Footer is recommended. Use \"Header\" if you have trouble to make the Fancybox work."
+msgstr "Bitte wählen Sie die Position für das JavaScript aus. Fußbereich wird empfohlen. Stellen Sie auf \"Kopfbereich\" um wenn es Probleme gibt."
+
+#: ../options-page.php:153
+msgid "Image appearance"
+msgstr "Bilddarstellung"
+
+#: ../options-page.php:156
+msgid "Convert images to inline elements."
+msgstr "Konvertiere Bilder in \"inline\"-Elemente."
+
+#: ../options-page.php:157
+msgid "Tick this is box if your images are among each other."
+msgstr "Aktivieren Sie dieses Feld wenn Ihre Bilder untereinander dargestellt werden."
+
+#: ../wp-plugin-fancy-gallery.php:64
 msgid "Fancy Gallery Settings"
 msgstr "Fancy Gallery Einstellungen"
 
-#: ../wp-plugin-fancy-gallery.php:70
+#: ../wp-plugin-fancy-gallery.php:65
 msgid "Fancy Gallery"
 msgstr "Fancy Gallery"
 
-#: ../wp-plugin-fancy-gallery.php:90
+#: ../wp-plugin-fancy-gallery.php:85
 msgid "Fancy Gallery Options"
 msgstr "Fancy Gallery Einstellungen"
 
+#~ msgid "Appearance problems"
+#~ msgstr "Darstellungsprobleme"
+
+#~ msgid ""
+#~ "Convert gallery images to inline elements. (Tick this box if your "
+#~ "galleries have only one column.)"
+#~ msgstr ""
+#~ "Konvertiere Galeriebilder in \"Inline\"-Elemente. (Aktivieren Sie dieses "
+#~ "Feld wenn Ihre Galerien mit nur einer Spalte dargestellt werden.)"
+
+#~ msgid ""
+#~ "Some themes let images appear as block elements. This effects that your "
+#~ "image galleries have only one column."
+#~ msgstr ""
+#~ "Einige Themes zeigen Bilder als Block-Elemente, was darin resultiert dass "
+#~ "Ihre Galerien einspaltig dargestellt werden."

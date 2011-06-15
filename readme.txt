@@ -78,6 +78,11 @@ Installation as usual.
 
 == Changelog ==
 
+= 1.3.30 =
+* Added Javascript position option
+* Added Image appearance options
+* Removed admin script and added media-upload.js
+
 = 1.3.29 =
 * Added the "fancyframe" class.
 

@@ -138,4 +138,24 @@
   </td>
 </tr>
 
+<tr valign="top">
+  <th scope="row"><?php Echo $this->t('Script position') ?></th>
+  <td>
+    <select name="script_position">
+      <option value="footer" <?php Selected ($this->get_option('script_position'), 'footer') ?> ><?php Echo $this->t('Footer of the website') ?></option>
+      <option value="header" <?php Selected ($this->get_option('script_position'), 'header') ?> ><?php Echo $this->t('Header of the website') ?></option>
+    </select><br />            
+    <small><?php Echo $this->t('Please choose the position of the javascript. Footer is recommended. Use "Header" if you have trouble to make the Fancybox work.') ?></small>
+  </td>
+</tr>
+
+<tr valign="top">
+  <th scope="row"><?php Echo $this->t('Image appearance') ?></th>
+  <td>
+    <input type="checkbox" name="change_image_display" value="yes" <?php Checked ($this->get_option('change_image_display'), 'yes') ?> />            
+    <?php Echo $this->t('Convert images to inline elements.') ?><br />            
+    <small><?php Echo $this->t('Tick this is box if your images are among each other.') ?></small>
+  </td>
+</tr>
+
 </table>

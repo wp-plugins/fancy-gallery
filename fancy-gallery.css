@@ -3,7 +3,7 @@
 }
 
 .gallery img {
-  display: inline;
+  display: inline-block;
   float: none;
   clear: none;
   margin: 0 5px 5px 0;

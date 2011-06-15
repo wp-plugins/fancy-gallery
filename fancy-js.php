@@ -94,6 +94,10 @@ $arr_type = Array( 'jpg', 'jpeg', 'png', 'gif', 'bmp', 'wbmp', 'ico' );
       $img.attr('title', caption);
     <?php EndIf; ?>
     
+    <?php If ($get_option('change_image_display')) : ?>
+    $img.css('display', 'inline-block');
+    <?php EndIf; ?>
+    
     // Copy the title tag from link to img
     $lnk.attr('title', $img.attr('title'));
   });

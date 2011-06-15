@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fancy Gallery Plugin for WordPress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-01-07 07:38+0100\n"
+"POT-Creation-Date: 2011-06-15 22:57+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe\n"
 "Language-Team: \n"
@@ -198,26 +198,42 @@ msgid "So you will have an image navigation for all images."
 msgstr ""
 
 #: ../options-page.php:142
-msgid "Appearance problems"
+msgid "Script position"
 msgstr ""
 
 #: ../options-page.php:145
-msgid "Convert gallery images to inline elements. (Tick this box if your galleries have only one column.)"
+msgid "Footer of the website"
 msgstr ""
 
 #: ../options-page.php:146
-msgid "Some themes let images appear as block elements. This effects that your image galleries have only one column."
+msgid "Header of the website"
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:69
+#: ../options-page.php:148
+msgid "Please choose the position of the javascript. Footer is recommended. Use \"Header\" if you have trouble to make the Fancybox work."
+msgstr ""
+
+#: ../options-page.php:153
+msgid "Image appearance"
+msgstr ""
+
+#: ../options-page.php:156
+msgid "Convert images to inline elements."
+msgstr ""
+
+#: ../options-page.php:157
+msgid "Tick this is box if your images are among each other."
+msgstr ""
+
+#: ../wp-plugin-fancy-gallery.php:64
 msgid "Fancy Gallery Settings"
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:70
+#: ../wp-plugin-fancy-gallery.php:65
 msgid "Fancy Gallery"
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:90
+#: ../wp-plugin-fancy-gallery.php:85
 msgid "Fancy Gallery Options"
 msgstr ""
 
