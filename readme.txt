@@ -3,7 +3,7 @@ Contributors: dhoppe
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=1220480
 Tags: image, images, picture, pictures, photo, photos, gallery, galleries, photo-albums, Post, admin, media, fancy, fancybox, thickbox, lightbox, jquery, 
 Requires at least: 3.0
-Tested up to: 3.2
+Tested up to: 3.3
 Stable tag: trunk
 
 Fancy Gallery associates linked images and galleries with the jQuery Fancybox. This Plugin has been granted the "Famous Software" Award!
@@ -77,6 +77,9 @@ Installation as usual.
 1. You like what you see?
 
 == Changelog ==
+
+= 1.3.30 =
+* Fixed single image navigation for jQuery 1.6.1 (WP3.2)
 
 = 1.3.30 =
 * Added Javascript position option

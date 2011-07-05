@@ -83,7 +83,7 @@ $arr_type = Array( 'jpg', 'jpeg', 'png', 'gif', 'bmp', 'wbmp', 'ico' );
     $lnk.addClass('fancybox');
     
     <?php If ($get_option('associate_single_images')) : // Give em a rel attribute ?>
-    if ($lnk.attr('rel') == '')
+    if ($lnk.attr('rel') == '' || $lnk.attr('rel') == undefined)
       $lnk.attr('rel', 'single-image');
     <?php EndIf; ?>
     
