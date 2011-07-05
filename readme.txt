@@ -78,7 +78,7 @@ Installation as usual.
 
 == Changelog ==
 
-= 1.3.30 =
+= 1.3.31 =
 * Fixed single image navigation for jQuery 1.6.1 (WP3.2)
 
 = 1.3.30 =
