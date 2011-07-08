@@ -78,6 +78,9 @@ Installation as usual.
 
 == Changelog ==
 
+= 1.3.32 =
+* Updated Czech translation. (Luke)
+
 = 1.3.31 =
 * Fixed single image navigation for jQuery 1.6.1 (WP3.2)
 

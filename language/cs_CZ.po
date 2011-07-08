@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fancy Gallery Plugin for WordPress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-06-15 22:56+0100\n"
+"POT-Creation-Date: 2011-07-08 07:12+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe\n"
 "Language-Team: Luke <N3s4@seznam.cz>\n"
@@ -206,15 +206,15 @@ msgstr "Pozice popisu"
 
 #: ../options-page.php:145
 msgid "Footer of the website"
-msgstr ""
+msgstr "v zápatí webu"
 
 #: ../options-page.php:146
 msgid "Header of the website"
-msgstr ""
+msgstr "V headeru webu"
 
 #: ../options-page.php:148
 msgid "Please choose the position of the javascript. Footer is recommended. Use \"Header\" if you have trouble to make the Fancybox work."
-msgstr ""
+msgstr "Prosím zvolte pozici skriptu. Doporučeno je použít zápatí webu. Použijte \"Zápatí\" pokud máte problémy se zprovozněním Fancyboxu."
 
 #: ../options-page.php:153
 msgid "Image appearance"
@@ -228,15 +228,15 @@ msgstr ""
 msgid "Tick this is box if your images are among each other."
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:64
+#: ../wp-plugin-fancy-gallery.php:68
 msgid "Fancy Gallery Settings"
 msgstr "Nastavení Fancy Gallery"
 
-#: ../wp-plugin-fancy-gallery.php:65
+#: ../wp-plugin-fancy-gallery.php:69
 msgid "Fancy Gallery"
 msgstr "Fancy Gallery"
 
-#: ../wp-plugin-fancy-gallery.php:85
+#: ../wp-plugin-fancy-gallery.php:89
 msgid "Fancy Gallery Options"
 msgstr "Volby Fancy Gallery"
 
