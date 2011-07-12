@@ -31,6 +31,7 @@ Class wp_plugin_fancy_gallery {
     // Add Scripts & Styles
     If (Is_Admin()) {
       Add_Action ('media_upload_gallery', Array($this, 'Media_Upload_Tab'));
+      Add_Action ('post-upload-ui', Array($this, 'Print_Pro_Banner'));
     }
     Else {
       WP_Enqueue_Script('fancybox', $this->base_url . '/fancybox/jquery.fancybox-1.3.4.pack.js', Array('jquery'), '1.3.4' );
@@ -233,6 +234,12 @@ Class wp_plugin_fancy_gallery {
     $code .= '</div>';
     
   	return $code;
+  }
+  
+  Function Print_Pro_Banner(){
+    ?>
+    <p><a href="http://wpplugins.com/plugin/870/fancy-gallery-pro" target="_blank"><img src="http://wpplugins.com/wp-content/uploads/projectimages/870/c540d672dc13f2d59d8fd5ace7d40d5f.png" alt="Fancy Gallery Pro"></a></p>
+    <?php
   }
   
 } /* End of the Class */

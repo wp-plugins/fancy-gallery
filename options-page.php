@@ -1,3 +1,5 @@
+<?php $this->Print_Pro_Banner() ?>
+
 <table class="form-table">
 <tr valign="top">
   <th scope="row"><?php Echo $this->t('Loop mode') ?></th>
