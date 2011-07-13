@@ -30,8 +30,8 @@ Class wp_plugin_fancy_gallery {
         
     // Add Scripts & Styles
     If (Is_Admin()) {
-      Add_Action ('media_upload_gallery', Array($this, 'Media_Upload_Tab'));
-      Add_Action ('post-upload-ui', Array($this, 'Print_Pro_Banner'));
+      Add_Action ('media_upload_gallery', Array($this, 'Media_Upload_Gallery_Tab'));
+      Add_Action ('post-upload-ui', Array($this, 'Print_Premium_Banner'));
     }
     Else {
       WP_Enqueue_Script('fancybox', $this->base_url . '/fancybox/jquery.fancybox-1.3.4.pack.js', Array('jquery'), '1.3.4' );
@@ -60,8 +60,11 @@ Class wp_plugin_fancy_gallery {
       return Translate_With_GetText_Context ($text, $context, __CLASS__);
   }
   
-  Function Media_Upload_Tab(){
-    WP_Enqueue_Script('fancy-gallery-media-upload', $this->base_url . '/media-upload.js', Array('jquery') );
+  Function Media_Upload_Gallery_Tab(){
+    WP_Enqueue_Script('fancy-gallery-media-upload', $this->base_url . '/media-upload-gallery-tab.js', Array('jquery') );
+    Echo '<div id="fancy-gallery-banner">';
+    $this->Print_Premium_Banner();
+    Echo '</div>';
   }
   
   Function Add_Options_Page(){
@@ -236,9 +239,13 @@ Class wp_plugin_fancy_gallery {
   	return $code;
   }
   
-  Function Print_Pro_Banner(){
+  Function Print_Premium_Banner(){
     ?>
-    <p><a href="http://wpplugins.com/plugin/870/fancy-gallery-pro" target="_blank"><img src="http://wpplugins.com/wp-content/uploads/projectimages/870/c540d672dc13f2d59d8fd5ace7d40d5f.png" alt="Fancy Gallery Pro"></a></p>
+    <p>
+      <a href="http://wpplugins.com/plugin/870/fancy-gallery-pro" target="_blank">
+        <img src="<?php Echo $this->base_url ?>/premiumbanner.png" alt="Fancy Gallery Pro">
+      </a>
+    </p>
     <?php
   }
   

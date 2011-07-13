@@ -1,4 +1,4 @@
-<?php $this->Print_Pro_Banner() ?>
+<?php $this->Print_Premium_Banner() ?>
 
 <table class="form-table">
 <tr valign="top">
