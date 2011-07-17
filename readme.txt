@@ -11,6 +11,7 @@ Fancy Gallery associates linked images and galleries with the jQuery Fancybox. T
 == Description ==
 
 = LATEST NEWS! =
+* [There is a PROFESSIONAL EDITION of this Plugin available now](http://wpplugins.com/plugin/870/fancy-gallery-pro)!
 * Fancy Gallery has been granted the "Famous Software" Award! [To the post &raquo;](http://download.famouswhy.com/fancy_gallery/)
 
 = Description =
