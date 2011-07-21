@@ -3,6 +3,16 @@
 // Send Header Mime type
 Header ('Content-Type: text/javascript');
 
+// Check Referer
+If (IsSet($_SERVER['HTTP_REFERER'])){
+  $referer = Parse_URL($_SERVER['HTTP_REFERER'], PHP_URL_HOST);
+  If (!Empty($referer) && !Empty($_SERVER['SERVER_NAME'])){
+    If (StrIPos($referer, $_SERVER['SERVER_NAME']) === False) : ?>
+    alert("Wrong Referer for <?php Echo BaseName(__FILE__) ?>!\n\nHost: <?php Echo $_SERVER['SERVER_NAME'] ?>\nReferer: <?php Echo $referer ?>");
+    window.location.href = "http://<?php Echo $_SERVER['SERVER_NAME'] ?>/";
+    <?php Exit; Endif;
+  }
+}
 
 // Load WordPress
 While (!Is_File ('wp-load.php')){
@@ -10,7 +20,6 @@ While (!Is_File ('wp-load.php')){
   Else Die('Could not find WordPress.');
 }
 Include_Once 'wp-load.php';
-
 
 // Is the class ready?
 If (!Class_exists('wp_plugin_fancy_gallery')) Die ('Could not find the Fancy Gallery Plugin.');

@@ -3,6 +3,21 @@
 // Send Header Mime type
 Header ('Content-Type: text/css');
 
+// Check Referer
+If (IsSet($_SERVER['HTTP_REFERER'])){
+  $referer = Parse_URL($_SERVER['HTTP_REFERER'], PHP_URL_HOST);
+  If (!Empty($referer) && !Empty($_SERVER['SERVER_NAME'])){
+    If (StrIPos($referer, $_SERVER['SERVER_NAME']) === False) : ?>
+    /*
+    Wrong Referer for <?php Echo BaseName(__FILE__) ?>!    
+    Host: <?php Echo $_SERVER['SERVER_NAME'] ?>.    
+    Referer: <?php Echo $referer ?>.
+    */
+
+    * { display: none !important; }
+    <?php Exit; Endif;
+  }
+}
 
 // Load WordPress
 $wp_load = 'wp-load.php';

@@ -79,6 +79,11 @@ Installation as usual.
 
 == Changelog ==
 
+= 1.3.33 =
+* Security Patch against script/traffic hijacking! Update is recommended!
+* Referer check in jquery.fancybox-1.3.4.css-png-fix.php
+* Referer check in fancy-js.php
+
 = 1.3.32 =
 * Updated Czech translation. (Luke)
 
