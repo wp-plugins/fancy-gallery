@@ -3,17 +3,6 @@
 // Send Header Mime type
 Header ('Content-Type: text/javascript');
 
-// Check Referer
-If (IsSet($_SERVER['HTTP_REFERER'])){
-  $referer = Parse_URL($_SERVER['HTTP_REFERER'], PHP_URL_HOST);
-  If (!Empty($referer) && !Empty($_SERVER['SERVER_NAME'])){
-    If (StrIPos($referer, $_SERVER['SERVER_NAME']) === False) : ?>
-    alert("Wrong Referer for <?php Echo BaseName(__FILE__) ?>!\n\nHost: <?php Echo $_SERVER['SERVER_NAME'] ?>\nReferer: <?php Echo $referer ?>");
-    window.location.href = "http://<?php Echo $_SERVER['SERVER_NAME'] ?>/";
-    <?php Exit; Endif;
-  }
-}
-
 // Load WordPress
 While (!Is_File ('wp-load.php')){
   If (Is_Dir('../')) ChDir('../');
@@ -25,9 +14,19 @@ Include_Once 'wp-load.php';
 If (!Class_exists('wp_plugin_fancy_gallery')) Die ('Could not find the Fancy Gallery Plugin.');
 Global $wp_plugin_fancy_gallery;
 
+// Check Referer
+If (!$wp_plugin_fancy_gallery->get_option('disable_referer_check') && IsSet($_SERVER['HTTP_REFERER'])){
+  $referer = Parse_URL($_SERVER['HTTP_REFERER'], PHP_URL_HOST);
+  If (!Empty($referer) && !Empty($_SERVER['SERVER_NAME'])){
+    If (StrIPos($referer, $_SERVER['SERVER_NAME']) === False) : ?>
+    alert("Wrong Referer for <?php Echo BaseName(__FILE__) ?>!\n\nHost: <?php Echo $_SERVER['SERVER_NAME'] ?>\nReferer: <?php Echo $referer ?>");
+    window.location.href = "http://<?php Echo $_SERVER['SERVER_NAME'] ?>/";
+    <?php Exit; Endif;
+  }
+}
+
 // Set image extensions
 $arr_type = Array( 'jpg', 'jpeg', 'png', 'gif', 'bmp', 'wbmp', 'ico' );
-
 
 ?>jQuery(function(){
 

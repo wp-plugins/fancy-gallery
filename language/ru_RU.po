@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fancy Gallery Plugin for WordPress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-06-15 22:57+0100\n"
+"POT-Creation-Date: 2011-07-23 07:02+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe\n"
 "Language-Team: Semasping <ya@semasping.info>\n"
@@ -16,228 +16,240 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../options-page.php:3
+#: ../options-page.php:5
 msgid "Loop mode"
 msgstr "Цикличный режим"
 
-#: ../options-page.php:6
+#: ../options-page.php:8
 msgid "Will enable the user to get from the last image to the first one with the \"Next &raquo;\" button."
 msgstr "Если отмечено, то пользователь сможет переходить с последней к первой фотографии через кнопку \"Далее\"."
 
-#: ../options-page.php:11
+#: ../options-page.php:13
 msgid "Scrollbars"
 msgstr "Полосы прокрутки"
 
-#: ../options-page.php:14
+#: ../options-page.php:16
 msgid "Automatic"
 msgstr "Автоматический"
 
-#: ../options-page.php:18
+#: ../options-page.php:20
 msgid "\"Automatic\" means scrollbars will be visibly if necessary. \"Yes\" and \"No\" should be clear."
 msgstr "&quot;Автоматический&quot; означает что полосы прокрутки появятся в случае необходимости. &quot;Да&quot; и &quot;Нет&quot; должно быть ясно."
 
-#: ../options-page.php:19
+#: ../options-page.php:21
 msgid "This option controls the appearance of the scrollbars inside the fancy box."
 msgstr "Этот параметр определяет внешний вид полосы прокрутки в окне Fancy."
 
-#: ../options-page.php:24
+#: ../options-page.php:26
 msgid "Center on scroll"
 msgstr "В центре при прокрутке"
 
-#: ../options-page.php:27
+#: ../options-page.php:29
 msgid "Keep the FancyBox always in the center of the screen while scrolling the page."
 msgstr "Держать FancyBox всегда в центре экрана при прокрутке страницы."
 
-#: ../options-page.php:32
+#: ../options-page.php:34
 msgid "Close button"
 msgstr "Кнопка &quot;Закрыть&quot;"
 
-#: ../options-page.php:35
+#: ../options-page.php:37
 msgid "Hide the close button."
 msgstr "Скрыть кнопку &quot;Закрыть&quot;."
 
-#: ../options-page.php:40
+#: ../options-page.php:42
 msgid "Overlay opacity"
 msgstr "Наложение непрозрачности"
 
-#: ../options-page.php:43
+#: ../options-page.php:45
 msgid "Percentaged opacity of the background of the FancyBox. Should be a value from 0 (invisible) to 100 (opaque). (Default is 30)"
 msgstr "Процент прозрачности фона FancyBox. Должен принимать значение от 0 (невидимый) до 100 (непрозрачный). (По умолчанию 30)"
 
-#: ../options-page.php:48
+#: ../options-page.php:50
 msgid "Overlay color"
 msgstr "Наложение цветов"
 
-#: ../options-page.php:52
+#: ../options-page.php:54
 msgid "Please choose the color of the \"darker\" background."
 msgstr "Пожалуйста, выберите цвет &quot;затемнения&quot; фона."
 
-#: ../options-page.php:57
+#: ../options-page.php:59
 msgid "Border width"
 msgstr "Ширина каймы"
 
-#: ../options-page.php:59
+#: ../options-page.php:61
 msgctxt "Abbr. Pixels"
 msgid "px"
 msgstr "px"
 
-#: ../options-page.php:60
+#: ../options-page.php:62
 msgid "Width of the image frame border. (in pixels)"
 msgstr "Ширина границы кадра изображения. (В пикселях)"
 
-#: ../options-page.php:65
+#: ../options-page.php:67
 msgid "Image title"
 msgstr "Заголовок изображения"
 
-#: ../options-page.php:67
+#: ../options-page.php:69
 msgid "Use the title of the image as title of the fancy box."
 msgstr "Использовать названия изображений в качестве заголовка окна FancyBox."
 
-#: ../options-page.php:68
+#: ../options-page.php:70
 msgid "Use the alternative text of the image as title of the fancy box."
 msgstr "Использовать альтернативный текста изображений в качестве заголовка окна FancyBox."
 
-#: ../options-page.php:69
+#: ../options-page.php:71
 msgid "Use the image caption as title of the fancy box."
 msgstr "Использовать подпись изображений в качестве заголовка окна FancyBox."
 
-#: ../options-page.php:70
+#: ../options-page.php:72
 msgid "Use the image description as title of the fancy box."
 msgstr "Использовать описания изображений в качестве заголовка окна FancyBox."
 
-#: ../options-page.php:71
+#: ../options-page.php:73
 msgid "Do not show image titles."
 msgstr "Не показывать заголовок изображения"
 
-#: ../options-page.php:76
+#: ../options-page.php:78
 msgid "Title position"
 msgstr "Позиция заголовка"
 
-#: ../options-page.php:79
+#: ../options-page.php:81
 msgid "Outside the FancyBox"
 msgstr "Вне FancyBox"
 
-#: ../options-page.php:79
+#: ../options-page.php:81
 msgid "Does not work with multiline titles."
 msgstr "Не показывать заголовок изображения"
 
-#: ../options-page.php:80
+#: ../options-page.php:82
 msgid "Inside the FancyBox"
 msgstr "Внутри FancyBox"
 
-#: ../options-page.php:80
+#: ../options-page.php:82
 msgid "Does not work blameless with multiline titles."
 msgstr "Не безупречно работает с многострочными названиями."
 
-#: ../options-page.php:81
+#: ../options-page.php:83
 msgid "Over the image"
 msgstr "На изображение"
 
-#: ../options-page.php:81
+#: ../options-page.php:83
 msgid "Works fine with multiline titles."
 msgstr "Отлично работает с многострочным названиями."
 
-#: ../options-page.php:87
+#: ../options-page.php:89
 msgid "Opening transition"
 msgstr "Открытие перехода"
 
-#: ../options-page.php:90
-#: ../options-page.php:109
+#: ../options-page.php:92
+#: ../options-page.php:111
 msgid "Fade"
 msgstr "Пропадать"
 
-#: ../options-page.php:91
-#: ../options-page.php:110
+#: ../options-page.php:93
+#: ../options-page.php:112
 msgid "Elastic"
 msgstr "Эластичный"
 
-#: ../options-page.php:92
-#: ../options-page.php:111
+#: ../options-page.php:94
+#: ../options-page.php:113
 msgid "No transition"
 msgstr "Нет перехода"
 
-#: ../options-page.php:98
+#: ../options-page.php:100
 msgid "Opening speed"
 msgstr "Скорость открытия"
 
-#: ../options-page.php:100
-#: ../options-page.php:119
-#: ../options-page.php:127
+#: ../options-page.php:102
+#: ../options-page.php:121
+#: ../options-page.php:129
 msgctxt "Abbr. Milliseconds"
 msgid "msec"
 msgstr "msec"
 
-#: ../options-page.php:101
-#: ../options-page.php:120
+#: ../options-page.php:103
+#: ../options-page.php:122
 msgid "Speed of the fade and elastic transitions. (in milliseconds)"
 msgstr "Скорость пропадания и эластичных переходов. (В миллисекундах)"
 
-#: ../options-page.php:106
+#: ../options-page.php:108
 msgid "Closing transition"
 msgstr "Закрытие перехода"
 
-#: ../options-page.php:117
+#: ../options-page.php:119
 msgid "Closing speed"
 msgstr "Скорость закрытия"
 
-#: ../options-page.php:125
+#: ../options-page.php:127
 msgid "Image resizing speed"
 msgstr "Скорость изменения размера "
 
-#: ../options-page.php:128
+#: ../options-page.php:130
 msgid "Speed of resizing when changing gallery items. (in milliseconds)"
 msgstr "Скорость изменения размеров при изменении пунктов галереи. (В миллисекундах)"
 
-#: ../options-page.php:133
+#: ../options-page.php:135
 msgid "Single images"
 msgstr ""
 
-#: ../options-page.php:136
+#: ../options-page.php:138
 msgid "Consolidate single images in a post to one group so the user can navigate through them."
 msgstr ""
 
-#: ../options-page.php:137
+#: ../options-page.php:139
 msgid "So you will have an image navigation for all images."
 msgstr ""
 
-#: ../options-page.php:142
+#: ../options-page.php:144
 #, fuzzy
 msgid "Script position"
 msgstr "Позиция заголовка"
 
-#: ../options-page.php:145
+#: ../options-page.php:147
 msgid "Footer of the website"
 msgstr ""
 
-#: ../options-page.php:146
+#: ../options-page.php:148
 msgid "Header of the website"
 msgstr ""
 
-#: ../options-page.php:148
+#: ../options-page.php:150
 msgid "Please choose the position of the javascript. Footer is recommended. Use \"Header\" if you have trouble to make the Fancybox work."
 msgstr ""
 
-#: ../options-page.php:153
+#: ../options-page.php:155
 msgid "Image appearance"
 msgstr ""
 
-#: ../options-page.php:156
+#: ../options-page.php:158
 msgid "Convert images to inline elements."
 msgstr ""
 
-#: ../options-page.php:157
+#: ../options-page.php:159
 msgid "Tick this is box if your images are among each other."
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:64
+#: ../options-page.php:164
+msgid "Referer Check"
+msgstr ""
+
+#: ../options-page.php:167
+msgid "Disable the referer check in the dynamically JavaScript and CSS files."
+msgstr ""
+
+#: ../options-page.php:168
+msgid "Tick this is box if see a \"Wrong Referer\" message on your own website!"
+msgstr ""
+
+#: ../wp-plugin-fancy-gallery.php:72
 msgid "Fancy Gallery Settings"
 msgstr "Настройки Fancy Галереи"
 
-#: ../wp-plugin-fancy-gallery.php:65
+#: ../wp-plugin-fancy-gallery.php:73
 msgid "Fancy Gallery"
 msgstr "Fancy Галерея"
 
-#: ../wp-plugin-fancy-gallery.php:85
+#: ../wp-plugin-fancy-gallery.php:93
 msgid "Fancy Gallery Options"
 msgstr "Функции Fancy Галереи"
 

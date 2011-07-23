@@ -160,4 +160,13 @@
   </td>
 </tr>
 
+<tr valign="top">
+  <th scope="row"><?php Echo $this->t('Referer Check') ?></th>
+  <td>
+    <input type="checkbox" name="disable_referer_check" value="yes" <?php Checked ($this->get_option('disable_referer_check'), 'yes') ?> />            
+    <?php Echo $this->t('Disable the referer check in the dynamically JavaScript and CSS files.') ?><br />            
+    <small><?php Echo $this->t('Tick this is box if see a "Wrong Referer" message on your own website!') ?></small>
+  </td>
+</tr>
+
 </table>

@@ -3,8 +3,19 @@
 // Send Header Mime type
 Header ('Content-Type: text/css');
 
+// Load WordPress
+While (!Is_File ('wp-load.php')){
+  If (Is_Dir('../')) ChDir('../');
+  Else Die('Could not find WordPress.');
+}
+Include_Once 'wp-load.php';
+
+// Is the class ready?
+If (!Class_exists('wp_plugin_fancy_gallery')) Die ('Could not find the Fancy Gallery Plugin.');
+Global $wp_plugin_fancy_gallery;
+
 // Check Referer
-If (IsSet($_SERVER['HTTP_REFERER'])){
+If (!$wp_plugin_fancy_gallery->get_option('disable_referer_check') && IsSet($_SERVER['HTTP_REFERER'])){
   $referer = Parse_URL($_SERVER['HTTP_REFERER'], PHP_URL_HOST);
   If (!Empty($referer) && !Empty($_SERVER['SERVER_NAME'])){
     If (StrIPos($referer, $_SERVER['SERVER_NAME']) === False) : ?>
@@ -18,16 +29,6 @@ If (IsSet($_SERVER['HTTP_REFERER'])){
     <?php Exit; Endif;
   }
 }
-
-// Load WordPress
-While (!Is_File ('wp-load.php')){
-  If (Is_Dir('../')) ChDir('../');
-  Else Die('Could not find WordPress.');
-}
-Include_Once 'wp-load.php';
-
-// Is the class ready?
-If (!Class_exists('wp_plugin_fancy_gallery')) Die ('Could not find the Fancy Gallery Plugin.');
 
 // I use an anonymous function because we are in the global NameSpace.
 $base_url = Create_Function(

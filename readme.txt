@@ -79,6 +79,9 @@ Installation as usual.
 
 == Changelog ==
 
+= 1.3.34 =
+* Added option to disable the referer check
+
 = 1.3.33 =
 * Security Patch against script/traffic hijacking! Update is recommended!
 * Referer check in jquery.fancybox-1.3.4.css-png-fix.php
