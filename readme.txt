@@ -79,6 +79,9 @@ Installation as usual.
 
 == Changelog ==
 
+= 1.3.35 =
+* Fixed localized number formats in fancy-js.php
+
 = 1.3.34 =
 * Added option to disable the referer check
 
