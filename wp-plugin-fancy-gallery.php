@@ -3,7 +3,7 @@
 Plugin Name: Fancy Gallery Lite
 Plugin URI: http://dennishoppe.de/en/wordpress-plugins/fancy-gallery
 Description: Fancy Gallery Lite enables you to create galleries and converts your galleries in post and pages to valid HTML blocks and associates linked images with the Fancy Light Box.
-Version: 1.3
+Version: 1.4
 Author: Dennis Hoppe
 Author URI: http://DennisHoppe.de
 */
@@ -15,7 +15,7 @@ Include DirName(__FILE__).'/wp-widget-fancy-taxonomy-cloud.php';
 If (!Class_Exists('wp_plugin_fancy_gallery')){
 class wp_plugin_fancy_gallery {
   var $base_url; # url to the plugin directory
-  var $version = '1.3'; # Current release number
+  var $version = '1.4'; # Current release number
   var $arr_option_box; # Meta boxes for the option page
   var $arr_gallery_meta_box; # Meta boxes for the gallery post type
   var $arr_taxonomies; # All buildIn Gallery Taxonomies - also the inactive ones.

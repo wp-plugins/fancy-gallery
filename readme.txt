@@ -8,11 +8,11 @@ Donate link: http://dennishoppe.de/en/wordpress-plugins/fancy-gallery
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Fancy Gallery associates all linked images and galleries anywhere on your website with the jQuery lightbox "Fancybox". This Plugin has been granted the "Famous Software" Award!
+Fancy Gallery associates all linked images and galleries anywhere on your website with the jQuery lightbox "Fancybox". Fancy Gallery granted the "Famous Software" Award!
 
 
 == Description ==
-[Fancy Gallery](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) is a state of the art [WordPress Gallery Plugin](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) which adds a beautiful lightbox effect to all links pointing to an image anywhere on your website. This is includes images in your posts, galleries, pages, sidebars, theme, etc.
+[Fancy Gallery](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) is a state of the art [WordPress Gallery Plugin](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) which adds a beautiful lightbox effect to all links pointing to an image anywhere on your website. This includes images in your posts, galleries, pages, sidebars, theme, etc.
 
 Furthermore you can use this tool to create, manage and handle image galleries easily in your WordPress backend and present images to your website visitors. ¹
 
@@ -103,6 +103,9 @@ Possibly even more important, buying the Premium edition gives you access to me 
 
 
 == Changelog ==
+
+= 1.4 =
+* Merged jQuery Lightbox repository from 1.3.1 to 1.3.35
 
 = 1.3 =
 * Updated the whole backend and added more valuable features to the lite version
