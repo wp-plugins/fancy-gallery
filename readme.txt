@@ -8,7 +8,7 @@ Donate link: http://dennishoppe.de/en/wordpress-plugins/fancy-gallery
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Fancy Gallery associates all linked images and galleries anywhere on your website with the jQuery lightbox Fancybox
+Fancy Gallery associates all linked images and galleries anywhere on your website with the jQuery lightbox "Fancybox".
 
 
 == Description ==
