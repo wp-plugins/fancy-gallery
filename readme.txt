@@ -2,13 +2,13 @@
 Contributors: dhoppe
 Tags: gallery, galleries, image, images, picture, pictures, photo, photos, photo-album, photo-albums, fancybox, thickbox, lightbox, jquery, javascript, widget, cms, free, flickr       widget,Post,plugin,admin,posts,sidebar,comments,google,images,page,image,links
 Requires at least: 3.5
-Tested up to: 3.8.2
+Tested up to: 3.8.3
 Stable tag: trunk
 Donate link: http://dennishoppe.de/en/wordpress-plugins/fancy-gallery
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Fancy Gallery associates all linked images and galleries anywhere on your website with the jQuery lightbox "Fancybox". Fancy Gallery granted the "Famous Software" Award!
+Fancy Gallery associates all linked images and galleries anywhere on your website with the jQuery lightbox Fancybox
 
 
 == Description ==
