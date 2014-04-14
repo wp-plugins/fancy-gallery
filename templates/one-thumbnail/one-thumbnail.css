@@ -1,0 +1,9 @@
+.gallery.one-thumbnail {
+  display: inline;
+}
+
+.gallery.one-thumbnail .hidden {
+  display: inline;
+  position: absolute;
+  visibility: invisible;
+}

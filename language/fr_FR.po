@@ -1,0 +1,1162 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Fancy Gallery\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-04-14 17:53+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
+"Language-Team: Thomas Schlesser <site.th.schlesser@gmail.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: t;t:2c,1\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../wp-widget-fancy-taxonomies.php:15
+msgid "Fancy Taxonomies"
+msgstr "Taxonomies Fancy"
+
+#: ../wp-widget-fancy-taxonomies.php:16
+msgid "Displays your Gallery taxonomies like Gallery Categories, Tags, Events, Photographers, etc."
+msgstr "Affiche vos taxonomies de galeries comme les catégories, tags, évènements, photographes, etc."
+
+#: ../wp-widget-fancy-taxonomies.php:63
+#: ../wp-widget-fancy-taxonomy-cloud.php:63
+msgid "Title"
+msgstr "Titre"
+
+#: ../wp-widget-fancy-taxonomies.php:65
+#: ../wp-widget-fancy-random-images.php:65
+#: ../wp-widget-fancy-taxonomy-cloud.php:65
+msgid "Leave blank to use the widget default title."
+msgstr "Laisser blanc pour utiliser le titre par défaut du widget."
+
+#: ../wp-widget-fancy-taxonomies.php:69
+#: ../wp-widget-fancy-taxonomy-cloud.php:69
+msgid "Taxonomy"
+msgstr "Taxonomie"
+
+#: ../wp-widget-fancy-taxonomies.php:75
+#: ../wp-widget-fancy-taxonomy-cloud.php:75
+msgid "Please choose the Taxonomy the widget should display."
+msgstr "Choisissez la taxonomie que le widget doit afficher."
+
+#: ../wp-widget-fancy-taxonomies.php:79
+#: ../wp-widget-fancy-taxonomy-cloud.php:79
+msgid "Number"
+msgstr "Nombre"
+
+#: ../wp-widget-fancy-taxonomies.php:81
+msgid "Leave blank to show all."
+msgstr "Laisser blanc pour tout afficher."
+
+#: ../wp-widget-fancy-taxonomies.php:87
+#: ../wp-widget-fancy-random-images.php:105
+#: ../wp-widget-fancy-taxonomy-cloud.php:87
+msgid "Term IDs, separated by commas."
+msgstr "IDs des termes, séparés par des virgules."
+
+#: ../wp-widget-fancy-taxonomies.php:96
+#: ../wp-widget-fancy-taxonomy-cloud.php:91
+msgid "Order by"
+msgstr "Ordonner par"
+
+#: ../wp-widget-fancy-taxonomies.php:99
+#: ../wp-widget-fancy-taxonomy-cloud.php:94
+msgid "Gallery Count"
+msgstr "Nombre d'éléments de la galerie"
+
+#: ../wp-widget-fancy-taxonomies.php:101
+msgid "Slug"
+msgstr "Slug"
+
+#: ../wp-widget-fancy-taxonomies.php:106
+#: ../wp-widget-fancy-taxonomy-cloud.php:99
+msgid "Order"
+msgstr "Ordre"
+
+#: ../wp-widget-fancy-random-images.php:15
+msgid "Fancy Random Images"
+msgstr "Images aléatoires Fancy"
+
+#: ../wp-widget-fancy-random-images.php:16
+msgid "Displays some random images from your galleries."
+msgstr "Affiche quelques images aléatoires de vos galeries."
+
+#: ../wp-widget-fancy-random-images.php:69
+msgid "Number of Images:"
+msgstr "Nombre d'images:"
+
+#: ../wp-widget-fancy-random-images.php:71
+#: ../wp-widget-fancy-taxonomy-cloud.php:81
+msgid "Leave blank (or \"0\") to show all."
+msgstr "Laisser blanc (ou \"0\") pour tout afficher."
+
+#: ../wp-widget-fancy-random-images.php:75
+msgid "Link target:"
+msgstr "Cible du lien:"
+
+#: ../wp-widget-fancy-random-images.php:77
+msgid "Fullsize Image"
+msgstr "Image à pleine taille"
+
+#: ../wp-widget-fancy-random-images.php:78
+msgid "Image Gallery"
+msgstr "Galerie d'images"
+
+#: ../wp-widget-fancy-random-images.php:83
+msgid "Thumbnail width:"
+msgstr "Largeur de la vignette :"
+
+#: ../wp-widget-fancy-random-images.php:88
+msgid "Thumbnail height:"
+msgstr "Hauteur de la vignette :"
+
+#: ../wp-widget-fancy-random-images.php:94
+msgid "Convert thumbnails to grayscale."
+msgstr "Convertir les vignettes en niveaux de gris."
+
+#: ../wp-widget-fancy-random-images.php:99
+msgid "Negate the thumbnails."
+msgstr "Rendre les vignettes négatives."
+
+#: ../wp-widget-fancy-random-images.php:108
+#: ../wp-plugin-fancy-gallery.php:713
+msgid "Template"
+msgstr "Modèle"
+
+#: ../wp-widget-fancy-random-images.php:109
+msgid "Please choose a template to display this widget."
+msgstr "Choisissez un modèle pour afficher ce widget."
+
+#: ../wp-plugin-fancy-gallery.php:207
+msgid "Set Gallery Thumbnail"
+msgstr "Définir une vignette de la galerie"
+
+#: ../wp-plugin-fancy-gallery.php:208
+msgid "Remove Gallery Thumbnail"
+msgstr "Supprimer la vignette de la galerie"
+
+#: ../wp-plugin-fancy-gallery.php:209
+msgid "Use as Gallery Thumbnail"
+msgstr "Utiliser comme vignette de la galerie"
+
+#: ../wp-plugin-fancy-gallery.php:267
+#: ../wp-plugin-fancy-gallery.php:324
+msgid "Fancy Gallery Options"
+msgstr "Options de Fancy Gallery"
+
+#: ../wp-plugin-fancy-gallery.php:268
+msgid "Fancy Gallery"
+msgstr "Fancy Gallery"
+
+#: ../wp-plugin-fancy-gallery.php:278
+msgid "Lightbox"
+msgstr "LightBox"
+
+#: ../wp-plugin-fancy-gallery.php:279
+#, fuzzy
+msgid "Gallery Management"
+msgstr "Nombre d'éléments de la galerie"
+
+#: ../wp-plugin-fancy-gallery.php:282
+msgid "Templates"
+msgstr "Modèles"
+
+#: ../wp-plugin-fancy-gallery.php:283
+msgid "User rights"
+msgstr ""
+
+#: ../wp-plugin-fancy-gallery.php:285
+msgid "Taxonomies"
+msgstr "Taxonomies"
+
+#: ../wp-plugin-fancy-gallery.php:286
+#: ../wp-plugin-fancy-gallery.php:595
+msgid "Archive Url"
+msgstr "URL de l'archive"
+
+#: ../wp-plugin-fancy-gallery.php:289
+msgid "Miscellaneous"
+msgstr "Divers"
+
+#: ../wp-plugin-fancy-gallery.php:468
+msgid "Galleries"
+msgstr "Galeries"
+
+#: ../wp-plugin-fancy-gallery.php:469
+msgid "Gallery"
+msgstr "Galerie"
+
+#: ../wp-plugin-fancy-gallery.php:470
+msgid "Add Gallery"
+msgstr "Ajouter une galerie"
+
+#: ../wp-plugin-fancy-gallery.php:471
+msgid "New Gallery"
+msgstr "Nouvelle galerie"
+
+#: ../wp-plugin-fancy-gallery.php:472
+msgid "Edit Gallery"
+msgstr "Editer la galerie"
+
+#: ../wp-plugin-fancy-gallery.php:473
+msgid "View Gallery"
+msgstr "Voir la galerie"
+
+#: ../wp-plugin-fancy-gallery.php:474
+msgid "Search Galleries"
+msgstr "Rechercher dans les galeries"
+
+#: ../wp-plugin-fancy-gallery.php:475
+msgid "No Galleries found"
+msgstr "Pas de galeries trouvées"
+
+#: ../wp-plugin-fancy-gallery.php:476
+msgid "No Galleries found in Trash"
+msgstr "Pas de galeries trouvées dans la corbeille"
+
+#: ../wp-plugin-fancy-gallery.php:486
+msgctxt "URL slug"
+msgid "galleries"
+msgstr "galeries"
+
+#: ../wp-plugin-fancy-gallery.php:497
+#, php-format
+msgid "Gallery updated. (<a href=\"%s\">View Gallery</a>)"
+msgstr "Galerie mise à jour. (<a href=\"%s\">Voir la galerie</a>)"
+
+#: ../wp-plugin-fancy-gallery.php:500
+msgid "Gallery updated."
+msgstr "Galerie mise à jour."
+
+#: ../wp-plugin-fancy-gallery.php:501
+#, php-format
+msgid "Gallery restored to revision from %s"
+msgstr "Galerie restaurée à la revision de %s"
+
+#: ../wp-plugin-fancy-gallery.php:502
+#, php-format
+msgid "Gallery published. (<a href=\"%s\">View Gallery</a>)"
+msgstr "Galerie publiée. (<a href=\"%s\">Voir la galerie</a>)"
+
+#: ../wp-plugin-fancy-gallery.php:503
+msgid "Gallery saved."
+msgstr "Galerie sauvegardée"
+
+#: ../wp-plugin-fancy-gallery.php:504
+msgid "Gallery submitted."
+msgstr "Galerie soumise."
+
+#: ../wp-plugin-fancy-gallery.php:505
+#, php-format
+msgid "Gallery scheduled. (<a target=\"_blank\" href=\"%s\">View Gallery</a>)"
+msgstr "Galerie planifiée. (<a target=\"_blank\" href=\"%s\">Voir Galerie</a>)"
+
+#: ../wp-plugin-fancy-gallery.php:506
+#, php-format
+msgid "Gallery draft updated. (<a target=\"_blank\" href=\"%s\">Preview Gallery</a>)"
+msgstr "Brouillon de la galerie mis à jour. (<a target=\"_blank\" href=\"%s\">Prévisualiser la galerie</a>)"
+
+#: ../wp-plugin-fancy-gallery.php:513
+msgid "Gallery Categories"
+msgstr "Catégories de galeries"
+
+#: ../wp-plugin-fancy-gallery.php:515
+msgid "Categories"
+msgstr "Catégories"
+
+#: ../wp-plugin-fancy-gallery.php:516
+msgid "Category"
+msgstr "Catégorie"
+
+#: ../wp-plugin-fancy-gallery.php:517
+msgid "Search Categories"
+msgstr "Rechercher dans les catégories"
+
+#: ../wp-plugin-fancy-gallery.php:518
+msgid "All Categories"
+msgstr "Toutes les catégories"
+
+#: ../wp-plugin-fancy-gallery.php:519
+msgid "Parent Category"
+msgstr "Catégorie parente"
+
+#: ../wp-plugin-fancy-gallery.php:520
+msgid "Parent Category:"
+msgstr "Catégorie parente :"
+
+#: ../wp-plugin-fancy-gallery.php:521
+msgid "Edit Category"
+msgstr "Editer la catégorie"
+
+#: ../wp-plugin-fancy-gallery.php:522
+msgid "Update Category"
+msgstr "Mettre à jour la catégorie"
+
+#: ../wp-plugin-fancy-gallery.php:523
+msgid "Add New Category"
+msgstr "Ajouter une nouvelle catégorie"
+
+#: ../wp-plugin-fancy-gallery.php:524
+msgid "New Category"
+msgstr "Nouvelle catégorie"
+
+#: ../wp-plugin-fancy-gallery.php:532
+msgctxt "URL slug"
+msgid "gallery-category"
+msgstr "galerie-catégorie"
+
+#: ../wp-plugin-fancy-gallery.php:543
+msgid "Gallery Tags"
+msgstr "Tags de la galerie"
+
+#: ../wp-plugin-fancy-gallery.php:545
+msgid "Tags"
+msgstr "Tags"
+
+#: ../wp-plugin-fancy-gallery.php:546
+msgid "Tag"
+msgstr "Tag"
+
+#: ../wp-plugin-fancy-gallery.php:547
+msgid "Search Tags"
+msgstr "Tags de recherche"
+
+#: ../wp-plugin-fancy-gallery.php:548
+msgid "All Tags"
+msgstr "Tous les tags"
+
+#: ../wp-plugin-fancy-gallery.php:549
+msgid "Edit Tag"
+msgstr "Editer le tag"
+
+#: ../wp-plugin-fancy-gallery.php:550
+msgid "Update Tag"
+msgstr "Mettre à jour le tag"
+
+#: ../wp-plugin-fancy-gallery.php:551
+msgid "Add New Tag"
+msgstr "Ajouter un nouveau tag"
+
+#: ../wp-plugin-fancy-gallery.php:552
+msgid "New Tag"
+msgstr "Nouveau tag"
+
+#: ../wp-plugin-fancy-gallery.php:560
+msgctxt "URL slug"
+msgid "gallery-tag"
+msgstr "galerie-tag"
+
+#: ../wp-plugin-fancy-gallery.php:598
+#, php-format
+msgid "This is the URL to the archive of this %s."
+msgstr "Ceci est l'URL vers l'archive de ce %s."
+
+#: ../wp-plugin-fancy-gallery.php:602
+msgid "Archive Feed"
+msgstr "Flux d'archive"
+
+#: ../wp-plugin-fancy-gallery.php:605
+#, php-format
+msgid "This is the URL to the feed of the archive of this %s."
+msgstr "Ceci est l'URL vers le flux d'archive de ce %s."
+
+#: ../wp-plugin-fancy-gallery.php:617
+msgid "Upload Images"
+msgstr "Envoyer des Images"
+
+#: ../wp-plugin-fancy-gallery.php:619
+msgid "Import from Library"
+msgstr "Importer depuis la bibliothèque"
+
+#: ../wp-plugin-fancy-gallery.php:708
+msgid "Images"
+msgstr "Images"
+
+#: ../wp-plugin-fancy-gallery.php:711
+msgid "Excerpt"
+msgstr "Aperçu"
+
+#: ../wp-plugin-fancy-gallery.php:716
+msgid "Owner"
+msgstr "Propriétaire"
+
+#: ../wp-plugin-fancy-gallery.php:718
+msgid "Gallery ShortCode"
+msgstr "ShortCode de la galerie"
+
+#: ../wp-plugin-fancy-gallery.php:719
+msgid "Thumbnails"
+msgstr "Vignettes"
+
+#: ../wp-plugin-fancy-gallery.php:756
+msgid "The Attachment was moved to your gallery."
+msgstr "Le fichier joint a été déplacé vers votre galerie."
+
+#: ../wp-plugin-fancy-gallery.php:1020
+#, fuzzy, php-format
+msgid "Available in the <a href=\"%s\" target=\"_blank\">Premium Version</a>."
+msgstr "Désolé, cette fonction est seulement disponible dans la <a href=\"%s\" target=\"_blank\">Version Pro de Fancy Gallery</a>."
+
+#: ../wp-plugin-fancy-gallery.php:1021
+#, php-format
+msgid "Do need a special taxonomy for your website? No problem! Just <a href=\"%s\" target=\"_blank\">get in touch</a>."
+msgstr ""
+
+#: ../wp-plugin-fancy-gallery.php:1022
+#, fuzzy, php-format
+msgid "This widget is available in the <a href=\"%s\" target=\"_blank\">Premium Version</a>. There will be no output in the front end of your website."
+msgstr "Désolé, cette fonction est seulement disponible dans la <a href=\"%s\" target=\"_blank\">Version Pro de Fancy Gallery</a>."
+
+#: ../wp-plugin-fancy-gallery.php:1023
+#, php-format
+msgid "In the <a href=\"%s\" target=\"_blank\">Premium Version of Fancy Gallery</a> you can take advantage of the gallery management without any limitations."
+msgstr ""
+
+#: ../wp-plugin-fancy-gallery.php:1024
+#, fuzzy, php-format
+msgid "Do you like the gallery management tool? Upgrade to the <a href=\"%s\" target=\"_blank\">Premium Version of Fancy Gallery</a>!"
+msgstr "Désolé, cette fonction est seulement disponible dans la <a href=\"%s\" target=\"_blank\">Version Pro de Fancy Gallery</a>."
+
+#: ../wp-plugin-fancy-gallery.php:1028
+msgctxt "Link to the authors website"
+msgid "http://dennishoppe.de/en/wordpress-plugins/fancy-gallery"
+msgstr "http://dennishoppe.de/en/wordpress-plugins/fancy-gallery"
+
+#: ../wp-plugin-fancy-gallery.php:1061
+msgid "&laquo; Back to your galleries"
+msgstr "&laquo; Retourner à vos galeries"
+
+#: ../wp-widget-fancy-taxonomy-cloud.php:15
+msgid "Fancy Taxonomy Cloud"
+msgstr "Nuage de taxonomie Fancy"
+
+#: ../wp-widget-fancy-taxonomy-cloud.php:16
+msgid "Displays your Gallery taxonomies as \"Tag Cloud\"."
+msgstr "Affiche vos taxonomies de galeries comme un \"Tag Cloud\"."
+
+#: ../import-images-form.php:53
+#, php-format
+msgid "Image: \"%s\""
+msgstr "Image : \"%s\""
+
+#: ../import-images-form.php:55
+#, php-format
+msgid "Belongs to %s: \"%s\""
+msgstr "Appartient à %s: \"%s\""
+
+#: ../import-images-form.php:57
+msgid "Not attached to a post."
+msgstr "Non attachée à un post."
+
+#: ../import-images-form.php:60
+msgid "This image belongs to your gallery."
+msgstr "Cette image appartient à votre galerie."
+
+#: ../import-images-form.php:63
+msgid "Import to my gallery"
+msgstr "Importer dans ma galerie"
+
+#: ../meta-boxes/gallery-meta-box-show-code.php:1
+msgid "To display this gallery in posts or pages easily you can use the <em>[gallery]</em> Shortcode:"
+msgstr "Pour afficher facilement cette galerie dans des posts ou pages, vous pouvez utiliser le ShortCode <em>[gallery]</em> :"
+
+#: ../meta-boxes/gallery-meta-box-show-code.php:3
+msgid "Copy this code to all places where this gallery should appear."
+msgstr "Copiez ce code à tous les endroits où votre galerie doit apparaître."
+
+#: ../meta-boxes/gallery-meta-box-owner.php:7
+msgid "Changes the owner of this gallery."
+msgstr "Change le propriétaire de cette galerie"
+
+#: ../meta-boxes/gallery-meta-box-thumbnails.php:2
+msgid "These settings affect the appearance of the thumbnail images of this gallery."
+msgstr "Ces paramètres affectent l'apparence des vignettes de cette galerie."
+
+#: ../meta-boxes/gallery-meta-box-template.php:1
+msgid "Please choose a template to display this gallery."
+msgstr "Choisissez un modèle pour afficher cette galerie."
+
+#: ../meta-boxes/gallery-meta-box-template.php:19
+#: ../meta-boxes/gallery-meta-box-template.php:21
+#: ../meta-boxes/gallery-meta-box-excerpt.php:59
+#: ../meta-boxes/gallery-meta-box-excerpt.php:61
+#: ../options-page/option-box-templates.php:11
+#: ../options-page/option-box-templates.php:13
+msgid "by"
+msgstr "par"
+
+#: ../meta-boxes/gallery-meta-box-excerpt.php:3
+msgid "Random Images"
+msgstr "Images aléatoires"
+
+#: ../meta-boxes/gallery-meta-box-excerpt.php:8
+msgid "In this mode the excerpt of the gallery will display a set of random images."
+msgstr "Dans ce mode l'aperçu de la galerie sera affiché comme une série d'images aléatoires."
+
+#: ../meta-boxes/gallery-meta-box-excerpt.php:9
+msgid "The following settings only affect the preview of galleries in archive and search result pages."
+msgstr ""
+
+#: ../meta-boxes/gallery-meta-box-excerpt.php:15
+msgid "Images per Excerpt:"
+msgstr "Images par aperçu :"
+
+#: ../meta-boxes/gallery-meta-box-excerpt.php:40
+msgid "Please choose a template to display the excerpt of this gallery."
+msgstr "Choisissez un modèle pour afficher l'aperçu de cette galerie."
+
+#: ../meta-boxes/gallery-meta-box-excerpt.php:74
+msgid "Text Excerpt"
+msgstr "Texte d'aperçu"
+
+#: ../options-page/option-box-archive-link.php:3
+#, php-format
+msgid "The Archive link for your Galleries is: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
+msgstr "Le lien d'archive de votre galerie est : <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
+
+#: ../options-page/option-box-archive-link.php:6
+#, php-format
+msgid "The Archive Feed for your Galleries is: <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
+msgstr "Le flux d'archive de votre galerie est : <a href=\"%1$s\" target=\"_blank\">%1$s</a>"
+
+#: ../options-page/option-box-archive-link.php:10
+msgid "Deactivate Archive"
+msgstr "Désactiver l'archive"
+
+#: ../options-page/option-box-archive-link.php:13
+msgid "Deactivate the archive feature."
+msgstr "Désactiver la fonction d'archive"
+
+#: ../options-page/option-box-archive-link.php:14
+msgid "If you tick this box visitors will no more be able to navigate through the gallery archive."
+msgstr "Si vous cochez cette case les visiteurs ne seront plus capables de naviguer dans l'archive de la galerie"
+
+#: ../options-page/option-box-lightbox.php:8
+msgid "FancyBox version 1.x."
+msgstr ""
+
+#: ../options-page/option-box-lightbox.php:9
+msgid "FancyBox is a tool for displaying images in a Mac-style \"lightbox\" that floats overtop of web page. Licensed under the <a href=\"http://wordpress.org/about/gpl/\" target=\"_blank\">GPL License</a>."
+msgstr ""
+
+#: ../options-page/option-box-lightbox.php:14
+msgid "FancyBox version 2.x."
+msgstr ""
+
+#: ../options-page/option-box-lightbox.php:15
+msgid "Version 2 supports image thumbnails, slideshows and it is fully repsonsive. Unfortunately this version is licensed under the <a href=\"http://creativecommons.org/licenses/by-nc/3.0/\" target=\"_blank\">CC BY-NC 3.0 License</a>."
+msgstr ""
+
+#: ../options-page/option-box-lightbox.php:18
+msgid "FancyBox 2 is not GPL compatible and cannot be part of this plugin itself."
+msgstr ""
+
+#: ../options-page/option-box-lightbox.php:19
+msgid "By activating this option the library will be included from an external hoster (<a href=\"http://cdnjs.com/libraries/fancybox/\" target=\"_blank\">CDNJS.com</a>)."
+msgstr ""
+
+#: ../options-page/option-box-lightbox.php:20
+msgid "By using FancyBox 2 you need to agree the lightbox authors <a href=\"http://fancyapps.com/fancybox/#license\" target=\"_blank\">license agreement</a>."
+msgstr ""
+
+#: ../options-page/option-box-lightbox.php:27
+msgid "Loop mode"
+msgstr "Mode boucle"
+
+#: ../options-page/option-box-lightbox.php:30
+msgid "Will enable the user to get from the last image to the first one with the \"Next &raquo;\" button."
+msgstr "Autorise l'utilisateur à passer de la dernière image à la première avec le bouton \"Next &raquo;\"."
+
+#: ../options-page/option-box-lightbox.php:35
+msgid "Border width"
+msgstr "Largeur de la bordure"
+
+#: ../options-page/option-box-lightbox.php:37
+msgctxt "Abbr. Pixels"
+msgid "px"
+msgstr "px"
+
+#: ../options-page/option-box-lightbox.php:38
+msgid "Width of the image frame border. (in pixels)"
+msgstr "Largeur du cadre de l'image. (en pixels)"
+
+#: ../options-page/option-box-lightbox.php:44
+msgid "Close button"
+msgstr "Bouton fermer"
+
+#: ../options-page/option-box-lightbox.php:48
+msgid "Hide the close button."
+msgstr "Cacher le bouton fermer."
+
+#: ../options-page/option-box-lightbox.php:49
+#: ../options-page/option-box-lightbox.php:58
+#: ../options-page/option-box-lightbox.php:66
+#: ../options-page/option-box-lightbox.php:115
+#: ../options-page/option-box-lightbox.php:127
+msgid "Not available in FancyBox 1.x"
+msgstr ""
+
+#: ../options-page/option-box-lightbox.php:54
+msgid "Auto play"
+msgstr "Lecture auto"
+
+#: ../options-page/option-box-lightbox.php:57
+msgid "Start the slideshow when the user opens the first gallery item."
+msgstr "Démarrer le diaporama lorsque l'utilisateur ouvre le premier élément de la galerie."
+
+#: ../options-page/option-box-lightbox.php:63
+msgid "Play speed"
+msgstr "Vitesse de lecture"
+
+#: ../options-page/option-box-lightbox.php:65
+#: ../options-page/option-box-lightbox.php:145
+#: ../options-page/option-box-lightbox.php:164
+#: ../options-page/option-box-lightbox.php:183
+msgctxt "Abbr. Milliseconds"
+msgid "msec"
+msgstr "msec"
+
+#: ../options-page/option-box-lightbox.php:66
+msgid "Speed of the slideshow. (in milliseconds)"
+msgstr "Vitesse du diaporama (en millisecondes)"
+
+#: ../options-page/option-box-lightbox.php:71
+msgid "Image title"
+msgstr "Titre de l'image"
+
+#: ../options-page/option-box-lightbox.php:74
+msgid "Use the title of the image as title of the light box."
+msgstr "Utiliser le titre de l'image comme titre de la lightbox."
+
+#: ../options-page/option-box-lightbox.php:77
+msgid "Use the alternative text of the image as title of the light box."
+msgstr "Utiliser le texte alternatif de l'image comme titre de la lightbox."
+
+#: ../options-page/option-box-lightbox.php:80
+msgid "Use the image caption as title of the light box."
+msgstr "Utiliser la légende de l'image comme titre de la lightbox."
+
+#: ../options-page/option-box-lightbox.php:83
+msgid "Use the image description as title of the light box."
+msgstr "Utiliser la description de l'image comme titre de la lightbox."
+
+#: ../options-page/option-box-lightbox.php:87
+msgid "Do not show image titles."
+msgstr "Ne pas montrer les titres des images."
+
+#: ../options-page/option-box-lightbox.php:93
+msgid "Title position"
+msgstr "Position du titre"
+
+#: ../options-page/option-box-lightbox.php:96
+msgid "Outside the light box"
+msgstr "Hors de la lightbox"
+
+#: ../options-page/option-box-lightbox.php:96
+msgid "Does not work with multiline titles."
+msgstr "Ne fonctionne pas avec des titres multilignes."
+
+#: ../options-page/option-box-lightbox.php:99
+msgid "Inside the light box"
+msgstr "Dans la lightbox"
+
+#: ../options-page/option-box-lightbox.php:99
+msgid "Does not work blameless with multiline titles."
+msgstr "Ne fonctionne pas pleinement avec des titres multilignes."
+
+#: ../options-page/option-box-lightbox.php:102
+msgid "Over the image"
+msgstr "Par-dessus l'image"
+
+#: ../options-page/option-box-lightbox.php:102
+msgid "Works fine with multiline titles."
+msgstr "Fonctionne avec des titres multilignes."
+
+#: ../options-page/option-box-lightbox.php:107
+msgid "Controls position"
+msgstr "Position des contrôles"
+
+#: ../options-page/option-box-lightbox.php:114
+msgid "Position of the Prev, Next, Slideshow, Stop, etc. controls."
+msgstr "Position des contrôles (Précédent, Suivant, Dia, Stop, etc.)"
+
+#: ../options-page/option-box-lightbox.php:120
+msgid "Thumbnails position"
+msgstr "Position des vignettes"
+
+#: ../options-page/option-box-lightbox.php:127
+msgid "Position of preview thumbnails relative to the lightbox."
+msgstr "Position des vignettes d'aperçu relative à la lightbox."
+
+#: ../options-page/option-box-lightbox.php:132
+msgid "Opening effect"
+msgstr "Effet d'ouverture"
+
+#: ../options-page/option-box-lightbox.php:135
+#: ../options-page/option-box-lightbox.php:154
+#: ../options-page/option-box-lightbox.php:173
+msgid "Fade"
+msgstr "Fondu"
+
+#: ../options-page/option-box-lightbox.php:136
+#: ../options-page/option-box-lightbox.php:155
+#: ../options-page/option-box-lightbox.php:174
+msgid "Elastic"
+msgstr "Elastique"
+
+#: ../options-page/option-box-lightbox.php:137
+#: ../options-page/option-box-lightbox.php:156
+#: ../options-page/option-box-lightbox.php:175
+msgid "No effect"
+msgstr "Pas d'effet"
+
+#: ../options-page/option-box-lightbox.php:143
+msgid "Opening speed"
+msgstr "Vitesse d'ouverture"
+
+#: ../options-page/option-box-lightbox.php:146
+#: ../options-page/option-box-lightbox.php:165
+msgid "Speed of the fade and elastic transitions. (in milliseconds)"
+msgstr "Vitesse du fondu et des transitions élastiques (en millisecondes)."
+
+#: ../options-page/option-box-lightbox.php:151
+msgid "Closing effect"
+msgstr "Effet de fermeture"
+
+#: ../options-page/option-box-lightbox.php:162
+msgid "Closing speed"
+msgstr "Vitesse de fermeture"
+
+#: ../options-page/option-box-lightbox.php:170
+msgid "Changing effect"
+msgstr "Effet de transition"
+
+#: ../options-page/option-box-lightbox.php:181
+msgid "Image resizing speed"
+msgstr "Vitesse de redimensionnement d'image"
+
+#: ../options-page/option-box-lightbox.php:184
+msgid "Speed of resizing when changing gallery items. (in milliseconds)"
+msgstr "Vitesse de redimensionnement lors du changement d'élément de la galerie (en millisecondes)."
+
+#: ../options-page/option-box-lightbox.php:189
+msgid "Script position"
+msgstr "Position du script"
+
+#: ../options-page/option-box-lightbox.php:192
+msgid "Footer of the website"
+msgstr "Bas-de-page du site (Footer)"
+
+#: ../options-page/option-box-lightbox.php:193
+msgid "Header of the website"
+msgstr "En-tête du site (Header)"
+
+#: ../options-page/option-box-lightbox.php:195
+msgid "Please choose the position of the javascript. Footer is recommended. Use \"Header\" if you have trouble to make the Fancybox work."
+msgstr "Choisissez la position du javascript. Le pied de page est recommandé. Utilisez \"Header\" si vous avez des problèmes avec le fonctionnement de FancyBox."
+
+#: ../options-page/option-box-misc.php:1
+msgid "Single images"
+msgstr "Images seules"
+
+#: ../options-page/option-box-misc.php:4
+msgid "Consolidate single images in a post to one group so the user can navigate through them."
+msgstr "Regrouper les images séparées dans un post en un seul groupe afin que l'utiliser puisse naviguer entre elles."
+
+#: ../options-page/option-box-misc.php:5
+msgid "So you will have an image navigation for all images."
+msgstr "Vous aurez donc une image de navigation pour toutes les images."
+
+#: ../options-page/option-box-misc.php:9
+msgid "Group single images by post."
+msgstr "Grouper les images séparées par post."
+
+#: ../options-page/option-box-misc.php:10
+msgid "Will create different navigation paths for different posts."
+msgstr "Va créer des chemins de navigation différents pour divers posts."
+
+#: ../options-page/option-box-misc.php:14
+msgid "Image appearance"
+msgstr "Apparence de l'image"
+
+#: ../options-page/option-box-misc.php:17
+msgid "Convert images to inline elements."
+msgstr "Convertir les images en éléments inline."
+
+#: ../options-page/option-box-misc.php:18
+msgid "Tick this box if your images are among each other."
+msgstr "Cochez cette case si vous images se superposent les unes aux autres."
+
+#: ../options-page/option-box-gallery-management.php:2
+msgid "Enable Gallery Management:"
+msgstr ""
+
+#: ../options-page/option-box-gallery-management.php:10
+msgid "The gallery management function enables you to manage your galleries separated from posts and pages."
+msgstr ""
+
+#: ../options-page/option-box-gallery-management.php:11
+msgid "After activating this feature you can find a new \"Galleries\" menu item on the left side of your dashboard."
+msgstr ""
+
+#: ../options-page/option-box-templates.php:16
+#, php-format
+msgid "Found in <em>%s</em>."
+msgstr "Localisé dans <em>%s</em>."
+
+#: ../options-page/option-box-templates.php:22
+msgid "Install a template in ZIP format"
+msgstr "Installer un modèle au format ZIP"
+
+#: ../options-page/option-box-templates.php:23
+msgid "If you have a template as a .zip archive, you may install it by uploading it here."
+msgstr "Si vous avez un modèle au format d'archive .zip, vous pouvez l'installer en le téléchargeant ici."
+
+#: ../options-page/option-box-templates.php:24
+msgid "Template as ZIP File"
+msgstr "Modèle comme fichier ZIP"
+
+#: ../options-page/option-box-templates.php:26
+msgid "Install a template in PHP format"
+msgstr "Installer un modèle au format PHP"
+
+#: ../options-page/option-box-templates.php:27
+msgid "If you have a template as a .php file, you may install it by uploading it here."
+msgstr "Si vous avez un modèle en fichier .php, vous pouvez l'installer en le téléchargeant ici."
+
+#: ../options-page/option-box-templates.php:28
+msgid "Templates PHP File"
+msgstr "Modèle comme fichier PHP"
+
+#: ../options-page/option-box-templates.php:30
+msgid "Install template and save all options"
+msgstr "Installer le modèle et sauvegarder toutes les options"
+
+#: ../options-page/option-box-taxonomies.php:3
+msgid "Please select the taxonomies you need to classify your galleries."
+msgstr "Merci de sélectionner les taxonomies dont vous avez besoin pour classer vos galeries."
+
+#: ../options-page/option-box-taxonomies.php:11
+#: ../options-page/option-box-taxonomies.php:17
+msgid "hierarchical"
+msgstr "hiérarchique"
+
+#: ../options-page/option-box-taxonomies.php:14
+msgid "Events"
+msgstr "Evènements"
+
+#: ../options-page/option-box-taxonomies.php:14
+msgid "Places"
+msgstr "Lieux"
+
+#: ../options-page/option-box-taxonomies.php:14
+msgid "Dates"
+msgstr "Dates"
+
+#: ../options-page/option-box-taxonomies.php:14
+msgid "Persons"
+msgstr "Personnages"
+
+#: ../options-page/option-box-taxonomies.php:14
+msgid "Photographers"
+msgstr "Photographes"
+
+#: ../options-page/option-box-taxonomies.php:24
+msgid "You need to activate the gallery management function before you can choose gallery taxonomies."
+msgstr ""
+
+#: ../options-page/option-box-capabilities.php:9
+msgid "Edit and create (own) Galleries"
+msgstr "Créer et éditer (ses) galeries"
+
+#: ../options-page/option-box-capabilities.php:10
+msgid "Edit others Galleries"
+msgstr "Editer d'autres galeries"
+
+#: ../options-page/option-box-capabilities.php:11
+msgid "Edit (own) private Galleries"
+msgstr "Editer (ses) galeries privées"
+
+#: ../options-page/option-box-capabilities.php:12
+msgid "Edit (own) published Galleries"
+msgstr "Editer (ses) galeries publiées"
+
+#: ../options-page/option-box-capabilities.php:14
+msgid "Delete (own) Galleries"
+msgstr "Supprimer (ses) galeries"
+
+#: ../options-page/option-box-capabilities.php:15
+msgid "Delete (own) private Galleries"
+msgstr "Supprimer (ses) galeries privées"
+
+#: ../options-page/option-box-capabilities.php:16
+msgid "Delete (own) published Galleries"
+msgstr "Supprimer (ses) galeries publiées"
+
+#: ../options-page/option-box-capabilities.php:17
+msgid "Delete others Galleries"
+msgstr "Supprimer d'autres galeries"
+
+#: ../options-page/option-box-capabilities.php:19
+msgid "Publish Galleries"
+msgstr "Publier les galeries"
+
+#: ../options-page/option-box-capabilities.php:20
+msgid "View (others) private Galleries"
+msgstr "Voir les galeries privées (des autres)"
+
+#: ../options-page/option-box-capabilities.php:25
+#, php-format
+msgid "Manage %s"
+msgstr "Gérer %s"
+
+#: ../options-page/option-box-capabilities.php:47
+msgid "You need to activate the gallery management function before you can set user rights."
+msgstr ""
+
+#~ msgid "Light Box"
+#~ msgstr "LightBox"
+
+#~ msgid "Sorry!"
+#~ msgstr "Désolé !"
+
+#~ msgid "In the Lite Version you can create one gallery only."
+#~ msgstr "Dans la version Lite vous ne pouvez créer qu'une seule galerie."
+
+#~ msgid ""
+#~ "Why not switching to the <a href=\"http://dennishoppe.de/en/wordpress-"
+#~ "plugins/fancy-gallery\">Pro Version of Fancy Gallery</a>? :)"
+#~ msgstr ""
+#~ "Pourquoi ne pas passer à la <a href=\"http://dennishoppe.de/en/wordpress-"
+#~ "plugins/fancy-gallery\">Version Pro de Fancy Gallery</a>? :)"
+
+#~ msgid "Please notice:"
+#~ msgstr "Remarquez que :"
+
+#~ msgid "Capabilities"
+#~ msgstr "Permissions"
+
+#~ msgid "Option Page"
+#~ msgstr "Page d'options"
+
+#~ msgid "Do not show the options page as sub menu of the \"Galleries\" menu."
+#~ msgstr ""
+#~ "Ne pas montrer les pages d'options comme un sous-menu du menu \"Galleries"
+#~ "\"."
+
+#, fuzzy
+#~ msgid "Gallery \"Excerpts\""
+#~ msgstr "Catégories de galeries"
+
+#, fuzzy
+#~ msgid "Updates"
+#~ msgstr "Mettre à jour le tag"
+
+#, fuzzy
+#~ msgid "Template installed."
+#~ msgstr "Modèle comme fichier PHP"
+
+#, fuzzy
+#~ msgid "Template deleted."
+#~ msgstr "Modèle"
+
+#, fuzzy
+#~ msgid "Event"
+#~ msgstr "Evènements"
+
+#, fuzzy
+#~ msgid "Search Events"
+#~ msgstr "Tags de recherche"
+
+#, fuzzy
+#~ msgid "All Events"
+#~ msgstr "Evènements"
+
+#, fuzzy
+#~ msgid "Edit Event"
+#~ msgstr "Evènements"
+
+#, fuzzy
+#~ msgid "Update Event"
+#~ msgstr "Mettre à jour le tag"
+
+#, fuzzy
+#~ msgid "Add New Event"
+#~ msgstr "Ajouter un nouveau tag"
+
+#, fuzzy
+#~ msgid "New Event"
+#~ msgstr "Evènements"
+
+#, fuzzy
+#~ msgctxt "URL slug"
+
+#~ msgid "gallery-event"
+#~ msgstr "galerie-tag"
+
+#, fuzzy
+#~ msgid "Gallery Places"
+#~ msgstr "Tags de la galerie"
+
+#, fuzzy
+#~ msgid "Place"
+#~ msgstr "Lieux"
+
+#, fuzzy
+#~ msgid "Search Places"
+#~ msgstr "Tags de recherche"
+
+#, fuzzy
+#~ msgid "All Places"
+#~ msgstr "Lieux"
+
+#, fuzzy
+#~ msgid "Edit Place"
+#~ msgstr "Editer le tag"
+
+#, fuzzy
+#~ msgid "Update Place"
+#~ msgstr "Mettre à jour le tag"
+
+#, fuzzy
+#~ msgid "Add New Place"
+#~ msgstr "Ajouter un nouveau tag"
+
+#, fuzzy
+#~ msgid "New Place"
+#~ msgstr "Lieux"
+
+#, fuzzy
+#~ msgctxt "URL slug"
+
+#~ msgid "gallery-place"
+#~ msgstr "galerie-tag"
+
+#, fuzzy
+#~ msgid "Gallery Dates"
+#~ msgstr "Tags de la galerie"
+
+#, fuzzy
+#~ msgid "Date"
+#~ msgstr "Dates"
+
+#, fuzzy
+#~ msgid "Search Dates"
+#~ msgstr "Tags de recherche"
+
+#, fuzzy
+#~ msgid "All Dates"
+#~ msgstr "Dates"
+
+#, fuzzy
+#~ msgid "Edit Date"
+#~ msgstr "Editer la catégorie"
+
+#, fuzzy
+#~ msgid "Update Date"
+#~ msgstr "Mettre à jour la catégorie"
+
+#, fuzzy
+#~ msgid "Add New Date"
+#~ msgstr "Ajouter une nouvelle catégorie"
+
+#, fuzzy
+#~ msgid "New Date"
+#~ msgstr "Nouvelle catégorie"
+
+#, fuzzy
+#~ msgctxt "URL slug"
+
+#~ msgid "gallery-date"
+#~ msgstr "galerie-catégorie"
+
+#, fuzzy
+#~ msgid "Gallery Persons"
+#~ msgstr "Nombre d'éléments de la galerie"
+
+#, fuzzy
+#~ msgid "Person"
+#~ msgstr "Personnages"
+
+#, fuzzy
+#~ msgid "Search Persons"
+#~ msgstr "Rechercher dans les galeries"
+
+#, fuzzy
+#~ msgid "All Persons"
+#~ msgstr "Personnages"
+
+#, fuzzy
+#~ msgid "Edit Person"
+#~ msgstr "Personnages"
+
+#, fuzzy
+#~ msgid "Update Person"
+#~ msgstr "Mettre à jour la catégorie"
+
+#, fuzzy
+#~ msgid "Add New Person"
+#~ msgstr "Ajouter une nouvelle catégorie"
+
+#, fuzzy
+#~ msgid "New Person"
+#~ msgstr "Personnages"
+
+#, fuzzy
+#~ msgctxt "URL slug"
+
+#~ msgid "gallery-person"
+#~ msgstr "galeries"
+
+#, fuzzy
+#~ msgid "Gallery Photographers"
+#~ msgstr "Photographes"
+
+#, fuzzy
+#~ msgid "Photographer"
+#~ msgstr "Photographes"
+
+#, fuzzy
+#~ msgid "Search Photographers"
+#~ msgstr "Photographes"
+
+#, fuzzy
+#~ msgid "All Photographers"
+#~ msgstr "Photographes"
+
+#, fuzzy
+#~ msgid "Edit Photographer"
+#~ msgstr "Photographes"
+
+#, fuzzy
+#~ msgid "Update Photographer"
+#~ msgstr "Photographes"
+
+#, fuzzy
+#~ msgid "Add New Photographer"
+#~ msgstr "Photographes"
+
+#, fuzzy
+#~ msgid "New Photographer"
+#~ msgstr "Photographes"
+
+#, fuzzy
+#~ msgctxt "URL slug"
+
+#~ msgid "gallery-photographer"
+#~ msgstr "Photographes"
+
+#, fuzzy
+#~ msgid "Delete this template"
+#~ msgstr "Supprimer d'autres galeries"
+
+#, fuzzy
+#~ msgid "Gallery excerpts are randomly chosen images from a gallery."
+#~ msgstr "Affiche quelques images aléatoires de vos galeries."

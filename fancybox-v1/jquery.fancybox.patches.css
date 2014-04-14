@@ -1,0 +1,10 @@
+.fancybox-overlay { z-index: 99991 }
+.fancybox-wrap { z-index: 99992 }
+.fancybox-opened { z-index: 99993 }
+.fancybox-close, .fancybox-nav, .fancybox-nav span { z-index: 99994 }
+.fancybox-title, .fancybox-title-float-wrap, #fancybox-thumbs, #fancybox-buttons { z-index: 99995 }
+#fancybox-loading { z-index: 99996 }
+
+#fancybox-thumbs ul, #fancybox-thumbs li { margin: 0 }
+
+body.admin-bar #fancybox-buttons.top { top: 35px }

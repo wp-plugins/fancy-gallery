@@ -1,0 +1,14 @@
+body div.fancy-gallery img {
+  display: inline;
+  float: none;
+  clear: none;
+}
+
+body .gallery.fancy-gallery {
+  overflow: hidden;
+}
+
+/* Deprecated */
+body div.fancy-gallery div.clear {
+  clear: both;
+}
