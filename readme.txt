@@ -2,7 +2,7 @@
 Contributors: dhoppe
 Tags: gallery, galleries, image, images, picture, pictures, photo, photos, photo-album, photo-albums, fancybox, thickbox, lightbox, jquery, javascript, widget, cms, free, flickr       widget,Post,plugin,admin,posts,sidebar,comments,google,images,page,image,links
 Requires at least: 3.5
-Tested up to: 3.8.3
+Tested up to: 3.9
 Stable tag: trunk
 Donate link: http://dennishoppe.de/en/wordpress-plugins/fancy-gallery
 License: GPLv2
@@ -126,6 +126,11 @@ Possibly even more important, buying the Premium edition gives you access to me 
 
 
 == Changelog ==
+
+= 1.4.1 =
+* Updated jQuery Mousewheel to 1.3.11
+* Updated jQuery Livequery to 1.3.6
+* Fixed PHP notice on import tab for images without parent
 
 = 1.4 =
 * Merged jQuery Lightbox repository from 1.3.1 to 1.3.35

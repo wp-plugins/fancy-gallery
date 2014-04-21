@@ -3,7 +3,7 @@
 Plugin Name: Fancy Gallery Lite
 Plugin URI: http://dennishoppe.de/en/wordpress-plugins/fancy-gallery
 Description: Fancy Gallery Lite enables you to create galleries and converts your galleries in post and pages to valid HTML blocks and associates linked images with the Fancy Light Box.
-Version: 1.4
+Version: 1.4.1
 Author: Dennis Hoppe
 Author URI: http://DennisHoppe.de
 */
@@ -15,7 +15,7 @@ Include DirName(__FILE__).'/wp-widget-fancy-taxonomy-cloud.php';
 If (!Class_Exists('wp_plugin_fancy_gallery')){
 class wp_plugin_fancy_gallery {
   var $base_url; # url to the plugin directory
-  var $version = '1.4'; # Current release number
+  var $version = '1.4.1'; # Current release number
   var $arr_option_box; # Meta boxes for the option page
   var $arr_gallery_meta_box; # Meta boxes for the gallery post type
   var $arr_taxonomies; # All buildIn Gallery Taxonomies - also the inactive ones.
@@ -120,7 +120,7 @@ class wp_plugin_fancy_gallery {
   }
 
   function Enqueue_Frontend_Scripts(){
-    WP_Enqueue_Script('jquery.mousewheel', $this->base_url . '/js/jquery.mousewheel.js', Array('jquery'), '3.1.3', ($this->get_option('script_position') != 'header') );
+    WP_Enqueue_Script('jquery-mousewheel', $this->base_url . '/js/jquery.mousewheel.min.js', Array('jquery'), '3.1.11', ($this->get_option('script_position') != 'header') );
 
     # Enqueue the lightbox library
     If ($this->Get_Option('lightbox') == 'fancybox2') $this->Enqueue_Fancybox_2();
@@ -153,14 +153,14 @@ class wp_plugin_fancy_gallery {
   }
 
   function Enqueue_Admin_Scripts(){
-    WP_Enqueue_Style('fancy-gallery-icon', $this->base_url . '/fancy-gallery-icon.css');
-    WP_Enqueue_Script('livequery', $this->base_url.'/js/jquery.livequery.js', Array('jquery'), '1.1.1', True);
-    WP_Enqueue_Script('fancy-gallery-media-gallery-settings', $this->base_url . '/js/gallery-settings.js', Array('jquery', 'livequery'), Null, True );
+    #WP_Enqueue_Style('fancy-gallery-icon', $this->base_url . '/fancy-gallery-icon.css');
+    WP_Enqueue_Script('jquery-livequery', $this->base_url.'/js/jquery.livequery.min.js', Array('jquery'), '1.3.6', True);
+    WP_Enqueue_Script('fancy-gallery-media-gallery-settings', $this->base_url . '/js/gallery-settings.js', Array('jquery', 'jquery-livequery'), Null, True );
   }
 
   function Enqueue_Fancybox_1(){
     # Enqueue Fancybox 1.3.x
-    WP_Enqueue_Script('fancybox', $this->base_url . '/fancybox-v1/jquery.fancybox-1.3.4.pack.js', Array('jquery', 'jquery.mousewheel'), '1.3.4', ($this->get_option('script_position') != 'header') );
+    WP_Enqueue_Script('fancybox', $this->base_url . '/fancybox-v1/jquery.fancybox-1.3.4.pack.js', Array('jquery', 'jquery-mousewheel'), '1.3.4', ($this->get_option('script_position') != 'header') );
     WP_Enqueue_Style('fancybox', $this->base_url . '/fancybox-v1/jquery.fancybox-1.3.4.css', Null, '1.3.4');
   }
 
@@ -176,7 +176,7 @@ class wp_plugin_fancy_gallery {
     */
 
     # Enqueue Fancybox 2.x
-    WP_Enqueue_Script('fancybox', '//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js', Array('jquery', 'jquery.mousewheel'), '2.1.5', ($this->get_option('script_position') != 'header'));
+    WP_Enqueue_Script('fancybox', '//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js', Array('jquery', 'jquery-mousewheel'), '2.1.5', ($this->get_option('script_position') != 'header'));
     WP_Enqueue_Script('fancybox-buttons', '//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-buttons.js', Array('fancybox'), '2.1.5', ($this->get_option('script_position') != 'header'));
     WP_Enqueue_Script('fancybox-media', '//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-media.js', Array('fancybox'), '2.1.5', ($this->get_option('script_position') != 'header'));
     WP_Enqueue_Script('fancybox-thumbs', '//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-thumbs.js', Array('fancybox'), '2.1.5', ($this->get_option('script_position') != 'header'));
@@ -196,7 +196,7 @@ class wp_plugin_fancy_gallery {
         $post = Get_Post($attachment->post_parent);
       }
 
-      If ($post->post_type == $this->gallery_post_type)
+      If (IsSet($post->post_type) && $post->post_type == $this->gallery_post_type)
         Add_Filter ( 'gettext', Array($this, 'Filter_GetText'), 10, 3 );
     }
   }
@@ -488,6 +488,7 @@ class wp_plugin_fancy_gallery {
       ),
       'supports' => Array( 'title', 'author', 'excerpt', 'thumbnail', 'comments' ),
       'menu_position' => 10, # below Media
+      'menu_icon' => 'dashicons-images-alt',
       'register_meta_box_cb' => Array($this, 'Add_Gallery_Meta_Boxes')
     ));
   }

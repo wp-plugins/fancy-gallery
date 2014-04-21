@@ -7,12 +7,15 @@ $current_gallery = Get_Post($_GET['post_id']);
 
 // Get the images for this page
 $images_query = New WP_Query(Array(
-  'post_type'				=> 'attachment',
-  'post_status'			=> 'any',
-  'post_mime_type'	=> 'image',
-  'paged'						=> $current_page,
-  'posts_per_page'	=> 20
+  'post_type'				    => 'attachment',
+  'post_status'			    => 'any',
+  'post_mime_type'	    => 'image',
+  'paged'						    => $current_page,
+  'posts_per_page'	    => 20,
+  'post_parent__not_in' => Array($current_gallery->ID)
 ));
+
+If (!$images_query->Have_Posts()) $message = $this->t('There are no images you could import.');
 
 // Prepare Pagination
 $page_links = paginate_links( array(
@@ -59,7 +62,7 @@ $image->move_link = Add_Query_Arg(Array('move_attachment' => $image->ID, 'move_t
 		<div class="ajax-loader hidden"><img src="<?php echo Admin_Url('images/loading.gif') ?>" alt="Loading"></div>
 		<div class="import-success hidden"><?php Echo $this->t('This image belongs to your gallery.') ?></div>
 
-		<?php If ($image->parent->ID != $current_gallery->ID): ?>
+		<?php If (!(IsSet($image->parent->ID) && $image->parent->ID == $current_gallery->ID)): ?>
 		<p class="import"><a href="<?php Echo $image->move_link ?>" class="import button"><?php Echo $this->t('Import to my gallery') ?></a></p>
 		<?php EndIf ?>
 	</div>
