@@ -47,6 +47,26 @@ You can find the settings page in WP Admin Panel &raquo; Settings &raquo; [Fancy
 = Limitations =
 There are no real limitations in this version except the number of galleries you can handle within the gallery management tool. The maximal number of galleries is limited to three but of course you can use the traditional galleries in your posts and pages *without* any limitations!
 
+= Gallery Templates =
+To create your own gallery template you only need elementary HTML and PHP knowledge. Just start by creating a new HTML file with the following example header with the template details.
+
+<code>
+/*
+Fancy Gallery Template: Template Name
+Description: Your template description here.
+Version: 1.0
+Author: John Doe
+Author URI: http://example.com
+*/
+</code>
+
+You can place the template in these folders:
+
+1. If it is for your own website put it in /wp-content/fancy-gallery-templates.
+1. If you are a theme author just put in your theme (max one level deep).
+1. If you are a plugin developer use the "fancy_gallery_template_files" to add template files from anywhere.
+1. Absolutely not recommended: in the "templates/" folder of the plugin itself.
+
 
 = In the Press =
 * Fancy Gallery has been granted the "Famous Software" Award. [To the post &raquo;](http://download.famouswhy.com/fancy_gallery/)
@@ -126,6 +146,9 @@ Possibly even more important, buying the Premium edition gives you access to me 
 
 
 == Changelog ==
+
+= 1.4.2 =
+* Added /wp-content/fancy-gallery-templates to the list of template include paths
 
 = 1.4.1 =
 * Updated jQuery Mousewheel to 1.3.11
