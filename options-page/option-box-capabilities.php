@@ -1,4 +1,3 @@
-<?php If ($this->Get_Option('gallery_management') == 'yes'): ?>
 <p class="pro-notice"><?php $this->Pro_Notice() ?></p>
 <?php
 $post_type = Get_Post_Type_Object($this->gallery_post_type);
@@ -43,6 +42,3 @@ ForEach ($GLOBALS['wp_roles']->roles AS $role_name => $arr_role) : ?>
   <?php EndForEach ?>
 
 <?php EndForEach;
-Else: ?>
-<p><?php Echo $this->t('You need to activate the gallery management function before you can set user rights.') ?></p>
-<?php EndIf;

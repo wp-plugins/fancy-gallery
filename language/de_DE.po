@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fancy Gallery\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-14 17:36+0100\n"
+"POT-Creation-Date: 2014-04-25 01:33+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
 "Language-Team: Ulrike Seddig\n"
@@ -125,7 +125,7 @@ msgid "Negate the thumbnails."
 msgstr "Miniaturbilder als Negativ anzeigen."
 
 #: ../wp-widget-fancy-random-images.php:108
-#: ../wp-plugin-fancy-gallery.php:713
+#: ../wp-plugin-fancy-gallery.php:717
 msgid "Template"
 msgstr "Vorlage"
 
@@ -133,301 +133,301 @@ msgstr "Vorlage"
 msgid "Please choose a template to display this widget."
 msgstr "Bitte wählen Sie eine Vorlage zum Anzeigen des Widgets aus."
 
-#: ../wp-plugin-fancy-gallery.php:207
+#: ../wp-plugin-fancy-gallery.php:210
 msgid "Set Gallery Thumbnail"
 msgstr "Galerievorschaubild setzen"
 
-#: ../wp-plugin-fancy-gallery.php:208
+#: ../wp-plugin-fancy-gallery.php:211
 msgid "Remove Gallery Thumbnail"
 msgstr "Vorschaubild entfernen"
 
-#: ../wp-plugin-fancy-gallery.php:209
+#: ../wp-plugin-fancy-gallery.php:212
 msgid "Use as Gallery Thumbnail"
 msgstr "Als Galerievorschaubild verwenden"
 
-#: ../wp-plugin-fancy-gallery.php:267
-#: ../wp-plugin-fancy-gallery.php:324
+#: ../wp-plugin-fancy-gallery.php:270
+#: ../wp-plugin-fancy-gallery.php:327
 msgid "Fancy Gallery Options"
 msgstr "Fancy Gallery Einstellungen"
 
-#: ../wp-plugin-fancy-gallery.php:268
+#: ../wp-plugin-fancy-gallery.php:271
 msgid "Fancy Gallery"
 msgstr "Fancy Gallery"
 
-#: ../wp-plugin-fancy-gallery.php:278
+#: ../wp-plugin-fancy-gallery.php:281
 msgid "Lightbox"
 msgstr "Lightbox"
 
-#: ../wp-plugin-fancy-gallery.php:279
+#: ../wp-plugin-fancy-gallery.php:282
 msgid "Gallery Management"
 msgstr "Galerieverwaltung"
 
-#: ../wp-plugin-fancy-gallery.php:282
+#: ../wp-plugin-fancy-gallery.php:285
 msgid "Templates"
 msgstr "Vorlagen"
 
-#: ../wp-plugin-fancy-gallery.php:283
+#: ../wp-plugin-fancy-gallery.php:286
 msgid "User rights"
 msgstr "Benutzerrechte"
 
-#: ../wp-plugin-fancy-gallery.php:285
+#: ../wp-plugin-fancy-gallery.php:288
 msgid "Taxonomies"
 msgstr "Klassifizierungen"
 
-#: ../wp-plugin-fancy-gallery.php:286
-#: ../wp-plugin-fancy-gallery.php:595
+#: ../wp-plugin-fancy-gallery.php:289
+#: ../wp-plugin-fancy-gallery.php:599
 msgid "Archive Url"
 msgstr "Archiv Url"
 
-#: ../wp-plugin-fancy-gallery.php:289
+#: ../wp-plugin-fancy-gallery.php:292
 msgid "Miscellaneous"
 msgstr "Sonstiges"
 
-#: ../wp-plugin-fancy-gallery.php:468
+#: ../wp-plugin-fancy-gallery.php:471
 msgid "Galleries"
 msgstr "Galerien"
 
-#: ../wp-plugin-fancy-gallery.php:469
+#: ../wp-plugin-fancy-gallery.php:472
 msgid "Gallery"
 msgstr "Galerie"
 
-#: ../wp-plugin-fancy-gallery.php:470
+#: ../wp-plugin-fancy-gallery.php:473
 msgid "Add Gallery"
 msgstr "Galerie hinzufügen"
 
-#: ../wp-plugin-fancy-gallery.php:471
+#: ../wp-plugin-fancy-gallery.php:474
 msgid "New Gallery"
 msgstr "Neue Galerie"
 
-#: ../wp-plugin-fancy-gallery.php:472
+#: ../wp-plugin-fancy-gallery.php:475
 msgid "Edit Gallery"
 msgstr "Galerie bearbeiten"
 
-#: ../wp-plugin-fancy-gallery.php:473
+#: ../wp-plugin-fancy-gallery.php:476
 msgid "View Gallery"
 msgstr "Galerie ansehen"
 
-#: ../wp-plugin-fancy-gallery.php:474
+#: ../wp-plugin-fancy-gallery.php:477
 msgid "Search Galleries"
 msgstr "Galerien suchen"
 
-#: ../wp-plugin-fancy-gallery.php:475
+#: ../wp-plugin-fancy-gallery.php:478
 msgid "No Galleries found"
 msgstr "Keine Galerien gefunden"
 
-#: ../wp-plugin-fancy-gallery.php:476
+#: ../wp-plugin-fancy-gallery.php:479
 msgid "No Galleries found in Trash"
 msgstr "Keine Galerien im Papierkorb gefunden."
 
-#: ../wp-plugin-fancy-gallery.php:486
+#: ../wp-plugin-fancy-gallery.php:489
 msgctxt "URL slug"
 msgid "galleries"
 msgstr "galerien"
 
-#: ../wp-plugin-fancy-gallery.php:497
+#: ../wp-plugin-fancy-gallery.php:501
 #, php-format
 msgid "Gallery updated. (<a href=\"%s\">View Gallery</a>)"
 msgstr "Galerie aktualisiert. (<a href=\"%s\">Galerie ansehen</a>)"
 
-#: ../wp-plugin-fancy-gallery.php:500
+#: ../wp-plugin-fancy-gallery.php:504
 msgid "Gallery updated."
 msgstr "Galerie aktualisiert."
 
-#: ../wp-plugin-fancy-gallery.php:501
+#: ../wp-plugin-fancy-gallery.php:505
 #, php-format
 msgid "Gallery restored to revision from %s"
 msgstr "Galerie auf den Stand von %s zurückgesetzt"
 
-#: ../wp-plugin-fancy-gallery.php:502
+#: ../wp-plugin-fancy-gallery.php:506
 #, php-format
 msgid "Gallery published. (<a href=\"%s\">View Gallery</a>)"
 msgstr "Galerie veröffentlicht. (<a href=\"%s\">Galerie ansehen</a>)"
 
-#: ../wp-plugin-fancy-gallery.php:503
+#: ../wp-plugin-fancy-gallery.php:507
 msgid "Gallery saved."
 msgstr "Galerie gespeichert."
 
-#: ../wp-plugin-fancy-gallery.php:504
+#: ../wp-plugin-fancy-gallery.php:508
 msgid "Gallery submitted."
 msgstr "Galerie eingereicht."
 
-#: ../wp-plugin-fancy-gallery.php:505
+#: ../wp-plugin-fancy-gallery.php:509
 #, php-format
 msgid "Gallery scheduled. (<a target=\"_blank\" href=\"%s\">View Gallery</a>)"
 msgstr "Galerie angelegt. (<a target=\"_blank\" href=\"%s\">Galerie ansehen</a>)"
 
-#: ../wp-plugin-fancy-gallery.php:506
+#: ../wp-plugin-fancy-gallery.php:510
 #, php-format
 msgid "Gallery draft updated. (<a target=\"_blank\" href=\"%s\">Preview Gallery</a>)"
 msgstr "Entwurf gespeichert. (<a target=\"_blank\" href=\"%s\">Galerievorschau</a>)"
 
-#: ../wp-plugin-fancy-gallery.php:513
+#: ../wp-plugin-fancy-gallery.php:517
 msgid "Gallery Categories"
 msgstr "Galeriekategorien"
 
-#: ../wp-plugin-fancy-gallery.php:515
+#: ../wp-plugin-fancy-gallery.php:519
 msgid "Categories"
 msgstr "Kategorien"
 
-#: ../wp-plugin-fancy-gallery.php:516
+#: ../wp-plugin-fancy-gallery.php:520
 msgid "Category"
 msgstr "Kategorie"
 
-#: ../wp-plugin-fancy-gallery.php:517
+#: ../wp-plugin-fancy-gallery.php:521
 msgid "Search Categories"
 msgstr "Kategorien durchsuchen"
 
-#: ../wp-plugin-fancy-gallery.php:518
+#: ../wp-plugin-fancy-gallery.php:522
 msgid "All Categories"
 msgstr "Alle Kategorien"
 
-#: ../wp-plugin-fancy-gallery.php:519
+#: ../wp-plugin-fancy-gallery.php:523
 msgid "Parent Category"
 msgstr "Übergeordnete Kategorie"
 
-#: ../wp-plugin-fancy-gallery.php:520
+#: ../wp-plugin-fancy-gallery.php:524
 msgid "Parent Category:"
 msgstr "Übergeordnete Kategorie:"
 
-#: ../wp-plugin-fancy-gallery.php:521
+#: ../wp-plugin-fancy-gallery.php:525
 msgid "Edit Category"
 msgstr "Kategorie bearbeiten"
 
-#: ../wp-plugin-fancy-gallery.php:522
+#: ../wp-plugin-fancy-gallery.php:526
 msgid "Update Category"
 msgstr "Kategorie aktualisieren"
 
-#: ../wp-plugin-fancy-gallery.php:523
+#: ../wp-plugin-fancy-gallery.php:527
 msgid "Add New Category"
 msgstr "Neue Kategorie hinzufügen"
 
-#: ../wp-plugin-fancy-gallery.php:524
+#: ../wp-plugin-fancy-gallery.php:528
 msgid "New Category"
 msgstr "Neue Kategorie"
 
-#: ../wp-plugin-fancy-gallery.php:532
+#: ../wp-plugin-fancy-gallery.php:536
 msgctxt "URL slug"
 msgid "gallery-category"
 msgstr "galerie-kategorie"
 
-#: ../wp-plugin-fancy-gallery.php:543
+#: ../wp-plugin-fancy-gallery.php:547
 msgid "Gallery Tags"
 msgstr "Schlagworte der Galerie "
 
-#: ../wp-plugin-fancy-gallery.php:545
+#: ../wp-plugin-fancy-gallery.php:549
 msgid "Tags"
 msgstr "Schlagworte"
 
-#: ../wp-plugin-fancy-gallery.php:546
+#: ../wp-plugin-fancy-gallery.php:550
 msgid "Tag"
 msgstr "Schlagwort"
 
-#: ../wp-plugin-fancy-gallery.php:547
+#: ../wp-plugin-fancy-gallery.php:551
 msgid "Search Tags"
 msgstr "Schlagworte durchsuchen"
 
-#: ../wp-plugin-fancy-gallery.php:548
+#: ../wp-plugin-fancy-gallery.php:552
 msgid "All Tags"
 msgstr "Alle Schlagworte"
 
-#: ../wp-plugin-fancy-gallery.php:549
+#: ../wp-plugin-fancy-gallery.php:553
 msgid "Edit Tag"
 msgstr "Schlagwort bearbeiten"
 
-#: ../wp-plugin-fancy-gallery.php:550
+#: ../wp-plugin-fancy-gallery.php:554
 msgid "Update Tag"
 msgstr "Schlagwort aktualisieren"
 
-#: ../wp-plugin-fancy-gallery.php:551
+#: ../wp-plugin-fancy-gallery.php:555
 msgid "Add New Tag"
 msgstr "Neues Schlagwort hinzufügen"
 
-#: ../wp-plugin-fancy-gallery.php:552
+#: ../wp-plugin-fancy-gallery.php:556
 msgid "New Tag"
 msgstr "Neues Schlagwort"
 
-#: ../wp-plugin-fancy-gallery.php:560
+#: ../wp-plugin-fancy-gallery.php:564
 msgctxt "URL slug"
 msgid "gallery-tag"
 msgstr "galerie-schlagwort"
 
-#: ../wp-plugin-fancy-gallery.php:598
+#: ../wp-plugin-fancy-gallery.php:602
 #, php-format
 msgid "This is the URL to the archive of this %s."
 msgstr "Das ist die URL des %s-Archives."
 
-#: ../wp-plugin-fancy-gallery.php:602
+#: ../wp-plugin-fancy-gallery.php:606
 msgid "Archive Feed"
 msgstr "Archiv Feed"
 
-#: ../wp-plugin-fancy-gallery.php:605
+#: ../wp-plugin-fancy-gallery.php:609
 #, php-format
 msgid "This is the URL to the feed of the archive of this %s."
 msgstr "Das ist die URL zum RSS Feed des %s-Archives."
 
-#: ../wp-plugin-fancy-gallery.php:617
+#: ../wp-plugin-fancy-gallery.php:621
 msgid "Upload Images"
 msgstr "Bilder hochladen"
 
-#: ../wp-plugin-fancy-gallery.php:619
+#: ../wp-plugin-fancy-gallery.php:623
 msgid "Import from Library"
 msgstr "Aus der Bibliothek importieren"
 
-#: ../wp-plugin-fancy-gallery.php:708
+#: ../wp-plugin-fancy-gallery.php:712
 msgid "Images"
 msgstr "Bilder"
 
-#: ../wp-plugin-fancy-gallery.php:711
+#: ../wp-plugin-fancy-gallery.php:715
 msgid "Excerpt"
 msgstr "Vorschau"
 
-#: ../wp-plugin-fancy-gallery.php:716
+#: ../wp-plugin-fancy-gallery.php:720
 msgid "Owner"
 msgstr "Eigentümer"
 
-#: ../wp-plugin-fancy-gallery.php:718
+#: ../wp-plugin-fancy-gallery.php:722
 msgid "Gallery ShortCode"
 msgstr "Galerie-Shortcode"
 
-#: ../wp-plugin-fancy-gallery.php:719
+#: ../wp-plugin-fancy-gallery.php:723
 msgid "Thumbnails"
 msgstr "Vorschaubilder"
 
-#: ../wp-plugin-fancy-gallery.php:756
+#: ../wp-plugin-fancy-gallery.php:760
 msgid "The Attachment was moved to your gallery."
 msgstr "Das Bild wurde in Ihre Galerie verschoben."
 
-#: ../wp-plugin-fancy-gallery.php:1020
+#: ../wp-plugin-fancy-gallery.php:1027
 #, php-format
 msgid "Available in the <a href=\"%s\" target=\"_blank\">Premium Version</a>."
 msgstr "Verfügbar in der <a href=\"%s\" target=\"_blank\">Premium-Version</a>."
 
-#: ../wp-plugin-fancy-gallery.php:1021
+#: ../wp-plugin-fancy-gallery.php:1028
 #, php-format
-msgid "Do need a special taxonomy for your website? No problem! Just <a href=\"%s\" target=\"_blank\">get in touch</a>."
+msgid "Do you need a special taxonomy for your website? No problem! Just <a href=\"%s\" target=\"_blank\">get in touch</a>."
 msgstr "Brauchen Sie eine spezielle Klassifizierung für Ihre Webseite? Kein Problem! <a href=\"%s\" target=\"_blank\">Fragen Sie uns einfach danach</a>."
 
-#: ../wp-plugin-fancy-gallery.php:1022
+#: ../wp-plugin-fancy-gallery.php:1029
 #, php-format
 msgid "This widget is available in the <a href=\"%s\" target=\"_blank\">Premium Version</a>. There will be no output in the front end of your website."
 msgstr "Dieses Widget ist in der <a href=\"%s\" target=\"_blank\">Premium-Version</a> verfügbar. Aktuell bleibt es auf der Webseite unsichtbar."
 
-#: ../wp-plugin-fancy-gallery.php:1023
+#: ../wp-plugin-fancy-gallery.php:1030
 #, php-format
 msgid "In the <a href=\"%s\" target=\"_blank\">Premium Version of Fancy Gallery</a> you can take advantage of the gallery management without any limitations."
 msgstr "In der <a href=\"%s\" target=\"_blank\">Premium Version von Fancy Gallery</a> können Sie die Vorteile der Galerieverwaltung ohne Einschränkungen nutzen."
 
-#: ../wp-plugin-fancy-gallery.php:1024
+#: ../wp-plugin-fancy-gallery.php:1031
 #, php-format
 msgid "Do you like the gallery management tool? Upgrade to the <a href=\"%s\" target=\"_blank\">Premium Version of Fancy Gallery</a>!"
 msgstr "Gefällt Ihnen die Galerieverwaltung? Dann steigen Sie doch auf die <a href=\"%s\"  target=\"_blank\">Premium Version von Fancy Gallery</a> um!"
 
-#: ../wp-plugin-fancy-gallery.php:1028
+#: ../wp-plugin-fancy-gallery.php:1035
 msgctxt "Link to the authors website"
 msgid "http://dennishoppe.de/en/wordpress-plugins/fancy-gallery"
 msgstr "http://dennishoppe.de/wordpress-plugins/fancy-gallery"
 
-#: ../wp-plugin-fancy-gallery.php:1061
+#: ../wp-plugin-fancy-gallery.php:1068
 msgid "&laquo; Back to your galleries"
 msgstr "&laquo; Zurück zu Ihren Galerien"
 
@@ -439,25 +439,29 @@ msgstr "Galerie Klassifizierungen (Wolke)"
 msgid "Displays your Gallery taxonomies as \"Tag Cloud\"."
 msgstr "Zeigt Ihre Galerieklassifizierungen als  \"Wortwolke\" an."
 
-#: ../import-images-form.php:53
+#: ../import-images-form.php:18
+msgid "There are no images you could import."
+msgstr "Es gibt keine Bilder die Sie importieren könnten."
+
+#: ../import-images-form.php:56
 #, php-format
 msgid "Image: \"%s\""
 msgstr "Bild: \"%s\""
 
-#: ../import-images-form.php:55
+#: ../import-images-form.php:58
 #, php-format
 msgid "Belongs to %s: \"%s\""
 msgstr "Gehört zu %s: \"%s\""
 
-#: ../import-images-form.php:57
+#: ../import-images-form.php:60
 msgid "Not attached to a post."
 msgstr "Gehört zu keinem Artikel."
 
-#: ../import-images-form.php:60
+#: ../import-images-form.php:63
 msgid "This image belongs to your gallery."
 msgstr "Das Bild gehört zu Ihrer Galerie."
 
-#: ../import-images-form.php:63
+#: ../import-images-form.php:66
 msgid "Import to my gallery"
 msgstr "In meine Galerie verschieben."
 
@@ -837,87 +841,93 @@ msgstr "Vorlagen-PHP-Datei"
 msgid "Install template and save all options"
 msgstr "Vorlagen installieren und alle Optionen speichern"
 
-#: ../options-page/option-box-taxonomies.php:3
+#: ../options-page/option-box-taxonomies.php:1
 msgid "Please select the taxonomies you need to classify your galleries."
 msgstr "Bitte wählen Sie die Klassifizierungen zur Gruppierung Ihrer Galerien aus."
 
-#: ../options-page/option-box-taxonomies.php:11
-#: ../options-page/option-box-taxonomies.php:17
+#: ../options-page/option-box-taxonomies.php:9
+#: ../options-page/option-box-taxonomies.php:15
 msgid "hierarchical"
 msgstr "hierarchisch"
 
-#: ../options-page/option-box-taxonomies.php:14
+#: ../options-page/option-box-taxonomies.php:12
 msgid "Events"
 msgstr "Ereignisse"
 
-#: ../options-page/option-box-taxonomies.php:14
+#: ../options-page/option-box-taxonomies.php:12
 msgid "Places"
 msgstr "Orte"
 
-#: ../options-page/option-box-taxonomies.php:14
+#: ../options-page/option-box-taxonomies.php:12
 msgid "Dates"
 msgstr "Zeiträume"
 
-#: ../options-page/option-box-taxonomies.php:14
+#: ../options-page/option-box-taxonomies.php:12
 msgid "Persons"
 msgstr "Personen"
 
-#: ../options-page/option-box-taxonomies.php:14
+#: ../options-page/option-box-taxonomies.php:12
 msgid "Photographers"
 msgstr "Fotografen"
 
-#: ../options-page/option-box-taxonomies.php:24
-msgid "You need to activate the gallery management function before you can choose gallery taxonomies."
-msgstr "Sie müssen die Galerieverwaltung  aktivieren bevor Sie die Klassifizierungen auswählen können."
-
-#: ../options-page/option-box-capabilities.php:9
+#: ../options-page/option-box-capabilities.php:8
 msgid "Edit and create (own) Galleries"
 msgstr "Erstellen und Bearbeiten (eigener) Galerien"
 
-#: ../options-page/option-box-capabilities.php:10
+#: ../options-page/option-box-capabilities.php:9
 msgid "Edit others Galleries"
 msgstr "Bearbeiten fremder Galerien"
 
-#: ../options-page/option-box-capabilities.php:11
+#: ../options-page/option-box-capabilities.php:10
 msgid "Edit (own) private Galleries"
 msgstr "Bearbeiten (eigener) privater Galerien"
 
-#: ../options-page/option-box-capabilities.php:12
+#: ../options-page/option-box-capabilities.php:11
 msgid "Edit (own) published Galleries"
 msgstr "Bearbeiten (eigener) veröffentlichter Galerien"
 
-#: ../options-page/option-box-capabilities.php:14
+#: ../options-page/option-box-capabilities.php:13
 msgid "Delete (own) Galleries"
 msgstr "Löschen (eigener) Galerien"
 
-#: ../options-page/option-box-capabilities.php:15
+#: ../options-page/option-box-capabilities.php:14
 msgid "Delete (own) private Galleries"
 msgstr "Löschen (eigener) privater Galerien"
 
-#: ../options-page/option-box-capabilities.php:16
+#: ../options-page/option-box-capabilities.php:15
 msgid "Delete (own) published Galleries"
 msgstr "Löschen (eigener) veröffentlichter Galerien"
 
-#: ../options-page/option-box-capabilities.php:17
+#: ../options-page/option-box-capabilities.php:16
 msgid "Delete others Galleries"
 msgstr "Löschen femder Galerien"
 
-#: ../options-page/option-box-capabilities.php:19
+#: ../options-page/option-box-capabilities.php:18
 msgid "Publish Galleries"
 msgstr "Galerien veröffentlichen"
 
-#: ../options-page/option-box-capabilities.php:20
+#: ../options-page/option-box-capabilities.php:19
 msgid "View (others) private Galleries"
 msgstr "Ansehen (fremder) privater Galerien"
 
-#: ../options-page/option-box-capabilities.php:25
+#: ../options-page/option-box-capabilities.php:24
 #, php-format
 msgid "Manage %s"
 msgstr "%s verwalten"
 
-#: ../options-page/option-box-capabilities.php:47
-msgid "You need to activate the gallery management function before you can set user rights."
-msgstr "Sie müssen die Galerieverwaltung aktivieren bevor Sie Benutzerrechte setzen können."
+#~ msgid ""
+#~ "You need to activate the gallery management function before you can "
+#~ "choose gallery taxonomies."
+#~ msgstr ""
+#~ "Sie müssen die Galerieverwaltung  aktivieren bevor Sie die "
+#~ "Klassifizierungen auswählen können."
+
+#~ msgid ""
+#~ "You need to activate the gallery management function before you can set "
+#~ "user rights."
+#~ msgstr ""
+#~ "Sie müssen die Galerieverwaltung aktivieren bevor Sie Benutzerrechte "
+#~ "setzen können."
 
 #~ msgid ""
 #~ "You can create as many galleries as you want in the <a href=\"http://"

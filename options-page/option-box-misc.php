@@ -17,13 +17,3 @@
   <label for="change_image_display"><?php Echo $this->t('Convert images to inline elements.') ?></label><br />
   <small><?php Echo $this->t('Tick this box if your images are among each other.') ?></small>
 </p>
-
-<?php
-/*
-<h4><?php Echo $this->t('Option Page') ?></h4>
-<p>
-  <input type="checkbox" name="disable_option_page_in_gallery_menu" id="disable_option_page_in_gallery_menu" value="yes" <?php Checked ($this->get_option('disable_option_page_in_gallery_menu'), 'yes') ?> />
-  <label for="disable_option_page_in_gallery_menu"><?php Echo $this->t('Do not show the options page as sub menu of the "Galleries" menu.') ?></label><br />
-</p>
-*/
-?>

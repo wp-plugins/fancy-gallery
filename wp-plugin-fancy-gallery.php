@@ -1025,7 +1025,7 @@ class wp_plugin_fancy_gallery {
   function Pro_Notice($message = 'feature', $output = True){
     $arr_message = Array(
       'feature' => $this->t('Available in the <a href="%s" target="_blank">Premium Version</a>.'),
-      'custom_tax' => $this->t('Do need a special taxonomy for your website? No problem! Just <a href="%s" target="_blank">get in touch</a>.'),
+      'custom_tax' => $this->t('Do you need a special taxonomy for your website? No problem! Just <a href="%s" target="_blank">get in touch</a>.'),
       'widget' => $this->t('This widget is available in the <a href="%s" target="_blank">Premium Version</a>. There will be no output in the front end of your website.'),
       'count_limit' => $this->t('In the <a href="%s" target="_blank">Premium Version of Fancy Gallery</a> you can take advantage of the gallery management without any limitations.'),
       'do_you_like' => $this->t('Do you like the gallery management tool? Upgrade to the <a href="%s" target="_blank">Premium Version of Fancy Gallery</a>!')
