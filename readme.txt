@@ -109,9 +109,9 @@ You can find the *Translation.pot* file in the *language/* folder in the plugin 
 
 = Automatic installation =
 
-Automatic installation is the easiest option as WordPress handles the file transfers itself and you do not need to leave your web browser. To do an automatic install of Fancy Gallery, log in to your WordPress dashboard, navigate to the Plugins menu and click Add New.
+Automatic installation is the easiest option as WordPress handles the file transfers itself and you do not need to leave your web browser. To do an automatic install of Fancy Gallery, log in to your WordPress dashboard, navigate to the Plugins menu and click "Add New".
 
-In the search field type "Fancy Gallery" and click Search Plugins. Once you have found my gallery plugin you can view details about it such as the the point release, rating and description. Most importantly of course, you can install it by simply clicking "Install Now".
+In the search field type "Fancy Gallery" and click "Search Plugins". Once you have found my gallery plugin you can view details about it such as the point release, rating and description. Most importantly of course, you can install it by simply clicking "Install Now".
 
 = Manual installation =
 
