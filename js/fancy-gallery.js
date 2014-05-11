@@ -1,5 +1,13 @@
-jQuery(function(){
+(function($){
   var FG = FANCY_GALLERY; // Pointer to our global object
+
+  // Render the template stylesheets
+  if(typeof FG.templates == 'object'){
+    var $head = $('head');
+    for(index in FG.templates){
+      $('<link rel="stylesheet">').attr('href', FG.templates[index]).appendTo($head);
+    }
+  }
 
   // group gallery items
   jQuery('div.fancy-gallery a')
@@ -75,4 +83,4 @@ jQuery(function(){
     padding:      parseInt(FG.padding)
   });
 
-});
+})(jQuery);

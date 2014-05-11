@@ -147,6 +147,9 @@ Possibly even more important, buying the Premium edition gives you access to me 
 
 == Changelog ==
 
+= 1.4.3 =
+* The plugin loads the stylesheets asynchronous now
+
 = 1.4.2 =
 * Added /wp-content/fancy-gallery-templates to the list of template include paths
 

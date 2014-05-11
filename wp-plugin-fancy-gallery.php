@@ -3,7 +3,7 @@
 Plugin Name: Fancy Gallery Lite
 Plugin URI: http://dennishoppe.de/en/wordpress-plugins/fancy-gallery
 Description: Fancy Gallery Lite enables you to create galleries and converts your galleries in post and pages to valid HTML blocks and associates linked images with the Fancy Light Box.
-Version: 1.4.2
+Version: 1.4.3
 Author: Dennis Hoppe
 Author URI: http://DennisHoppe.de
 */
@@ -15,7 +15,7 @@ Include DirName(__FILE__).'/wp-widget-fancy-taxonomy-cloud.php';
 If (!Class_Exists('wp_plugin_fancy_gallery')){
 class wp_plugin_fancy_gallery {
   var $base_url; # url to the plugin directory
-  var $version = '1.4.2'; # Current release number
+  var $version = '1.4.3'; # Current release number
   var $arr_option_box; # Meta boxes for the option page
   var $arr_gallery_meta_box; # Meta boxes for the gallery post type
   var $arr_taxonomies; # All buildIn Gallery Taxonomies - also the inactive ones.
@@ -123,6 +123,9 @@ class wp_plugin_fancy_gallery {
   }
 
   function Enqueue_Frontend_Scripts(){
+    # Prepare JS_OPTIONS
+    $JS_OPTIONS = $this->Get_Option();
+
     WP_Enqueue_Script('jquery-mousewheel', $this->base_url . '/js/jquery.mousewheel.min.js', Array('jquery'), '3.1.11', ($this->get_option('script_position') != 'header') );
 
     # Enqueue the lightbox library
@@ -132,10 +135,8 @@ class wp_plugin_fancy_gallery {
     WP_Enqueue_Script('fancy-gallery', $this->base_url . '/js/fancy-gallery.js', Array('jquery', 'fancybox'), $this->version, ($this->get_option('script_position') != 'header') );
     WP_Enqueue_Style('fancybox-pachtes', $this->base_url.'/fancybox-v1/jquery.fancybox.patches.css', Array('fancybox', 'fancybox-buttons', 'fancybox-thumbs'), $this->version);
 
-    # Add the plugin options to the JS front end
-    WP_Localize_Script('fancy-gallery', 'FANCY_GALLERY', $this->Get_Option());
-
     # Enqueue Template Stylesheets
+    $JS_OPTIONS['templates'] = Array();
     ForEach ($this->Get_Template_Files() AS $template_name => $template_properties){
       $style_sheet_name = BaseName($template_properties['file'], '.php') . '.css';
       $style_sheet_file = DirName($template_properties['file']) . '/' . $style_sheet_name;
@@ -151,8 +152,12 @@ class wp_plugin_fancy_gallery {
       }
 
       $template_base_url = Str_Replace("\\", '/', $template_base_url); # Windows workaround
-      WP_Enqueue_Style($style_sheet_id, $template_base_url . '/' . $style_sheet_name);
+      #WP_Enqueue_Style($style_sheet_id, $template_base_url . '/' . $style_sheet_name);
+      $JS_OPTIONS['templates'][] = $template_base_url . '/' . $style_sheet_name;
     }
+
+    # Add the plugin options to the JS front end
+    WP_Localize_Script('fancy-gallery', 'FANCY_GALLERY', $JS_OPTIONS);
   }
 
   function Enqueue_Admin_Scripts(){
