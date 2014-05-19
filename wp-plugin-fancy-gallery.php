@@ -3,7 +3,7 @@
 Plugin Name: Fancy Gallery Lite
 Plugin URI: http://dennishoppe.de/en/wordpress-plugins/fancy-gallery
 Description: Fancy Gallery Lite enables you to create galleries and converts your galleries in post and pages to valid HTML blocks and associates linked images with the Fancy Light Box.
-Version: 1.4.3
+Version: 1.4.4
 Author: Dennis Hoppe
 Author URI: http://DennisHoppe.de
 */
@@ -48,7 +48,7 @@ class wp_plugin_fancy_gallery {
     Add_Action('wp_enqueue_scripts', Array($this, 'enqueue_frontend_scripts'));
     Add_Action('admin_enqueue_scripts', Array($this, 'enqueue_admin_scripts'));
 
-    If ($this->get_option('gallery_management') == 'yes'){
+    #If ($this->get_option('gallery_management') == 'yes'){
       Add_Action('init', Array($this, 'Register_Gallery_Post_Type'));
       Add_Action('init', Array($this, 'Register_Gallery_Taxonomies'));
       Add_Action('admin_init', Array($this, 'Add_Taxonomy_Archive_Urls'), 99);
@@ -66,9 +66,9 @@ class wp_plugin_fancy_gallery {
       Add_Filter('views_edit-fancy-gallery', Array($this, 'Add_Gallery_Count_Notice'));
       Add_Action('admin_print_styles', Array($this, 'Print_Dashboard_Styles'));
       Add_Action('admin_bar_menu', Array($this, 'Filter_Admin_Bar_Menu'), 999);
-    }
+    #}
 
-    Add_ShortCode('gallery', Array($this, 'ShortCode_Gallery'));
+    #Add_ShortCode('gallery', Array($this, 'ShortCode_Gallery'));
 
     If (IsSet($_REQUEST['strip_tabs'])){
       Add_Action('media_upload_gallery', Array($this, 'Add_Media_Upload_Style'));
@@ -126,14 +126,11 @@ class wp_plugin_fancy_gallery {
     # Prepare JS_OPTIONS
     $JS_OPTIONS = $this->Get_Option();
 
-    WP_Enqueue_Script('jquery-mousewheel', $this->base_url . '/js/jquery.mousewheel.min.js', Array('jquery'), '3.1.11', ($this->get_option('script_position') != 'header') );
-
     # Enqueue the lightbox library
-    If ($this->Get_Option('lightbox') == 'fancybox2') $this->Enqueue_Fancybox_2();
-    Else $this->Enqueue_Fancybox_1();
+    If ($this->Get_Option('lightbox') == 'fancybox1') $this->Enqueue_Fancybox_1();
+    ElseIf ($this->Get_Option('lightbox') == 'fancybox2') $this->Enqueue_Fancybox_2();
 
-    WP_Enqueue_Script('fancy-gallery', $this->base_url . '/js/fancy-gallery.js', Array('jquery', 'fancybox'), $this->version, ($this->get_option('script_position') != 'header') );
-    WP_Enqueue_Style('fancybox-pachtes', $this->base_url.'/fancybox-v1/jquery.fancybox.patches.css', Array('fancybox', 'fancybox-buttons', 'fancybox-thumbs'), $this->version);
+    WP_Enqueue_Script('fancy-gallery', $this->base_url . '/js/fancy-gallery.js', Array('jquery'), $this->version, ($this->get_option('script_position') != 'header') );
 
     # Enqueue Template Stylesheets
     $JS_OPTIONS['templates'] = Array();
@@ -168,6 +165,7 @@ class wp_plugin_fancy_gallery {
 
   function Enqueue_Fancybox_1(){
     # Enqueue Fancybox 1.3.x
+    WP_Enqueue_Script('jquery-mousewheel', $this->base_url . '/js/jquery.mousewheel.min.js', Array('jquery'), '3.1.11', ($this->get_option('script_position') != 'header') );
     WP_Enqueue_Script('fancybox', $this->base_url . '/fancybox-v1/jquery.fancybox-1.3.4.pack.js', Array('jquery', 'jquery-mousewheel'), '1.3.4', ($this->get_option('script_position') != 'header') );
     WP_Enqueue_Style('fancybox', $this->base_url . '/fancybox-v1/jquery.fancybox-1.3.4.css', Null, '1.3.4');
   }
@@ -184,6 +182,7 @@ class wp_plugin_fancy_gallery {
     */
 
     # Enqueue Fancybox 2.x
+    WP_Enqueue_Script('jquery-mousewheel', $this->base_url . '/js/jquery.mousewheel.min.js', Array('jquery'), '3.1.11', ($this->get_option('script_position') != 'header') );
     WP_Enqueue_Script('fancybox', '//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js', Array('jquery', 'jquery-mousewheel'), '2.1.5', ($this->get_option('script_position') != 'header'));
     WP_Enqueue_Script('fancybox-buttons', '//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-buttons.js', Array('fancybox'), '2.1.5', ($this->get_option('script_position') != 'header'));
     WP_Enqueue_Script('fancybox-media', '//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-media.js', Array('fancybox'), '2.1.5', ($this->get_option('script_position') != 'header'));
@@ -191,6 +190,7 @@ class wp_plugin_fancy_gallery {
     WP_Enqueue_Style('fancybox', '//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css', Null, '2.1.5');
     WP_Enqueue_Style('fancybox-buttons', '//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-buttons.css', Null, '2.1.5');
     WP_Enqueue_Style('fancybox-thumbs', '//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-thumbs.css', Null, '2.1.5');
+    WP_Enqueue_Style('fancybox-pachtes', $this->base_url.'/fancybox-v1/jquery.fancybox.patches.css', Array('fancybox', 'fancybox-buttons', 'fancybox-thumbs'), $this->version);
   }
 
   function Add_GetTextFilter(){
@@ -284,15 +284,15 @@ class wp_plugin_fancy_gallery {
 
     # Add option boxes
     $this->Add_Option_Box ($this->t('Lightbox'), DirName(__FILE__).'/options-page/option-box-lightbox.php');
-    $this->Add_Option_Box ($this->t('Gallery Management'), DirName(__FILE__).'/options-page/option-box-gallery-management.php', 'side');
+    #$this->Add_Option_Box ($this->t('Gallery Management'), DirName(__FILE__).'/options-page/option-box-gallery-management.php', 'side');
 
-    If ($this->get_option('gallery_management') == 'yes'){
+    #If ($this->get_option('gallery_management') == 'yes'){
       $this->Add_Option_Box ($this->t('Templates'), DirName(__FILE__).'/options-page/option-box-templates.php', 'main', 'closed');
       $this->Add_Option_Box ($this->t('User rights'), DirName(__FILE__).'/options-page/option-box-capabilities.php', 'main', 'closed');
 
       $this->Add_Option_Box ($this->t('Taxonomies'), DirName(__FILE__).'/options-page/option-box-taxonomies.php', 'side');
       $this->Add_Option_Box ($this->t('Archive Url'), DirName(__FILE__).'/options-page/option-box-archive-link.php', 'side');
-    }
+    #}
 
     $this->Add_Option_Box ($this->t('Miscellaneous'), DirName(__FILE__).'/options-page/option-box-misc.php', 'side');
 
@@ -314,10 +314,10 @@ class wp_plugin_fancy_gallery {
     WP_Enqueue_Script('dashboard');
     WP_Enqueue_Style('dashboard');
 
-    WP_Enqueue_Script('farbtastic');
-    WP_Enqueue_Style('farbtastic');
+    #WP_Enqueue_Script('farbtastic');
+    #WP_Enqueue_Style('farbtastic');
 
-    WP_Enqueue_Script('fancy-gallery-options-page', $this->base_url . '/options-page/options-page.js', Array('jquery') );
+    WP_Enqueue_Script('fancy-gallery-options-page', $this->base_url . '/options-page/options-page.js', Array('jquery'), Null, True);
     WP_Enqueue_Style('fancy-gallery-options-page', $this->base_url . '/options-page/options-page.css' );
 
     # Remove incompatible JS Libs
@@ -328,7 +328,6 @@ class wp_plugin_fancy_gallery {
     $options_saved = IsSet($_GET['options_saved']) && !Empty($_GET['options_saved']);
     ?>
     <div class="wrap">
-      <?php Screen_Icon() ?>
       <h2><?php Echo $this->t('Fancy Gallery Options') ?></h2>
 
       <?php If ($options_saved) : ?>
@@ -363,7 +362,6 @@ class wp_plugin_fancy_gallery {
 
       <p class="submit">
         <input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>">
-        <input type="reset" value="<?php _e('Reset') ?>">
       </p>
 
       </form>

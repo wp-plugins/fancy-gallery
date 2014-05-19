@@ -2,7 +2,7 @@
 Contributors: dhoppe
 Tags: gallery, galleries, image, images, picture, pictures, photo, photos, photo-album, photo-albums, fancybox, thickbox, lightbox, jquery, javascript, widget, cms, free, flickr       widget,Post,plugin,admin,posts,sidebar,comments,google,images,page,image,links
 Requires at least: 3.5
-Tested up to: 3.9
+Tested up to: 3.9.1
 Stable tag: trunk
 Donate link: http://dennishoppe.de/en/wordpress-plugins/fancy-gallery
 License: GPLv2
@@ -146,6 +146,10 @@ Possibly even more important, buying the Premium edition gives you access to me 
 
 
 == Changelog ==
+
+= 1.4.4 =
+* Fixed the edit image section
+* Made the lightbox library optional
 
 = 1.4.3 =
 * The plugin loads the stylesheets asynchronous now

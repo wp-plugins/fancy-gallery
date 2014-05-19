@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fancy Gallery\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-25 01:34+0100\n"
+"POT-Creation-Date: 2014-05-19 10:41+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
 "Language-Team: Guillermo Gozalbes <ggozalbes@gmail.com>\n"
@@ -127,7 +127,7 @@ msgid "Negate the thumbnails."
 msgstr "Pasar a negativo las miniaturas."
 
 #: ../wp-widget-fancy-random-images.php:108
-#: ../wp-plugin-fancy-gallery.php:717
+#: ../wp-plugin-fancy-gallery.php:720
 msgid "Template"
 msgstr "Plantilla"
 
@@ -135,304 +135,299 @@ msgstr "Plantilla"
 msgid "Please choose a template to display this widget."
 msgstr "Por favor, escoge una plantilla para mostrar el widget."
 
-#: ../wp-plugin-fancy-gallery.php:210
+#: ../wp-plugin-fancy-gallery.php:215
 msgid "Set Gallery Thumbnail"
 msgstr "Activar Miniaturas de Galería"
 
-#: ../wp-plugin-fancy-gallery.php:211
+#: ../wp-plugin-fancy-gallery.php:216
 msgid "Remove Gallery Thumbnail"
 msgstr "Desactivar Miniaturas de Galería"
 
-#: ../wp-plugin-fancy-gallery.php:212
+#: ../wp-plugin-fancy-gallery.php:217
 msgid "Use as Gallery Thumbnail"
 msgstr "Usar como miniatura de galería"
 
-#: ../wp-plugin-fancy-gallery.php:270
-#: ../wp-plugin-fancy-gallery.php:327
+#: ../wp-plugin-fancy-gallery.php:275
+#: ../wp-plugin-fancy-gallery.php:331
 msgid "Fancy Gallery Options"
 msgstr "Opciones de Fancy Gallery"
 
-#: ../wp-plugin-fancy-gallery.php:271
+#: ../wp-plugin-fancy-gallery.php:276
 msgid "Fancy Gallery"
 msgstr "Fancy Gallery"
 
-#: ../wp-plugin-fancy-gallery.php:281
+#: ../wp-plugin-fancy-gallery.php:286
 msgid "Lightbox"
 msgstr "Lightbox"
 
-#: ../wp-plugin-fancy-gallery.php:282
-#, fuzzy
-msgid "Gallery Management"
-msgstr "Etiquetas de Galería"
-
-#: ../wp-plugin-fancy-gallery.php:285
+#: ../wp-plugin-fancy-gallery.php:290
 msgid "Templates"
 msgstr "Plantillas"
 
-#: ../wp-plugin-fancy-gallery.php:286
+#: ../wp-plugin-fancy-gallery.php:291
 msgid "User rights"
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:288
+#: ../wp-plugin-fancy-gallery.php:293
 msgid "Taxonomies"
 msgstr "Taxonomías"
 
-#: ../wp-plugin-fancy-gallery.php:289
-#: ../wp-plugin-fancy-gallery.php:599
+#: ../wp-plugin-fancy-gallery.php:294
+#: ../wp-plugin-fancy-gallery.php:602
 msgid "Archive Url"
 msgstr "Url de archivo"
 
-#: ../wp-plugin-fancy-gallery.php:292
+#: ../wp-plugin-fancy-gallery.php:297
 msgid "Miscellaneous"
 msgstr "Miscelánea"
 
-#: ../wp-plugin-fancy-gallery.php:471
+#: ../wp-plugin-fancy-gallery.php:474
 msgid "Galleries"
 msgstr "Galerías"
 
-#: ../wp-plugin-fancy-gallery.php:472
+#: ../wp-plugin-fancy-gallery.php:475
 msgid "Gallery"
 msgstr "Galería"
 
-#: ../wp-plugin-fancy-gallery.php:473
+#: ../wp-plugin-fancy-gallery.php:476
 msgid "Add Gallery"
 msgstr "Añadir Galería"
 
-#: ../wp-plugin-fancy-gallery.php:474
+#: ../wp-plugin-fancy-gallery.php:477
 msgid "New Gallery"
 msgstr "Nueva Galería"
 
-#: ../wp-plugin-fancy-gallery.php:475
+#: ../wp-plugin-fancy-gallery.php:478
 msgid "Edit Gallery"
 msgstr "Editar Galería"
 
-#: ../wp-plugin-fancy-gallery.php:476
+#: ../wp-plugin-fancy-gallery.php:479
 msgid "View Gallery"
 msgstr "Ver Galería"
 
-#: ../wp-plugin-fancy-gallery.php:477
+#: ../wp-plugin-fancy-gallery.php:480
 msgid "Search Galleries"
 msgstr "Buscar Galería"
 
-#: ../wp-plugin-fancy-gallery.php:478
+#: ../wp-plugin-fancy-gallery.php:481
 msgid "No Galleries found"
 msgstr "No se han encontrado Galerías"
 
-#: ../wp-plugin-fancy-gallery.php:479
+#: ../wp-plugin-fancy-gallery.php:482
 msgid "No Galleries found in Trash"
 msgstr "No hay Galerías en la Papelera"
 
-#: ../wp-plugin-fancy-gallery.php:489
+#: ../wp-plugin-fancy-gallery.php:492
 msgctxt "URL slug"
 msgid "galleries"
 msgstr "galerias"
 
-#: ../wp-plugin-fancy-gallery.php:501
+#: ../wp-plugin-fancy-gallery.php:504
 #, php-format
 msgid "Gallery updated. (<a href=\"%s\">View Gallery</a>)"
 msgstr "Galería actualizada. (<a href=\"%s\">Ver Galería</a>)"
 
-#: ../wp-plugin-fancy-gallery.php:504
+#: ../wp-plugin-fancy-gallery.php:507
 msgid "Gallery updated."
 msgstr "Galería actualizada."
 
-#: ../wp-plugin-fancy-gallery.php:505
+#: ../wp-plugin-fancy-gallery.php:508
 #, php-format
 msgid "Gallery restored to revision from %s"
 msgstr "Galería restaurada a la revisión de %s"
 
-#: ../wp-plugin-fancy-gallery.php:506
+#: ../wp-plugin-fancy-gallery.php:509
 #, php-format
 msgid "Gallery published. (<a href=\"%s\">View Gallery</a>)"
 msgstr "Galería publicada  (<a href=\"%s\">Ver Galería</a>)"
 
-#: ../wp-plugin-fancy-gallery.php:507
+#: ../wp-plugin-fancy-gallery.php:510
 msgid "Gallery saved."
 msgstr "Galería guardada."
 
-#: ../wp-plugin-fancy-gallery.php:508
+#: ../wp-plugin-fancy-gallery.php:511
 msgid "Gallery submitted."
 msgstr "Galería enviada."
 
-#: ../wp-plugin-fancy-gallery.php:509
+#: ../wp-plugin-fancy-gallery.php:512
 #, php-format
 msgid "Gallery scheduled. (<a target=\"_blank\" href=\"%s\">View Gallery</a>)"
 msgstr "Galería programada.  (<a href=\"%s\">Ver Galería</a>)"
 
-#: ../wp-plugin-fancy-gallery.php:510
+#: ../wp-plugin-fancy-gallery.php:513
 #, php-format
 msgid "Gallery draft updated. (<a target=\"_blank\" href=\"%s\">Preview Gallery</a>)"
 msgstr "Borrador de Galería actualizado.  (<a href=\"%s\">Previsualizar Galería</a>)"
 
-#: ../wp-plugin-fancy-gallery.php:517
+#: ../wp-plugin-fancy-gallery.php:520
 msgid "Gallery Categories"
 msgstr "Categorías de Galería"
 
-#: ../wp-plugin-fancy-gallery.php:519
+#: ../wp-plugin-fancy-gallery.php:522
 msgid "Categories"
 msgstr "Categorías"
 
-#: ../wp-plugin-fancy-gallery.php:520
+#: ../wp-plugin-fancy-gallery.php:523
 msgid "Category"
 msgstr "Categoría"
 
-#: ../wp-plugin-fancy-gallery.php:521
+#: ../wp-plugin-fancy-gallery.php:524
 msgid "Search Categories"
 msgstr "Buscar Categoría"
 
-#: ../wp-plugin-fancy-gallery.php:522
+#: ../wp-plugin-fancy-gallery.php:525
 msgid "All Categories"
 msgstr "Todas las Categorías"
 
-#: ../wp-plugin-fancy-gallery.php:523
+#: ../wp-plugin-fancy-gallery.php:526
 msgid "Parent Category"
 msgstr "Categoría Padre"
 
-#: ../wp-plugin-fancy-gallery.php:524
+#: ../wp-plugin-fancy-gallery.php:527
 msgid "Parent Category:"
 msgstr "Categoría Padre:"
 
-#: ../wp-plugin-fancy-gallery.php:525
+#: ../wp-plugin-fancy-gallery.php:528
 msgid "Edit Category"
 msgstr "Editar Categoría"
 
-#: ../wp-plugin-fancy-gallery.php:526
+#: ../wp-plugin-fancy-gallery.php:529
 msgid "Update Category"
 msgstr "Actualizar Categoría"
 
-#: ../wp-plugin-fancy-gallery.php:527
+#: ../wp-plugin-fancy-gallery.php:530
 msgid "Add New Category"
 msgstr "Añadir nueva Categoría"
 
-#: ../wp-plugin-fancy-gallery.php:528
+#: ../wp-plugin-fancy-gallery.php:531
 msgid "New Category"
 msgstr "Nueva Categoría"
 
-#: ../wp-plugin-fancy-gallery.php:536
+#: ../wp-plugin-fancy-gallery.php:539
 #, fuzzy
 msgctxt "URL slug"
 msgid "gallery-category"
 msgstr "Categorías de Galería"
 
-#: ../wp-plugin-fancy-gallery.php:547
+#: ../wp-plugin-fancy-gallery.php:550
 msgid "Gallery Tags"
 msgstr "Etiquetas de Galería"
 
-#: ../wp-plugin-fancy-gallery.php:549
+#: ../wp-plugin-fancy-gallery.php:552
 msgid "Tags"
 msgstr "Etiquetas"
 
-#: ../wp-plugin-fancy-gallery.php:550
+#: ../wp-plugin-fancy-gallery.php:553
 msgid "Tag"
 msgstr "Etiqueta"
 
-#: ../wp-plugin-fancy-gallery.php:551
+#: ../wp-plugin-fancy-gallery.php:554
 msgid "Search Tags"
 msgstr "Buscar Etiquetas"
 
-#: ../wp-plugin-fancy-gallery.php:552
+#: ../wp-plugin-fancy-gallery.php:555
 msgid "All Tags"
 msgstr "Todas las Etiquetas"
 
-#: ../wp-plugin-fancy-gallery.php:553
+#: ../wp-plugin-fancy-gallery.php:556
 msgid "Edit Tag"
 msgstr "Editar Etiqueta"
 
-#: ../wp-plugin-fancy-gallery.php:554
+#: ../wp-plugin-fancy-gallery.php:557
 msgid "Update Tag"
 msgstr "Actualizar Etiqueta"
 
-#: ../wp-plugin-fancy-gallery.php:555
+#: ../wp-plugin-fancy-gallery.php:558
 msgid "Add New Tag"
 msgstr "Añadir Nueva Etiqueta"
 
-#: ../wp-plugin-fancy-gallery.php:556
+#: ../wp-plugin-fancy-gallery.php:559
 msgid "New Tag"
 msgstr "Nueva Etiqueta"
 
-#: ../wp-plugin-fancy-gallery.php:564
+#: ../wp-plugin-fancy-gallery.php:567
 #, fuzzy
 msgctxt "URL slug"
 msgid "gallery-tag"
 msgstr "Etiquetas de Galería"
 
-#: ../wp-plugin-fancy-gallery.php:602
+#: ../wp-plugin-fancy-gallery.php:605
 #, php-format
 msgid "This is the URL to the archive of this %s."
 msgstr "Esta es la URL al archivo de este %s."
 
-#: ../wp-plugin-fancy-gallery.php:606
+#: ../wp-plugin-fancy-gallery.php:609
 msgid "Archive Feed"
 msgstr "Archivo de Feed"
 
-#: ../wp-plugin-fancy-gallery.php:609
+#: ../wp-plugin-fancy-gallery.php:612
 #, php-format
 msgid "This is the URL to the feed of the archive of this %s."
 msgstr "Esta es la URL al feed del archivo de estos %s."
 
-#: ../wp-plugin-fancy-gallery.php:621
+#: ../wp-plugin-fancy-gallery.php:624
 msgid "Upload Images"
 msgstr "Subir imágenes"
 
-#: ../wp-plugin-fancy-gallery.php:623
+#: ../wp-plugin-fancy-gallery.php:626
 msgid "Import from Library"
 msgstr "Importar desde la Biblioteca"
 
-#: ../wp-plugin-fancy-gallery.php:712
+#: ../wp-plugin-fancy-gallery.php:715
 msgid "Images"
 msgstr "Imágenes"
 
-#: ../wp-plugin-fancy-gallery.php:715
+#: ../wp-plugin-fancy-gallery.php:718
 msgid "Excerpt"
 msgstr "Extracto"
 
-#: ../wp-plugin-fancy-gallery.php:720
+#: ../wp-plugin-fancy-gallery.php:723
 msgid "Owner"
 msgstr "Propietario"
 
-#: ../wp-plugin-fancy-gallery.php:722
+#: ../wp-plugin-fancy-gallery.php:725
 msgid "Gallery ShortCode"
 msgstr "Codigo corto de la Galería"
 
-#: ../wp-plugin-fancy-gallery.php:723
+#: ../wp-plugin-fancy-gallery.php:726
 msgid "Thumbnails"
 msgstr "Miniatura"
 
-#: ../wp-plugin-fancy-gallery.php:760
+#: ../wp-plugin-fancy-gallery.php:763
 msgid "The Attachment was moved to your gallery."
 msgstr "Se ha movido el adjunto a tu galería."
 
-#: ../wp-plugin-fancy-gallery.php:1027
+#: ../wp-plugin-fancy-gallery.php:1030
 #, fuzzy, php-format
 msgid "Available in the <a href=\"%s\" target=\"_blank\">Premium Version</a>."
 msgstr "Lo sentimos, esta caractéristica sólo está disponible en la  <a href=\"%s\" target=\"_blank\">Version Pro de Fancy Gallery</a>."
 
-#: ../wp-plugin-fancy-gallery.php:1028
+#: ../wp-plugin-fancy-gallery.php:1031
 #, php-format
 msgid "Do you need a special taxonomy for your website? No problem! Just <a href=\"%s\" target=\"_blank\">get in touch</a>."
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:1029
+#: ../wp-plugin-fancy-gallery.php:1032
 #, fuzzy, php-format
 msgid "This widget is available in the <a href=\"%s\" target=\"_blank\">Premium Version</a>. There will be no output in the front end of your website."
 msgstr "Lo sentimos, esta caractéristica sólo está disponible en la  <a href=\"%s\" target=\"_blank\">Version Pro de Fancy Gallery</a>."
 
-#: ../wp-plugin-fancy-gallery.php:1030
+#: ../wp-plugin-fancy-gallery.php:1033
 #, php-format
 msgid "In the <a href=\"%s\" target=\"_blank\">Premium Version of Fancy Gallery</a> you can take advantage of the gallery management without any limitations."
 msgstr ""
 
-#: ../wp-plugin-fancy-gallery.php:1031
+#: ../wp-plugin-fancy-gallery.php:1034
 #, fuzzy, php-format
 msgid "Do you like the gallery management tool? Upgrade to the <a href=\"%s\" target=\"_blank\">Premium Version of Fancy Gallery</a>!"
 msgstr "Lo sentimos, esta caractéristica sólo está disponible en la  <a href=\"%s\" target=\"_blank\">Version Pro de Fancy Gallery</a>."
 
-#: ../wp-plugin-fancy-gallery.php:1035
+#: ../wp-plugin-fancy-gallery.php:1038
 msgctxt "Link to the authors website"
 msgid "http://dennishoppe.de/en/wordpress-plugins/fancy-gallery"
 msgstr "http://dennishoppe.de/en/wordpress-plugins/fancy-gallery"
 
-#: ../wp-plugin-fancy-gallery.php:1068
+#: ../wp-plugin-fancy-gallery.php:1071
 msgid "&laquo; Back to your galleries"
 msgstr "&laquo; Volver a tus galerías"
 
@@ -546,238 +541,247 @@ msgid "If you tick this box visitors will no more be able to navigate through th
 msgstr "Si marcas esta caja, los visitantes no podrán navegar por el archivo de la galería."
 
 #: ../options-page/option-box-lightbox.php:8
-msgid "FancyBox version 1.x."
-msgstr ""
+#, fuzzy
+msgid "No lightbox"
+msgstr "Lightbox"
 
 #: ../options-page/option-box-lightbox.php:9
-msgid "FancyBox is a tool for displaying images in a Mac-style \"lightbox\" that floats overtop of web page. Licensed under the <a href=\"http://wordpress.org/about/gpl/\" target=\"_blank\">GPL License</a>."
+msgid "Choose this option if you want to use an external lightbox library."
 msgstr ""
 
 #: ../options-page/option-box-lightbox.php:14
-msgid "FancyBox version 2.x."
+msgid "FancyBox version 1.x."
 msgstr ""
 
 #: ../options-page/option-box-lightbox.php:15
-msgid "Version 2 supports image thumbnails, slideshows and it is fully repsonsive. Unfortunately this version is licensed under the <a href=\"http://creativecommons.org/licenses/by-nc/3.0/\" target=\"_blank\">CC BY-NC 3.0 License</a>."
-msgstr ""
-
-#: ../options-page/option-box-lightbox.php:18
-msgid "FancyBox 2 is not GPL compatible and cannot be part of this plugin itself."
-msgstr ""
-
-#: ../options-page/option-box-lightbox.php:19
-msgid "By activating this option the library will be included from an external hoster (<a href=\"http://cdnjs.com/libraries/fancybox/\" target=\"_blank\">CDNJS.com</a>)."
+msgid "FancyBox is a tool for displaying images in a Mac-style \"lightbox\" that floats overtop of web page. Licensed under the <a href=\"http://wordpress.org/about/gpl/\" target=\"_blank\">GPL License</a>."
 msgstr ""
 
 #: ../options-page/option-box-lightbox.php:20
+msgid "FancyBox version 2.x."
+msgstr ""
+
+#: ../options-page/option-box-lightbox.php:21
+msgid "Version 2 supports image thumbnails, slideshows and it is fully repsonsive. Unfortunately this version is licensed under the <a href=\"http://creativecommons.org/licenses/by-nc/3.0/\" target=\"_blank\">CC BY-NC 3.0 License</a>."
+msgstr ""
+
+#: ../options-page/option-box-lightbox.php:24
+msgid "FancyBox 2 is not GPL compatible and cannot be part of this plugin itself."
+msgstr ""
+
+#: ../options-page/option-box-lightbox.php:25
+msgid "By activating this option the library will be included from an external hoster (<a href=\"http://cdnjs.com/libraries/fancybox/\" target=\"_blank\">CDNJS.com</a>)."
+msgstr ""
+
+#: ../options-page/option-box-lightbox.php:26
 msgid "By using FancyBox 2 you need to agree the lightbox authors <a href=\"http://fancyapps.com/fancybox/#license\" target=\"_blank\">license agreement</a>."
 msgstr ""
 
-#: ../options-page/option-box-lightbox.php:27
+#: ../options-page/option-box-lightbox.php:33
 msgid "Loop mode"
 msgstr "Modo bucle"
 
-#: ../options-page/option-box-lightbox.php:30
+#: ../options-page/option-box-lightbox.php:36
 msgid "Will enable the user to get from the last image to the first one with the \"Next &raquo;\" button."
 msgstr "Posibilitará al usuario ir desde la última imagen a la primera usando el botón \"Siguiente &raquo;\" "
 
-#: ../options-page/option-box-lightbox.php:35
+#: ../options-page/option-box-lightbox.php:41
 msgid "Border width"
 msgstr "Ancho del borde"
 
-#: ../options-page/option-box-lightbox.php:37
+#: ../options-page/option-box-lightbox.php:43
 msgctxt "Abbr. Pixels"
 msgid "px"
 msgstr "px"
 
-#: ../options-page/option-box-lightbox.php:38
+#: ../options-page/option-box-lightbox.php:44
 msgid "Width of the image frame border. (in pixels)"
 msgstr "Ancho del borde del marco de la imagen (en pixeles)"
 
-#: ../options-page/option-box-lightbox.php:44
+#: ../options-page/option-box-lightbox.php:50
 msgid "Close button"
 msgstr "Botón cerrar"
 
-#: ../options-page/option-box-lightbox.php:48
+#: ../options-page/option-box-lightbox.php:54
 msgid "Hide the close button."
 msgstr "Esconder el botón Cerrar"
 
-#: ../options-page/option-box-lightbox.php:49
-#: ../options-page/option-box-lightbox.php:58
-#: ../options-page/option-box-lightbox.php:66
-#: ../options-page/option-box-lightbox.php:115
-#: ../options-page/option-box-lightbox.php:127
+#: ../options-page/option-box-lightbox.php:55
+#: ../options-page/option-box-lightbox.php:64
+#: ../options-page/option-box-lightbox.php:72
+#: ../options-page/option-box-lightbox.php:121
+#: ../options-page/option-box-lightbox.php:133
 msgid "Not available in FancyBox 1.x"
 msgstr ""
 
-#: ../options-page/option-box-lightbox.php:54
+#: ../options-page/option-box-lightbox.php:60
 msgid "Auto play"
 msgstr ""
 
-#: ../options-page/option-box-lightbox.php:57
+#: ../options-page/option-box-lightbox.php:63
 msgid "Start the slideshow when the user opens the first gallery item."
 msgstr ""
 
-#: ../options-page/option-box-lightbox.php:63
+#: ../options-page/option-box-lightbox.php:69
 #, fuzzy
 msgid "Play speed"
 msgstr "Velocidad de cierre"
 
-#: ../options-page/option-box-lightbox.php:65
-#: ../options-page/option-box-lightbox.php:145
-#: ../options-page/option-box-lightbox.php:164
-#: ../options-page/option-box-lightbox.php:183
+#: ../options-page/option-box-lightbox.php:71
+#: ../options-page/option-box-lightbox.php:151
+#: ../options-page/option-box-lightbox.php:170
+#: ../options-page/option-box-lightbox.php:189
 msgctxt "Abbr. Milliseconds"
 msgid "msec"
 msgstr "msec"
 
-#: ../options-page/option-box-lightbox.php:66
+#: ../options-page/option-box-lightbox.php:72
 #, fuzzy
 msgid "Speed of the slideshow. (in milliseconds)"
 msgstr "Velocidad del desvanecimiento y las transiciones elásticas (en milisegundos)"
 
-#: ../options-page/option-box-lightbox.php:71
+#: ../options-page/option-box-lightbox.php:77
 msgid "Image title"
 msgstr "Título de la imagen"
 
-#: ../options-page/option-box-lightbox.php:74
+#: ../options-page/option-box-lightbox.php:80
 #, fuzzy
 msgid "Use the title of the image as title of the light box."
 msgstr "Usar el título de la imagen como título del FancyBox"
 
-#: ../options-page/option-box-lightbox.php:77
+#: ../options-page/option-box-lightbox.php:83
 #, fuzzy
 msgid "Use the alternative text of the image as title of the light box."
 msgstr "Usar texto alternativo de la imagen como título del FancyBox"
 
-#: ../options-page/option-box-lightbox.php:80
+#: ../options-page/option-box-lightbox.php:86
 #, fuzzy
 msgid "Use the image caption as title of the light box."
 msgstr "Usar la leyenda de la imagen como título del FancyBox"
 
-#: ../options-page/option-box-lightbox.php:83
+#: ../options-page/option-box-lightbox.php:89
 #, fuzzy
 msgid "Use the image description as title of the light box."
 msgstr "Usar la descripción de la imagen como título del FancyBox"
 
-#: ../options-page/option-box-lightbox.php:87
+#: ../options-page/option-box-lightbox.php:93
 msgid "Do not show image titles."
 msgstr "No mostrar títulos de imagen."
 
-#: ../options-page/option-box-lightbox.php:93
+#: ../options-page/option-box-lightbox.php:99
 msgid "Title position"
 msgstr "Posición del título"
 
-#: ../options-page/option-box-lightbox.php:96
+#: ../options-page/option-box-lightbox.php:102
 #, fuzzy
 msgid "Outside the light box"
 msgstr "Fuera del FancyBox"
 
-#: ../options-page/option-box-lightbox.php:96
+#: ../options-page/option-box-lightbox.php:102
 msgid "Does not work with multiline titles."
 msgstr "No trabajar con múltiples títulos."
 
-#: ../options-page/option-box-lightbox.php:99
+#: ../options-page/option-box-lightbox.php:105
 #, fuzzy
 msgid "Inside the light box"
 msgstr "Dentro del FancyBox"
 
-#: ../options-page/option-box-lightbox.php:99
+#: ../options-page/option-box-lightbox.php:105
 msgid "Does not work blameless with multiline titles."
 msgstr "No trabajar con múltiples títulos."
 
-#: ../options-page/option-box-lightbox.php:102
+#: ../options-page/option-box-lightbox.php:108
 msgid "Over the image"
 msgstr "Sobre la imagen"
 
-#: ../options-page/option-box-lightbox.php:102
+#: ../options-page/option-box-lightbox.php:108
 msgid "Works fine with multiline titles."
 msgstr "Funciona mejor con títulos multilínea"
 
-#: ../options-page/option-box-lightbox.php:107
+#: ../options-page/option-box-lightbox.php:113
 #, fuzzy
 msgid "Controls position"
 msgstr "Posición del título"
 
-#: ../options-page/option-box-lightbox.php:114
+#: ../options-page/option-box-lightbox.php:120
 msgid "Position of the Prev, Next, Slideshow, Stop, etc. controls."
 msgstr ""
 
-#: ../options-page/option-box-lightbox.php:120
+#: ../options-page/option-box-lightbox.php:126
 #, fuzzy
 msgid "Thumbnails position"
 msgstr "Posición del título"
 
-#: ../options-page/option-box-lightbox.php:127
+#: ../options-page/option-box-lightbox.php:133
 msgid "Position of preview thumbnails relative to the lightbox."
 msgstr ""
 
-#: ../options-page/option-box-lightbox.php:132
+#: ../options-page/option-box-lightbox.php:138
 #, fuzzy
 msgid "Opening effect"
 msgstr "Velocidad de entrada"
 
-#: ../options-page/option-box-lightbox.php:135
-#: ../options-page/option-box-lightbox.php:154
-#: ../options-page/option-box-lightbox.php:173
+#: ../options-page/option-box-lightbox.php:141
+#: ../options-page/option-box-lightbox.php:160
+#: ../options-page/option-box-lightbox.php:179
 msgid "Fade"
 msgstr "Desvanecimiento"
 
-#: ../options-page/option-box-lightbox.php:136
-#: ../options-page/option-box-lightbox.php:155
-#: ../options-page/option-box-lightbox.php:174
+#: ../options-page/option-box-lightbox.php:142
+#: ../options-page/option-box-lightbox.php:161
+#: ../options-page/option-box-lightbox.php:180
 msgid "Elastic"
 msgstr "Elástico"
 
-#: ../options-page/option-box-lightbox.php:137
-#: ../options-page/option-box-lightbox.php:156
-#: ../options-page/option-box-lightbox.php:175
+#: ../options-page/option-box-lightbox.php:143
+#: ../options-page/option-box-lightbox.php:162
+#: ../options-page/option-box-lightbox.php:181
 msgid "No effect"
 msgstr ""
 
-#: ../options-page/option-box-lightbox.php:143
+#: ../options-page/option-box-lightbox.php:149
 msgid "Opening speed"
 msgstr "Velocidad de entrada"
 
-#: ../options-page/option-box-lightbox.php:146
-#: ../options-page/option-box-lightbox.php:165
+#: ../options-page/option-box-lightbox.php:152
+#: ../options-page/option-box-lightbox.php:171
 msgid "Speed of the fade and elastic transitions. (in milliseconds)"
 msgstr "Velocidad del desvanecimiento y las transiciones elásticas (en milisegundos)"
 
-#: ../options-page/option-box-lightbox.php:151
+#: ../options-page/option-box-lightbox.php:157
 #, fuzzy
 msgid "Closing effect"
 msgstr "Velocidad de cierre"
 
-#: ../options-page/option-box-lightbox.php:162
+#: ../options-page/option-box-lightbox.php:168
 msgid "Closing speed"
 msgstr "Velocidad de cierre"
 
-#: ../options-page/option-box-lightbox.php:170
+#: ../options-page/option-box-lightbox.php:176
 msgid "Changing effect"
 msgstr ""
 
-#: ../options-page/option-box-lightbox.php:181
+#: ../options-page/option-box-lightbox.php:187
 msgid "Image resizing speed"
 msgstr "Velocidad del redimensionamiento de imagen"
 
-#: ../options-page/option-box-lightbox.php:184
+#: ../options-page/option-box-lightbox.php:190
 msgid "Speed of resizing when changing gallery items. (in milliseconds)"
 msgstr "Velocidad del redimensionamiento de imagen al cambiar entre items de la galería (en milisegundos)"
 
-#: ../options-page/option-box-lightbox.php:189
+#: ../options-page/option-box-lightbox.php:195
 msgid "Script position"
 msgstr "Posición del Script"
 
-#: ../options-page/option-box-lightbox.php:192
+#: ../options-page/option-box-lightbox.php:198
 msgid "Footer of the website"
 msgstr "Pie del web"
 
-#: ../options-page/option-box-lightbox.php:193
+#: ../options-page/option-box-lightbox.php:199
 msgid "Header of the website"
 msgstr "Cabecera del web"
 
-#: ../options-page/option-box-lightbox.php:195
+#: ../options-page/option-box-lightbox.php:201
 msgid "Please choose the position of the javascript. Footer is recommended. Use \"Header\" if you have trouble to make the Fancybox work."
 msgstr "Por favor elige la posición del javascript. Recomendamos el pie. Usa \"Cabecera\" si tienes problemas haciendo funcionar FancyBox"
 
@@ -931,6 +935,10 @@ msgstr "Ver Galerías Privadas de otros"
 #, php-format
 msgid "Manage %s"
 msgstr "Gestionar %s"
+
+#, fuzzy
+#~ msgid "Gallery Management"
+#~ msgstr "Etiquetas de Galería"
 
 #~ msgid "Light Box"
 #~ msgstr "Light Box"

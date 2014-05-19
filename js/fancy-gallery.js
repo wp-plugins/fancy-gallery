@@ -10,17 +10,17 @@
   }
 
   // group gallery items
-  jQuery('div.fancy-gallery a')
+  $('div.fancy-gallery a')
   .each(function(){
-    var $this = jQuery(this);
+    var $this = $(this);
     $this.attr('rel', $this.parents('.fancy-gallery').attr('id'));
   });
 
   // Patch the linked images
-  jQuery('a[href$=".jpg"], a[href$=".jpeg"], a[href$=".png"], a[href$=".gif"], a[href$=".bmp"], a[href$=".wbmp"]').each(function(){
+  $('a[href$=".jpg"], a[href$=".jpeg"], a[href$=".png"], a[href$=".gif"], a[href$=".bmp"], a[href$=".wbmp"]').each(function(){
 
     // shorter access path
-    var $lnk = jQuery(this);
+    var $lnk = $(this);
     var $img = $lnk.find('img');
 
     if ($lnk.attr('rel') == '' || $lnk.attr('rel') == undefined)
@@ -47,40 +47,40 @@
   });
 
   // Add the light box effect to the linked images
-  jQuery('a.fancybox')
-  .unbind('click')
-  .fancybox({
-    // Fancybox 1.x
-    cyclic:         (FG.loop == 'yes'),
-    titlePosition:  FG.title_position,
-    transitionIn:   FG.open_effect,
-    speedIn:        parseInt(FG.open_speed),
-    transitionOut:  FG.close_effect,
-    speedOut:       parseInt(FG.close_speed),
-    changeFade:     FG.change_effect,
-    changeSpeed:    parseInt(FG.change_speed),
+  if (typeof $.fancybox == 'function'){
+    $('a.fancybox').unbind('click').fancybox({
+      // Fancybox 1.x
+      cyclic:         (FG.loop == 'yes'),
+      titlePosition:  FG.title_position,
+      transitionIn:   FG.open_effect,
+      speedIn:        parseInt(FG.open_speed),
+      transitionOut:  FG.close_effect,
+      speedOut:       parseInt(FG.close_speed),
+      changeFade:     FG.change_effect,
+      changeSpeed:    parseInt(FG.change_speed),
 
-    // Fancybox 2.x
-    loop:         (FG.loop == 'yes'),
-    closeBtn:     (FG.hide_close_button != 'yes'),
-    autoPlay:     (FG.auto_play == 'yes'),
-    playSpeed:    parseInt(FG.play_speed),
-    openEffect:   FG.open_effect,
-    openSpeed:    parseInt(FG.open_speed),
-    closeEffect:  FG.close_effect,
-    closeSpeed:   parseInt(FG.close_speed),
-    nextEffect:   FG.change_effect,
-    nextSpeed:    parseInt(FG.change_speed),
-    prevEffect:   FG.change_effect,
-    prevSpeed:    parseInt(FG.change_speed),
-    helpers: {
-			title:      { type: FG.title_position },
-			buttons:    { position: FG.controls_position },
-      thumbs :    { width: 50, height: 50, position: FG.thumbs_position }
-		},
+      // Fancybox 2.x
+      loop:         (FG.loop == 'yes'),
+      closeBtn:     (FG.hide_close_button != 'yes'),
+      autoPlay:     (FG.auto_play == 'yes'),
+      playSpeed:    parseInt(FG.play_speed),
+      openEffect:   FG.open_effect,
+      openSpeed:    parseInt(FG.open_speed),
+      closeEffect:  FG.close_effect,
+      closeSpeed:   parseInt(FG.close_speed),
+      nextEffect:   FG.change_effect,
+      nextSpeed:    parseInt(FG.change_speed),
+      prevEffect:   FG.change_effect,
+      prevSpeed:    parseInt(FG.change_speed),
+      helpers: {
+        title:      { type: FG.title_position },
+        buttons:    { position: FG.controls_position },
+        thumbs :    { width: 50, height: 50, position: FG.thumbs_position }
+      },
 
-    // All versions
-    padding:      parseInt(FG.padding)
-  });
+      // All versions
+      padding:      parseInt(FG.padding)
+    });
+  }
 
 })(jQuery);

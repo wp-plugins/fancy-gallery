@@ -3,22 +3,28 @@
 <tr valign="top">
   <th scope="row" ><?php Echo $this->t('Lightbox') ?></th>
   <td>
-      <p>
+    <p>
+      <input type="radio" name="lightbox" value="none" id="lightbox_none" <?php Checked ($this->get_option('lightbox'), 'none') ?> >
+      <label for="lightbox_none"><strong><?php Echo $this->t('No lightbox') ?></strong></label>
+      <?php Echo $this->t('Choose this option if you want to use an external lightbox library.') ?>
+    </p>
+
+    <p>
       <input type="radio" name="lightbox" value="fancybox1" id="lightbox_fancybox1" <?php Checked ($this->get_option('lightbox'), 'fancybox1') ?> >
       <label for="lightbox_fancybox1"><strong><?php Echo $this->t('FancyBox version 1.x.') ?></strong></label>
       <?php Echo $this->t('FancyBox is a tool for displaying images in a Mac-style "lightbox" that floats overtop of web page. Licensed under the <a href="http://wordpress.org/about/gpl/" target="_blank">GPL License</a>.') ?>
-      </p>
+    </p>
 
-      <p>
+    <p>
       <input type="radio" name="lightbox" value="fancybox2" id="lightbox_fancybox2" <?php Checked ($this->get_option('lightbox'), 'fancybox2') ?> >
       <label for="lightbox_fancybox2"><strong><?php Echo $this->t('FancyBox version 2.x.') ?></strong></label>
       <?php Echo $this->t('Version 2 supports image thumbnails, slideshows and it is fully repsonsive. Unfortunately this version is licensed under the <a href="http://creativecommons.org/licenses/by-nc/3.0/" target="_blank">CC BY-NC 3.0 License</a>.') ?>
-      </p>
-      <ol>
-        <li><?php Echo $this->t('FancyBox 2 is not GPL compatible and cannot be part of this plugin itself.') ?></li>
-        <li><?php Echo $this->t('By activating this option the library will be included from an external hoster (<a href="http://cdnjs.com/libraries/fancybox/" target="_blank">CDNJS.com</a>).') ?></li>
-        <li><?php Echo $this->t('By using FancyBox 2 you need to agree the lightbox authors <a href="http://fancyapps.com/fancybox/#license" target="_blank">license agreement</a>.') ?></li>
-      </ol>
+    </p>
+    <ol>
+      <li><?php Echo $this->t('FancyBox 2 is not GPL compatible and cannot be part of this plugin itself.') ?></li>
+      <li><?php Echo $this->t('By activating this option the library will be included from an external hoster (<a href="http://cdnjs.com/libraries/fancybox/" target="_blank">CDNJS.com</a>).') ?></li>
+      <li><?php Echo $this->t('By using FancyBox 2 you need to agree the lightbox authors <a href="http://fancyapps.com/fancybox/#license" target="_blank">license agreement</a>.') ?></li>
+    </ol>
 
   </td>
 </tr>

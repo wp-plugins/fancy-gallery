@@ -30,3 +30,11 @@ body#media-upload #gallery-form .widefat {
 body#media-upload #sort-buttons {
   text-align: left;
 }
+
+body#media-upload #gallery-form .imgedit-settings {
+  float: right;
+}
+
+body#media-upload #gallery-form .imgedit-panel-content {
+  float: left;
+}
