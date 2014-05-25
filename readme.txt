@@ -1,14 +1,14 @@
 === Fancy Gallery ===
 Contributors: dhoppe
 Tags: gallery, galleries, image, images, picture, pictures, photo, photos, photo-album, photo-albums, fancybox, thickbox, lightbox, jquery, javascript, widget, cms, free, flickr       widget,Post,plugin,admin,posts,sidebar,comments,google,images,page,image,links
-Requires at least: 3.5
+Requires at least: 3.7
 Tested up to: 3.9.1
 Stable tag: trunk
 Donate link: http://dennishoppe.de/en/wordpress-plugins/fancy-gallery
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Fancy Gallery associates all linked images and galleries anywhere on your website with the jQuery lightbox "Fancybox".
+Fancy Gallery is a gallery management and lightbox tool which helps you to manage and present your image galleries.
 
 
 == Description ==
@@ -16,32 +16,30 @@ Fancy Gallery associates all linked images and galleries anywhere on your websit
 
 Furthermore you can use this tool to create, manage and handle image galleries easily in your WordPress backend and present images to your website visitors. ¹
 
-It migrates the Fancy Image Box to your WordPress. All links pointing to an image will automatically open in the Fancybox. If you use the [gallery] shortcode the images will get a navigation bar and the gallery itself will be converted to a valid HTML5 block.
+It migrates an awesome lightbox to your WordPress. All links pointing to an image will automatically open in the responsive lightbox. If you use the [gallery] shortcode the images will get a navigation bar and the gallery itself will be converted to a valid HTML5 block.
 
 Of course you can use "exclude" and "include" parameters in your [gallery] shortcode like you already know from the traditional gallery code.
 
-If you want to display links in the fancybox add the class "fancyframe" to them.
-
 
 = Main features =
-In this version of [Fancy Gallery](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) some features are not available or limited. You will find notices on several places in the backend that the described feature is part of the [Premium Version](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery).
+In this version of [Fancy Gallery](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) some features are not available or limited. You will find notices on several places in the backend that the described feature is part of the [premium version](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery).
 
-* Fancy LightBox support for all linked images on your website.
-* Manage Galleries separated from Posts or Pages.
-* Gallery Taxonomies to categorize all your image galleries.
+* Lightbox support for all linked images on your website.
+* Manage galleries separated from posts or pages.
+* Gallery taxonomies to categorize all your image galleries.
 * Custom thumbnail sizes and color effects.¹
 * Fully compatible with all existing themes with archive template.
 * Template engine to display your galleries.
 * User role and capability support.¹
-* Gallery archives and RSS Feed support.
+* Gallery archives and RSS feed support.
 * Clean and easy-to-use user interfaces.
 * Widgets to display your images in the sidebars.¹
 * Completely free of advertisement and brandings.¹
 
-¹Available in the [Premium Version of Fancy Gallery](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery).
+¹Available in the [premium version of Fancy Gallery](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery).
 
 = Settings =
-You can find the settings page in WP Admin Panel &raquo; Settings &raquo; [Fancy Gallery](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery).
+You can find the settings page in WP admin panel &raquo; Settings &raquo; [Fancy Gallery](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery).
 
 
 = Limitations =
@@ -103,8 +101,8 @@ You can find the *Translation.pot* file in the *language/* folder in the plugin 
 
 = Minimum Requirements =
 
-* WordPress 3.5 or greater
-* PHP version 5.2.4 or greater
+* WordPress 3.7 or greater
+* PHP version 5.3.16 or greater
 * MySQL version 5.0 or greater
 
 = Automatic installation =
@@ -146,6 +144,11 @@ Possibly even more important, buying the Premium edition gives you access to me 
 
 
 == Changelog ==
+
+= 1.5. =
+* Replaced lightbox with a new responsive one
+* Replaced admin menu icon
+* Completely refactored PHP code
 
 = 1.4.4 =
 * Fixed the edit image section

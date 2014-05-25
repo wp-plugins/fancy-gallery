@@ -1,4 +1,4 @@
-div#gallery-meta-box-show-code input.gallery-code {
+div#meta-box-show-code input.gallery-code {
   background-color: #ddd;
   color: #111;
   border: none;
@@ -6,19 +6,17 @@ div#gallery-meta-box-show-code input.gallery-code {
   text-align: center;
 }
 
-div#gallery-meta-box-excerpt h3 {
+div#meta-box-excerpt h3 {
   cursor: default;
 }
 
-div#gallery-meta-box-excerpt div.inside h3 {
+div#meta-box-excerpt div.inside h3 {
   margin-bottom: 0;
 }
-div#gallery-meta-box-excerpt div.togglebox {
+div#meta-box-excerpt div.togglebox {
   border: 1px solid #dfdfdf;
   margin-bottom: 10px;
   padding: 10px;
 }
 
-.pro-notice {
-  font-style: italic;
-}
+.asterisk { font-weight: bold; color: green; font-size: 125% }
