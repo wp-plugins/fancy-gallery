@@ -47,7 +47,7 @@ class Mocking_Bird {
   }
 
   function Check_Post_Count(){
-    return $this->Count_Posts(11) < 11;
+    return $this->Count_Posts(3) < 3;
   }
 
   function User_Creates_New_Post(){
