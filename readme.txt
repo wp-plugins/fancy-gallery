@@ -127,13 +127,13 @@ I am still collecting frequently asked questions.
 == Screenshots ==
 1. Gallery single view
 2. Gallery lightbox
-3. Add a new Gallery
-4. Manage Gallery Categories
+3. Add a new gallery
+4. Manage gallery categories
 5. Edit a category
 6. Edit an image
 7. Integrate your galleries to your navigation menus
 8. Change details of several images
-9. The Fancybox settings
+9. The lightbox settings
 
 
 == Premium Version ==
