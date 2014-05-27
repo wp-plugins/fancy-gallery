@@ -135,6 +135,9 @@ I am still collecting frequently asked questions.
 8. Change details of several images
 9. The lightbox settings
 
+== Upgrade Notice ==
+If you update the plugin to version 1.5.x or higher please reactivate the plugin after the update and re-save your options through clicking the "Save changes" button at the end of the options page.
+
 
 == Premium Version ==
 
