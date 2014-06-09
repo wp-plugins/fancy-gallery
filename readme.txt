@@ -8,15 +8,13 @@ Donate link: http://dennishoppe.de/en/wordpress-plugins/fancy-gallery
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Fancy Gallery is a gallery management and lightbox tool which helps you to manage and present your image galleries.
+Fancy Gallery is a GALLERY MANAGEMENT & IMAGE LIGHTBOX tool which helps you to manage and present your image galleries.
 
 
 == Description ==
-[Fancy Gallery](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) is a state of the art [WordPress Gallery Plugin](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) which adds a beautiful lightbox effect to all links pointing to an image anywhere on your website. This includes images in your posts, galleries, pages, sidebars, theme, etc.
+[Fancy Gallery](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) is a state of the art [WordPress Gallery Management tool](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) which enables you to create, manage and handle image galleries easily in your WordPress backend, embed these galleries in your posts or pages and present them to your website visitors. ¹
 
-Furthermore you can use this tool to create, manage and handle image galleries easily in your WordPress backend and present images to your website visitors. ¹
-
-It migrates an awesome lightbox to your WordPress. All links pointing to an image will automatically open in the responsive lightbox. If you use the [gallery] shortcode the images will get a navigation bar and the gallery itself will be converted to a valid HTML5 block.
+Furthermore the plugin adds a beautiful awesome *javascript lightbox effect* to all links pointing to an image anywhere on your website. This includes images in your posts, galleries, pages, sidebar widgets or anywhere else on your website. In detail this means all links - regardless if text or image - pointing to an image will automatically opened in a responsive lightbox. If you use the [gallery] shortcode the images will get a "previous" and "next" button and a slideshow button and the gallery itself will be converted to a valid HTML5 block - even if your theme does not support HTML5 galleries yet.
 
 Of course you can use "exclude" and "include" parameters in your [gallery] shortcode like you already know from the traditional gallery code.
 
@@ -102,7 +100,7 @@ You can find the *Translation.pot* file in the *language/* folder in the plugin 
 = Minimum Requirements =
 
 * WordPress 3.7 or greater
-* PHP version 5.3.16 or greater
+* PHP version 5.3 or greater
 * MySQL version 5.0 or greater
 
 = Automatic installation =
@@ -125,15 +123,15 @@ I am still collecting frequently asked questions.
 
 
 == Screenshots ==
-1. Gallery single view
-2. Gallery lightbox
-3. Add a new gallery
-4. Manage gallery categories
-5. Edit a category
-6. Edit an image
-7. Integrate your galleries to your navigation menus
-8. Change details of several images
-9. The lightbox settings
+01. Gallery single view
+02. Gallery lightbox
+03. Add a new gallery
+04. Manage gallery categories
+05. Edit a category
+06. Edit an image
+07. Integrate your galleries to your navigation menus
+08. Change details of several images
+09. The lightbox settings
 
 == Upgrade Notice ==
 If you update the plugin to version 1.5.x or higher please reactivate the plugin after the update and re-save your options through clicking the "Save changes" button at the end of the options page.
