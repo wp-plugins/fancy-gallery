@@ -146,7 +146,10 @@ Possibly even more important, buying the Premium edition gives you access to me 
 
 == Changelog ==
 
-= 1.5. =
+= 1.5.2 =
+* Removed deprecated jQuery "live" function call
+
+= 1.5 =
 * Replaced lightbox with a new responsive one
 * Replaced admin menu icon
 * Completely refactored PHP code

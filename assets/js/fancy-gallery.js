@@ -35,7 +35,7 @@
     };
 
     // Associate the links with the lightbox
-    $('a[href$=".jpg"], a[href$=".jpeg"], a[href$=".png"], a[href$=".gif"], a[href$=".bmp"], a[href$=".wbmp"]').live('click', function(event){
+    $('body').on('click', 'a[href$=".jpg"], a[href$=".jpeg"], a[href$=".png"], a[href$=".gif"], a[href$=".bmp"], a[href$=".wbmp"], .image-lightbox', function(event){
       event.preventDefault();
 
       var
