@@ -154,11 +154,11 @@ msgstr "Bildergalerie"
 
 #: ../widget.random-images.php:112
 msgid "Thumbnail width:"
-msgstr "Breite des Miniaturbildes:"
+msgstr "Breite der Bilder:"
 
 #: ../widget.random-images.php:117
 msgid "Thumbnail height:"
-msgstr "Höhe des Miniaturbildes:"
+msgstr "Höhe der Bilder:"
 
 #: ../widget.random-images.php:123
 msgid "Convert thumbnails to grayscale."

@@ -146,6 +146,11 @@ Possibly even more important, buying the Premium edition gives you access to me 
 
 == Changelog ==
 
+= 1.5.3 =
+* Patched HTML5-gallery style sheet to work with older themes
+* Patched Collage gallery template
+* Fixed German translation strings
+
 = 1.5.2 =
 * Removed deprecated jQuery "live" function call
 

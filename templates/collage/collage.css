@@ -2,10 +2,11 @@
   padding: 15px;
 }
 
-.fancy-gallery.collage figure.gallery-item a {
+.fancy-gallery.collage figure a {
   width: auto;
+  padding: 0;
 }
-.fancy-gallery.collage figure.gallery-item img {
+.fancy-gallery.collage figure img {
   width: 100%;
   height: auto;
   margin: 0;
@@ -13,7 +14,7 @@
   display: block;
 }
 
-.fancy-gallery.collage figure.gallery-item {
+.fancy-gallery.collage figure {
   -moz-transform: rotate(-4deg);
   -webkit-transform: rotate(-4deg);
   -o-transform: rotate(-4deg);

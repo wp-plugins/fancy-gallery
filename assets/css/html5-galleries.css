@@ -2,7 +2,7 @@
   overflow: hidden
 }
 
-.gallery.fancy-gallery .gallery-item {
+.gallery.fancy-gallery figure {
   display: inline-block;
   margin: 0 0 16px 0;
   padding: 0;
@@ -21,11 +21,12 @@
 .gallery-columns-8 .gallery-item { width: 12.500% }
 .gallery-columns-9 .gallery-item { width: 11.111% }
 
-.gallery.fancy-gallery .gallery-item .gallery-icon {
-  padding: 0 8px
+.gallery.fancy-gallery figure .gallery-icon {
+  padding: 0 8px;
+  display: block
 }
 
-.gallery.fancy-gallery .gallery-item .gallery-icon img {
+.gallery.fancy-gallery figure .gallery-icon img {
   margin: 0;
   max-width: 100%;
   height: auto;
@@ -34,7 +35,7 @@
 	box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
-.gallery.fancy-gallery .gallery-item .wp-caption {
+.gallery.fancy-gallery figure figcaption {
   padding: 2px 8px;
   font-size: 80%
 }
