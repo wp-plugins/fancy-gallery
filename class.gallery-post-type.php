@@ -5,6 +5,7 @@ class Gallery_Post_Type {
   var
     $core, # Pointer to the core object
     $name = 'fancy-gallery', # Name of the gallery post type
+    $meta_field = 'fancy-gallery-meta', # Name of the meta field which is used in the post type meta boxes
     $arr_meta_box, # Meta boxes for the gallery post type
     $arr_taxonomies; # All buildIn Gallery Taxonomies - also the inactive ones.
 
@@ -35,7 +36,7 @@ class Gallery_Post_Type {
 
   function Field_Name($option_name){
     # Generates field names for the meta box
-    return __CLASS__ . '[' . $option_name . ']';
+    return $this->meta_field . '[' . $option_name . ']';
   }
 
   function Save_Meta_Box($post_id){
@@ -48,10 +49,9 @@ class Gallery_Post_Type {
     If ($post->post_type != $this->name) return;
 
     # Check if this request came from the edit page section
-    If (IsSet($_POST[ __CLASS__ ])){
+    If (IsSet($_POST[$this->meta_field]) && Is_Array($_POST[$this->meta_field])){
       # Save Meta data
-      Update_Post_Meta ($post_id, '_wp_plugin_fancy_gallery', (Array) ($_POST[ __CLASS__ ]) );
-      Delete_Post_Meta ($post_id, '_wp_plugin_fancy_gallery_pro');
+      Update_Post_Meta ($post_id, '_wp_plugin_fancy_gallery', $_POST[$this->meta_field]);
     }
 
   }
@@ -64,10 +64,7 @@ class Gallery_Post_Type {
       return False;
 
     # Read meta data
-    $arr_meta = Array_Merge(
-      (Array) Get_Post_Meta($post_id, '_wp_plugin_fancy_gallery_pro', True),
-      (Array) Get_Post_Meta($post_id, '_wp_plugin_fancy_gallery', True)
-    );
+    $arr_meta = (Array) Get_Post_Meta($post_id, '_wp_plugin_fancy_gallery', True);
     If (Empty($arr_meta) || !Is_Array($arr_meta)) $arr_meta = Array();
 
     # Clean Meta data
@@ -115,7 +112,6 @@ class Gallery_Post_Type {
       'public' => True,
       'show_ui' => True,
       'has_archive' => !$this->core->options->Get('deactivate_archive'),
-      #'capability_type' => Array('gallery', 'galleries'),
 			'map_meta_cap' => True,
 			'hierarchical' => False,
       'rewrite' => Array(

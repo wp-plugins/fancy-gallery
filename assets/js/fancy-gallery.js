@@ -68,7 +68,7 @@
           href = $gallery_item.attr('href'),
           thumbnail = $gallery_item.find('img:first').attr('src') || href,
           title = $gallery_item.attr('title') || $gallery_item.find('img:first').attr('title'),
-          description = $gallery_item.data('description') || $gallery_item.data('caption') || $gallery_item.siblings('figcaption:first').text();
+          description = $gallery_item.data('description') /* || $gallery_item.data('caption') || $gallery_item.siblings('figcaption:first').text() */ ;
 
         // modify the gallery set
         $gallery[index] = {

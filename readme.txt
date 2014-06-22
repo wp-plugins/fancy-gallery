@@ -146,6 +146,11 @@ Possibly even more important, buying the Premium edition gives you access to me 
 
 == Changelog ==
 
+= 1.5.4 =
+* Fixed: input name of the meta box fields do not contain backslashes anymore
+* Change: Does not use the image caption as description anymore if the description is not set
+* Patched: Permalink for taxonomies were rewritten on plugin activation
+
 = 1.5.3 =
 * Patched HTML5-gallery style sheet to work with older themes
 * Patched Collage gallery template
