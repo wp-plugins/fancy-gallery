@@ -1,7 +1,7 @@
 === Fancy Gallery ===
 Contributors: dhoppe
 Tags: gallery, galleries, image, images, picture, pictures, photo, photos, photo-album, photo-albums, fancybox, thickbox, lightbox, jquery, javascript, widget, cms, free, flickr       widget,Post,plugin,admin,posts,sidebar,comments,google,images,page,image,links
-Requires at least: 3.7
+Requires at least: 3.8
 Tested up to: 3.9.1
 Stable tag: trunk
 Donate link: http://dennishoppe.de/en/wordpress-plugins/fancy-gallery
@@ -99,7 +99,7 @@ You can find the *Translation.pot* file in the *language/* folder in the plugin 
 
 = Minimum Requirements =
 
-* WordPress 3.7 or greater
+* WordPress 3.8 or greater
 * PHP version 5.3 or greater
 * MySQL version 5.0 or greater
 
