@@ -146,6 +146,9 @@ Possibly even more important, buying the Premium edition gives you access to me 
 
 == Changelog ==
 
+= 1.5.5 =
+* Added: Classify images within the same post content
+
 = 1.5.4 =
 * Fixed: input name of the meta box fields do not contain backslashes anymore
 * Change: Does not use the image caption as description anymore if the description is not set

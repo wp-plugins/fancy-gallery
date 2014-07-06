@@ -9,11 +9,13 @@
     }
   }
 
+  /*
   // group gallery items
   $('div.fancy-gallery a').each(function(){
     var $this = $(this);
     $this.attr('rel', $this.parents('.fancy-gallery').attr('id'));
   });
+  */
 
   // Associate the links with the lightbox
   if (FANCYGALLERY.lightbox == 'on'){
@@ -24,6 +26,7 @@
     var options = {
       'gallery_relation_attr':  'rel',
       'gallery_container':      $('#blueimp-gallery'),
+      'image_selector':         'a[href$=".jpg"], a[href$=".jpeg"], a[href$=".png"], a[href$=".gif"], a[href$=".bmp"], a[href$=".wbmp"], .image-lightbox',
       'titleElement':           '.title',
       'continuous':             FANCYGALLERY.continuous == 'on', // Allow continuous navigation, moving from last to first and from first to last slide
       'slideshowInterval':      parseFloat(FANCYGALLERY.slideshow_speed), // Delay in milliseconds between slides for the automatic slideshow
@@ -35,20 +38,33 @@
     };
 
     // Associate the links with the lightbox
-    $('body').on('click', 'a[href$=".jpg"], a[href$=".jpeg"], a[href$=".png"], a[href$=".gif"], a[href$=".bmp"], a[href$=".wbmp"], .image-lightbox', function(event){
+    $('body').on('click', options.image_selector, function(event){
       event.preventDefault();
 
       var
         $container = options.gallery_container,
         $link = $(this),
         gallery_relation = $link.attr(options.gallery_relation_attr),
-        $gallery = [];
+        $gallery = [],
+        $gallery_wrapper = $link.parents('.gallery.fancy-gallery:first'),
+        $content_wrapper = $link.parents('.fancy-gallery-content-unit:first');
+
+      // If the relation attribute is empty we need to remove it from all other link tags which have empty relation attributes
+      if (!gallery_relation){
+        $(options.image_selector)
+          .filter(function(){ return !$(this).attr(options.gallery_relation_attr); })
+          .removeAttr(options.gallery_relation_attr);
+      }
 
       // Find other link images which belongs to this one
       if (gallery_relation)
-        $gallery = $('a['+ options.gallery_relation_attr +'=' + gallery_relation + ']');
+        $gallery = $('a[' + options.gallery_relation_attr + '="' + gallery_relation + '"]');
+      else if ($gallery_wrapper.length > 0)
+        $gallery = $gallery_wrapper.find(options.image_selector);
+      else if ($content_wrapper.length > 0)
+        $gallery = $content_wrapper.find(options.image_selector).not('a[' + options.gallery_relation_attr + '], .gallery.fancy-gallery a');
       else
-        $gallery = $link;
+        $gallery = $(options.image_selector).not('.fancy-gallery-content-unit a, a[' + options.gallery_relation_attr + '], .gallery.fancy-gallery a');
 
       // Set link index and event
       $.extend(options, {
