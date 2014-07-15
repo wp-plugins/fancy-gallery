@@ -4,7 +4,7 @@ Namespace WordPress\Plugin\Fancy_Gallery;
 class Core {
   public
     $base_url, # url to the plugin directory
-    $version = '1.5.5', # Current release number
+    $version = '1.5.6', # Current release number
     $gallery, # The current gallery object while running shortcode
     $template_dir,
     $arr_stylesheets = Array(), # Array with stylesheet urls which should be loaded asynchronously
@@ -311,7 +311,8 @@ class Core {
       'thumb_width'     => False,
       'thumb_height'    => False,
       'thumb_grayscale' => False,
-      'thumb_negate'    => False
+      'thumb_negate'    => False,
+      'template'        => False
     ), $gallery_meta, $attributes);
 
     # Rename some keys
@@ -320,6 +321,8 @@ class Core {
       'posts_per_page' => $attributes['number'],
       'include' => $attributes['include'].$attributes['ids']
     ));
+
+    If (!Empty($attributes['include'])) $attributes['post_parent'] = Null;
 
     ForEach (Array('id', 'number', 'ids') AS $field) Unset($attributes[$field]);
 

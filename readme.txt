@@ -146,6 +146,9 @@ Possibly even more important, buying the Premium edition gives you access to me 
 
 == Changelog ==
 
+= 1.5.6 =
+* Fixed: Gallery items can contain images from other posts.
+
 = 1.5.5 =
 * Added: Classify images within the same post content
 
