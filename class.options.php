@@ -112,7 +112,7 @@ class Options {
         <div class="postbox-container" style="width:69%;">
           <?php ForEach ($this->arr_option_box['main'] AS $box) : ?>
             <div class="postbox should-be-<?php Echo $box['state'] ?>">
-              <div class="handlediv" title="Click to toggle"><br /></div>
+              <div class="handlediv" title="<?php _e('Click to toggle') ?>"><br /></div>
               <h3 class="hndle"><span><?php Echo $box['title'] ?></span></h3>
               <div class="inside"><?php Include $box['file'] ?></div>
             </div>
@@ -122,7 +122,7 @@ class Options {
         <div class="postbox-container" style="width:29%;float:right">
           <?php ForEach ($this->arr_option_box['side'] AS $box) : ?>
             <div class="postbox should-be-<?php Echo $box['state'] ?>">
-              <div class="handlediv" title="Click to toggle"><br /></div>
+              <div class="handlediv" title="<?php _e('Click to toggle') ?>"><br /></div>
               <h3 class="hndle"><span><?php Echo $box['title'] ?></span></h3>
               <div class="inside"><?php Include $box['file'] ?></div>
             </div>
