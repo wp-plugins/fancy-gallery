@@ -8,7 +8,7 @@ Donate link: http://dennishoppe.de/en/wordpress-plugins/fancy-gallery
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Fancy Gallery is a GALLERY MANAGEMENT & IMAGE LIGHTBOX tool which helps you to manage and present your image galleries.
+Fancy Gallery is an awesome gallery management and responsive image lightbox tool to manage and present image galleries within WordPress.
 
 
 == Description ==
