@@ -146,6 +146,9 @@ Possibly even more important, buying the Premium edition gives you access to me 
 
 == Changelog ==
 
+= 1.5.7 =
+* Fixed: Undefined post object in the save meta box function
+
 = 1.5.6.1 =
 * Fixed: Made meta box hover texts translatable
 

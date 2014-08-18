@@ -18,7 +18,7 @@ class Gallery_Post_Type {
     Add_Action('init', Array($this, 'Add_Taxonomy_Archive_Urls'), 99);
     Add_Filter('image_upload_iframe_src', Array($this, 'Image_Upload_Iframe_Src'));
     Add_Filter('post_updated_messages', Array($this, 'Updated_Messages'));
-    Add_Action('save_post', Array($this, 'Save_Meta_Box'));
+    Add_Action(SPrintF('save_post_%s', $this->name), Array($this, 'Save_Meta_Box'), 10, 2);
 
     If (IsSet($_REQUEST['strip_tabs'])){
       Add_Action('media_upload_gallery', Array($this, 'Add_Media_Upload_Style'));
@@ -36,24 +36,21 @@ class Gallery_Post_Type {
 
   function Field_Name($option_name){
     # Generates field names for the meta box
-    return $this->meta_field . '[' . $option_name . ']';
+    return SPrintF('%s[%s]', $this->meta_field, $option_name);
   }
 
-  function Save_Meta_Box($post_id){
-    Global $post;
-
+  function Save_Meta_Box($post_id, $post){
     # If this is an autosave we dont care
-    If ( Defined('DOING_AUTOSAVE') && DOING_AUTOSAVE ) return;
+    If (Defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) return;
 
     # Check the PostType
-    If ($post->post_type != $this->name) return;
+    #If ($post->post_type != $this->name) return;
 
     # Check if this request came from the edit page section
     If (IsSet($_POST[$this->meta_field]) && Is_Array($_POST[$this->meta_field])){
       # Save Meta data
       Update_Post_Meta ($post_id, '_wp_plugin_fancy_gallery', $_POST[$this->meta_field]);
     }
-
   }
 
   function Get_Meta ($key = Null, $default = False, $post_id = Null){
