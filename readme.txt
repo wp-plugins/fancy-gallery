@@ -8,13 +8,13 @@ Donate link: http://dennishoppe.de/en/wordpress-plugins/fancy-gallery
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Fancy Gallery is an awesome gallery management and responsive image lightbox tool to manage and present image galleries within WordPress.
+An awesome gallery management and touch-enabled, responsive, mobil-friendly image lightbox tool to manage and present image galleries within WordPress
 
 
 == Description ==
 [Fancy Gallery](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) is a state of the art [WordPress Gallery Management tool](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) which enables you to create, manage and handle image galleries easily in your WordPress backend, embed these galleries in your posts or pages and present them to your website visitors. ¹
 
-Furthermore this [gallery plugin](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) adds a beautiful awesome *javascript lightbox effect* to all links pointing to an image anywhere on your website. This includes images in your posts, galleries, pages, sidebar widgets or anywhere else on your website. In detail this means all links - regardless if text or image - pointing to an image will automatically opened in a responsive lightbox. If you use the [gallery] shortcode the images will get a "previous" and "next" button and a slideshow button and the gallery itself will be converted to a valid HTML5 block - even if your theme does not support HTML5 galleries yet.
+Furthermore this [gallery plugin](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) adds a beautiful awesome *javascript lightbox effect* (touch-enabled, responsive, optimized for both mobile and desktop web browsers) to all links pointing to an image anywhere on your website. This includes images in your posts, galleries, pages, sidebar widgets or anywhere else on your website. In detail this means all links - regardless if text or image - pointing to an image will automatically opened in a responsive lightbox. When using the [gallery] shortcode the images will get a "previous" and "next" button and a slideshow button and the gallery itself will be converted to a valid HTML5 section - even if your theme does not support HTML5 galleries yet.
 
 Of course you can use "exclude" and "include" parameters in your [gallery] shortcode like you already know from the traditional gallery code.
 
