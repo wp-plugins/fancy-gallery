@@ -12,9 +12,13 @@ class I18n {
     Load_TextDomain (__CLASS__, DirName(__FILE__).'/language/' . $locale . '.mo');
   }
 
-  public function t ($text, $context = ''){
+  public function Get_Text_Domain(){
+    return __CLASS__;
+  }
+
+  public function t ($text, $context = Null){
     # Translates the string $text with context $context
-    If ($context == '')
+    If (Empty($context))
       return Translate ($text, __CLASS__);
     Else
       return Translate_With_GetText_Context ($text, $context, __CLASS__);

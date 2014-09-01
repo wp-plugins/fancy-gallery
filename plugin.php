@@ -3,7 +3,7 @@
 Plugin Name: Fancy Gallery Lite
 Plugin URI: http://dennishoppe.de/en/wordpress-plugins/fancy-gallery
 Description: Fancy Gallery enables you to create and manage galleries and converts your galleries in post and pages to valid HTML5 blocks and associates linked images with a nice and responsive lightbox.
-Version: 1.5.7.1
+Version: 1.5.8
 Author: Dennis Hoppe
 Author URI: http://DennisHoppe.de
 */
@@ -15,6 +15,7 @@ Include DirName(__FILE__) . '/class.lightbox.php';
 Include DirName(__FILE__) . '/class.i18n.php';
 Include DirName(__FILE__) . '/class.mocking-bird.php';
 Include DirName(__FILE__) . '/class.options.php';
+Include DirName(__FILE__) . '/class.wpml.php';
 
 # Load widgets
 Include DirName(__FILE__) . '/widget.random-images.php';

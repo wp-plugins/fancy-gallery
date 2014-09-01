@@ -146,6 +146,9 @@ Possibly even more important, buying the Premium edition gives you access to me 
 
 == Changelog ==
 
+= 1.5.8 =
+* Added WPML Workaround for translated post type slugs
+
 = 1.5.7.1 =
 * Added padding style attribute to collage template
 

@@ -11,7 +11,8 @@ class Core {
     $gallery_post_type, # Pointer to the Gallery Post Type object
     $lightbox, # Pointer to the Lightbox object
     $i18n, # Pointer to the I18n object
-    $options; # Pointer to the Options object
+    $options, # Pointer to the Options object
+    $wpml; # Pointer to the WPML helper object
 
   function __construct($plugin_file){
     # Read base
@@ -20,11 +21,13 @@ class Core {
     # Template directory
     $this->template_dir = WP_CONTENT_DIR . '/fancy-gallery-templates';
 
+    # Helper classes
     $this->gallery_post_type = New Gallery_Post_Type($this);
     $this->i18n = New I18n($this);
     $this->lightbox = New Lightbox($this);
     $this->mocking_bird = New Mocking_Bird($this);
     $this->options = New Options($this);
+    $this->wpml = New WPML($this);
 
     # This Plugin supports post thumbnails
     Add_Theme_Support('post-thumbnails');
