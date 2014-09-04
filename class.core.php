@@ -4,7 +4,7 @@ Namespace WordPress\Plugin\Fancy_Gallery;
 class Core {
   public
     $base_url, # url to the plugin directory
-    $version = '1.5.7.1', # Current release number
+    $version = '1.5.8', # Current release number
     $gallery, # The current gallery object while running shortcode
     $template_dir,
     $arr_stylesheets = Array(), # Array with stylesheet urls which should be loaded asynchronously
@@ -40,7 +40,7 @@ class Core {
     Add_Action('wp_enqueue_scripts', Array($this, 'Enqueue_Frontend_Scripts'));
     Add_Action('widgets_init', Array($this, 'Register_Widgets'));
     Add_Filter('post_class', Array($this, 'Filter_Post_Class'));
-    Add_ShortCode ('gallery', Array($this, 'ShortCode_Gallery'));
+    Add_ShortCode('gallery', Array($this, 'ShortCode_Gallery'));
 
     If (!$this->options->Get('disable_excerpts')) Add_Filter('get_the_excerpt', Array($this, 'Filter_Excerpt'), 9);
 

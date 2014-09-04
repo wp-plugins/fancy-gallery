@@ -2,7 +2,7 @@
 Contributors: dhoppe
 Tags: gallery, galleries, image, images, picture, pictures, photo, photos, photo-album, photo-albums, fancybox, thickbox, lightbox, jquery, javascript, widget, cms, free, flickr       widget,Post,plugin,admin,posts,sidebar,comments,google,images,page,image,links
 Requires at least: 3.8
-Tested up to: 3.9.2
+Tested up to: 4.0
 Stable tag: trunk
 Donate link: http://dennishoppe.de/en/wordpress-plugins/fancy-gallery
 License: GPLv2
