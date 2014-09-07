@@ -118,10 +118,6 @@ The manual installation method involves downloading my gallery plugin and upload
 Automatic updates should work like a charm; as always though, ensure you backup your site just in case.
 
 
-== Frequently Asked Questions ==
-I am still collecting frequently asked questions.
-
-
 == Screenshots ==
 01. Gallery single view
 02. Gallery lightbox
