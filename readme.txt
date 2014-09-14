@@ -14,7 +14,7 @@ Awesome gallery management and touch-enabled, responsive, mobile-friendly image 
 == Description ==
 [Fancy Gallery](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) is *the* state of the art **[WordPress Gallery Management tool](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery)** which enables you to organize image galleries easily in your WordPress backend. Embed these galleries in your posts or pages and present them to your website visitors.
 
-Furthermore this [gallery plugin](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) adds a beautiful awesome **javascript lightbox effect** (touch-enabled, responsive, optimized for both mobile and desktop web browsers) to all links, pointing to an image anywhere on your website. This includes images in your posts, galleries, pages, sidebar widgets and anywhere else on your website. In detail this means all links - regardless if text or image - pointing to an image will automatically opened in a responsive lightbox. When using the [gallery] shortcode the images will get a "previous", "next" and a slideshow button. The gallery itself will be converted to a valid HTML5 section - even if your theme does not support HTML5 galleries yet.
+Furthermore this [gallery plugin](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) adds a beautiful awesome **javascript lightbox effect** (touch-enabled, responsive, optimized for both mobile and desktop web browsers) to all links, pointing to an image anywhere on your website. This includes images in your posts, galleries, pages, sidebar widgets and anywhere else on your website. In detail this means all links - regardless if text or image - pointing to an image will automatically opened in a responsive lightbox. When using the [gallery] shortcode the images will get a "previous", "next" and a slideshow button. The gallery itself will be converted to a **valid HTML5 section** - even if your theme does not support HTML5 galleries yet.
 
 
 = Facts &amp; Features =
@@ -25,6 +25,7 @@ Furthermore this [gallery plugin](http://dennishoppe.de/en/wordpress-plugins/fan
 * Every gallery has its own page with unique URL
 * **SEO conform** URL structure for all kind of pages
 * **Tags and categories**¹ to classify your galleries (both tags and categories are disjunct from your post tags and post categories)
+* More taxonomies to classify your galleries: Categories, Tags, Events, Places, Dates, Persons, Photographers. (Need more? Ask us!)
 * Supports **WPML** flawless and enables you to create a multilingual image website
 * Supports the WordPress theme template hierarchy and the parent-child-theme paradigm
 * Supports **user defined HTML templates**
@@ -38,7 +39,9 @@ Furthermore this [gallery plugin](http://dennishoppe.de/en/wordpress-plugins/fan
 * Custom **thumbnail sizes** and **color effects**¹
 * **Fully compatible** with all existing themes with archive template
 * Template engine to display your galleries in different styles
-* Widgets to display your images in the sidebars¹
+* Widget to display random images from your galleries in the sidebar¹
+* Widget to display the gallery taxonomies as list or cloud in the sidebar¹
+* Converts all galleries in **valid HTML5 blocks**
 * **Completely translatable** - .pot file is included
 * Includes a **bunch of filters** to give you the control of the behavior of this piece of code
 * **Import and export** directly via the official "[WordPress Importer](https://wordpress.org/plugins/wordpress-importer/)" by Automattic Inc.
@@ -47,7 +50,8 @@ Furthermore this [gallery plugin](http://dennishoppe.de/en/wordpress-plugins/fan
 * Personal **one-on-one real-time support** by the developer¹
 * No ads or branding anywhere - perfect white label solution¹
 
-¹ Available in the [premium version of Fancy Gallery](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery).
+¹ Available in the [premium version of Fancy Gallery](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery).<br>
+² Your theme needs to support this too.
 
 = Gallery Shortcode =
 Of course you can use "exclude" and "include" parameters in your [gallery] shortcode like you already know from the traditional gallery code.
