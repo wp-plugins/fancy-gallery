@@ -1,47 +1,59 @@
-=== Fancy Gallery ===
+﻿=== Fancy Gallery | Management & Lightbox Tool ===
 Contributors: dhoppe
-Tags: gallery, galleries, image, images, picture, pictures, photo, photos, photo-album, photo-albums, fancybox, thickbox, lightbox, jquery, javascript, widget, cms, free, flickr       widget,Post,plugin,admin,posts,sidebar,comments,google,images,page,image,links
-Requires at least: 3.8
+Tags: gallery, galleries, image, images, picture, pictures, photo, photos, photo-album, photo-albums, fancybox, thickbox, lightbox, jquery, javascript, widget, cms, free, flickr				widget,Post,plugin,admin,posts,sidebar,comments,google,images,page,image,links
+Requires at least: 3.6
 Tested up to: 4.0
 Stable tag: trunk
 Donate link: http://dennishoppe.de/en/wordpress-plugins/fancy-gallery
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-An awesome gallery management and touch-enabled, responsive, mobil-friendly image lightbox tool to manage and present image galleries within WordPress
+An awesome gallery management and touch-enabled, responsive, mobile-friendly image lightbox tool to manage and present image galleries within WordPress
 
 
 == Description ==
-[Fancy Gallery](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) is a state of the art [WordPress Gallery Management tool](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) which enables you to create, manage and handle image galleries easily in your WordPress backend, embed these galleries in your posts or pages and present them to your website visitors. ¹
+[Fancy Gallery](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) is *the* state of the art **[WordPress Gallery Management tool](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery)** which enables you to organize image galleries easily in your WordPress backend, embed these galleries in your posts or pages and present them to your website visitors.
 
-Furthermore this [gallery plugin](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) adds a beautiful awesome *javascript lightbox effect* (touch-enabled, responsive, optimized for both mobile and desktop web browsers) to all links pointing to an image anywhere on your website. This includes images in your posts, galleries, pages, sidebar widgets or anywhere else on your website. In detail this means all links - regardless if text or image - pointing to an image will automatically opened in a responsive lightbox. When using the [gallery] shortcode the images will get a "previous" and "next" button and a slideshow button and the gallery itself will be converted to a valid HTML5 section - even if your theme does not support HTML5 galleries yet.
+Furthermore this [gallery plugin](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) adds a beautiful awesome **javascript lightbox effect** (touch-enabled, responsive, optimized for both mobile and desktop web browsers) to all links, pointing to an image anywhere on your website. This includes images in your posts, galleries, pages, sidebar widgets and anywhere else on your website. In detail this means all links - regardless if text or image - pointing to an image will automatically opened in a responsive lightbox. When using the [gallery] shortcode the images will get a "previous", "next" and a slideshow button. The gallery itself will be converted to a valid HTML5 section - even if your theme does not support HTML5 galleries yet.
 
+
+= Facts &amp; Features =
+* Organize image galleries separated from posts or pages
+* **Centralized gallery management**. Enjoy a single location where you can see and manage all your galleries
+* Javascript lightbox support for all linked images on your website
+* Automatically generated **index page with all galleries**
+* Every gallery has its own page with unique URL
+* **SEO conform** URL structure for all kind of pages
+* **Tags and categories**¹ to classify your galleries (both tags and categories are disjunct from your post tags and post categories)
+* Supports **WPML** flawless and enables you to create a multilingual image website
+* Supports the WordPress theme template hierarchy and the parent-child-theme paradigm
+* Supports **user defined HTML templates**
+* Supports gallery **comments**²
+* Supports **featured images** as gallery thumbnails²
+* Supports **excerpts** for your uploaded galleries (the same way you already know from regular posts)
+* Excerpts can contain text description and a random set of preview images
+* Supports WordPress **user rights** and capabilities¹
+* Supports the **WordPress menus** and enables you to add all components of your encyclopedia to any menu
+* Supports **RSS feeds** for the gallery index and for the comments of each gallery
+* Custom **thumbnail sizes** and **color effects**¹
+* **Fully compatible** with all existing themes with archive template
+* Template engine to display your galleries in different styles
+* Widgets to display your images in the sidebars¹
+* **Completely translatable** - .pot file is included
+* Includes a **bunch of filters** to give you the control of the behavior of this piece of code
+* **Import and export** directly via the official "[WordPress Importer](https://wordpress.org/plugins/wordpress-importer/)" by Automattic Inc.
+* **Clean and intuitive** user interface
+* Works great with **WordPress Multisite**
+* Personal **one-on-one real-time support** by the developer¹
+* No ads or branding anywhere - perfect white label solution¹
+
+¹ Available in the [premium version of Fancy Gallery](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery).
+
+= Gallery Shortcode =
 Of course you can use "exclude" and "include" parameters in your [gallery] shortcode like you already know from the traditional gallery code.
 
-
-= Main features =
-In this version of [Fancy Gallery](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) some features are not available or limited. You will find notices on several places in the backend that the described feature is part of the [premium version](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery).
-
-* Lightbox support for all linked images on your website.
-* Manage galleries separated from posts or pages.
-* Gallery taxonomies to categorize all your image galleries.
-* Custom thumbnail sizes and color effects.¹
-* Fully compatible with all existing themes with archive template.
-* Template engine to display your galleries.
-* User role and capability support.¹
-* Gallery archives and RSS feed support.
-* Clean and easy-to-use user interfaces.
-* Widgets to display your images in the sidebars.¹
-* Completely free of advertisement and brandings.¹
-
-¹Available in the [premium version of Fancy Gallery](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery).
-
 = Settings =
-You can find the settings page in WP admin panel &raquo; Settings &raquo; [Fancy Gallery](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery).
-
-
-= Limitations =
-There are no real limitations in this version except the number of galleries you can handle within the gallery management tool. The maximal number of galleries is limited to three but of course you can use the traditional galleries in your posts and pages *without* any limitations!
+You can find the settings page in your Dashboard -> Settings -> [Fancy Gallery](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery).
 
 = Gallery Templates =
 To create your own gallery template you only need elementary HTML and PHP knowledge. Just start by creating a new HTML file with the following example header with the template details.
@@ -64,15 +76,8 @@ You can place the template in these folders:
 1. Absolutely not recommended: in the "templates/" folder of the plugin itself.
 
 
-= In the Press =
-* Fancy Gallery has been granted the "Famous Software" Award. [To the post &raquo;](http://download.famouswhy.com/fancy_gallery/)
-* 17 Most Used WordPress jQuery Plugins @ [Skyje.com](http://skyje.com/). [To the post &raquo;](http://skyje.com/2010/04/wordpress-jquery-plugins/)
-* "Awesome and easy to use Wordpress gallery plugin" [To the post &raquo;](http://topsy.com/trackback?utm_source=pingback&utm_campaign=L2&url=http://dennishoppe.de/wordpress-plugins/fancy-gallery)
-* WordPress Series #2 – The essential plugins @ [Inscope](http://www.inscope.net/). [To the post &raquo;](http://www.inscope.net/post/755)
-
-
-= Questions =
-Please use the support forum on WordPress.org for this version of the Plugin. For the [Premium Version](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) there is a separate support package [available](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery). Of course you can hire me for consulting, support, programming and customizations at any time.
+= Questions / Support requests =
+Please use the support forum on WordPress.org for this version of the plugin. For the [Premium Version](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) there is a separate support package [available](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery). Of course you can hire me for consulting, support, programming and customizations at any time.
 
 
 = Language =
@@ -94,24 +99,27 @@ You can find the *Translation.pot* file in the *language/* folder in the plugin 
 * Send it via E-Mail to &lt;Mail [@t] [DennisHoppe](http://DennisHoppe.de) [dot] de&gt;.
 * Thats it. Thank you! =)
 
+= Limitations of the lite version =
+There are no real limitations in this version except the number of galleries you can organize within the gallery management tool. The maximal number of galleries is limited to three but of course you can use the traditional galleries in your posts and pages *without* any limitations!
+
 
 == Installation ==
 
 = Minimum Requirements =
 
-* WordPress 3.8 or greater
+* WordPress 3.6 or greater
 * PHP version 5.3 or greater
 * MySQL version 5.0 or greater
 
 = Automatic installation =
 
-Automatic installation is the easiest option as WordPress handles the file transfers itself and you do not need to leave your web browser. To do an automatic install of Fancy Gallery, log in to your WordPress dashboard, navigate to the Plugins menu and click "Add New".
+Automatic installation is the easiest option as WordPress handles the file transfers itself and you do not need to leave your web browser. To do an automatic install of Fancy Gallery, log in to your WordPress dashboard, navigate to the plugins menu and click "Add New".
 
-In the search field type "Fancy Gallery" and click "Search Plugins". Once you have found my gallery plugin you can view details about it such as the point release, rating and description. Most importantly of course, you can install it by simply clicking "Install Now".
+In the search field type "Fancy Gallery" and click "Search plugins". Once you have found my gallery plugin you can view details about it such as the point release, rating and description. Most importantly of course, you can install it by simply clicking "Install Now".
 
 = Manual installation =
 
-The manual installation method involves downloading my gallery plugin and uploading it to your webserver via your favourite FTP application. The WordPress codex contains [instructions on how to do this here](http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation).
+The manual installation method involves downloading my gallery plugin and uploading it to your web server via your favorite FTP application. The WordPress codex contains [instructions on how to do this here](http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation).
 
 = Updating =
 
@@ -142,6 +150,9 @@ Possibly even more important, buying the Premium edition gives you access to me 
 
 == Changelog ==
 
+= 1.5.9 =
+* Added PHP warning if version is lower than 5.3
+
 = 1.5.8 =
 * Added WPML Workaround for translated post type slugs
 
@@ -163,7 +174,7 @@ Possibly even more important, buying the Premium edition gives you access to me 
 = 1.5.4 =
 * Fixed: input name of the meta box fields do not contain backslashes anymore
 * Change: Does not use the image caption as description anymore if the description is not set
-* Patched: Permalink for taxonomies were rewritten on plugin activation
+* Patched: permalink for taxonomies were rewritten on plugin activation
 
 = 1.5.3 =
 * Patched HTML5-gallery style sheet to work with older themes
@@ -176,7 +187,7 @@ Possibly even more important, buying the Premium edition gives you access to me 
 = 1.5 =
 * Replaced lightbox with a new responsive one
 * Replaced admin menu icon
-* Completely refactored PHP code
+* Completely re-factored PHP code
 
 = 1.4.4 =
 * Fixed the edit image section
@@ -223,7 +234,7 @@ Possibly even more important, buying the Premium edition gives you access to me 
 
 = 1.2 =
 * Complete roll back to FancyBox 1.3.4
-* Optional FancyBox 2.x from externel CDN
+* Optional FancyBox 2.x from external CDN
 
 = 1.1.7 =
 * Updated Fancybox JS library to the latest Git Hub state
@@ -294,7 +305,7 @@ Possibly even more important, buying the Premium edition gives you access to me 
 * Added html trim function
 
 = 1.0.19 =
-* Splited templates in Code and Style
+* Splitted templates in Code and Style
 * improved template output cleaning
 
 = 1.0.18 =
