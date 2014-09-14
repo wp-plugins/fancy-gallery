@@ -16,25 +16,33 @@ Awesome gallery management and touch-enabled, responsive, mobile-friendly image 
 
 Furthermore this [gallery plugin](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) adds a beautiful awesome **javascript lightbox effect** (touch-enabled, responsive, optimized for both mobile and desktop web browsers) to all links, pointing to an image anywhere on your website. This includes images in your posts, galleries, pages, sidebar widgets and anywhere else on your website. In detail this means all links - regardless if text or image - pointing to an image will automatically opened in a responsive lightbox. When using the [gallery] shortcode the images will get a "previous", "next" and a slideshow button. The gallery itself will be converted to a **valid HTML5 section** - even if your theme does not support HTML5 galleries yet.
 
-
-= Facts &amp; Features =
+= Gallery management features =
 * Organize image galleries separated from posts or pages
 * **Centralized gallery management**. Enjoy a single location where you can see and manage all your galleries
-* Javascript lightbox support for all linked images on your website
 * Automatically generated **index page with all galleries**
 * Every gallery has its own page with unique URL
-* **SEO conform** URL structure for all kind of pages
-* **Tags and categories**¹ to classify your galleries (both tags and categories are disjunct from your post tags and post categories)
-* More taxonomies to classify your galleries: Categories, Tags, Events, Places, Dates, Persons, Photographers. (Need more? Ask us!)
-* Supports **WPML** flawless and enables you to create a multilingual image website
-* Supports the WordPress theme template hierarchy and the parent-child-theme paradigm
-* Supports **user defined HTML templates**
+* Taxonomies to classify your galleries: **Categories, Tags, Events, Places, Dates, Persons, Photographers**.¹ (Need more? Ask us!)
+* Both tags and categories are disjunct from your post tags and post categories
 * Supports gallery **comments**²
 * Supports **featured images** as gallery thumbnails²
 * Supports **excerpts** for your uploaded galleries (the same way you already know from regular posts)
 * Excerpts can contain text description and a random set of preview images
 * Supports WordPress **user rights** and capabilities¹
-* Supports the **WordPress menus** and enables you to add all components of your encyclopedia to any menu
+* Supports the **WordPress menus** and enables you to add all components of your galleries to any menu
+* **Import and export** directly via the official "[WordPress Importer](https://wordpress.org/plugins/wordpress-importer/)" by Automattic Inc.
+
+= Lightbox features =
+* Javascript lightbox support for **all linked images** on your website
+* Lightbox is **touch-enabled, responsive and mobile-friendly**
+* Image **slideshow** function
+* **Indicator thumbnail images** below the full size image
+* **full screen** image size
+
+= General features =
+* **SEO conform** URL structure for all kind of pages
+* Supports **WPML** flawless and enables you to create a multilingual image website
+* Supports the WordPress theme template hierarchy and the parent-child-theme paradigm
+* Supports **user defined HTML templates**
 * Supports **RSS feeds** for the gallery index and for the comments of each gallery
 * Custom **thumbnail sizes** and **color effects**¹
 * **Fully compatible** with all existing themes with archive template
@@ -44,7 +52,6 @@ Furthermore this [gallery plugin](http://dennishoppe.de/en/wordpress-plugins/fan
 * Converts all galleries in **valid HTML5 blocks**
 * **Completely translatable** - .pot file is included
 * Includes a **bunch of filters** to give you the control of the behavior of this piece of code
-* **Import and export** directly via the official "[WordPress Importer](https://wordpress.org/plugins/wordpress-importer/)" by Automattic Inc.
 * **Clean and intuitive** user interface
 * Works great with **WordPress Multisite**
 * Personal **one-on-one real-time support** by the developer¹
