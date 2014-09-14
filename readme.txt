@@ -1,4 +1,4 @@
-﻿=== Fancy Gallery | Management & Lightbox Tool ===
+﻿=== Fancy Gallery<br>Gallery Management & Lightbox Tool ===
 Contributors: dhoppe
 Tags: gallery, galleries, image, images, picture, pictures, photo, photos, photo-album, photo-albums, fancybox, thickbox, lightbox, jquery, javascript, widget, cms, free, flickr				widget,Post,plugin,admin,posts,sidebar,comments,google,images,page,image,links
 Requires at least: 3.6
