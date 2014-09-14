@@ -1,4 +1,4 @@
-﻿=== Fancy Gallery<br>Gallery Management & Lightbox Tool ===
+﻿=== Fancy Gallery ===
 Contributors: dhoppe
 Tags: gallery, galleries, image, images, picture, pictures, photo, photos, photo-album, photo-albums, fancybox, thickbox, lightbox, jquery, javascript, widget, cms, free, flickr				widget,Post,plugin,admin,posts,sidebar,comments,google,images,page,image,links
 Requires at least: 3.6
@@ -8,11 +8,11 @@ Donate link: http://dennishoppe.de/en/wordpress-plugins/fancy-gallery
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-An awesome gallery management and touch-enabled, responsive, mobile-friendly image lightbox tool to manage and present image galleries within WordPress
+Awesome gallery management and touch-enabled, responsive, mobile-friendly image lightbox tool to manage and present image galleries within WordPress
 
 
 == Description ==
-[Fancy Gallery](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) is *the* state of the art **[WordPress Gallery Management tool](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery)** which enables you to organize image galleries easily in your WordPress backend, embed these galleries in your posts or pages and present them to your website visitors.
+[Fancy Gallery](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) is *the* state of the art **[WordPress Gallery Management tool](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery)** which enables you to organize image galleries easily in your WordPress backend. Embed these galleries in your posts or pages and present them to your website visitors.
 
 Furthermore this [gallery plugin](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) adds a beautiful awesome **javascript lightbox effect** (touch-enabled, responsive, optimized for both mobile and desktop web browsers) to all links, pointing to an image anywhere on your website. This includes images in your posts, galleries, pages, sidebar widgets and anywhere else on your website. In detail this means all links - regardless if text or image - pointing to an image will automatically opened in a responsive lightbox. When using the [gallery] shortcode the images will get a "previous", "next" and a slideshow button. The gallery itself will be converted to a valid HTML5 section - even if your theme does not support HTML5 galleries yet.
 
