@@ -36,11 +36,11 @@ Furthermore this [gallery plugin](http://dennishoppe.de/en/wordpress-plugins/fan
 * Lightbox is **touch-enabled, responsive and mobile-friendly**
 * Image **slideshow** function
 * **Indicator thumbnail images** below the full size image
-* **full screen** image size
+* **Full screen** image size
 
 = General features =
 * **SEO conform** URL structure for all kind of pages
-* Supports **WPML** flawless and enables you to create a multilingual image website
+* Supports **WPML** flawless
 * Supports the WordPress theme template hierarchy and the parent-child-theme paradigm
 * Supports **user defined HTML templates**
 * Supports **RSS feeds** for the gallery index and for the comments of each gallery
