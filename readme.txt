@@ -17,6 +17,9 @@ Awesome gallery management and touch-enabled, responsive, mobile-friendly image 
 = The lightbox behavior =
 All links - regardless if text or image - pointing to an image will automatically opened in a **responsive lightbox**. You do not need to care about any tag attributes or link classes – the plugins thinks about that for you. When using the [gallery] shortcode the images will get a **"previous", "next" and a slideshow button**. The gallery itself will be converted to a **valid HTML5 section** - even if your theme does not support HTML5 galleries yet.
 
+> #### Kick-start
+> Read the feature lists below of [take an eye on the screenshots](http://wordpress.org/plugins/fancy-gallery/screenshots/)!
+
 = Gallery management features =
 * Organize image galleries separated from posts or pages
 * **Centralized gallery management**. Enjoy a single location where you can see and manage all your galleries
