@@ -12,9 +12,10 @@ Awesome gallery management and touch-enabled, responsive, mobile-friendly image 
 
 
 == Description ==
-[Fancy Gallery](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) is *the* state of the art **[WordPress Gallery Management tool](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery)** which enables you to organize image galleries easily in your WordPress backend. Embed these galleries in your posts or pages and present them to your website visitors.
+[Fancy Gallery](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) is *the* most innovative state of the art **[WordPress Gallery Management tool](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery)** which enables you to **organize image galleries** easily in your WordPress backend. Furthermore this [gallery plugin](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) adds a beautiful awesome **javascript lightbox effect** (touch-enabled, responsive, optimized for both mobile and desktop web browsers) to all links pointing to an image anywhere on your website. This includes images in your posts, galleries, pages, sidebar widgets and anywhere else on your website.
 
-Furthermore this [gallery plugin](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) adds a beautiful awesome **javascript lightbox effect** (touch-enabled, responsive, optimized for both mobile and desktop web browsers) to all links pointing to an image anywhere on your website. This includes images in your posts, galleries, pages, sidebar widgets and anywhere else on your website. In detail this means all links - regardless if text or image - pointing to an image will automatically opened in a responsive lightbox. When using the [gallery] shortcode the images will get a "previous", "next" and a slideshow button. The gallery itself will be converted to a **valid HTML5 section** - even if your theme does not support HTML5 galleries yet.
+= The lightbox behavior =
+All links - regardless if text or image - pointing to an image will automatically opened in a **responsive lightbox**. You do not need to care about any tag attributes or link classes – the plugins thinks about that for you. When using the [gallery] shortcode the images will get a **"previous", "next" and a slideshow button**. The gallery itself will be converted to a **valid HTML5 section** - even if your theme does not support HTML5 galleries yet.
 
 = Gallery management features =
 * Organize image galleries separated from posts or pages
@@ -33,10 +34,13 @@ Furthermore this [gallery plugin](http://dennishoppe.de/en/wordpress-plugins/fan
 
 = Lightbox features =
 * Javascript lightbox support for **all linked images** on your website
+* Has "Previous" and "Next" buttons
+* Shows image title and description
 * Lightbox is **touch-enabled, responsive and mobile-friendly**
-* Image **slideshow** function
+* Supports **Swipe function** for touch screens – works with every smart phone and tablet
+* Awesome image **slideshow** function
 * **Indicator thumbnail images** below the full size image
-* **Full screen** image size
+* Uses the **full screen** size for presenting your image
 
 = General features =
 * **SEO conform** URL structure for all kind of pages
