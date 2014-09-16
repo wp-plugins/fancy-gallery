@@ -12,12 +12,12 @@ Awesome gallery management and touch-enabled, responsive, mobile-friendly image 
 
 
 == Description ==
-[Fancy Gallery](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) is *the* most innovative state of the art **[WordPress Gallery Management tool](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery)** which enables you to **organize image galleries** easily in your WordPress backend. Furthermore this [gallery plugin](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) adds a beautiful awesome **javascript lightbox effect** (touch-enabled, responsive, optimized for both mobile and desktop web browsers) to all links pointing to an image anywhere on your website. This includes images in your posts, galleries, pages, sidebar widgets and anywhere else on your website.
+Fancy Gallery is *the* most innovative state of the art **WordPress Gallery Management tool** which enables you to **organize image galleries** easily in your WordPress backend. Furthermore this gallery plugin adds a beautiful awesome **javascript lightbox effect** (touch-enabled, responsive, optimized for both mobile and desktop web browsers) to all links pointing to an image anywhere on your website. This includes images in your posts, galleries, pages, sidebar widgets and anywhere else on your website.
 
 = The lightbox behavior =
 All links - regardless if text or image - pointing to an image will automatically opened in a **responsive lightbox**. You do not need to care about any tag attributes or link classes – the plugins thinks about that for you. When using the [gallery] shortcode the images will get a **"previous", "next" and a slideshow button**. The gallery itself will be converted to a **valid HTML5 section** - even if your theme does not support HTML5 galleries yet.
 
-> #### Kick-start
+> #### Kick-Start
 > Read the feature lists below or [take an eye on the screenshots](https://wordpress.org/plugins/fancy-gallery/screenshots/)!
 
 = Gallery management features =
@@ -64,14 +64,14 @@ All links - regardless if text or image - pointing to an image will automaticall
 * Personal **one-on-one real-time support** by the developer¹
 * No ads or branding anywhere - perfect white label solution¹
 
-¹ Available in the [premium version of Fancy Gallery](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery).<br>
+¹ Available in [Fancy Gallery Pro](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery).<br>
 ² Your theme needs to support this too.
 
 = Gallery Shortcode =
 Of course you can use "exclude" and "include" parameters in your [gallery] shortcode like you already know from the traditional gallery code.
 
 = Settings =
-You can find the settings page in your Dashboard -> Settings -> [Fancy Gallery](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery).
+You can find the settings page in your Dashboard -> Settings -> Fancy Gallery.
 
 = Gallery Templates =
 To create your own gallery template you only need elementary HTML and PHP knowledge. Just start by creating a new HTML file with the following example header with the template details.
@@ -95,7 +95,7 @@ You can place the template in these folders:
 
 
 = Questions / Support requests =
-Please use the support forum on WordPress.org for this version of the plugin. For the [Premium Version](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) there is a separate support package [available](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery). Of course you can hire me for consulting, support, programming and customizations at any time.
+Please use the support forum on WordPress.org for this version of the plugin. For the premium version there is a separate support package available. Of course you can hire me for consulting, support, programming and customizations at any time.
 
 
 = Language =
@@ -156,14 +156,14 @@ Automatic updates should work like a charm; as always though, ensure you backup 
 09. The lightbox settings
 
 == Upgrade Notice ==
-If you update the plugin to version 1.5.x or higher please reactivate the plugin after the update and re-save your options through clicking the "Save changes" button at the end of the options page.
+If you update the plugin from version 1.4.x or lower to version 1.5.x or higher please reactivate the plugin after the update and re-save your options through clicking the "Save changes" button at the end of the options page.
 
 
-== Premium Version ==
+== Other Notes ==
 
-Fancy Gallery is available as [Premium Plugin](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) too. In the Premium Version you can use all options and features which are restricted in the lite version.
+Fancy Gallery is available as [premium plugin](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery) too. In the premium version you can use all options and features which are restricted in the lite version.
 
-Possibly even more important, buying the Premium edition gives you access to me and my support team. You can email us your questions about usage of the plugin or your problems in setting it up and we will assist you in no time!
+Possibly even more important, buying the premium edition gives you access to me and my support team. You can email us your questions about usage of the plugin or your problems in setting it up and we will assist you in no time!
 
 
 == Changelog ==
