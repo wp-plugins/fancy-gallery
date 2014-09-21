@@ -14,7 +14,7 @@ If (Version_Compare(PHP_VERSION, '5.3.0', '<')){
   Add_Action('admin_notices', 'Fancy_Gallery_PHP53_Version_Warning');
   function Fancy_Gallery_PHP53_Version_Warning(){ ?>
     <div class="error">
-      <p><?php PrintF('<strong>%1$s:</strong> You need at least <strong>PHP 5.3</strong> or higher to use %1$s. You have PHP %2$s installed. Please ask your hoster for an upgrade.', 'Fancy Gallery', PHP_VERSION) ?></p>
+      <p><?php PrintF('<strong>%1$s:</strong> You need at least <strong>PHP 5.3</strong> or higher to use %1$s. You are using PHP %2$s. Please ask your hoster for an upgrade.', 'Fancy Gallery', PHP_VERSION) ?></p>
     </div><?php
   }
 
@@ -35,7 +35,7 @@ Else {
   Include DirName(__FILE__) . '/widget.taxonomies.php';
   Include DirName(__FILE__) . '/widget.taxonomy-cloud.php';
 
-  # Inititalize Plugin
+  # Inititalize Plugin: Would cause a synthax error in PHP < 5.3
   Eval('New WordPress\Plugin\Fancy_Gallery\Core(__FILE__);');
 
 }
