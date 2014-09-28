@@ -37,7 +37,9 @@ $page_links = paginate_links( array(
 </div>
 <?php EndIf ?>
 
-<?php ForEach ($images_query->posts AS $image) :
+<?php
+$attachment_counter = 0;
+ForEach ($images_query->posts AS $image) :
 $attachment_counter++;
 $image->parent = Get_Post($image->post_parent);
 If (Is_Object($image->parent)){

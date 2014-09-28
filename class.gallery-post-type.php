@@ -269,7 +269,7 @@ class Gallery_Post_Type {
   }
 
   function Image_Upload_Iframe_Src($url){
-    If ($GLOBALS['post']->post_type == $this->name)
+    If (IsSet($GLOBALS['post']) && $GLOBALS['post']->post_type == $this->name)
       return $url . '&strip_tabs=true';
     Else
       return $url;

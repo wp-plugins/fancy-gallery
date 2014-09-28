@@ -168,6 +168,11 @@ Possibly even more important, buying the premium edition gives you access to me 
 
 == Changelog ==
 
+= 1.5.10 =
+* Fixed warning in library import tab
+* Fixed warning in featured image meta box
+* Set background color for images meta box to white
+
 = 1.5.9 =
 * Added PHP warning if version is lower than 5.3
 

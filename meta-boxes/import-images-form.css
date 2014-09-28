@@ -1,3 +1,7 @@
+body {
+  background: white;
+}
+
 .tablenav .tablenav-pages {
 	text-align: center;
 	float: none;
