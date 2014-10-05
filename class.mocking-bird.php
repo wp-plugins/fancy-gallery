@@ -59,7 +59,6 @@ class Mocking_Bird {
     If (Get_Post_Type($post_id) == $this->post_type && !$this->Check_Post_Count()) $this->Print_Post_Count_Limit();
   }
 
-
   function Print_Post_Count_Limit(){
     WP_Die(
       SPrintF('<p>%s</p><p>%s</p>',

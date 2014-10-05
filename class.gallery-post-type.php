@@ -124,16 +124,16 @@ class Gallery_Post_Type {
 
   function Updated_Messages($arr_message){
     return Array_Merge ($arr_message, Array($this->name => Array(
-      1 => SPrintF ($this->t('Gallery updated. (<a href="%s">View Gallery</a>)'), Get_Permalink()),
+      1 => SPrintF ($this->t('Gallery updated. <a href="%s">View Gallery</a>'), Get_Permalink()),
       2 => __('Custom field updated.'),
       3 => __('Custom field deleted.'),
       4 => $this->t('Gallery updated.'),
       5 => IsSet($_GET['revision']) ? SPrintF($this->t('Gallery restored to revision from %s'), WP_Post_Revision_Title( (Int) $_GET['revision'], False ) ) : False,
-      6 => SPrintF($this->t('Gallery published. (<a href="%s">View Gallery</a>)'), Get_Permalink()),
+      6 => SPrintF($this->t('Gallery published. <a href="%s">View Gallery</a>'), Get_Permalink()),
       7 => $this->t('Gallery saved.'),
       8 => $this->t('Gallery submitted.'),
-      9 => SPrintF($this->t('Gallery scheduled. (<a target="_blank" href="%s">View Gallery</a>)'), Get_Permalink()),
-      10 => SPrintF($this->t('Gallery draft updated. (<a target="_blank" href="%s">Preview Gallery</a>)'), Add_Query_Arg('preview', 'true', Get_Permalink()))
+      9 => SPrintF($this->t('Gallery scheduled. <a target="_blank" href="%s">View Gallery</a>'), Get_Permalink()),
+      10 => SPrintF($this->t('Gallery draft updated. <a target="_blank" href="%s">Preview Gallery</a>'), Add_Query_Arg('preview', 'true', Get_Permalink()))
     )));
   }
 
