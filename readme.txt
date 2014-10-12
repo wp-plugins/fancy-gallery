@@ -14,7 +14,7 @@ Awesome gallery management and touch-enabled, responsive, mobile-friendly image 
 == Description ==
 Fancy Gallery is *the* most innovative state of the art **WordPress Gallery Management tool** which enables you to **organize image galleries** easily in your WordPress backend. Furthermore this gallery plugin adds a beautiful awesome **javascript lightbox effect** (touch-enabled, responsive, optimized for both mobile and desktop web browsers) to all links pointing to an image anywhere on your website. This includes images in your posts, galleries, pages, sidebar widgets and anywhere else on your website.
 
-= The lightbox behavior =
+= Lightbox behavior =
 All links - regardless if text or image - pointing to an image will automatically opened in a **responsive lightbox**. You do not need to care about any tag attributes or link classes – the plugins thinks about that for you. When using the [gallery] shortcode the images will get a **"previous", "next" and a slideshow button**. The gallery itself will be converted to a **valid HTML5 section** - even if your theme does not support HTML5 galleries yet.
 
 > #### Kick-Start
@@ -67,7 +67,7 @@ All links - regardless if text or image - pointing to an image will automaticall
 ¹ Available in [Fancy Gallery Pro](http://dennishoppe.de/en/wordpress-plugins/fancy-gallery).<br>
 ² Your theme needs to support this too.
 
-= Gallery Shortcode =
+= Gallery shortcode =
 Of course you can use "exclude" and "include" parameters in your [gallery] shortcode like you already know from the traditional gallery code.
 
 = Settings =
@@ -94,8 +94,8 @@ You can place the template in these folders:
 1. Absolutely not recommended: in the "templates/" folder of the plugin itself.
 
 
-= Questions / Support requests =
-Please use the support forum on WordPress.org for this version of the plugin. For the premium version there is a separate support package available. Of course you can hire me for consulting, support, programming and customizations at any time.
+= Questions and support requests =
+Please use the support forum on WordPress.org only for this free lite version of the plugin. For the pro version there is a separate support package available. *Please do not use the WordPress.org support forum for questions about the pro version* or questions about my services! Of course you can hire me for consulting, support, programming and customizations at any time.
 
 
 = Language =
