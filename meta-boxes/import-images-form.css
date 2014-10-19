@@ -1,5 +1,9 @@
-body {
+body, html {
+  height: auto;
   background: white;
+}
+
+body {
 }
 
 .tablenav .tablenav-pages {

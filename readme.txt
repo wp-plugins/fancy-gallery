@@ -168,6 +168,10 @@ Possibly even more important, buying the premium edition gives you access to me 
 
 == Changelog ==
 
+= 1.5.11 =
+* Fixed warning in library import tab
+* Fixed stylesheet in library import tab
+
 = 1.5.10 =
 * Fixed warning in library import tab
 * Fixed warning in featured image meta box

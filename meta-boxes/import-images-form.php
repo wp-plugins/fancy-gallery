@@ -46,8 +46,10 @@ If (Is_Object($image->parent)){
 	$image->parent->title = Get_The_Title($image->parent->ID);
 	$image->parent->link = Get_Permalink($image->parent->ID);
 	$image->parent->type = Get_Post_Type_Object($image->parent->post_type);
+  If (!$image->parent->type) $image->parent = False; # The type seems to be an unregistered post type
 }
 Else $image->parent = False;
+#PrintF('<pre>%s</pre>', Print_R ($image->parent, True));
 $image->move_link = Add_Query_Arg(Array('move_attachment' => $image->ID, 'move_to' => $current_gallery->ID));
 ?>
 <div class="attachment" id="attachment-<?php Echo $image->ID ?>">
@@ -62,7 +64,7 @@ $image->move_link = Add_Query_Arg(Array('move_attachment' => $image->ID, 'move_t
 		<div class="ajax-loader hidden"><img src="<?php echo Admin_Url('images/loading.gif') ?>" alt="Loading"></div>
 		<div class="import-success hidden"><?php Echo $this->t('This image belongs to your gallery.') ?></div>
 
-		<?php If ($image->parent->ID != $current_gallery->ID): ?>
+		<?php If (!$image->parent || $image->parent->ID != $current_gallery->ID): ?>
 		<p class="import"><a href="<?php Echo $image->move_link ?>" class="import button"><?php Echo $this->t('Import to my gallery') ?></a></p>
 		<?php EndIf ?>
 
