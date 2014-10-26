@@ -107,7 +107,7 @@ Please use the support forum on WordPress.org only for this free lite version of
 
 
 = Translate this plugin =
-If you have translated this plugin in your language feel free to send me the language file (.po file) via E-Mail with your name and this translated sentence: "This plug-in is available in %YOUR_LANGUAGE_NAME%." So i can add it to the plug-in.
+If you have translated this plugin in your language feel free to send us the language file (.po file) via E-Mail with your name and this translated sentence: "This plug-in is available in %YOUR_LANGUAGE_NAME%." We will add it to the plug-in.
 
 You can find the *Translation.pot* file in the *language/* folder in the plugin directory.
 
