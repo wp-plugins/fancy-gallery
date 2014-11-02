@@ -178,7 +178,7 @@ Possibly even more important, buying the premium edition gives you access to me 
 * Set background color for images meta box to white
 
 = 1.5.9 =
-* Added PHP warning if version is lower than 5.3
+* Added warning if PHP version is lower than 5.3
 
 = 1.5.8 =
 * Added WPML Workaround for translated post type slugs
@@ -280,7 +280,7 @@ Possibly even more important, buying the premium edition gives you access to me 
 = 1.1.4 =
 * Added French translation.
 * Merged all styles via SASS to fancybox.css
-* Patched z-index bug for TwentenEleven theme
+* Patched z-index bug for Twenty Eleven theme
 * Patched default template styles
 * Improved Gallery generate code and parameters
 
