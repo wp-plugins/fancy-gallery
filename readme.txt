@@ -168,6 +168,9 @@ Possibly even more important, buying the premium edition gives you access to me 
 
 == Changelog ==
 
+= 1.5.12 =
+* Removed the Install_Template() function
+
 = 1.5.11 =
 * Fixed warning in library import tab
 * Fixed stylesheet in library import tab
