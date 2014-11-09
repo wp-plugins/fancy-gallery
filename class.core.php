@@ -142,52 +142,6 @@ class Core {
     return $arr_class;
   }
 
-  public function Install_Template(){
-    # Was this a Post request with data enctype?
-    If (!Is_Array($_FILES) || Empty($_FILES)) return False;
-
-    # Check the files
-    ForEach ($_FILES AS $field_name => $arr_file){
-      If (!Is_File($arr_file['tmp_name']))
-        Unset ($_FILES[$field_name]);
-    }
-
-    # Check if there are uploaded files
-    If (Empty($_FILES)) return False;
-
-    # Create template dir
-    If (!Is_Dir($this->template_dir)){
-      MkDir($this->template_dir);
-      ChMod($this->template_dir, 0755);
-    }
-
-    # Copy the template file
-    If (IsSet($_FILES['template_zip'])){
-      # Install the ZIP Template
-      $zip_file = $_FILES['template_zip']['tmp_name'];
-      Require_Once 'includes/file.php';
-      WP_Filesystem();
-      return UnZip_File ($zip_file, $this->template_dir );
-    }
-    ElseIf (IsSet($_FILES['template_php']) && $this->Get_Template_Properties($_FILES['template_php']['tmp_name']) ){
-      # Install the PHP Template
-      $php_file = $_FILES['template_php']['tmp_name'];
-      $template_name = BaseName($_FILES['template_php']['name'], '.php');
-
-      # Create dir and copy file
-      If (!Is_Dir($this->template_dir . '/' . $template_name)){
-        MkDir ($this->template_dir . '/' . $template_name);
-        ChMod ($this->template_dir . '/' . $template_name, 0755);
-      }
-      Copy ( $php_file, $this->template_dir . '/' . $template_name . '/' . $template_name . '.php' );
-      ChMod ( $this->template_dir . '/' . $template_name . '/' . $template_name . '.php', 0755 );
-    }
-    Else return False;
-
-    # Template installed
-    return True;
-  }
-
   public function Get_Template_Files(){
     $arr_template = Array_Unique(Array_Merge (
       (Array) Glob ( DirName(__FILE__) . '/templates/*.php' ),

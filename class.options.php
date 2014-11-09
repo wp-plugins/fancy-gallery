@@ -65,13 +65,8 @@ class Options {
 
     # If this is a Post request to save the options
     $options_saved = $this->Save_Options();
-    $template_installed = $this->core->Install_Template();
-    If ($options_saved && $template_installed)
-      WP_Redirect( $this->Get_Options_Page_Url(Array('options_saved' => 'true', 'template_installed' => 'true')) );
-    ElseIf ($options_saved)
+    If ($options_saved)
       WP_Redirect( $this->Get_Options_Page_Url(Array('options_saved' => 'true')) );
-    ElseIf ($template_installed)
-      WP_Redirect( $this->Get_Options_Page_Url(Array('template_installed' => 'true')) );
 
     WP_Enqueue_Script('dashboard');
     WP_Enqueue_Style('dashboard');
