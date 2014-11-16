@@ -56,7 +56,7 @@
           .removeAttr(options.gallery_relation_attr);
       }
 
-      // Find other link images which belongs to this one
+      // Find other linked images which belongs to this gallery
       if (gallery_relation)
         $gallery = $('a[' + options.gallery_relation_attr + '="' + gallery_relation + '"]');
       else if ($gallery_wrapper.length > 0)

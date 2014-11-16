@@ -168,6 +168,11 @@ Possibly even more important, buying the premium edition gives you access to me 
 
 == Changelog ==
 
+= 1.5.13 =
+* Fixed: XSS issue in the options page
+* Improved: Options page slug is sanitized now
+* Fixed Settings warning in taxonomy and taxonomy cloud widget
+
 = 1.5.12 =
 * Removed the Install_Template() function
 

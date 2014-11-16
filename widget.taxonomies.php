@@ -2,7 +2,9 @@
 Namespace WordPress\Plugin\Fancy_Gallery\Widget;
 
 class Taxonomies Extends \WP_Widget {
-  var $core; #  Pointer to the core class
+  public
+    $arr_options,
+    $core; #  Pointer to the core class
 
   function __construct(){
     $this->core = $GLOBALS['WordPress\Plugin\Fancy_Gallery\Core'];
@@ -120,7 +122,7 @@ class Taxonomies Extends \WP_Widget {
     # Display Widget
     Echo $args['before_widget'];
 
-    Echo $args['before_title'] . Apply_Filters('widget_title', $this->Get_Option('title'), $settings, $this->id_base) . $args['after_title'];
+    Echo $args['before_title'] . Apply_Filters('widget_title', $this->Get_Option('title'), $this->arr_option, $this->id_base) . $args['after_title'];
 
     Echo '<ul>';
     WP_List_Categories(Array(

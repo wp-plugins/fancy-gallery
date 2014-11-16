@@ -4,10 +4,12 @@ Namespace WordPress\Plugin\Fancy_Gallery;
 class Options {
   private
     $arr_option_box, # Meta boxes for the option page
+    $options_page_slug, # Slug for the options page
     $core; # Pointer to the core object
 
   public function __construct($core){
     $this->core = $core;
+    $this->options_page_slug = Sanitize_Title(Str_Replace(Array('\\', '/', '_'), '-', __CLASS__));
 
     # Option boxes
     $this->arr_option_box = Array(
@@ -27,7 +29,7 @@ class Options {
       $this->t('Fancy Gallery Options'),
       $this->t('Fancy Gallery'),
       'manage_options',
-      __CLASS__,
+      $this->options_page_slug,
       Array($this, 'Print_Options_Page')
     );
 
@@ -45,7 +47,7 @@ class Options {
   }
 
   private function Get_Options_Page_Url($parameters = Array()){
-    $url = Add_Query_Arg(Array('page' => __CLASS__), Admin_Url('options-general.php'));
+    $url = Add_Query_Arg(Array('page' => $this->options_page_slug), Admin_Url('options-general.php'));
     If (Is_Array($parameters) && !Empty($parameters)) $url = Add_Query_Arg($parameters, $url);
     return $url;
   }
@@ -57,7 +59,7 @@ class Options {
       WP_Redirect( $this->Get_Options_Page_Url(Array('template_deleted' => 'true')) );
     }
     ElseIf (IsSet($_GET['delete'])){
-      WP_Die($this->t('Error while deleting: ' . $_GET['delete']));
+      WP_Die($this->t('Error while deleting: ' . HTMLSpecialChars($_GET['delete'])));
     }
 
     # If the Request was redirected from a "Save Options"-Post
