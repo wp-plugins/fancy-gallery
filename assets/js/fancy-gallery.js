@@ -34,7 +34,7 @@
       'transitionSpeed':        parseFloat(FANCYGALLERY.animation_speed), // The transition speed between slide changes in milliseconds
       'stretchImages':          FANCYGALLERY.stretch_images, // Defines if images should be stretched to fill the available space. Values: "cover", "contain", false
       'onopen':                 function(){ $('html').css('overflow', 'hidden') },
-      'onclosed':               function(){ $('html').css('overflow', 'auto')   }
+      'onclosed':               function(){ $('html').css('overflow', '')   }
     };
 
     // Associate the links with the lightbox
