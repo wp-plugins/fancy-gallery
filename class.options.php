@@ -85,23 +85,23 @@ class Options {
     <div class="wrap">
       <h2><?php Echo $this->t('Fancy Gallery Settings') ?></h2>
 
-      <?php If (IsSet($_GET['options_saved'])) : ?>
+      <?php If (IsSet($_GET['options_saved'])): ?>
       <div id="message" class="updated fade">
         <p><strong><?php _e('Settings saved.') ?></strong></p>
       </div>
-      <?php EndIf; ?>
+      <?php EndIf ?>
 
-      <?php If (IsSet($_GET['template_installed'])) : ?>
+      <?php If (IsSet($_GET['template_installed'])): ?>
       <div id="message" class="updated fade">
         <p><strong><?php echo $this->t('Template installed.') ?></strong></p>
       </div>
-      <?php EndIf; ?>
+      <?php EndIf ?>
 
-      <?php If (IsSet($_GET['template_deleted'])) : ?>
+      <?php If (IsSet($_GET['template_deleted'])): ?>
       <div id="message" class="updated fade">
         <p><strong><?php echo $this->t('Template deleted.') ?></strong></p>
       </div>
-      <?php EndIf; ?>
+      <?php EndIf ?>
 
       <form method="post" action="" enctype="multipart/form-data">
       <div class="metabox-holder">
@@ -141,19 +141,13 @@ class Options {
   public function Add_Option_Box($title, $include_file, $column = 'main', $state = 'opened'){
     # Check the input
     If (!Is_File($include_file)) return False;
-    If ( $title == '' ) $title = '&nbsp;';
+    If (Empty($title)) $title = '&nbsp;';
 
     # Column (can be 'side' or 'main')
-    If ($column != '' && $column != Null && $column != 'main')
-      $column = 'side';
-    Else
-      $column = 'main';
+    If ($column != 'main') $column = 'side';
 
     # State (can be 'opened' or 'closed')
-    If ($state != '' && $state != Null && $state != 'opened')
-      $state = 'closed';
-    Else
-      $state = 'opened';
+    If ($state != 'opened') $state = 'closed';
 
     # Add a new box
     $this->arr_option_box[$column][] = Array('title' => $title, 'file' => $include_file, 'state' => $state);
