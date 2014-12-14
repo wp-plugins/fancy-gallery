@@ -4,7 +4,7 @@ Namespace WordPress\Plugin\Fancy_Gallery;
 class Core {
   public
     $base_url, # url to the plugin directory
-    $version = '1.5.13', # Current release number
+    $version = '1.5.14', # Current release number
     $gallery, # The current gallery object while running shortcode
     $template_dir,
     $arr_stylesheets = Array(), # Array with stylesheet urls which should be loaded asynchronously
@@ -40,9 +40,11 @@ class Core {
     Add_Action('wp_enqueue_scripts', Array($this, 'Enqueue_Frontend_Scripts'));
     Add_Action('widgets_init', Array($this, 'Register_Widgets'));
     Add_Filter('post_class', Array($this, 'Filter_Post_Class'));
+    Add_Action('pre_get_posts', Array($this, 'Filter_Attachment_Query'));
     Add_ShortCode('gallery', Array($this, 'ShortCode_Gallery'));
 
     If (!$this->options->Get('disable_excerpts')) Add_Filter('get_the_excerpt', Array($this, 'Filter_Excerpt'), 9);
+
 
     # Add to GLOBALs
     $GLOBALS[__CLASS__] = $this;
@@ -105,6 +107,11 @@ class Core {
     Unset($arr_options['disable_update_notification'], $arr_options['update_username'], $arr_options['update_password']);
     $arr_options['stylesheets'] = $this->arr_stylesheets;
     WP_Localize_Script('fancy-gallery', 'FANCYGALLERY', $arr_options);
+  }
+
+  public function Filter_Attachment_Query($query){
+    If (Is_Admin() && $query->Get('post_type') == 'attachment' && $query->Get('orderby') == 'menu_order ASC, ID')
+      $query->Set('order', 'ASC');
   }
 
   public function Filter_Excerpt($excerpt){

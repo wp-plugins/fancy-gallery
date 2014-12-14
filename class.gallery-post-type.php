@@ -61,15 +61,14 @@ class Gallery_Post_Type {
       return False;
 
     # Read meta data
-    $arr_meta = (Array) Get_Post_Meta($post_id, '_wp_plugin_fancy_gallery', True);
-    If (Empty($arr_meta) || !Is_Array($arr_meta)) $arr_meta = Array();
+    $arr_meta = Get_Post_Meta($post_id, '_wp_plugin_fancy_gallery', True);
+    $arr_meta = Is_Array($arr_meta) ? $arr_meta : Array();
 
     # Clean Meta data
-    ForEach ($arr_meta AS $k => $v)
-      If (!$v) Unset ($arr_meta[$k]);
+    $arr_meta = Array_Filter($arr_meta);
 
     # Load default Meta data
-    $arr_meta = Array_Merge ( $this->Default_Meta(), $arr_meta );
+    $arr_meta = Array_Merge($this->Default_Meta(), $arr_meta);
 
     # Get the key value
     If ($key == Null)
@@ -218,8 +217,12 @@ class Gallery_Post_Type {
     $this->arr_taxonomies = $this->Get_Taxonomies();
 
     # Register Taxonomies
-    ForEach ( (Array) $this->core->options->Get('gallery_taxonomies') As $taxonomie => $attributes ){
+    $arr_taxonomies = $this->core->options->Get('gallery_taxonomies');
+    If (!Is_Array($arr_taxonomies)) return False;
+
+    ForEach ($arr_taxonomies As $taxonomie => $attributes ){
       If (!IsSet($this->arr_taxonomies[$taxonomie])) Continue;
+      $this->arr_taxonomies[$taxonomie] = Is_Array($this->arr_taxonomies[$taxonomie]) ? $this->arr_taxonomies[$taxonomie] : Array();
       Register_Taxonomy ($taxonomie, $this->name, Array_Merge($this->arr_taxonomies[$taxonomie], $attributes));
     }
   }

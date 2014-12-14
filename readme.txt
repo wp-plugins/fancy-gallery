@@ -168,6 +168,10 @@ Possibly even more important, buying the premium edition gives you access to me 
 
 == Changelog ==
 
+= 1.5.14 =
+* Fixed: Array_Merge issues for meta data handling
+* Fixed: Image order in Edit Gallery view
+
 = 1.5.13 =
 * Fixed: XSS issue in the options page
 * Improved: Options page slug is sanitized now
