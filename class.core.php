@@ -45,7 +45,6 @@ class Core {
 
     If (!$this->options->Get('disable_excerpts')) Add_Filter('get_the_excerpt', Array($this, 'Filter_Excerpt'), 9);
 
-
     # Add to GLOBALs
     $GLOBALS[__CLASS__] = $this;
   }
@@ -110,7 +109,7 @@ class Core {
   }
 
   public function Filter_Attachment_Query($query){
-    If (Is_Admin() && $query->Get('post_type') == 'attachment' && $query->Get('orderby') == 'menu_order ASC, ID')
+    If (Is_Admin() && $query->Get('post_type') == 'attachment' && $query->Get('orderby') == 'menu_order ASC, ID' && $query->Get('order') == 'DESC')
       $query->Set('order', 'ASC');
   }
 
