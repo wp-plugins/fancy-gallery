@@ -17,12 +17,10 @@ $arr_capabilities = Array(
   $post_type->cap->delete_others_posts => $this->t('Delete others galleries'),
 
   $post_type->cap->publish_posts => $this->t('Publish galleries'),
-  $post_type->cap->read_private_posts => $this->t('View (others) private galleries')
-);
+  $post_type->cap->read_private_posts => $this->t('View (others) private galleries'),
 
-# Taxonomies
-ForEach ( $this->core->gallery_post_type->arr_taxonomies AS $taxonomie => $tax_args )
-  $arr_capabilities[ $tax_args['capabilities']['manage_terms'] ] = SPrintF($this->t('Manage %s'), $tax_args['labels']['name']);
+  'manage_categories' => $this->t('Manage taxonomies')
+);
 
 # Show the user roles
 ForEach ($GLOBALS['wp_roles']->roles AS $role_name => $arr_role) : ?>

@@ -168,6 +168,9 @@ Possibly even more important, buying the premium edition gives you access to me 
 
 == Changelog ==
 
+= 1.5.15 =
+* Fixed: taxonomy user rights for managing gallery taxonomies
+
 = 1.5.14 =
 * Fixed: Array_Merge issues for meta data handling
 * Fixed: Image order in Edit Gallery view

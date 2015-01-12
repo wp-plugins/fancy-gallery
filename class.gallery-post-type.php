@@ -165,12 +165,6 @@ class Gallery_Post_Type {
         'rewrite' => Array(
           'with_front' => False,
           'slug' => $this->t('gallery-category', 'URL slug')
-        ),
-        'capabilities' => Array (
-          'manage_terms' => 'manage_gallery_categories',
-          'edit_terms' => 'manage_gallery_categories',
-          'delete_terms' => 'manage_gallery_categories',
-          'assign_terms' => 'edit_galleries'
         )
       ),
 
@@ -201,12 +195,6 @@ class Gallery_Post_Type {
         'rewrite' => Array(
           'with_front' => False,
           'slug' => $this->t('gallery-tag', 'URL slug')
-        ),
-        'capabilities' => Array (
-          'manage_terms' => 'manage_gallery_tags',
-          'edit_terms' => 'manage_gallery_tags',
-          'delete_terms' => 'manage_gallery_tags',
-          'assign_terms' => 'edit_galleries'
         )
       )
     );
