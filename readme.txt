@@ -168,6 +168,9 @@ Possibly even more important, buying the premium edition gives you access to me 
 
 == Changelog ==
 
+= 1.5.16 =
+* Updated blueimp Gallery to 2.14.1
+
 = 1.5.15 =
 * Fixed: taxonomy user rights for managing gallery taxonomies
 
