@@ -173,11 +173,12 @@ class Options {
 
     # Clean the Post array
     $_POST = StripSlashes_Deep($_POST);
-    ForEach ($_POST AS $option => $value)
-      If (!$value) Unset ($_POST[$option]);
+    $options = Array_Filter($_POST);
+    #ForEach ($_POST AS $option => $value)
+    #  If (!$value) Unset ($_POST[$option]);
 
     # Save Options
-    Update_Option (__CLASS__, $_POST);
+    Update_Option (__CLASS__, $options);
     Delete_Option ('wp_plugin_fancy_gallery_pro');
     Delete_Option ('wp_plugin_fancy_gallery');
 
