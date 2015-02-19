@@ -1,12 +1,36 @@
-.blueimp-gallery>.title {
-  text-shadow: none;
-  opacity: 1;
+.title-description {
+  position: absolute;
   top: 5px;
-  font-size: inherit;
-  font-weight: bold;
+  left: 10px;
+  margin: 0 40px 0 0;
+  line-height: 150%;
+  color: #fff;
+  display: none
 }
 
-.blueimp-gallery > .prev, .blueimp-gallery > .next {
+.blueimp-gallery-controls > .title-description {
+  display: block
+}
+
+.title-description .title,
+.title-description .description {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 5px;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+.title-description :empty {
+  display: none;
+}
+
+.title-description .title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.blueimp-gallery > .prev,
+.blueimp-gallery > .next {
   font-family: Arial, sans-serif;
 }
 
@@ -18,17 +42,4 @@
     height: 29px;
     width: 29px;
   }
-}
-
-.blueimp-gallery > .description {
-  position: absolute;
-  top: 35px;
-  left: 15px;
-  color: #fff;
-  display: none;
-  margin-right: 60px;
-}
-
-.blueimp-gallery-controls > .description {
-  display: block;
 }

@@ -2,7 +2,7 @@
 Contributors: dhoppe
 Tags: gallery, galleries, image, images, picture, pictures, photo, photos, photo-album, photo-albums, fancybox, thickbox, lightbox, jquery, javascript, widget, cms, free, flickr				widget,Post,plugin,admin,posts,sidebar,comments,google,images,page,image,links
 Requires at least: 3.6
-Tested up to: 4.1
+Tested up to: 4.1.1
 Stable tag: trunk
 Donate link: http://dennishoppe.de/en/wordpress-plugins/fancy-gallery
 License: GPLv2
@@ -167,6 +167,9 @@ Possibly even more important, buying the premium edition gives you access to me 
 
 
 == Changelog ==
+
+= 1.5.17 =
+* Fixed the title and description background in the lightbox
 
 = 1.5.16 =
 * Updated blueimp Gallery to 2.14.1

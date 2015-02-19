@@ -21,8 +21,10 @@ class Lightbox {
     ?>
     <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
       <div class="slides"></div>
-      <div class="title"></div>
-      <div class="description"></div>
+      <div class="title-description">
+        <div class="title"></div>
+        <div class="description"></div>
+      </div>
       <a class="prev"> ‹ </a>
       <a class="next"> › </a>
       <a class="close"> × </a>
