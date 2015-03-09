@@ -11,30 +11,28 @@
 
 <table>
 <tr>
-  <td><label for=""><?php Echo $this->t('Images per excerpt') ?></label></td>
+  <td><label><?php Echo $this->t('Images per excerpt') ?></label></td>
   <td>
-    <input type="number" id="" value="<?php Echo Esc_Attr($this->Get('excerpt_image_number')) ?>" <?php Disabled(True) ?> >
-    <span class="asterisk">*</span>
-  </td>
-  </tr>
-</tr>
-<tr>
-  <td><label for=""><?php Echo $this->t('Thumbnail width') ?></label></td>
-  <td>
-    <input type="number" id="" value="<?php Echo Esc_Attr($this->Get('excerpt_thumb_width')) ?>" <?php Disabled(True) ?> > px
-    <span class="asterisk">*</span>
+    <input type="number" value="<?php Echo Esc_Attr($this->Get('excerpt_image_number')) ?>" readonly="readonly"><span class="asterisk">*</span>
   </td>
 </tr>
+
 <tr>
-  <td><label for=""><?php Echo $this->t('Thumbnail height') ?></label></td>
+  <td><label><?php Echo $this->t('Thumbnail width') ?></label></td>
   <td>
-    <input type="number" id="" value="<?php Echo Esc_Attr($this->Get('excerpt_thumb_height')) ?>" <?php Disabled(True) ?> > px
-    <span class="asterisk">*</span>
+    <input type="number" value="<?php Echo Esc_Attr($this->Get('excerpt_thumb_width')) ?>" readonly="readonly">px<span class="asterisk">*</span>
+  </td>
+</tr>
+
+<tr>
+  <td><label><?php Echo $this->t('Thumbnail height') ?></label></td>
+  <td>
+    <input type="number" value="<?php Echo Esc_Attr($this->Get('excerpt_thumb_height')) ?>" readonly="readonly">px<span class="asterisk">*</span>
   </td>
 </tr>
 </table>
 
 <p>
   <span class="asterisk">*</span>
-  <?php Echo $this->core->mocking_bird->Pro_Notice('feature') ?>
+  <?php Echo $this->core->mocking_bird->Pro_Notice('setting') ?>
 </p>

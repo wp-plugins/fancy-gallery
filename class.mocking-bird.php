@@ -19,11 +19,12 @@ class Mocking_Bird {
     return $this->core->t($text, $context);
   }
 
-  function Pro_Notice($message = 'feature', $output = True){
+  function Pro_Notice($message = 'setting', $output = True){
     $arr_message = Array(
       'upgrade' => $this->t('Upgrade to Pro'),
       'upgrade_url' => '%s',
       'feature' => $this->t('This feature is available in the <a href="%s" target="_blank">premium version</a>.'),
+      'setting' => $this->t('This setting is changeable in the <a href="%s" target="_blank">premium version</a>.'),
       'custom_tax' => $this->t('Do you need a special taxonomy for your website? No problem! Just <a href="%s" target="_blank">get in touch</a>.'),
       'widget' => $this->t('This widget is available in the <a href="%s" target="_blank">premium version</a>. For now there will be no output in the front end of your website.'),
       #'count_limit' => $this->t('In the <a href="%s" target="_blank">Premium Version of Fancy Gallery</a> you can take advantage of the gallery management without any limitations.'),

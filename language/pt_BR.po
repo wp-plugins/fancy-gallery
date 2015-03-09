@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fancy Gallery\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-12 15:29+0100\n"
+"POT-Creation-Date: 2015-03-09 15:26+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
 "Language-Team: Ramiro Modica <contato@modica.com.br>\n"
@@ -106,29 +106,29 @@ msgstr ""
 msgid "Taxonomies"
 msgstr "Taxonomias"
 
-#: ../class.options.php:45
+#: ../class.options.php:46
 msgid "Gallery \"Excerpts\""
 msgstr "\"Resumos\" da Galeria"
 
-#: ../class.options.php:46
+#: ../class.options.php:47
 #: ../class.gallery-post-type.php:230
 msgid "Archive Url"
 msgstr "Url do acervo"
 
-#: ../class.options.php:62
+#: ../class.options.php:63
 msgid "Error while deleting: "
 msgstr "Erro ao deletar:"
 
-#: ../class.options.php:86
+#: ../class.options.php:87
 #, fuzzy
 msgid "Fancy Gallery Settings"
 msgstr "Configurações da galeria Fancy Pro"
 
-#: ../class.options.php:96
+#: ../class.options.php:97
 msgid "Template installed."
 msgstr "Modelo instalado."
 
-#: ../class.options.php:102
+#: ../class.options.php:103
 msgid "Template deleted."
 msgstr "Modelo deletado."
 
@@ -496,21 +496,26 @@ msgid "This feature is available in the <a href=\"%s\" target=\"_blank\">premium
 msgstr "Desculpe, este recurso está disponível apenas na <a href=\"%s\" target=\"_blank\">Versão Pro da Fancy Gallery</a>."
 
 #: ../class.mocking-bird.php:27
+#, fuzzy, php-format
+msgid "This setting is changeable in the <a href=\"%s\" target=\"_blank\">premium version</a>."
+msgstr "Desculpe, este recurso está disponível apenas na <a href=\"%s\" target=\"_blank\">Versão Pro da Fancy Gallery</a>."
+
+#: ../class.mocking-bird.php:28
 #, php-format
 msgid "Do you need a special taxonomy for your website? No problem! Just <a href=\"%s\" target=\"_blank\">get in touch</a>."
 msgstr ""
 
-#: ../class.mocking-bird.php:28
+#: ../class.mocking-bird.php:29
 #, php-format
 msgid "This widget is available in the <a href=\"%s\" target=\"_blank\">premium version</a>. For now there will be no output in the front end of your website."
 msgstr ""
 
-#: ../class.mocking-bird.php:33
+#: ../class.mocking-bird.php:34
 msgctxt "Link to the authors website"
 msgid "http://dennishoppe.de/en/wordpress-plugins/fancy-gallery"
 msgstr "http://dennishoppe.de/en/wordpress-plugins/fancy-gallery"
 
-#: ../class.mocking-bird.php:66
+#: ../class.mocking-bird.php:67
 msgid "&laquo; Back to your galleries"
 msgstr "&laquo; Voltar para as galerias"
 
@@ -611,7 +616,8 @@ msgid "Deactivate the archive feature."
 msgstr "Desativar o sistema de acervo."
 
 #: ../options-page/archive-link.php:14
-msgid "If you tick this box visitors will no more be able to navigate through the gallery archive."
+#, fuzzy
+msgid "If you tick this box visitors will not be able to navigate through the gallery archive."
 msgstr "Se você marcar esta caixa os visitantes não poderão mais navegar pelo acervo de galerias."
 
 #: ../options-page/templates.php:2
@@ -660,131 +666,131 @@ msgid "Install template and save all options"
 msgstr "Instalar modelo e salvar todas as opções"
 
 #: ../options-page/lightbox.php:7
-#: ../options-page/lightbox.php:19
-#: ../options-page/lightbox.php:31
-#: ../options-page/lightbox.php:43
-#: ../options-page/lightbox.php:55
+#: ../options-page/lightbox.php:18
+#: ../options-page/lightbox.php:29
+#: ../options-page/lightbox.php:40
+#: ../options-page/lightbox.php:51
 msgid "On"
 msgstr ""
 
 #: ../options-page/lightbox.php:8
-#: ../options-page/lightbox.php:20
-#: ../options-page/lightbox.php:32
-#: ../options-page/lightbox.php:44
-#: ../options-page/lightbox.php:56
+#: ../options-page/lightbox.php:19
+#: ../options-page/lightbox.php:30
+#: ../options-page/lightbox.php:41
+#: ../options-page/lightbox.php:52
 msgid "Off"
 msgstr ""
 
-#: ../options-page/lightbox.php:11
+#: ../options-page/lightbox.php:10
 msgid "Turn this off if you do not want to use the included lightbox."
 msgstr ""
 
-#: ../options-page/lightbox.php:16
+#: ../options-page/lightbox.php:15
 msgid "Loop mode"
 msgstr "Modo de Loop"
 
-#: ../options-page/lightbox.php:23
+#: ../options-page/lightbox.php:21
 #, fuzzy
 msgid "Enables the user to get from the last image to the first one with the \"Next &raquo;\" button."
 msgstr "Permite que o usuário vá da última imagem direto para a primeira através do botão de \"Próximo &raquo;\"."
 
-#: ../options-page/lightbox.php:28
+#: ../options-page/lightbox.php:26
 #, fuzzy
 msgid "Title &amp; Description"
 msgstr "Posição do título"
 
-#: ../options-page/lightbox.php:35
+#: ../options-page/lightbox.php:32
 msgid "Turn this off if you do not want to display the image title and description in your lightbox."
 msgstr ""
 
-#: ../options-page/lightbox.php:40
+#: ../options-page/lightbox.php:37
 msgid "Close button"
 msgstr "Botão \"fechar\""
 
-#: ../options-page/lightbox.php:47
+#: ../options-page/lightbox.php:43
 msgid "Turn this off if you do not want to display a close button in your lightbox."
 msgstr ""
 
-#: ../options-page/lightbox.php:52
+#: ../options-page/lightbox.php:48
 #, fuzzy
 msgid "Indicator thumbnails"
 msgstr "Negativar as miniaturas."
 
-#: ../options-page/lightbox.php:59
+#: ../options-page/lightbox.php:54
 msgid "Turn this off if you do not want to display small preview thumbnails below the lightbox image."
 msgstr ""
 
-#: ../options-page/lightbox.php:64
+#: ../options-page/lightbox.php:59
 msgid "Slideshow speed"
 msgstr ""
 
-#: ../options-page/lightbox.php:67
-#: ../options-page/lightbox.php:85
+#: ../options-page/lightbox.php:62
+#: ../options-page/lightbox.php:79
 #, fuzzy
 msgctxt "Abbr. Milliseconds"
 msgid "ms"
 msgstr "ms"
 
-#: ../options-page/lightbox.php:68
+#: ../options-page/lightbox.php:63
 msgid "The delay between two images in the slideshow."
 msgstr ""
 
-#: ../options-page/lightbox.php:73
+#: ../options-page/lightbox.php:68
 #, fuzzy
 msgid "Preload images"
 msgstr "Fazer upload de imagens"
 
-#: ../options-page/lightbox.php:77
+#: ../options-page/lightbox.php:71
 msgid "The number of images which should be preloaded around the current one."
 msgstr ""
 
-#: ../options-page/lightbox.php:82
+#: ../options-page/lightbox.php:76
 #, fuzzy
 msgid "Animation speed"
 msgstr "Velocidade de abertura"
 
-#: ../options-page/lightbox.php:86
+#: ../options-page/lightbox.php:80
 msgid "The speed of the image change animation."
 msgstr ""
 
-#: ../options-page/lightbox.php:91
+#: ../options-page/lightbox.php:85
 #, fuzzy
 msgid "Stretch images"
 msgstr "Imagens únicas"
 
-#: ../options-page/lightbox.php:94
+#: ../options-page/lightbox.php:88
 msgid "No stretching"
 msgstr ""
 
-#: ../options-page/lightbox.php:95
+#: ../options-page/lightbox.php:89
 msgid "Contain"
 msgstr ""
 
-#: ../options-page/lightbox.php:96
+#: ../options-page/lightbox.php:90
 msgid "Cover"
 msgstr ""
 
-#: ../options-page/lightbox.php:98
+#: ../options-page/lightbox.php:92
 msgid "\"Contain\" means to scale the image to the largest size such that both its width and its height can fit the screen."
 msgstr ""
 
-#: ../options-page/lightbox.php:99
+#: ../options-page/lightbox.php:93
 msgid "\"Cover\" means to scale the image to be as large as possible so that the screen is completely covered by the image. Some parts of the image may be cropped and not in view."
 msgstr ""
 
-#: ../options-page/lightbox.php:104
+#: ../options-page/lightbox.php:98
 msgid "Script position"
 msgstr "Posição do código"
 
-#: ../options-page/lightbox.php:107
+#: ../options-page/lightbox.php:101
 msgid "Footer of the website"
 msgstr "Rodapé do site"
 
-#: ../options-page/lightbox.php:108
+#: ../options-page/lightbox.php:102
 msgid "Header of the website"
 msgstr "Cabeçalho do site"
 
-#: ../options-page/lightbox.php:110
+#: ../options-page/lightbox.php:104
 #, fuzzy
 msgid "Please choose the position of the javascript. Footer is recommended. Use \"Header\" if you have trouble to make the lightbox work."
 msgstr "Por favor escolha a posição do javascript. Rodapé é o recomendado. Use \"Cabeçalho\" se a Fancy Box não funcionar."
@@ -833,6 +839,10 @@ msgstr "Estas configurações serão anuladas para galerias individuais."
 #: ../options-page/excerpt.php:9
 msgid "Do not generate excerpts out of random gallery images."
 msgstr "Não crie resumos de galerias com imagens aleatórias."
+
+#: ../options-page/upgrade.php:1
+msgid "Want to unlock all settings and features? Upgrade to Fancy Gallery Pro!"
+msgstr ""
 
 #: ../options-page/user-rights.php:9
 #, fuzzy

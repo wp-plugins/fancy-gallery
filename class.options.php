@@ -42,6 +42,7 @@ class Options {
     $this->Add_Option_Box($this->t('User rights'), DirName(__FILE__).'/options-page/user-rights.php', 'main', 'closed');
 
     $this->Add_Option_Box($this->t('Taxonomies'), DirName(__FILE__).'/options-page/taxonomies.php', 'side');
+    $this->Add_Option_Box($this->core->mocking_bird->Pro_Notice('upgrade', False), DirName(__FILE__).'/options-page/upgrade.php', 'side');
     $this->Add_Option_Box($this->t('Gallery "Excerpts"'), DirName(__FILE__).'/options-page/excerpt.php', 'side');
     $this->Add_Option_Box($this->t('Archive Url'), DirName(__FILE__).'/options-page/archive-link.php', 'side');
   }

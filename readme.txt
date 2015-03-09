@@ -168,6 +168,9 @@ Possibly even more important, buying the premium edition gives you access to me 
 
 == Changelog ==
 
+= 1.5.18 =
+* Updated options page
+
 = 1.5.17 =
 * Fixed the title and description background in the lightbox
 

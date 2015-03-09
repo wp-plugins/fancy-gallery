@@ -15,9 +15,8 @@ ForEach ($this->core->gallery_post_type->arr_taxonomies AS $taxonomy => $tax_arg
 
 <?php ForEach (Array($this->t('Events'), $this->t('Places'), $this->t('Dates'), $this->t('Persons'), $this->t('Photographers')) AS $tax): ?>
 <p>
-  <input type="checkbox" <?php Disabled(True) ?> > <label><?php Echo $tax ?></label>
-  (<input type="checkbox" <?php Disabled(True) ?> > <label><?php Echo $this->t('hierarchical') ?></label>)
-  <span class="asterisk">*</span>
+  <input type="checkbox" <?php Disabled(True) ?> ><label><?php Echo $tax ?></label>
+  (<input type="checkbox" <?php Disabled(True) ?> ><label><?php Echo $this->t('hierarchical') ?></label>)<span class="asterisk">*</span>
 </p>
 <?php EndForEach ?>
 
@@ -25,5 +24,5 @@ ForEach ($this->core->gallery_post_type->arr_taxonomies AS $taxonomy => $tax_arg
 
 <p>
   <span class="asterisk">*</span>
-  <?php Echo $this->core->mocking_bird->Pro_Notice('feature') ?>
+  <?php Echo $this->core->mocking_bird->Pro_Notice('setting') ?>
 </p>

@@ -11,5 +11,5 @@
 <p>
   <input type="checkbox" name="deactivate_archive" id="deactivate_archive" value="yes" <?php Checked ($this->Get('deactivate_archive'), 'yes') ?>>
   <label for="deactivate_archive"><?php Echo $this->t('Deactivate the archive feature.') ?></label><br>
-  <small><?php Echo $this->t('If you tick this box visitors will no more be able to navigate through the gallery archive.') ?></small>
+  <small><?php Echo $this->t('If you tick this box visitors will not be able to navigate through the gallery archive.') ?></small>
 </p>

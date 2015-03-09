@@ -4,4 +4,7 @@ div.capability-selection input { margin-left: 15px; }
 div.capability-selection.highlight1 { background-color: #eee; }
 div.capability-selection.highlight2 { background-color: #ddd; }
 input[type="number"]{ width: 80px }
-.asterisk { font-weight: bold; color: green; font-size: 125% }
+.asterisk { }
+img.premium-banner { max-width: 100%; height: auto; border-radius: 3px }
+.settings_page_wordpress-plugin-fancy-gallery-options .button.button-block { display: block; text-transform: uppercase; font-weight: bold; text-align: center }
+.settings_page_wordpress-plugin-fancy-gallery-options .button.button-large { font-size: 125%; padding: 10px; height: auto }

@@ -24,11 +24,11 @@ var $delete_confirm_message = "<?php Echo $this->t('Are you sure you want to del
 </ol>
 
 
-<h4><?php Echo $this->t('Install a template in ZIP format') ?> <span class="asterisk">*</span></h4>
+<h4><?php Echo $this->t('Install a template in ZIP format') ?><span class="asterisk">*</span></h4>
 <p><?php Echo $this->t('If you have a template as a .zip archive, you may install it by uploading it here.') ?></p>
-<p><label for=""><?php Echo $this->t('Template as ZIP File') ?></label> <input type="file" id="template_zip" <?php Disabled(True) ?> ></p>
+<p><label for="template_zip"><?php Echo $this->t('Template as ZIP File') ?></label> <input type="file" id="template_zip" <?php Disabled(True) ?> ></p>
 
-<h4><?php Echo $this->t('Install a template in PHP format') ?> <span class="asterisk">*</span></h4>
+<h4><?php Echo $this->t('Install a template in PHP format') ?><span class="asterisk">*</span></h4>
 <p><?php Echo $this->t('If you have a template as a .php file, you may install it by uploading it here.') ?></p>
 <p><label for="template_php"><?php Echo $this->t('Templates PHP File') ?></label> <input type="file" id="template_php" <?php Disabled(True) ?> ></p>
 

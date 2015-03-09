@@ -20,3 +20,4 @@ div#meta-box-excerpt div.togglebox {
 }
 
 .asterisk { font-weight: bold; color: green; font-size: 125% }
+input.short { width: 60px }
