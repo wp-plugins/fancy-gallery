@@ -5,7 +5,7 @@
 </p>
 
 <p>
-  <input type="checkbox" name="disable_excerpts" id="disable_excerpts" value="yes" <?php Checked($this->Get('disable_excerpts'), 'yes') ?> >
+  <input type="checkbox" name="disable_excerpts" id="disable_excerpts" value="1" <?php Checked($this->Get('disable_excerpts')) ?> >
   <label for="disable_excerpts"><?php Echo $this->t('Do not generate excerpts out of random gallery images.') ?></label>
 </p>
 

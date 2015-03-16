@@ -168,6 +168,9 @@ Possibly even more important, buying the premium edition gives you access to me 
 
 == Changelog ==
 
+= 1.5.19 =
+* Rewritten options data handler
+
 = 1.5.18 =
 * Updated options page
 

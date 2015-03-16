@@ -9,7 +9,7 @@
 
 <h4><?php Echo $this->t('Deactivate Archive') ?></h4>
 <p>
-  <input type="checkbox" name="deactivate_archive" id="deactivate_archive" value="yes" <?php Checked ($this->Get('deactivate_archive'), 'yes') ?>>
+  <input type="checkbox" name="deactivate_archive" id="deactivate_archive" value="1" <?php Checked ($this->Get('deactivate_archive')) ?>>
   <label for="deactivate_archive"><?php Echo $this->t('Deactivate the archive feature.') ?></label><br>
   <small><?php Echo $this->t('If you tick this box visitors will not be able to navigate through the gallery archive.') ?></small>
 </p>

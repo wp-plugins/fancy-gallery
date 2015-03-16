@@ -174,9 +174,7 @@ class Options {
 
     # Clean the Post array
     $_POST = StripSlashes_Deep($_POST);
-    $options = Array_Filter($_POST);
-    #ForEach ($_POST AS $option => $value)
-    #  If (!$value) Unset ($_POST[$option]);
+    $options = Array_Filter($_POST, function($value){ return $value == '0' || !Empty($value); });
 
     # Save Options
     Update_Option (__CLASS__, $options);
@@ -191,11 +189,11 @@ class Options {
 
   private function Default_Options(){
     return Array(
-      'lightbox' => 'on',
-      'continuous' => 'off',
-      'title_description' => 'on',
-      'close_button' => 'on',
-      'indicator_thumbnails' => 'on',
+      'lightbox' => True,
+      'continuous' => False,
+      'title_description' => True,
+      'close_button' => True,
+      'indicator_thumbnails' => True,
       'slideshow_speed' => 4000, # Slideshow speed in milliseconds
       'preload_images' => 2,
       'animation_speed' => 400,
