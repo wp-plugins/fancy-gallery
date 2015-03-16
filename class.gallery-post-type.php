@@ -236,7 +236,7 @@ class Gallery_Post_Type {
     <tr class="form-field">
       <th scope="row" valign="top"><?php Echo $this->t('Archive Feed') ?></th>
       <td>
-        <a href="<?php Echo $archive_feed ?>" target="_blank"><?php Echo $archive_feed ?></a><br />
+        <a href="<?php Echo $archive_feed ?>" target="_blank"><?php Echo $archive_feed ?></a><br>
         <span class="description"><?php PrintF($this->t('This is the URL to the feed of the archive of this %s.'), $taxonomy->labels->singular_name) ?></span>
       </td>
     </tr>
