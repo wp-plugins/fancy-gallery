@@ -295,18 +295,19 @@ class Gallery_Post_Type {
     #Add_Filter ( 'gettext', Array($this, 'Filter_GetText'), 10, 3 );
 
     # Register Meta Boxes
-    $this->Add_Meta_Box( $this->t('Images'), DirName(__FILE__) . '/meta-boxes/images.php', 'normal', 'high' );
+    $this->Add_Meta_Box($this->t('Images'), DirName(__FILE__) . '/meta-boxes/images.php', 'normal', 'high');
 
     If (!$this->core->options->Get('disable_excerpts'))
-      $this->Add_Meta_Box( $this->t('Excerpt'), DirName(__FILE__) . '/meta-boxes/excerpt.php', 'normal', 'high' );
+      $this->Add_Meta_Box($this->t('Excerpt'), DirName(__FILE__) . '/meta-boxes/excerpt.php', 'normal', 'high');
 
-    $this->Add_Meta_Box( $this->t('Template'), DirName(__FILE__) . '/meta-boxes/template.php', 'normal', 'high' );
+    $this->Add_Meta_Box($this->t('Template'), DirName(__FILE__) . '/meta-boxes/template.php', 'normal', 'high');
 
     If (Current_User_Can($post_type_object->cap->edit_others_posts))
       $this->Add_Meta_Box( $this->t('Owner'), DirName(__FILE__) . '/meta-boxes/owner.php' );
 
-    $this->Add_Meta_Box( $this->t('Gallery ShortCode'), DirName(__FILE__) . '/meta-boxes/show-code.php', 'side', 'high' );
-    $this->Add_Meta_Box( $this->t('Thumbnails'), DirName(__FILE__) . '/meta-boxes/thumbnails.php', 'side' );
+    $this->Add_Meta_Box($this->t('Gallery ShortCode'), DirName(__FILE__) . '/meta-boxes/show-code.php', 'side', 'high');
+    $this->Add_Meta_Box($this->core->mocking_bird->Pro_Notice('upgrade', False), DirName(__FILE__) . '/options-page/upgrade.php', 'side', 'high');
+    $this->Add_Meta_Box($this->t('Thumbnails'), DirName(__FILE__) . '/meta-boxes/thumbnails.php', 'side' );
 
     # Add Meta Boxes
     ForEach ($this->arr_meta_box AS $box_index => $meta_box){

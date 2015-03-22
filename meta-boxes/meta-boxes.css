@@ -21,3 +21,7 @@ div#meta-box-excerpt div.togglebox {
 
 .asterisk { font-weight: bold; color: green; font-size: 125% }
 input.short { width: 60px }
+
+#meta-box-upgrade img.premium-banner { max-width: 100%; height: auto }
+#meta-box-upgrade .button.button-block { display: block; text-transform: uppercase; font-weight: bold; text-align: center }
+#meta-box-upgrade .button.button-large { font-size: 125%; padding: 10px; height: auto }
