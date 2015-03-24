@@ -594,7 +594,7 @@ msgstr "Die Archivfunktion deaktivieren."
 
 #: ../options-page/archive-link.php:14
 msgid "If you tick this box visitors will not be able to navigate through the gallery archive."
-msgstr "Wenn Sie diese Option aktivieren sind die Besucher nicht mehr in der Lage das Galeriearchiv einzusehen."
+msgstr "Wenn Sie diese Option aktivieren, sind die Besucher nicht mehr in der Lage das Galeriearchiv einzusehen."
 
 #: ../options-page/templates.php:2
 msgid "Are you sure you want to delete this template?"
@@ -659,7 +659,7 @@ msgstr "Aus"
 
 #: ../options-page/lightbox.php:10
 msgid "Turn this off if you do not want to use the included lightbox."
-msgstr "Schalten Sie die Lightbox aus wenn Ihnen die mitgelieferte Version nicht zusagt."
+msgstr "Schalten Sie die Lightbox aus, wenn Ihnen die mitgelieferte Version nicht zusagt."
 
 #: ../options-page/lightbox.php:15
 msgid "Loop mode"
@@ -675,7 +675,7 @@ msgstr "Titel &amp; Beschreibung"
 
 #: ../options-page/lightbox.php:32
 msgid "Turn this off if you do not want to display the image title and description in your lightbox."
-msgstr "Schalten Sie diese Option ab wenn Sie Bildtitel und Beschreibung nicht in der Lightbox anzeigen möchten."
+msgstr "Schalten Sie diese Option ab, wenn Sie Bildtitel und Beschreibung nicht in der Lightbox anzeigen möchten."
 
 #: ../options-page/lightbox.php:37
 msgid "Close button"
@@ -683,7 +683,7 @@ msgstr "Schließen-Knopf"
 
 #: ../options-page/lightbox.php:43
 msgid "Turn this off if you do not want to display a close button in your lightbox."
-msgstr "Schalten Sie diese Option ab wenn Sie keinen Schließen-Knopf in der Lightbox anzeigen möchten."
+msgstr "Schalten Sie diese Option ab, wenn Sie keinen Schließen-Knopf in der Lightbox anzeigen möchten."
 
 #: ../options-page/lightbox.php:48
 msgid "Indicator thumbnails"
@@ -691,7 +691,7 @@ msgstr "Navigationsvorschaubilder"
 
 #: ../options-page/lightbox.php:54
 msgid "Turn this off if you do not want to display small preview thumbnails below the lightbox image."
-msgstr "Schalten Sie diese Option aus wenn Sie keine Navigationsvorschaubilder in der Lightbox anzeigen möchten."
+msgstr "Schalten Sie diese Option aus, wenn Sie keine Navigationsvorschaubilder in der Lightbox anzeigen möchten."
 
 #: ../options-page/lightbox.php:59
 msgid "Slideshow speed"
