@@ -306,7 +306,6 @@ class Gallery_Post_Type {
       $this->Add_Meta_Box( $this->t('Owner'), DirName(__FILE__) . '/meta-boxes/owner.php' );
 
     $this->Add_Meta_Box($this->t('Gallery ShortCode'), DirName(__FILE__) . '/meta-boxes/show-code.php', 'side', 'high');
-    $this->Add_Meta_Box($this->core->mocking_bird->Pro_Notice('upgrade', False), DirName(__FILE__) . '/options-page/upgrade.php', 'side', 'high');
     $this->Add_Meta_Box($this->t('Thumbnails'), DirName(__FILE__) . '/meta-boxes/thumbnails.php', 'side' );
 
     # Add Meta Boxes

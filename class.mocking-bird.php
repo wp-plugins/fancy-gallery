@@ -24,6 +24,7 @@ class Mocking_Bird {
       'upgrade' => $this->t('Upgrade to Pro'),
       'upgrade_url' => '%s',
       'feature' => $this->t('This feature is available in the <a href="%s" target="_blank">premium version</a>.'),
+      'unlock' => SPrintF('<a href="%%s" title="%s" class="unlock" target="_blank"><span class="dashicons dashicons-lock"></span></a>', $this->t('Unlock this feature')),
       'setting' => $this->t('This setting is changeable in the <a href="%s" target="_blank">premium version</a>.'),
       'custom_tax' => $this->t('Do you need a special taxonomy for your website? No problem! Just <a href="%s" target="_blank">get in touch</a>.'),
       'widget' => $this->t('This widget is available in the <a href="%s" target="_blank">premium version</a>. For now there will be no output in the front end of your website.'),

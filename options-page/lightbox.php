@@ -3,10 +3,10 @@
 <tr valign="top">
   <th scope="row"><label><?php Echo $this->t('Lightbox') ?></label></th>
   <td>
-    <select>
+    <select <?php Disabled(True) ?>>
       <option <?php Selected(True) ?> ><?php Echo $this->t('On') ?></option>
-      <option <?php Disabled(True) ?>><?php Echo $this->t('Off') ?>*</option>
-    </select>
+      <option <?php Disabled(True) ?>><?php Echo $this->t('Off') ?></option>
+    </select><?php $this->core->mocking_bird->Pro_Notice('unlock') ?>
     <p class="help"><?php Echo $this->t('Turn this off if you do not want to use the included lightbox.') ?></p>
   </td>
 </tr>
@@ -14,10 +14,10 @@
 <tr valign="top">
   <th scope="row"><label><?php Echo $this->t('Loop mode') ?></label></th>
   <td>
-    <select>
-      <option <?php Disabled(True) ?>><?php Echo $this->t('On') ?>*</option>
+    <select <?php Disabled(True) ?>>
+      <option <?php Disabled(True) ?>><?php Echo $this->t('On') ?></option>
       <option <?php Selected(True) ?> ><?php Echo $this->t('Off') ?></option>
-    </select>
+    </select><?php $this->core->mocking_bird->Pro_Notice('unlock') ?>
     <p class="help"><?php Echo $this->t('Enables the user to get from the last image to the first one with the "Next &raquo;" button.') ?></p>
   </td>
 </tr>
@@ -25,10 +25,10 @@
 <tr valign="top">
   <th scope="row"><label><?php Echo $this->t('Title &amp; Description') ?></label></th>
   <td>
-    <select>
+    <select <?php Disabled(True) ?>>
       <option <?php Selected(True) ?> ><?php Echo $this->t('On') ?></option>
-      <option <?php Disabled(True) ?> ><?php Echo $this->t('Off') ?>*</option>
-    </select>
+      <option <?php Disabled(True) ?> ><?php Echo $this->t('Off') ?></option>
+    </select><?php $this->core->mocking_bird->Pro_Notice('unlock') ?>
     <p class="help"><?php Echo $this->t('Turn this off if you do not want to display the image title and description in your lightbox.') ?></p>
   </td>
 </tr>
@@ -36,10 +36,10 @@
 <tr valign="top">
   <th scope="row"><label><?php Echo $this->t('Close button') ?></label></th>
   <td>
-    <select>
+    <select <?php Disabled(True) ?>>
       <option <?php Selected(True) ?> ><?php Echo $this->t('On') ?></option>
-      <option <?php Disabled(True) ?> ><?php Echo $this->t('Off') ?>*</option>
-    </select>
+      <option <?php Disabled(True) ?> ><?php Echo $this->t('Off') ?></option>
+    </select><?php $this->core->mocking_bird->Pro_Notice('unlock') ?>
     <p class="help"><?php Echo $this->t('Turn this off if you do not want to display a close button in your lightbox.') ?></p>
   </td>
 </tr>
@@ -47,10 +47,10 @@
 <tr valign="top">
   <th scope="row"><label><?php Echo $this->t('Indicator thumbnails') ?></label></th>
   <td>
-    <select>
+    <select <?php Disabled(True) ?>>
       <option <?php Selected(True) ?> ><?php Echo $this->t('On') ?></option>
-      <option <?php Disabled(True) ?> ><?php Echo $this->t('Off') ?>*</option>
-    </select>
+      <option <?php Disabled(True) ?> ><?php Echo $this->t('Off') ?></option>
+    </select><?php $this->core->mocking_bird->Pro_Notice('unlock') ?>
     <p class="help"><?php Echo $this->t('Turn this off if you do not want to display small preview thumbnails below the lightbox image.') ?></p>
   </td>
 </tr>
@@ -67,7 +67,7 @@
 <tr valign="top">
   <th scope="row"><label><?php Echo $this->t('Preload images') ?></label></th>
   <td>
-    <input type="number" value="<?php Echo IntVal($this->Get('preload_images')) ?>" readonly="readonly"><span class="asterisk">*</span>
+    <input type="number" value="<?php Echo IntVal($this->Get('preload_images')) ?>" <?php Disabled(True) ?>><?php $this->core->mocking_bird->Pro_Notice('unlock') ?>
     <p class="help"><?php Echo $this->t('The number of images which should be preloaded around the current one.') ?></p>
   </td>
 </tr>
@@ -106,8 +106,3 @@
 </tr>
 
 </table>
-
-<p>
-  <span class="asterisk">*</span>
-  <?php Echo $this->core->mocking_bird->Pro_Notice('setting') ?>
-</p>

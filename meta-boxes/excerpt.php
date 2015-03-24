@@ -8,24 +8,24 @@
   <table>
   <tr>
     <td><label for="<?php Echo $this->Field_Name('excerpt_image_number') ?>"><?php Echo $this->t('Images per excerpt') ?></label></td>
-    <td><input type="number" name="<?php Echo $this->Field_Name('excerpt_image_number') ?>" id="<?php Echo $this->Field_Name('excerpt_image_number') ?>" value="<?php Echo Esc_Attr($this->Get_Meta('excerpt_image_number')) ?>"></td>
+    <td><input type="number" name="<?php Echo $this->Field_Name('excerpt_image_number') ?>" id="<?php Echo $this->Field_Name('excerpt_image_number') ?>" value="<?php Echo Esc_Attr($this->Get_Meta('excerpt_image_number')) ?>" class="short"></td>
   </tr>
   <tr>
     <td><label for="<?php Echo $this->Field_Name('excerpt_thumb_width') ?>"><?php Echo $this->t('Thumbnail width') ?></label></td>
-    <td><input type="number" name="<?php Echo $this->Field_Name('excerpt_thumb_width') ?>" id="<?php Echo $this->Field_Name('excerpt_thumb_width') ?>" value="<?php Echo Esc_Attr($this->Get_Meta('excerpt_thumb_width')) ?>" <?php Disabled(True) ?> > px <span class="asterisk">*</span></td>
+    <td><input type="number" name="<?php Echo $this->Field_Name('excerpt_thumb_width') ?>" id="<?php Echo $this->Field_Name('excerpt_thumb_width') ?>" value="<?php Echo Esc_Attr($this->Get_Meta('excerpt_thumb_width')) ?>" class="short" <?php Disabled(True) ?> >px<?php $this->core->mocking_bird->Pro_Notice('unlock') ?></td>
   </tr>
   <tr>
     <td><label for="<?php Echo $this->Field_Name('excerpt_thumb_height') ?>"><?php Echo $this->t('Thumbnail height') ?></label></td>
-    <td><input type="number" name="<?php Echo $this->Field_Name('excerpt_thumb_height') ?>" id="<?php Echo $this->Field_Name('excerpt_thumb_height') ?>" value="<?php Echo Esc_Attr($this->Get_Meta('excerpt_thumb_height')) ?>" <?php Disabled(True) ?> > px <span class="asterisk">*</span></td>
+    <td><input type="number" name="<?php Echo $this->Field_Name('excerpt_thumb_height') ?>" id="<?php Echo $this->Field_Name('excerpt_thumb_height') ?>" value="<?php Echo Esc_Attr($this->Get_Meta('excerpt_thumb_height')) ?>" class="short" <?php Disabled(True) ?> >px<?php $this->core->mocking_bird->Pro_Notice('unlock') ?></td>
   </tr>
   </table>
   <p>
     <input type="checkbox" name="<?php Echo $this->Field_Name('excerpt_thumb_grayscale') ?>" id="<?php Echo $this->Field_Name('excerpt_thumb_grayscale') ?>" value="yes" <?php Checked($this->Get_Meta('excerpt_thumb_grayscale'), 'yes'); Disabled(True) ?> >
-    <label for="<?php Echo $this->Field_Name('excerpt_thumb_grayscale') ?>"><?php Echo $this->t('Convert thumbnails to grayscale.') ?> <span class="asterisk">*</span></label>
+    <label for="<?php Echo $this->Field_Name('excerpt_thumb_grayscale') ?>"><?php Echo $this->t('Convert thumbnails to grayscale.') ?><?php $this->core->mocking_bird->Pro_Notice('unlock') ?></label>
   </p>
   <p>
     <input type="checkbox" name="<?php Echo $this->Field_Name('excerpt_thumb_negate') ?>" id="<?php Echo $this->Field_Name('excerpt_thumb_negate') ?>" value="yes" <?php Checked($this->Get_Meta('excerpt_thumb_negate'), 'yes'); Disabled(True) ?> >
-    <label for="<?php Echo $this->Field_Name('excerpt_thumb_negate') ?>"><?php Echo $this->t('Negate the thumbnails.') ?> <span class="asterisk">*</span></label>
+    <label for="<?php Echo $this->Field_Name('excerpt_thumb_negate') ?>"><?php Echo $this->t('Negate the thumbnails.') ?><?php $this->core->mocking_bird->Pro_Notice('unlock') ?></label>
   </p>
 
   <h4><?php Echo $this->t('Template') ?></h4>
@@ -51,11 +51,6 @@
     <?php If ($properties['description']) : ?><br><?php Echo $properties['description']; Endif; ?>
   </p>
   <?php EndForEach ?>
-
-  <p>
-    <span class="asterisk">*</span>
-    <?php Echo $this->core->mocking_bird->Pro_Notice('feature') ?>
-  </p>
 </div>
 
 <h3>

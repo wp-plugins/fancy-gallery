@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fancy Gallery\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-09 15:26+0100\n"
+"POT-Creation-Date: 2015-03-24 08:09+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
 "Language-Team: Ramiro Modica <contato@modica.com.br>\n"
@@ -106,29 +106,29 @@ msgstr ""
 msgid "Taxonomies"
 msgstr "Taxonomias"
 
-#: ../class.options.php:46
+#: ../class.options.php:45
 msgid "Gallery \"Excerpts\""
 msgstr "\"Resumos\" da Galeria"
 
-#: ../class.options.php:47
+#: ../class.options.php:46
 #: ../class.gallery-post-type.php:230
 msgid "Archive Url"
 msgstr "Url do acervo"
 
-#: ../class.options.php:63
+#: ../class.options.php:62
 msgid "Error while deleting: "
 msgstr "Erro ao deletar:"
 
-#: ../class.options.php:87
+#: ../class.options.php:86
 #, fuzzy
 msgid "Fancy Gallery Settings"
 msgstr "Configurações da galeria Fancy Pro"
 
-#: ../class.options.php:97
+#: ../class.options.php:96
 msgid "Template installed."
 msgstr "Modelo instalado."
 
-#: ../class.options.php:103
+#: ../class.options.php:102
 msgid "Template deleted."
 msgstr "Modelo deletado."
 
@@ -496,26 +496,30 @@ msgid "This feature is available in the <a href=\"%s\" target=\"_blank\">premium
 msgstr "Desculpe, este recurso está disponível apenas na <a href=\"%s\" target=\"_blank\">Versão Pro da Fancy Gallery</a>."
 
 #: ../class.mocking-bird.php:27
+msgid "Unlock this feature"
+msgstr ""
+
+#: ../class.mocking-bird.php:28
 #, fuzzy, php-format
 msgid "This setting is changeable in the <a href=\"%s\" target=\"_blank\">premium version</a>."
 msgstr "Desculpe, este recurso está disponível apenas na <a href=\"%s\" target=\"_blank\">Versão Pro da Fancy Gallery</a>."
 
-#: ../class.mocking-bird.php:28
+#: ../class.mocking-bird.php:29
 #, php-format
 msgid "Do you need a special taxonomy for your website? No problem! Just <a href=\"%s\" target=\"_blank\">get in touch</a>."
 msgstr ""
 
-#: ../class.mocking-bird.php:29
+#: ../class.mocking-bird.php:30
 #, php-format
 msgid "This widget is available in the <a href=\"%s\" target=\"_blank\">premium version</a>. For now there will be no output in the front end of your website."
 msgstr ""
 
-#: ../class.mocking-bird.php:34
+#: ../class.mocking-bird.php:35
 msgctxt "Link to the authors website"
 msgid "http://dennishoppe.de/en/wordpress-plugins/fancy-gallery"
 msgstr "http://dennishoppe.de/en/wordpress-plugins/fancy-gallery"
 
-#: ../class.mocking-bird.php:67
+#: ../class.mocking-bird.php:68
 msgid "&laquo; Back to your galleries"
 msgstr "&laquo; Voltar para as galerias"
 
@@ -549,16 +553,19 @@ msgid "In this mode the excerpt of the gallery will display a set of random imag
 msgstr "Neste modo o excerpt (resumo) da galeria vai mostrar um conjunto de imagens aleatórias."
 
 #: ../meta-boxes/excerpt.php:10
+#: ../options-page/excerpt.php:14
 #, fuzzy
 msgid "Images per excerpt"
 msgstr "Imagens por resumo:"
 
 #: ../meta-boxes/excerpt.php:14
+#: ../options-page/excerpt.php:21
 #, fuzzy
 msgid "Thumbnail width"
 msgstr "Largura da miniatura:"
 
 #: ../meta-boxes/excerpt.php:18
+#: ../options-page/excerpt.php:28
 #, fuzzy
 msgid "Thumbnail height"
 msgstr "Altura da miniatura:"
@@ -567,7 +574,7 @@ msgstr "Altura da miniatura:"
 msgid "Please choose a template to display the excerpt of this gallery."
 msgstr "Por favor escolha um modelo para mostrar o resumo desta galeria."
 
-#: ../meta-boxes/excerpt.php:63
+#: ../meta-boxes/excerpt.php:58
 msgid "Text Excerpt"
 msgstr "Resumo de texto"
 
