@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fancy Gallery\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-24 08:09+0100\n"
+"POT-Creation-Date: 2015-03-30 18:04+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
 "Language-Team: Thomas Schlesser <site.th.schlesser@gmail.com>\n"
@@ -553,19 +553,16 @@ msgid "In this mode the excerpt of the gallery will display a set of random imag
 msgstr "Dans ce mode l'aperçu de la galerie sera affiché comme une série d'images aléatoires."
 
 #: ../meta-boxes/excerpt.php:10
-#: ../options-page/excerpt.php:14
 #, fuzzy
 msgid "Images per excerpt"
 msgstr "Images par aperçu :"
 
 #: ../meta-boxes/excerpt.php:14
-#: ../options-page/excerpt.php:21
 #, fuzzy
 msgid "Thumbnail width"
 msgstr "Largeur de la vignette :"
 
 #: ../meta-boxes/excerpt.php:18
-#: ../options-page/excerpt.php:28
 #, fuzzy
 msgid "Thumbnail height"
 msgstr "Hauteur de la vignette :"
@@ -802,6 +799,30 @@ msgstr "En-tête du site (Header)"
 #, fuzzy
 msgid "Please choose the position of the javascript. Footer is recommended. Use \"Header\" if you have trouble to make the lightbox work."
 msgstr "Choisissez la position du javascript. Le pied de page est recommandé. Utilisez \"Header\" si vous avez des problèmes avec le fonctionnement de FancyBox."
+
+#: ../options-page/lightbox.php:109
+msgid "Asynchronous loading"
+msgstr ""
+
+#: ../options-page/lightbox.php:112
+msgid "Load all components asynchronously"
+msgstr ""
+
+#: ../options-page/lightbox.php:113
+msgid "Do not load anything asynchronously"
+msgstr ""
+
+#: ../options-page/lightbox.php:114
+msgid "Load CSS asynchronously only"
+msgstr ""
+
+#: ../options-page/lightbox.php:115
+msgid "Load JavaScripts asynchronously only"
+msgstr ""
+
+#: ../options-page/lightbox.php:117
+msgid "If you are using a HTML/CSS/JS minifier you should disable the asynchronous loading."
+msgstr ""
 
 #: ../options-page/taxonomies.php:2
 msgid "Please select the taxonomies you need to classify your galleries."

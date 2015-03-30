@@ -204,6 +204,7 @@ class Options {
       'excerpt_thumb_width' => Get_Option('thumbnail_size_w'),
       'excerpt_thumb_height' => Get_Option('thumbnail_size_h'),
       'excerpt_image_number' => 3,
+      'asynchronous_loading' => 'all',
 
       'deactivate_archive' => False
     );

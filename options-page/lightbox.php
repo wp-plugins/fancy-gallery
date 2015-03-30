@@ -105,4 +105,17 @@
   </td>
 </tr>
 
+<tr valign="top">
+  <th scope="row"><label for="asynchronous_loading"><?php Echo $this->t('Asynchronous loading') ?></label></th>
+  <td>
+    <select name="asynchronous_loading" id="asynchronous_loading">
+      <option value="all" <?php Selected ($this->Get('asynchronous_loading'), 'all') ?> ><?php Echo $this->t('Load all components asynchronously') ?></option>
+      <option value="none" <?php Selected ($this->Get('asynchronous_loading'), 'none') ?> ><?php Echo $this->t('Do not load anything asynchronously') ?></option>
+      <option value="css" <?php Selected ($this->Get('asynchronous_loading'), 'css') ?> ><?php Echo $this->t('Load CSS asynchronously only') ?></option>
+      <option value="js" <?php Selected ($this->Get('asynchronous_loading'), 'js') ?> ><?php Echo $this->t('Load JavaScripts asynchronously only') ?></option>
+    </select>
+    <p class="help"><?php Echo $this->t('If you are using a HTML/CSS/JS minifier you should disable the asynchronous loading.') ?></p>
+  </td>
+</tr>
+
 </table>

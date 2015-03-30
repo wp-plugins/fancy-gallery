@@ -4,10 +4,11 @@ Namespace WordPress\Plugin\Fancy_Gallery;
 class Core {
   public
     $base_url, # url to the plugin directory
-    $version = '1.5.21', # Current release number
+    $version = '1.5.22', # Current release number
     $gallery, # The current gallery object while running shortcode
     $template_dir,
     $arr_stylesheets = Array(), # Array with stylesheet urls which should be loaded asynchronously
+    $arr_javascripts = Array(), # Array with javascript urls which should be loaded asynchronously
     $gallery_post_type, # Pointer to the Gallery Post Type object
     $lightbox, # Pointer to the Lightbox object
     $i18n, # Pointer to the I18n object
@@ -22,12 +23,12 @@ class Core {
     $this->template_dir = WP_CONTENT_DIR . '/fancy-gallery-templates';
 
     # Helper classes
-    $this->gallery_post_type = New Gallery_Post_Type($this);
-    $this->i18n = New I18n($this);
-    $this->lightbox = New Lightbox($this);
-    $this->mocking_bird = New Mocking_Bird($this);
+    $this->i18n = New I18n();
     $this->options = New Options($this);
-    $this->wpml = New WPML($this);
+    $this->gallery_post_type = New Gallery_Post_Type($this);
+    If ($this->options->Get('lightbox') == 'on') $this->lightbox = new Lightbox($this);
+    $this->wpml = New WPML($this->i18n);
+    $this->mocking_bird = New Mocking_Bird($this);
 
     # This Plugin supports post thumbnails
     Add_Theme_Support('post-thumbnails');
@@ -78,33 +79,49 @@ class Core {
     Register_Widget('WordPress\Plugin\Fancy_Gallery\Widget\Taxonomy_Cloud');
   }
 
-  public function Enqueue_Frontend_Stylehseet($stylesheet_url){
-    $this->arr_stylesheets[] = $stylesheet_url;
+  public function Enqueue_Frontend_StyleSheet($stylesheet_url){
+    If (In_Array($this->options->Get('asynchronous_loading'), Array('all', 'css')))
+      $this->arr_stylesheets[] = $stylesheet_url;
+    Else
+      WP_Enqueue_Style(BaseName($stylesheet_url, '.css'), $stylesheet_url);
   }
 
   public function Dequeue_Frontend_Stylehseet($stylesheet_url){
     If ($index = Array_Find($stylesheet_url, $this->arr_stylesheets) !== False)
       Unset($this->arr_stylesheets[$index]);
   }
+  
+  public function Enqueue_Frontend_Script($script_url){
+    If (In_Array($this->options->Get('asynchronous_loading'), Array('all', 'js')))
+      $this->arr_javascripts[] = $script_url;
+    Else
+      WP_Enqueue_Script(BaseName($script_url, '.js'), $script_url, Array('jquery'), Null, $this->options->Get('script_position') != 'header');
+  }
+  
+  public function Dequeue_Frontend_Script($script_url){
+    If ($index = Array_Find($script_url, $this->arr_javascripts) !== False)
+      Unset($this->arr_javascripts[$index]);
+  }
 
   public function Enqueue_Frontend_Scripts(){
     # Check for HTML5 galleries
     If (!Current_Theme_Supports('html5', 'gallery')){
-      $this->Enqueue_Frontend_Stylehseet($this->base_url . '/assets/css/html5-galleries.css');
+      $this->Enqueue_Frontend_StyleSheet($this->base_url . '/assets/css/html5-galleries.css');
     }
 
     # Enqueue Template Stylesheets
     ForEach ($this->Get_Template_Files() AS $template_name => $template_properties){
       If ($stylesheet_uri = $template_properties['stylesheet_uri']){
-        $this->Enqueue_Frontend_Stylehseet($stylesheet_uri);
+        $this->Enqueue_Frontend_StyleSheet($stylesheet_uri);
       }
     }
 
     # Enqueue the Script
-    WP_Enqueue_Script('fancy-gallery', $this->base_url . '/assets/js/fancy-gallery.js', Array('jquery'), $this->version, ($this->options->Get('script_position') != 'header') );
+    WP_Enqueue_Script('fancy-gallery', $this->base_url . '/assets/js/fancy-gallery.js', Array('jquery'), $this->version, $this->options->Get('script_position') != 'header');
     $arr_options = $this->options->Get();
     Unset($arr_options['disable_update_notification'], $arr_options['update_username'], $arr_options['update_password']);
     $arr_options['stylesheets'] = $this->arr_stylesheets;
+    $arr_options['javascripts'] = $this->arr_javascripts;
     WP_Localize_Script('fancy-gallery', 'FANCYGALLERY', $arr_options);
   }
 

@@ -13,8 +13,9 @@ class Lightbox {
   }
 
   public function Enqueue_Frontend_Styles(){
-    $this->core->Enqueue_Frontend_Stylehseet($this->core->base_url . '/lightbox/css/blueimp-gallery.min.css');
-    $this->core->Enqueue_Frontend_Stylehseet($this->core->base_url . '/lightbox/css/blueimp-patches.css');
+    $this->core->Enqueue_Frontend_Script($this->core->base_url . '/lightbox/js/blueimp-gallery.min.js');
+    $this->core->Enqueue_Frontend_StyleSheet($this->core->base_url . '/lightbox/css/blueimp-gallery.min.css');
+    $this->core->Enqueue_Frontend_StyleSheet($this->core->base_url . '/lightbox/css/blueimp-patches.css');
   }
 
   public function WP_Footer(){
