@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fancy Gallery\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-30 18:05+0100\n"
+"POT-Creation-Date: 2015-04-20 18:56+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
 "Language-Team: Ramiro Modica <contato@modica.com.br>\n"
@@ -224,6 +224,8 @@ msgid "No Galleries found in Trash"
 msgstr "Nenhuma galeria encontrada na lixeira."
 
 #: ../class.gallery-post-type.php:114
+#: ../class.gallery-post-type.php:167
+#: ../class.gallery-post-type.php:197
 #, fuzzy
 msgctxt "URL slug"
 msgid "galleries"
@@ -340,10 +342,10 @@ msgid "No Categories found."
 msgstr "Nenhuma galeria encontrada"
 
 #: ../class.gallery-post-type.php:167
-#, fuzzy
+#, fuzzy, php-format
 msgctxt "URL slug"
-msgid "gallery-category"
-msgstr "Categorias de galeria"
+msgid "%s/category"
+msgstr "Categoria"
 
 #: ../class.gallery-post-type.php:172
 msgid "Gallery Tags"
@@ -420,10 +422,10 @@ msgid "No Tags found."
 msgstr "Nenhuma galeria encontrada"
 
 #: ../class.gallery-post-type.php:197
-#, fuzzy
+#, fuzzy, php-format
 msgctxt "URL slug"
-msgid "gallery-tag"
-msgstr "Tags da galeria"
+msgid "%s/tag"
+msgstr "%s/tag"
 
 #: ../class.gallery-post-type.php:233
 #, php-format
@@ -926,6 +928,12 @@ msgstr "Ver galerias privadas (de outros)"
 #, fuzzy
 msgid "Manage taxonomies"
 msgstr "Categorias de galeria"
+
+#, fuzzy
+#~ msgctxt "URL slug"
+
+#~ msgid "gallery-category"
+#~ msgstr "Categorias de galeria"
 
 #~ msgid "Manage %s"
 #~ msgstr "Gerenciar %s"

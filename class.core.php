@@ -4,7 +4,7 @@ Namespace WordPress\Plugin\Fancy_Gallery;
 class Core {
   public
     $base_url, # url to the plugin directory
-    $version = '1.5.22', # Current release number
+    $version = '1.5.23', # Current release number
     $gallery, # The current gallery object while running shortcode
     $template_dir,
     $arr_stylesheets = Array(), # Array with stylesheet urls which should be loaded asynchronously
@@ -57,8 +57,8 @@ class Core {
   public function Plugin_Activation(){
     $this->i18n->Load_TextDomain();
     $this->gallery_post_type->Update_Post_Type_Name();
-    $this->gallery_post_type->Register_Post_Type();
     $this->gallery_post_type->Register_Taxonomies();
+    $this->gallery_post_type->Register_Post_Type();
     Flush_Rewrite_Rules();
   }
 

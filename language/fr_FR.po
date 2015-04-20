@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fancy Gallery\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-30 18:04+0100\n"
+"POT-Creation-Date: 2015-04-20 18:56+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
 "Language-Team: Thomas Schlesser <site.th.schlesser@gmail.com>\n"
@@ -228,6 +228,8 @@ msgid "No Galleries found in Trash"
 msgstr "Pas de galeries trouvées dans la corbeille"
 
 #: ../class.gallery-post-type.php:114
+#: ../class.gallery-post-type.php:167
+#: ../class.gallery-post-type.php:197
 msgctxt "URL slug"
 msgid "galleries"
 msgstr "galeries"
@@ -343,9 +345,10 @@ msgid "No Categories found."
 msgstr "Pas de galeries trouvées"
 
 #: ../class.gallery-post-type.php:167
+#, php-format
 msgctxt "URL slug"
-msgid "gallery-category"
-msgstr "galerie-catégorie"
+msgid "%s/category"
+msgstr "%s/categorie"
 
 #: ../class.gallery-post-type.php:172
 msgid "Gallery Tags"
@@ -421,9 +424,10 @@ msgid "No Tags found."
 msgstr "Pas de galeries trouvées"
 
 #: ../class.gallery-post-type.php:197
+#, php-format
 msgctxt "URL slug"
-msgid "gallery-tag"
-msgstr "galerie-tag"
+msgid "%s/tag"
+msgstr "%s/tag"
 
 #: ../class.gallery-post-type.php:233
 #, php-format

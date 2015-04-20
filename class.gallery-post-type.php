@@ -2,7 +2,7 @@
 Namespace WordPress\Plugin\Fancy_Gallery;
 
 class Gallery_Post_Type {
-  var
+  public
     $core, # Pointer to the core object
     $name = 'fancy-gallery', # Name of the gallery post type
     $meta_field = 'fancy-gallery-meta', # Name of the meta field which is used in the post type meta boxes
@@ -13,8 +13,8 @@ class Gallery_Post_Type {
     $this->core = $core;
     $this->arr_meta_box = Array();
 
-    Add_Action('init', Array($this, 'Register_Post_Type'));
     Add_Action('init', Array($this, 'Register_Taxonomies'));
+    Add_Action('init', Array($this, 'Register_Post_Type'));
     Add_Action('init', Array($this, 'Add_Taxonomy_Archive_Urls'), 99);
     Add_Filter('image_upload_iframe_src', Array($this, 'Image_Upload_Iframe_Src'));
     Add_Filter('post_updated_messages', Array($this, 'Updated_Messages'));
@@ -164,7 +164,7 @@ class Gallery_Post_Type {
         'query_var' => True,
         'rewrite' => Array(
           'with_front' => False,
-          'slug' => $this->t('gallery-category', 'URL slug')
+          'slug' => SPrintF($this->t('%s/category', 'URL slug'), $this->t('galleries', 'URL slug'))
         )
       ),
 
@@ -194,7 +194,7 @@ class Gallery_Post_Type {
         'query_var' => True,
         'rewrite' => Array(
           'with_front' => False,
-          'slug' => $this->t('gallery-tag', 'URL slug')
+          'slug' => SPrintF($this->t('%s/tag', 'URL slug'), $this->t('galleries', 'URL slug'))
         )
       )
     );

@@ -168,6 +168,9 @@ Possibly even more important, buying the premium edition gives you access to me 
 
 == Changelog ==
 
+= 1.5.23 =
+* Updated taxonomy link structure
+
 = 1.5.22 =
 * Added asynchronous-loading-options
 
