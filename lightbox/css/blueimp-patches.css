@@ -36,6 +36,7 @@
 
 .blueimp-gallery > .indicator > li {
   background-size: cover;
+  padding: 0;
 }
 @media (min-width: 800px){
   .blueimp-gallery > .indicator > li {
