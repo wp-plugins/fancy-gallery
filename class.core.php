@@ -4,7 +4,7 @@ Namespace WordPress\Plugin\Fancy_Gallery;
 class Core {
   public
     $base_url, # url to the plugin directory
-    $version = '1.5.24', # Current release number
+    $version = '1.5.25', # Current release number
     $gallery, # The current gallery object while running shortcode
     $template_dir,
     $arr_stylesheets = Array(), # Array with stylesheet urls which should be loaded asynchronously
@@ -42,6 +42,11 @@ class Core {
     Add_Action('widgets_init', Array($this, 'Register_Widgets'));
     Add_Filter('post_class', Array($this, 'Filter_Post_Class'));
     Add_Action('pre_get_posts', Array($this, 'Filter_Attachment_Query'));
+    Add_Filter('get_the_categories', Array($this, 'Filter_Get_The_Categories'));
+    Add_Filter('the_category', Array($this, 'Filter_The_Category'), 10, 3);
+    Add_Filter('get_the_tags', Array($this, 'Filter_Get_The_Tags'));
+    Add_Filter('the_tags', Array($this, 'Filter_The_Tags'), 10, 5);
+
     Add_ShortCode('gallery', Array($this, 'ShortCode_Gallery'));
 
     If (!$this->options->Get('disable_excerpts')) Add_Filter('get_the_excerpt', Array($this, 'Filter_Excerpt'), 9);
@@ -394,6 +399,84 @@ class Core {
 
   function Clear_Plugin_Update_Cache(){
     Update_Option('_site_transient_update_plugins', Array());
+  }
+
+  function Filter_Get_The_Categories($arr_categories){
+    Global $post;
+    
+    If (!Is_Admin()){
+      $gallery_taxonomy = 'gallery_category';
+      $taxonomy_exists = Taxonomy_Exists($gallery_taxonomy);
+      $is_gallery = $post->post_type == $this->gallery_post_type->name;
+      $uses_post_categories = Is_Object_in_Taxonomy($post->post_type, 'category');
+      $uses_gallery_categories = Is_Object_in_Taxonomy($post->post_type, $gallery_taxonomy);
+      
+      If ($taxonomy_exists && $is_gallery && !$uses_post_categories && $uses_gallery_categories){
+        $arr_categories = Get_The_Terms($post->ID, $gallery_taxonomy);
+        If (Is_Array($arr_categories)){
+          ForEach ($arr_categories As &$category){
+            _Make_Cat_Compat($category); # Compat mode for very very very old and deprecated themes...
+          }
+        }
+      }
+    }
+    
+    return $arr_categories;
+  }
+
+  function Filter_The_Category($str_category_list, $separator = Null, $parents = Null){
+    Global $post;
+    
+    If (!Is_Admin()){
+      $gallery_taxonomy = 'gallery_category';
+      $taxonomy_exists = Taxonomy_Exists($gallery_taxonomy);
+      $is_gallery = $post->post_type == $this->gallery_post_type->name;
+      $uses_post_categories = Is_Object_in_Taxonomy($post->post_type, 'category');
+      $uses_gallery_categories = Is_Object_in_Taxonomy($post->post_type, $gallery_taxonomy);
+      
+      If ($taxonomy_exists && $is_gallery && !$uses_post_categories && $uses_gallery_categories){
+        $str_category_list = Get_The_Term_List($post->ID, $gallery_taxonomy, Null, $separator, Null);
+        If (Empty($str_category_list)) $str_category_list = __('Uncategorized');
+      }
+    }
+    
+    return $str_category_list;
+  }
+  
+  function Filter_Get_The_Tags($arr_tags){
+    Global $post;
+    
+    If (!Is_Admin()){
+      $gallery_taxonomy = 'gallery_tag';
+      $taxonomy_exists = Taxonomy_Exists($gallery_taxonomy);
+      $is_gallery = $post->post_type == $this->gallery_post_type->name;
+      $uses_post_tags = Is_Object_in_Taxonomy($post->post_type, 'post_tag');
+      $uses_gallery_tags = Is_Object_in_Taxonomy($post->post_type, $gallery_taxonomy);
+      
+      If ($taxonomy_exists && $is_gallery && !$uses_post_tags && $uses_gallery_tags){
+        $arr_tags = Get_The_Terms($post->ID, $gallery_taxonomy);
+      }
+    }
+    
+    return $arr_tags;
+  }
+
+  function Filter_The_Tags($str_tag_list, $before, $separator, $after, $post_id){
+    $post = Get_Post($post_id);
+
+    If (!Is_Admin()){
+      $gallery_taxonomy = 'gallery_tag';
+      $taxonomy_exists = Taxonomy_Exists($gallery_taxonomy);
+      $is_gallery = $post->post_type == $this->gallery_post_type->name;
+      $uses_post_tags = Is_Object_in_Taxonomy($post->post_type, 'post_tag');
+      $uses_gallery_tags = Is_Object_in_Taxonomy($post->post_type, $gallery_taxonomy);
+      
+      If ($taxonomy_exists && $is_gallery && !$uses_post_tags && $uses_gallery_tags){
+        $str_tag_list = Get_The_Term_List($post_id, $gallery_taxonomy, $before, $separator, $after);
+      }
+    }
+    
+    return $str_tag_list;
   }
 
 }

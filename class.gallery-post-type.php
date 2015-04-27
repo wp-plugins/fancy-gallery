@@ -114,7 +114,7 @@ class Gallery_Post_Type {
         'slug' => $this->t('galleries', 'URL slug'),
         'with_front' => False
       ),
-      'supports' => Array( 'title', 'author', 'excerpt', 'thumbnail', 'comments' ),
+      'supports' => Array('title', 'author', 'excerpt', 'thumbnail', 'comments', 'custom-fields'),
       'menu_position' => 10, # below Media
       'menu_icon' => 'dashicons-images-alt',
       'register_meta_box_cb' => Array($this, 'Add_Meta_Boxes')

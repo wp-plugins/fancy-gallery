@@ -168,6 +168,11 @@ Possibly even more important, buying the premium edition gives you access to me 
 
 == Changelog ==
 
+= 1.5.25 =
+* Added support for template tags "the_category()"
+* Added support for template tags "the_tags()"
+* Added custom fields support to gallery post type
+
 = 1.5.24 =
 * Patched padding for indicator thumbnails
 
