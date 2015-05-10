@@ -104,6 +104,7 @@ Please use the support forum on WordPress.org only for this free lite version of
 * Plugin disponible en Español. ([Guillermo Gozalbes](http://www.versus.es/))
 * Este plugin está disponível em português - Brasil. (Ramiro Modica)
 * Ce plugin est disponible en français. (Thomas Schlesser)
+* Ovaj plug-in je takodje dostupan na Srpsko-Hrvatskom. ([Andrijana Nikolic / WebHostingGeeks](http://webhostinggeeks.com/))
 
 
 = Translate this plugin =
@@ -167,6 +168,9 @@ Possibly even more important, buying the premium edition gives you access to me 
 
 
 == Changelog ==
+
+= 1.5.26 =
+* Added Serbo-Croatian translation file by [Andrijana Nikolic / WebHostingGeeks](http://webhostinggeeks.com/)
 
 = 1.5.25 =
 * Added support for template tags "the_category()"
