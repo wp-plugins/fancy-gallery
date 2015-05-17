@@ -169,6 +169,9 @@ Possibly even more important, buying the premium edition gives you access to me 
 
 == Changelog ==
 
+= 1.5.27 =
+* Patched: Changed translation file loading hook
+
 = 1.5.26 =
 * Added Serbo-Croatian translation file by [Andrijana Nikolic / WebHostingGeeks](http://webhostinggeeks.com/)
 
