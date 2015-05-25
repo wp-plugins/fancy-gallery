@@ -8,7 +8,7 @@ Donate link: http://dennishoppe.de/en/wordpress-plugins/fancy-gallery
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Awesome gallery management and touch-enabled, responsive, mobile-friendly image lightbox tool to manage and present image galleries within WordPress
+Supercharged image gallery management tool with touch-enabled, responsive, mobile-friendly image lightbox for WordPress!
 
 
 == Description ==
