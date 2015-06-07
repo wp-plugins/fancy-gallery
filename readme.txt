@@ -169,6 +169,9 @@ Possibly even more important, buying the premium edition gives you access to me 
 
 == Changelog ==
 
+= 1.5.28 =
+* Updated lightbox library
+
 = 1.5.27 =
 * Patched: Changed translation file loading hook to "init"
 
