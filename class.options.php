@@ -21,7 +21,7 @@ class Options {
   }
 
   private function t($text, $context = False){
-    return $this->core->t($text, $context);
+    return I18n::t($text, $context);
   }
 
   public function Add_Options_Page(){

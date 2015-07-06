@@ -1,5 +1,6 @@
 <?php
 Namespace WordPress\Plugin\Fancy_Gallery\Widget;
+Use WordPress\Plugin\Fancy_Gallery\I18n;
 
 class Random_Images Extends \WP_Widget {
   var $core; #  Pointer to the core class
@@ -16,7 +17,7 @@ class Random_Images Extends \WP_Widget {
   }
 
   function t ($text, $context = False){
-    return $this->core->t($text, $context);
+    return I18n::t($text, $context);
   }
 
   function Default_Options(){

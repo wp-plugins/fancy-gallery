@@ -1,5 +1,6 @@
 <?php
 Namespace WordPress\Plugin\Fancy_Gallery\Widget;
+Use WordPress\Plugin\Fancy_Gallery\I18n;
 
 class Taxonomies Extends \WP_Widget {
   public
@@ -18,12 +19,13 @@ class Taxonomies Extends \WP_Widget {
   }
 
   function t ($text, $context = False){
-    return $this->core->t($text, $context);
+    return I18n::t($text, $context);
   }
 
   function Default_Options(){
     # Default settings
     return Array(
+      'title'      => $this->t('Gallery taxonomies'),
       'show_count' => False,
       'number'     => Null,
       'orderby'    => 'name',

@@ -169,6 +169,10 @@ Possibly even more important, buying the premium edition gives you access to me 
 
 == Changelog ==
 
+= 1.5.29 =
+* Converted the i18n class to static
+* Added default widgets titles
+
 = 1.5.28 =
 * Updated lightbox library
 

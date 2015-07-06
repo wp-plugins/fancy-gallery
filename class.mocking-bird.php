@@ -16,7 +16,7 @@ class Mocking_Bird {
   }
 
   private function t($text, $context = False){
-    return $this->core->t($text, $context);
+    return I18n::t($text, $context);
   }
 
   function Pro_Notice($message = 'setting', $output = True){
