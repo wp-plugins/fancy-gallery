@@ -23,6 +23,7 @@ class Gallery_Post_Type {
     If (IsSet($_REQUEST['strip_tabs'])){
       Add_Action('media_upload_gallery', Array($this, 'Add_Media_Upload_Style'));
       Add_Action('media_upload_image', Array($this, 'Add_Media_Upload_Style'));
+      Add_Action('media_upload_import_images', Array($this, 'Add_Media_Upload_Style'));
       Add_Filter('media_upload_tabs', Array($this, 'Media_Upload_Tabs'));
       Add_Filter('media_upload_form_url', Array($this, 'Media_Upload_Form_URL'));
       Add_Action('media_upload_import_images', Array($this, 'Import_Images'));

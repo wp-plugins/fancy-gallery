@@ -62,10 +62,10 @@ $image->move_link = Add_Query_Arg(Array('move_attachment' => $image->ID, 'move_t
 		<div class="post"><?php Echo $this->t('Not attached to a post.') ?></div>
 		<?php Endif ?>
 		<div class="ajax-loader hidden"><img src="<?php echo Admin_Url('images/loading.gif') ?>" alt="Loading"></div>
-		<div class="import-success hidden"><?php Echo $this->t('This image belongs to your gallery.') ?></div>
+		<div class="import-success hidden"><?php Echo $this->t('This image belongs to this gallery.') ?></div>
 
 		<?php If (!$image->parent || $image->parent->ID != $current_gallery->ID): ?>
-		<p class="import"><a href="<?php Echo $image->move_link ?>" class="import button"><?php Echo $this->t('Import to my gallery') ?></a></p>
+		<p class="import"><a href="<?php Echo $image->move_link ?>" class="import button"><?php Echo $this->t('Import to this gallery') ?></a></p>
 		<?php EndIf ?>
 
 	</div>

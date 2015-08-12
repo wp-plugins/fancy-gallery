@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fancy Gallery\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-10 09:06+0100\n"
+"POT-Creation-Date: 2015-08-12 10:10+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
 "Language-Team: Dennis Hoppe <Mail@DennisHoppe.de>\n"
@@ -15,62 +15,68 @@ msgstr ""
 "X-Generator: Poedit 1.7.4\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../widget.taxonomy-cloud.php:15
+#: ../widget.taxonomy-cloud.php:16
 msgid "Gallery taxonomy cloud"
 msgstr "Oblačić taksonomije galerije"
 
-#: ../widget.taxonomy-cloud.php:16
+#: ../widget.taxonomy-cloud.php:17
 msgid "Displays your gallery taxonomies as tag cloud."
 msgstr "Prikazuje taksonomije vaše galerije kao oblačić oznake."
 
-#: ../widget.taxonomy-cloud.php:64
-#: ../widget.random-images.php:94
-#: ../widget.taxonomies.php:64
+#: ../widget.taxonomy-cloud.php:28
+#: ../widget.taxonomies.php:16
+#: ../widget.taxonomies.php:28
+msgid "Gallery taxonomies"
+msgstr "Taksonomije galerije"
+
+#: ../widget.taxonomy-cloud.php:66
+#: ../widget.random-images.php:95
+#: ../widget.taxonomies.php:66
 msgid "Leave blank to use the widget default title."
 msgstr "Ostavite prazno da biste koristili podrazumevani naziv widget-a."
 
-#: ../widget.taxonomy-cloud.php:68
-#: ../widget.taxonomies.php:68
+#: ../widget.taxonomy-cloud.php:70
+#: ../widget.taxonomies.php:70
 msgid "Taxonomy:"
 msgstr "Taksonomija:"
 
-#: ../widget.taxonomy-cloud.php:74
-#: ../widget.taxonomies.php:74
+#: ../widget.taxonomy-cloud.php:76
+#: ../widget.taxonomies.php:76
 msgid "Please choose the Taxonomy the widget should display."
 msgstr "Odaberite taksonomiju koju widget treba da prikaže."
 
-#: ../widget.taxonomy-cloud.php:78
-#: ../widget.taxonomies.php:78
+#: ../widget.taxonomy-cloud.php:80
+#: ../widget.taxonomies.php:80
 msgid "Number of terms:"
 msgstr "Broj termina:"
 
-#: ../widget.taxonomy-cloud.php:80
-#: ../widget.taxonomies.php:80
+#: ../widget.taxonomy-cloud.php:82
+#: ../widget.taxonomies.php:82
 msgid "Leave blank to show all."
 msgstr "Ostavite prazno da biste prikazali sve."
 
-#: ../widget.taxonomy-cloud.php:86
-#: ../widget.taxonomies.php:86
+#: ../widget.taxonomy-cloud.php:88
+#: ../widget.taxonomies.php:88
 msgid "Term IDs, separated by commas."
 msgstr "ID termina, odvojeni zarezima."
 
-#: ../widget.taxonomy-cloud.php:90
-#: ../widget.taxonomies.php:95
+#: ../widget.taxonomy-cloud.php:92
+#: ../widget.taxonomies.php:97
 msgid "Order by:"
 msgstr "Rasporedi prema:"
 
-#: ../widget.taxonomy-cloud.php:93
-#: ../widget.taxonomies.php:98
+#: ../widget.taxonomy-cloud.php:95
+#: ../widget.taxonomies.php:100
 msgid "Gallery Count"
 msgstr "Broj galerije"
 
-#: ../widget.taxonomy-cloud.php:95
-#: ../widget.taxonomies.php:100
+#: ../widget.taxonomy-cloud.php:97
+#: ../widget.taxonomies.php:102
 msgid "Slug"
 msgstr "Podloška"
 
-#: ../widget.taxonomy-cloud.php:100
-#: ../widget.taxonomies.php:105
+#: ../widget.taxonomy-cloud.php:102
+#: ../widget.taxonomies.php:107
 msgid "Order:"
 msgstr "Redosled:"
 
@@ -103,7 +109,7 @@ msgid "Gallery \"Excerpts\""
 msgstr "Galerija \"Odlomci\""
 
 #: ../class.options.php:46
-#: ../class.gallery-post-type.php:230
+#: ../class.gallery-post-type.php:231
 msgid "Archive Url"
 msgstr "Url arhive"
 
@@ -123,342 +129,338 @@ msgstr "Šablon instaliran."
 msgid "Template deleted."
 msgstr "Šablon obrisan."
 
-#: ../widget.random-images.php:13
+#: ../widget.random-images.php:14
 msgid "Random Images"
 msgstr "Nasumične slike"
 
-#: ../widget.random-images.php:14
+#: ../widget.random-images.php:15
 msgid "Displays some random images from your galleries."
 msgstr "Prikazuje neke nasumične slike iz vaših galerija."
 
-#: ../widget.random-images.php:98
+#: ../widget.random-images.php:99
 msgid "Number of Images:"
 msgstr "Broj slika:"
 
-#: ../widget.random-images.php:100
+#: ../widget.random-images.php:101
 msgid "Leave blank (or \"0\") to show all."
 msgstr "Ostavite prazno (ili \"0\") da biste prikazali sve. "
 
-#: ../widget.random-images.php:104
+#: ../widget.random-images.php:105
 msgid "Link target:"
 msgstr "Ciljni link:"
 
-#: ../widget.random-images.php:106
+#: ../widget.random-images.php:107
 msgid "Fullsize Image"
 msgstr "Puna veličina slike"
 
-#: ../widget.random-images.php:107
+#: ../widget.random-images.php:108
 msgid "Image Gallery"
 msgstr "Galerija slika"
 
-#: ../widget.random-images.php:112
+#: ../widget.random-images.php:113
 msgid "Thumbnail width:"
 msgstr "Širina sličice:"
 
-#: ../widget.random-images.php:117
+#: ../widget.random-images.php:118
 msgid "Thumbnail height:"
 msgstr "Visina sličice:"
 
-#: ../widget.random-images.php:123
+#: ../widget.random-images.php:124
 msgid "Convert thumbnails to grayscale."
 msgstr "Prebacite sličice u crno-bele."
 
-#: ../widget.random-images.php:128
+#: ../widget.random-images.php:129
 msgid "Negate the thumbnails."
 msgstr "Poništite sličice."
 
-#: ../widget.random-images.php:131
-#: ../class.gallery-post-type.php:303
+#: ../widget.random-images.php:132
+#: ../class.gallery-post-type.php:304
 msgid "Template"
 msgstr "Šablon"
 
-#: ../widget.random-images.php:132
+#: ../widget.random-images.php:133
 msgid "Please choose a template to display this widget."
 msgstr "Izaberite šablon da biste prikazali ovaj widget."
 
-#: ../class.gallery-post-type.php:97
+#: ../class.gallery-post-type.php:98
 msgid "Galleries"
 msgstr "Galerije"
 
-#: ../class.gallery-post-type.php:98
+#: ../class.gallery-post-type.php:99
 msgid "Gallery"
 msgstr "Galerija"
 
-#: ../class.gallery-post-type.php:99
+#: ../class.gallery-post-type.php:100
 msgid "Add Gallery"
 msgstr "Dodaj galeriju"
 
-#: ../class.gallery-post-type.php:100
+#: ../class.gallery-post-type.php:101
 msgid "New Gallery"
 msgstr "Nova galerija"
 
-#: ../class.gallery-post-type.php:101
+#: ../class.gallery-post-type.php:102
 msgid "Edit Gallery"
 msgstr "Uredi galeriju"
 
-#: ../class.gallery-post-type.php:102
+#: ../class.gallery-post-type.php:103
 msgid "View Gallery"
 msgstr "Vidi galeriju"
 
-#: ../class.gallery-post-type.php:103
+#: ../class.gallery-post-type.php:104
 msgid "Search Galleries"
 msgstr "Pretraži galerije"
 
-#: ../class.gallery-post-type.php:104
+#: ../class.gallery-post-type.php:105
 msgid "No Galleries found"
 msgstr "Nisu pronađene galerije"
 
-#: ../class.gallery-post-type.php:105
+#: ../class.gallery-post-type.php:106
 msgid "No Galleries found in Trash"
 msgstr "Nisu pronađene galerije u korpi za otpatke"
 
-#: ../class.gallery-post-type.php:114
-#: ../class.gallery-post-type.php:167
-#: ../class.gallery-post-type.php:197
+#: ../class.gallery-post-type.php:115
+#: ../class.gallery-post-type.php:168
+#: ../class.gallery-post-type.php:198
 msgctxt "URL slug"
 msgid "galleries"
 msgstr "galerije"
 
-#: ../class.gallery-post-type.php:126
+#: ../class.gallery-post-type.php:127
 #, php-format
 msgid "Gallery updated. <a href=\"%s\">View Gallery</a>"
 msgstr "Galerija ažurirana. <a href=\"%s\">Vidi galeriju</a>"
 
-#: ../class.gallery-post-type.php:129
+#: ../class.gallery-post-type.php:130
 msgid "Gallery updated."
 msgstr "Galerija ažurirana."
 
-#: ../class.gallery-post-type.php:130
+#: ../class.gallery-post-type.php:131
 #, php-format
 msgid "Gallery restored to revision from %s"
 msgstr "Galerija vraćena na reviziju od %s."
 
-#: ../class.gallery-post-type.php:131
+#: ../class.gallery-post-type.php:132
 #, php-format
 msgid "Gallery published. <a href=\"%s\">View Gallery</a>"
 msgstr "Galerija objavljena. <a href=\"%s\">Vidi galeriju</a>"
 
-#: ../class.gallery-post-type.php:132
+#: ../class.gallery-post-type.php:133
 msgid "Gallery saved."
 msgstr "Galerija sačuvana."
 
-#: ../class.gallery-post-type.php:133
+#: ../class.gallery-post-type.php:134
 msgid "Gallery submitted."
 msgstr "Galerija podnesena."
 
-#: ../class.gallery-post-type.php:134
+#: ../class.gallery-post-type.php:135
 #, php-format
 msgid "Gallery scheduled. <a target=\"_blank\" href=\"%s\">View Gallery</a>"
 msgstr "Galerija planirana. <a target=\"_blank\" href=\"%s\">Vidi galeriju</a>"
 
-#: ../class.gallery-post-type.php:135
+#: ../class.gallery-post-type.php:136
 #, php-format
 msgid "Gallery draft updated. <a target=\"_blank\" href=\"%s\">Preview Gallery</a>"
 msgstr "Skica galerije ažurirana. <a target=\"_blank\" href=\"%s\">Pregledaj galeriju </a>"
 
-#: ../class.gallery-post-type.php:142
+#: ../class.gallery-post-type.php:143
 msgid "Gallery Categories"
 msgstr "Kategorije galerije"
 
-#: ../class.gallery-post-type.php:144
+#: ../class.gallery-post-type.php:145
 msgid "Categories"
 msgstr "Kategorije"
 
-#: ../class.gallery-post-type.php:145
+#: ../class.gallery-post-type.php:146
 msgid "Category"
 msgstr "Kategorija"
 
-#: ../class.gallery-post-type.php:146
+#: ../class.gallery-post-type.php:147
 msgid "All Categories"
 msgstr "Sve kategorije"
 
-#: ../class.gallery-post-type.php:147
+#: ../class.gallery-post-type.php:148
 msgid "Edit Category"
 msgstr "Uredi kategoriju"
 
-#: ../class.gallery-post-type.php:148
+#: ../class.gallery-post-type.php:149
 msgid "View Category"
 msgstr "Vidi kategoriju"
 
-#: ../class.gallery-post-type.php:149
+#: ../class.gallery-post-type.php:150
 msgid "Update Category"
 msgstr "Ažuriraj kategoriju"
 
-#: ../class.gallery-post-type.php:150
+#: ../class.gallery-post-type.php:151
 msgid "Add New Category"
 msgstr "Dodaj novu kategoriju"
 
-#: ../class.gallery-post-type.php:151
+#: ../class.gallery-post-type.php:152
 msgid "New Category"
 msgstr "Nova kategorija"
 
-#: ../class.gallery-post-type.php:152
+#: ../class.gallery-post-type.php:153
 msgid "Parent Category"
 msgstr "Nova kategorija"
 
-#: ../class.gallery-post-type.php:153
+#: ../class.gallery-post-type.php:154
 msgid "Parent Category:"
 msgstr "Nadređena kategorija:"
 
-#: ../class.gallery-post-type.php:154
+#: ../class.gallery-post-type.php:155
 msgid "Search Categories"
 msgstr "Pretraži kategorije"
 
-#: ../class.gallery-post-type.php:155
+#: ../class.gallery-post-type.php:156
 msgid "Popular Categories"
 msgstr "Popularne kategorije"
 
-#: ../class.gallery-post-type.php:156
+#: ../class.gallery-post-type.php:157
 msgid "Separate Categories with commas"
 msgstr "Odvojite kategorije zarezima"
 
-#: ../class.gallery-post-type.php:157
+#: ../class.gallery-post-type.php:158
 msgid "Add or remove Categories"
 msgstr "Dodajte ili uklonite kategorije"
 
-#: ../class.gallery-post-type.php:158
+#: ../class.gallery-post-type.php:159
 msgid "Choose from the most used Categories"
 msgstr "Izaberite iz najčešće upotrebljavanih kategorija"
 
-#: ../class.gallery-post-type.php:159
+#: ../class.gallery-post-type.php:160
 msgid "No Categories found."
 msgstr "Nisu pronađene kategorije."
 
-#: ../class.gallery-post-type.php:167
+#: ../class.gallery-post-type.php:168
 #, php-format
 msgctxt "URL slug"
 msgid "%s/category"
 msgstr "%s/kategorija"
 
-#: ../class.gallery-post-type.php:172
+#: ../class.gallery-post-type.php:173
 msgid "Gallery Tags"
 msgstr "Oznake galerije"
 
-#: ../class.gallery-post-type.php:174
+#: ../class.gallery-post-type.php:175
 msgid "Tags"
 msgstr "Oznake"
 
-#: ../class.gallery-post-type.php:175
+#: ../class.gallery-post-type.php:176
 msgid "Tag"
 msgstr "Oznaka"
 
-#: ../class.gallery-post-type.php:176
+#: ../class.gallery-post-type.php:177
 msgid "All Tags"
 msgstr "Sve oznake"
 
-#: ../class.gallery-post-type.php:177
+#: ../class.gallery-post-type.php:178
 msgid "Edit Tag"
 msgstr "Uredi oznaku"
 
-#: ../class.gallery-post-type.php:178
+#: ../class.gallery-post-type.php:179
 msgid "View Tag"
 msgstr "Vidi oznaku"
 
-#: ../class.gallery-post-type.php:179
+#: ../class.gallery-post-type.php:180
 msgid "Update Tag"
 msgstr "Ažuriraj oznaku"
 
-#: ../class.gallery-post-type.php:180
+#: ../class.gallery-post-type.php:181
 msgid "Add New Tag"
 msgstr "Dodaj novu oznaku"
 
-#: ../class.gallery-post-type.php:181
+#: ../class.gallery-post-type.php:182
 msgid "New Tag"
 msgstr "Nova oznaka"
 
-#: ../class.gallery-post-type.php:182
+#: ../class.gallery-post-type.php:183
 msgid "Parent Tag"
 msgstr "Nadređena oznaka"
 
-#: ../class.gallery-post-type.php:183
+#: ../class.gallery-post-type.php:184
 msgid "Parent Tag:"
 msgstr "Nadređena oznaka:"
 
-#: ../class.gallery-post-type.php:184
+#: ../class.gallery-post-type.php:185
 msgid "Search Tags"
 msgstr "Pretraži oznake"
 
-#: ../class.gallery-post-type.php:185
+#: ../class.gallery-post-type.php:186
 msgid "Popular Tags"
 msgstr "Popularne oznake"
 
-#: ../class.gallery-post-type.php:186
+#: ../class.gallery-post-type.php:187
 msgid "Separate Tags with commas"
 msgstr "Odvojite oznake zarezima"
 
-#: ../class.gallery-post-type.php:187
+#: ../class.gallery-post-type.php:188
 msgid "Add or remove Tags"
 msgstr "Dodaj ili ukloni oznake"
 
-#: ../class.gallery-post-type.php:188
+#: ../class.gallery-post-type.php:189
 msgid "Choose from the most used Tags"
 msgstr "Izaberi iz najčešće korišćenih oznaka"
 
-#: ../class.gallery-post-type.php:189
+#: ../class.gallery-post-type.php:190
 msgid "No Tags found."
 msgstr "Nisu pronađene oznake"
 
-#: ../class.gallery-post-type.php:197
+#: ../class.gallery-post-type.php:198
 #, php-format
 msgctxt "URL slug"
 msgid "%s/tag"
 msgstr "%s/oznaka"
 
-#: ../class.gallery-post-type.php:233
+#: ../class.gallery-post-type.php:234
 #, php-format
 msgid "This is the URL to the archive of this %s."
 msgstr "Ovo je URL za arhivu ovog %s."
 
-#: ../class.gallery-post-type.php:237
+#: ../class.gallery-post-type.php:238
 msgid "Archive Feed"
 msgstr "Feed arhive"
 
-#: ../class.gallery-post-type.php:240
+#: ../class.gallery-post-type.php:241
 #, php-format
 msgid "This is the URL to the feed of the archive of this %s."
 msgstr "Ovo je URL za feed arhive ovog %s."
 
-#: ../class.gallery-post-type.php:252
+#: ../class.gallery-post-type.php:253
 msgid "Upload Images"
 msgstr "Otpremi slike"
 
-#: ../class.gallery-post-type.php:254
+#: ../class.gallery-post-type.php:255
 msgid "Import from Library"
 msgstr "Uvezi iz biblioteke"
 
-#: ../class.gallery-post-type.php:298
+#: ../class.gallery-post-type.php:299
 msgid "Images"
 msgstr "Slike"
 
-#: ../class.gallery-post-type.php:301
+#: ../class.gallery-post-type.php:302
 msgid "Excerpt"
 msgstr "Odlomak"
 
-#: ../class.gallery-post-type.php:306
+#: ../class.gallery-post-type.php:307
 msgid "Owner"
 msgstr "Vlasnik"
 
-#: ../class.gallery-post-type.php:308
+#: ../class.gallery-post-type.php:309
 msgid "Gallery ShortCode"
 msgstr "ShortCode galerije"
 
-#: ../class.gallery-post-type.php:309
+#: ../class.gallery-post-type.php:310
 msgid "Thumbnails"
 msgstr "Sličice"
 
-#: ../class.gallery-post-type.php:346
+#: ../class.gallery-post-type.php:347
 msgid "The Attachment was moved to your gallery."
 msgstr "Prilog je premešten u vašu galeriju."
 
-#: ../widget.taxonomies.php:15
-msgid "Gallery taxonomies"
-msgstr "Taksonomije galerije"
-
-#: ../widget.taxonomies.php:16
+#: ../widget.taxonomies.php:17
 msgid "Displays your gallery taxonomies like categories, tags, events, photographers, etc."
 msgstr "Prikazuje taksonomije vaše galerije kao kategorije, oznake, događaje, fotografe itd."
 
-#: ../widget.taxonomies.php:91
+#: ../widget.taxonomies.php:93
 msgid "Show Gallery counts."
 msgstr "Prikaži brojeve kategorije."
 
@@ -563,11 +565,13 @@ msgid "Not attached to a post."
 msgstr "Nije pripojen postu."
 
 #: ../meta-boxes/import-images-form.php:65
-msgid "This image belongs to your gallery."
+#, fuzzy
+msgid "This image belongs to this gallery."
 msgstr "Ova slika pripada vašoj galeriji."
 
 #: ../meta-boxes/import-images-form.php:68
-msgid "Import to my gallery"
+#, fuzzy
+msgid "Import to this gallery"
 msgstr "Uvezi u moju galeriju"
 
 #: ../meta-boxes/thumbnails.php:2

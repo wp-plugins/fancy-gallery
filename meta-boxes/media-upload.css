@@ -40,3 +40,10 @@ body#media-upload #gallery-form .imgedit-settings {
 body#media-upload #gallery-form .imgedit-panel-content {
   float: left;
 }
+
+div#media-upload-header,
+#sidemenu a {
+  background-color: transparent;
+  border-top-color: transparent;
+  border-radius: 4px 4px 0 0;
+}

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fancy Gallery\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-20 18:56+0100\n"
+"POT-Creation-Date: 2015-08-12 10:10+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
 "Language-Team: Ramiro Modica <contato@modica.com.br>\n"
@@ -16,67 +16,74 @@ msgstr ""
 "X-Poedit-KeywordsList: t;t:2c,1\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../widget.taxonomy-cloud.php:15
+#: ../widget.taxonomy-cloud.php:16
 #, fuzzy
 msgid "Gallery taxonomy cloud"
 msgstr "Taxonomia da galeria (nuvem)"
 
-#: ../widget.taxonomy-cloud.php:16
+#: ../widget.taxonomy-cloud.php:17
 #, fuzzy
 msgid "Displays your gallery taxonomies as tag cloud."
 msgstr "Mostrar a taxonomia da galeria como  \"nuvem de Tags\"."
 
-#: ../widget.taxonomy-cloud.php:64
-#: ../widget.random-images.php:94
-#: ../widget.taxonomies.php:64
+#: ../widget.taxonomy-cloud.php:28
+#: ../widget.taxonomies.php:16
+#: ../widget.taxonomies.php:28
+#, fuzzy
+msgid "Gallery taxonomies"
+msgstr "Categorias de galeria"
+
+#: ../widget.taxonomy-cloud.php:66
+#: ../widget.random-images.php:95
+#: ../widget.taxonomies.php:66
 msgid "Leave blank to use the widget default title."
 msgstr "Deixe em branco para usar o título padrão da galeria."
 
-#: ../widget.taxonomy-cloud.php:68
-#: ../widget.taxonomies.php:68
+#: ../widget.taxonomy-cloud.php:70
+#: ../widget.taxonomies.php:70
 #, fuzzy
 msgid "Taxonomy:"
 msgstr "Taxonomia"
 
-#: ../widget.taxonomy-cloud.php:74
-#: ../widget.taxonomies.php:74
+#: ../widget.taxonomy-cloud.php:76
+#: ../widget.taxonomies.php:76
 msgid "Please choose the Taxonomy the widget should display."
 msgstr "Por favor escolha o tipo de taxonomia que o deverá mostrar."
 
-#: ../widget.taxonomy-cloud.php:78
-#: ../widget.taxonomies.php:78
+#: ../widget.taxonomy-cloud.php:80
+#: ../widget.taxonomies.php:80
 #, fuzzy
 msgid "Number of terms:"
 msgstr "Número de Imagens"
 
-#: ../widget.taxonomy-cloud.php:80
-#: ../widget.taxonomies.php:80
+#: ../widget.taxonomy-cloud.php:82
+#: ../widget.taxonomies.php:82
 msgid "Leave blank to show all."
 msgstr "Deixe em branco para mostrar todos."
 
-#: ../widget.taxonomy-cloud.php:86
-#: ../widget.taxonomies.php:86
+#: ../widget.taxonomy-cloud.php:88
+#: ../widget.taxonomies.php:88
 msgid "Term IDs, separated by commas."
 msgstr "Termos identificadores, separados por vírgula."
 
-#: ../widget.taxonomy-cloud.php:90
-#: ../widget.taxonomies.php:95
+#: ../widget.taxonomy-cloud.php:92
+#: ../widget.taxonomies.php:97
 #, fuzzy
 msgid "Order by:"
 msgstr "Ordenar por"
 
-#: ../widget.taxonomy-cloud.php:93
-#: ../widget.taxonomies.php:98
+#: ../widget.taxonomy-cloud.php:95
+#: ../widget.taxonomies.php:100
 msgid "Gallery Count"
 msgstr "Contagem da galeria"
 
-#: ../widget.taxonomy-cloud.php:95
-#: ../widget.taxonomies.php:100
+#: ../widget.taxonomy-cloud.php:97
+#: ../widget.taxonomies.php:102
 msgid "Slug"
 msgstr "Slug (Permalink)"
 
-#: ../widget.taxonomy-cloud.php:100
-#: ../widget.taxonomies.php:105
+#: ../widget.taxonomy-cloud.php:102
+#: ../widget.taxonomies.php:107
 #, fuzzy
 msgid "Order:"
 msgstr "Ordenar"
@@ -111,7 +118,7 @@ msgid "Gallery \"Excerpts\""
 msgstr "\"Resumos\" da Galeria"
 
 #: ../class.options.php:46
-#: ../class.gallery-post-type.php:230
+#: ../class.gallery-post-type.php:231
 msgid "Archive Url"
 msgstr "Url do acervo"
 
@@ -132,358 +139,353 @@ msgstr "Modelo instalado."
 msgid "Template deleted."
 msgstr "Modelo deletado."
 
-#: ../widget.random-images.php:13
+#: ../widget.random-images.php:14
 msgid "Random Images"
 msgstr "Imagens aleatórias"
 
-#: ../widget.random-images.php:14
+#: ../widget.random-images.php:15
 msgid "Displays some random images from your galleries."
 msgstr "Mostra imagens aleatórias de suas galerias."
 
-#: ../widget.random-images.php:98
+#: ../widget.random-images.php:99
 #, fuzzy
 msgid "Number of Images:"
 msgstr "Número de Imagens"
 
-#: ../widget.random-images.php:100
+#: ../widget.random-images.php:101
 msgid "Leave blank (or \"0\") to show all."
 msgstr "Deixe em branco (ou \"0\") para mostrar todos."
 
-#: ../widget.random-images.php:104
+#: ../widget.random-images.php:105
 #, fuzzy
 msgid "Link target:"
 msgstr "Link alvo"
 
-#: ../widget.random-images.php:106
+#: ../widget.random-images.php:107
 msgid "Fullsize Image"
 msgstr "Imagem em tamanho real"
 
-#: ../widget.random-images.php:107
+#: ../widget.random-images.php:108
 msgid "Image Gallery"
 msgstr "Galeria de imagens"
 
-#: ../widget.random-images.php:112
+#: ../widget.random-images.php:113
 msgid "Thumbnail width:"
 msgstr "Largura da miniatura:"
 
-#: ../widget.random-images.php:117
+#: ../widget.random-images.php:118
 msgid "Thumbnail height:"
 msgstr "Altura da miniatura:"
 
-#: ../widget.random-images.php:123
+#: ../widget.random-images.php:124
 msgid "Convert thumbnails to grayscale."
 msgstr "Converter miniaturas para tons de cinza."
 
-#: ../widget.random-images.php:128
+#: ../widget.random-images.php:129
 msgid "Negate the thumbnails."
 msgstr "Negativar as miniaturas."
 
-#: ../widget.random-images.php:131
-#: ../class.gallery-post-type.php:303
+#: ../widget.random-images.php:132
+#: ../class.gallery-post-type.php:304
 msgid "Template"
 msgstr "Modelos"
 
-#: ../widget.random-images.php:132
+#: ../widget.random-images.php:133
 msgid "Please choose a template to display this widget."
 msgstr "Por favor escolha um modelo para mostrar este widget."
 
-#: ../class.gallery-post-type.php:97
+#: ../class.gallery-post-type.php:98
 msgid "Galleries"
 msgstr "Galerias"
 
-#: ../class.gallery-post-type.php:98
+#: ../class.gallery-post-type.php:99
 msgid "Gallery"
 msgstr "Galeria"
 
-#: ../class.gallery-post-type.php:99
+#: ../class.gallery-post-type.php:100
 msgid "Add Gallery"
 msgstr "Adicionar galeria"
 
-#: ../class.gallery-post-type.php:100
+#: ../class.gallery-post-type.php:101
 msgid "New Gallery"
 msgstr "Nova galeria"
 
-#: ../class.gallery-post-type.php:101
+#: ../class.gallery-post-type.php:102
 msgid "Edit Gallery"
 msgstr "Editar galeria"
 
-#: ../class.gallery-post-type.php:102
+#: ../class.gallery-post-type.php:103
 msgid "View Gallery"
 msgstr "Ver galeria"
 
-#: ../class.gallery-post-type.php:103
+#: ../class.gallery-post-type.php:104
 msgid "Search Galleries"
 msgstr "Pesquisar galerias"
 
-#: ../class.gallery-post-type.php:104
+#: ../class.gallery-post-type.php:105
 msgid "No Galleries found"
 msgstr "Nenhuma galeria encontrada"
 
-#: ../class.gallery-post-type.php:105
+#: ../class.gallery-post-type.php:106
 msgid "No Galleries found in Trash"
 msgstr "Nenhuma galeria encontrada na lixeira."
 
-#: ../class.gallery-post-type.php:114
-#: ../class.gallery-post-type.php:167
-#: ../class.gallery-post-type.php:197
+#: ../class.gallery-post-type.php:115
+#: ../class.gallery-post-type.php:168
+#: ../class.gallery-post-type.php:198
 #, fuzzy
 msgctxt "URL slug"
 msgid "galleries"
 msgstr "Galerias"
 
-#: ../class.gallery-post-type.php:126
+#: ../class.gallery-post-type.php:127
 #, php-format
 msgid "Gallery updated. <a href=\"%s\">View Gallery</a>"
 msgstr "Galeria atualizada. <a href=\"%s\">Ver galeria</a>"
 
-#: ../class.gallery-post-type.php:129
+#: ../class.gallery-post-type.php:130
 msgid "Gallery updated."
 msgstr "Galeria atualizada."
 
-#: ../class.gallery-post-type.php:130
+#: ../class.gallery-post-type.php:131
 #, php-format
 msgid "Gallery restored to revision from %s"
 msgstr "Galeria restaurada para revisão por %s"
 
-#: ../class.gallery-post-type.php:131
+#: ../class.gallery-post-type.php:132
 #, php-format
 msgid "Gallery published. <a href=\"%s\">View Gallery</a>"
 msgstr "Galeria publicada. <a href=\"%s\">Ver galeria</a>"
 
-#: ../class.gallery-post-type.php:132
+#: ../class.gallery-post-type.php:133
 msgid "Gallery saved."
 msgstr "Galeria salva."
 
-#: ../class.gallery-post-type.php:133
+#: ../class.gallery-post-type.php:134
 msgid "Gallery submitted."
 msgstr "Galeria enviada."
 
-#: ../class.gallery-post-type.php:134
+#: ../class.gallery-post-type.php:135
 #, php-format
 msgid "Gallery scheduled. <a target=\"_blank\" href=\"%s\">View Gallery</a>"
 msgstr "Galeria agendada. <a target=\"_blank\" href=\"%s\">Ver galeria</a>"
 
-#: ../class.gallery-post-type.php:135
+#: ../class.gallery-post-type.php:136
 #, php-format
 msgid "Gallery draft updated. <a target=\"_blank\" href=\"%s\">Preview Gallery</a>"
 msgstr "Rascunho de galeria atualizado. <a target=\"_blank\" href=\"%s\">Ver galeria</a>"
 
-#: ../class.gallery-post-type.php:142
+#: ../class.gallery-post-type.php:143
 msgid "Gallery Categories"
 msgstr "Categorias de galeria"
 
-#: ../class.gallery-post-type.php:144
+#: ../class.gallery-post-type.php:145
 msgid "Categories"
 msgstr "Categorias"
 
-#: ../class.gallery-post-type.php:145
+#: ../class.gallery-post-type.php:146
 msgid "Category"
 msgstr "Categoria"
 
-#: ../class.gallery-post-type.php:146
+#: ../class.gallery-post-type.php:147
 msgid "All Categories"
 msgstr "Todas as categorias"
 
-#: ../class.gallery-post-type.php:147
+#: ../class.gallery-post-type.php:148
 msgid "Edit Category"
 msgstr "Editar categoria"
 
-#: ../class.gallery-post-type.php:148
+#: ../class.gallery-post-type.php:149
 #, fuzzy
 msgid "View Category"
 msgstr "Nova categoria"
 
-#: ../class.gallery-post-type.php:149
+#: ../class.gallery-post-type.php:150
 msgid "Update Category"
 msgstr "Atualizar categoria"
 
-#: ../class.gallery-post-type.php:150
+#: ../class.gallery-post-type.php:151
 msgid "Add New Category"
 msgstr "Adicionar nova categoria"
 
-#: ../class.gallery-post-type.php:151
+#: ../class.gallery-post-type.php:152
 msgid "New Category"
 msgstr "Nova categoria"
 
-#: ../class.gallery-post-type.php:152
+#: ../class.gallery-post-type.php:153
 msgid "Parent Category"
 msgstr "Categoria pai"
 
-#: ../class.gallery-post-type.php:153
+#: ../class.gallery-post-type.php:154
 msgid "Parent Category:"
 msgstr "Categoria pai:"
 
-#: ../class.gallery-post-type.php:154
+#: ../class.gallery-post-type.php:155
 msgid "Search Categories"
 msgstr "Pesquisar categorias"
 
-#: ../class.gallery-post-type.php:155
+#: ../class.gallery-post-type.php:156
 #, fuzzy
 msgid "Popular Categories"
 msgstr "Todas as categorias"
 
-#: ../class.gallery-post-type.php:156
+#: ../class.gallery-post-type.php:157
 #, fuzzy
 msgid "Separate Categories with commas"
 msgstr "Pesquisar categorias"
 
-#: ../class.gallery-post-type.php:157
+#: ../class.gallery-post-type.php:158
 #, fuzzy
 msgid "Add or remove Categories"
 msgstr "Adicionar nova categoria"
 
-#: ../class.gallery-post-type.php:158
+#: ../class.gallery-post-type.php:159
 msgid "Choose from the most used Categories"
 msgstr ""
 
-#: ../class.gallery-post-type.php:159
+#: ../class.gallery-post-type.php:160
 #, fuzzy
 msgid "No Categories found."
 msgstr "Nenhuma galeria encontrada"
 
-#: ../class.gallery-post-type.php:167
+#: ../class.gallery-post-type.php:168
 #, fuzzy, php-format
 msgctxt "URL slug"
 msgid "%s/category"
 msgstr "Categoria"
 
-#: ../class.gallery-post-type.php:172
+#: ../class.gallery-post-type.php:173
 msgid "Gallery Tags"
 msgstr "Tags da galeria"
 
-#: ../class.gallery-post-type.php:174
+#: ../class.gallery-post-type.php:175
 msgid "Tags"
 msgstr "Tags"
 
-#: ../class.gallery-post-type.php:175
+#: ../class.gallery-post-type.php:176
 msgid "Tag"
 msgstr "Tag"
 
-#: ../class.gallery-post-type.php:176
+#: ../class.gallery-post-type.php:177
 msgid "All Tags"
 msgstr "Todas as tags"
 
-#: ../class.gallery-post-type.php:177
+#: ../class.gallery-post-type.php:178
 msgid "Edit Tag"
 msgstr "Editar tag"
 
-#: ../class.gallery-post-type.php:178
+#: ../class.gallery-post-type.php:179
 #, fuzzy
 msgid "View Tag"
 msgstr "Nova tag"
 
-#: ../class.gallery-post-type.php:179
+#: ../class.gallery-post-type.php:180
 msgid "Update Tag"
 msgstr "Atualizar tag"
 
-#: ../class.gallery-post-type.php:180
+#: ../class.gallery-post-type.php:181
 msgid "Add New Tag"
 msgstr "Adicionar nova tag"
 
-#: ../class.gallery-post-type.php:181
+#: ../class.gallery-post-type.php:182
 msgid "New Tag"
 msgstr "Nova tag"
 
-#: ../class.gallery-post-type.php:182
+#: ../class.gallery-post-type.php:183
 #, fuzzy
 msgid "Parent Tag"
 msgstr "Categoria pai"
 
-#: ../class.gallery-post-type.php:183
+#: ../class.gallery-post-type.php:184
 #, fuzzy
 msgid "Parent Tag:"
 msgstr "Categoria pai:"
 
-#: ../class.gallery-post-type.php:184
+#: ../class.gallery-post-type.php:185
 msgid "Search Tags"
 msgstr "Pesquisar por tags"
 
-#: ../class.gallery-post-type.php:185
+#: ../class.gallery-post-type.php:186
 #, fuzzy
 msgid "Popular Tags"
 msgstr "Pesquisar por tags"
 
-#: ../class.gallery-post-type.php:186
+#: ../class.gallery-post-type.php:187
 msgid "Separate Tags with commas"
 msgstr ""
 
-#: ../class.gallery-post-type.php:187
+#: ../class.gallery-post-type.php:188
 #, fuzzy
 msgid "Add or remove Tags"
 msgstr "Adicionar nova tag"
 
-#: ../class.gallery-post-type.php:188
+#: ../class.gallery-post-type.php:189
 msgid "Choose from the most used Tags"
 msgstr ""
 
-#: ../class.gallery-post-type.php:189
+#: ../class.gallery-post-type.php:190
 #, fuzzy
 msgid "No Tags found."
 msgstr "Nenhuma galeria encontrada"
 
-#: ../class.gallery-post-type.php:197
+#: ../class.gallery-post-type.php:198
 #, fuzzy, php-format
 msgctxt "URL slug"
 msgid "%s/tag"
 msgstr "%s/tag"
 
-#: ../class.gallery-post-type.php:233
+#: ../class.gallery-post-type.php:234
 #, php-format
 msgid "This is the URL to the archive of this %s."
 msgstr "Esta é a URL para o acervo deste %s."
 
-#: ../class.gallery-post-type.php:237
+#: ../class.gallery-post-type.php:238
 msgid "Archive Feed"
 msgstr "RSS de acervo"
 
-#: ../class.gallery-post-type.php:240
+#: ../class.gallery-post-type.php:241
 #, php-format
 msgid "This is the URL to the feed of the archive of this %s."
 msgstr "Esta é a URL para o RSS do acervo deste %s."
 
-#: ../class.gallery-post-type.php:252
+#: ../class.gallery-post-type.php:253
 msgid "Upload Images"
 msgstr "Fazer upload de imagens"
 
-#: ../class.gallery-post-type.php:254
+#: ../class.gallery-post-type.php:255
 msgid "Import from Library"
 msgstr "Importar da biblioteca"
 
-#: ../class.gallery-post-type.php:298
+#: ../class.gallery-post-type.php:299
 msgid "Images"
 msgstr "Imagens"
 
-#: ../class.gallery-post-type.php:301
+#: ../class.gallery-post-type.php:302
 msgid "Excerpt"
 msgstr "Resumo"
 
-#: ../class.gallery-post-type.php:306
+#: ../class.gallery-post-type.php:307
 msgid "Owner"
 msgstr "Dono"
 
-#: ../class.gallery-post-type.php:308
+#: ../class.gallery-post-type.php:309
 msgid "Gallery ShortCode"
 msgstr "ShortCode da galeria"
 
-#: ../class.gallery-post-type.php:309
+#: ../class.gallery-post-type.php:310
 msgid "Thumbnails"
 msgstr "Miniaturas"
 
-#: ../class.gallery-post-type.php:346
+#: ../class.gallery-post-type.php:347
 msgid "The Attachment was moved to your gallery."
 msgstr "O anexo foi movido para sua galeria."
 
-#: ../widget.taxonomies.php:15
-#, fuzzy
-msgid "Gallery taxonomies"
-msgstr "Categorias de galeria"
-
-#: ../widget.taxonomies.php:16
+#: ../widget.taxonomies.php:17
 #, fuzzy
 msgid "Displays your gallery taxonomies like categories, tags, events, photographers, etc."
 msgstr "Mostra a taxonomia da sua galeria como categorias, tags, eventos, fotógrafos, etc."
 
-#: ../widget.taxonomies.php:91
+#: ../widget.taxonomies.php:93
 #, fuzzy
 msgid "Show Gallery counts."
 msgstr "Contagem da galeria"
@@ -592,11 +594,13 @@ msgid "Not attached to a post."
 msgstr "Não anexado a um post."
 
 #: ../meta-boxes/import-images-form.php:65
-msgid "This image belongs to your gallery."
+#, fuzzy
+msgid "This image belongs to this gallery."
 msgstr "Essa imagem pertence à sua galeria."
 
 #: ../meta-boxes/import-images-form.php:68
-msgid "Import to my gallery"
+#, fuzzy
+msgid "Import to this gallery"
 msgstr "Importar para minha galeria."
 
 #: ../meta-boxes/thumbnails.php:2
