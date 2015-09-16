@@ -2,7 +2,7 @@
 Contributors: dhoppe
 Tags: gallery, galleries, image, images, picture, pictures, photo, photos, photo-album, photo-albums, fancybox, thickbox, lightbox, jquery, javascript, widget, cms, free, flickr				widget,Post,plugin,admin,posts,sidebar,comments,google,images,page,image,links
 Requires at least: 3.6
-Tested up to: 4.2.4
+Tested up to: 4.3.1
 Stable tag: trunk
 Donate link: http://dennishoppe.de/en/wordpress-plugins/fancy-gallery
 License: GPLv2
@@ -168,6 +168,12 @@ Possibly even more important, buying the premium edition gives you access to me 
 
 
 == Changelog ==
+
+= 1.5.31 =
+* Fixed: JavaScript can be loaded in header now
+* Updated: Lightbox components
+* Fixed: Removed ID attribute from blueimp-gallery container
+* Added: Translations Deutsch und Deutsch (Sie)
 
 = 1.5.30 =
 * Fixed tab styles, button texts and image import view styles in images meta box

@@ -20,7 +20,7 @@ class Lightbox {
 
   public function WP_Footer(){
     ?>
-    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+    <div class="blueimp-gallery blueimp-gallery-controls fancy-gallery-lightbox-container" style="display:none">
       <div class="slides"></div>
       <div class="title-description">
         <div class="title"></div>

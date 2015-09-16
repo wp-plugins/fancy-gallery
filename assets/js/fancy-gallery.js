@@ -4,8 +4,11 @@
   // Render the template stylesheets and javascripts
   if(FANCYGALLERY.stylesheets || FANCYGALLERY.javascripts){
     var $head = $('head:first');
-    for(var index in FANCYGALLERY.stylesheets){
-      $('<link rel="stylesheet" href="" media="screen">').attr('href', FANCYGALLERY.stylesheets[index]).appendTo($head);
+
+    if(FANCYGALLERY.stylesheets){
+      for(var index in FANCYGALLERY.stylesheets){
+        $('<link rel="stylesheet" href="" media="screen">').attr('href', FANCYGALLERY.stylesheets[index]).appendTo($head);
+      }
     }
 
     if(FANCYGALLERY.javascripts){
@@ -20,7 +23,7 @@
     // Default options for the lightbox
     var options = {
       'gallery_relation_attr':  'rel',
-      'gallery_container':      $('#blueimp-gallery'),
+      'container':              'div.fancy-gallery-lightbox-container',
       'image_selector':         'a[href$=".jpg"], a[href$=".jpeg"], a[href$=".png"], a[href$=".gif"], a[href$=".bmp"], a[href$=".wbmp"], .image-lightbox',
       'titleElement':           '.title',
       'continuous':             FANCYGALLERY.continuous, // Allow continuous navigation, moving from last to first and from first to last slide
@@ -29,15 +32,14 @@
       'transitionSpeed':        parseFloat(FANCYGALLERY.animation_speed), // The transition speed between slide changes in milliseconds
       'stretchImages':          FANCYGALLERY.stretch_images, // Defines if images should be stretched to fill the available space. Values: "cover", "contain", false
       'onopen':                 function(){ $('html').css('overflow', 'hidden') },
-      'onclosed':               function(){ $('html').css('overflow', '')   }
+      'onclosed':               function(){ $('html').css('overflow', '') }
     };
 
     // Associate the links with the lightbox
-    $('body').on('click', options.image_selector, function(event){
+    $(document).on('click', options.image_selector, function(event){
       event.preventDefault();
 
       var
-        $container = options.gallery_container,
         $link = $(this),
         gallery_relation = $link.attr(options.gallery_relation_attr),
         $gallery = [],
@@ -54,9 +56,9 @@
       // Find other linked images which belongs to this gallery
       if (gallery_relation)
         $gallery = $('a[' + options.gallery_relation_attr + '="' + gallery_relation + '"]');
-      else if ($gallery_wrapper.length > 0)
+      else if ($gallery_wrapper.length)
         $gallery = $gallery_wrapper.find(options.image_selector);
-      else if ($content_wrapper.length > 0)
+      else if ($content_wrapper.length)
         $gallery = $content_wrapper.find(options.image_selector).not('a[' + options.gallery_relation_attr + '], .gallery.fancy-gallery a');
       else
         $gallery = $(options.image_selector).not('.fancy-gallery-content-unit a, a[' + options.gallery_relation_attr + '], .gallery.fancy-gallery a');
@@ -95,4 +97,4 @@
     });
   }
 
-})(jQuery);
+}(jQuery));
