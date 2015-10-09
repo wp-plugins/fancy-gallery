@@ -296,18 +296,18 @@ class Gallery_Post_Type {
     #Add_Filter ( 'gettext', Array($this, 'Filter_GetText'), 10, 3 );
 
     # Register Meta Boxes
-    $this->Add_Meta_Box($this->t('Images'), DirName(__FILE__) . '/meta-boxes/images.php', 'normal', 'high');
+    $this->Add_Meta_Box($this->t('Images'), Core::$plugin_folder . '/meta-boxes/images.php', 'normal', 'high');
 
     If (!$this->core->options->Get('disable_excerpts'))
-      $this->Add_Meta_Box($this->t('Excerpt'), DirName(__FILE__) . '/meta-boxes/excerpt.php', 'normal', 'high');
+      $this->Add_Meta_Box($this->t('Excerpt'), Core::$plugin_folder . '/meta-boxes/excerpt.php', 'normal', 'high');
 
-    $this->Add_Meta_Box($this->t('Template'), DirName(__FILE__) . '/meta-boxes/template.php', 'normal', 'high');
+    $this->Add_Meta_Box($this->t('Template'), Core::$plugin_folder . '/meta-boxes/template.php', 'normal', 'high');
 
     If (Current_User_Can($post_type_object->cap->edit_others_posts))
-      $this->Add_Meta_Box( $this->t('Owner'), DirName(__FILE__) . '/meta-boxes/owner.php' );
+      $this->Add_Meta_Box( $this->t('Owner'), Core::$plugin_folder . '/meta-boxes/owner.php' );
 
-    $this->Add_Meta_Box($this->t('Gallery ShortCode'), DirName(__FILE__) . '/meta-boxes/show-code.php', 'side', 'high');
-    $this->Add_Meta_Box($this->t('Thumbnails'), DirName(__FILE__) . '/meta-boxes/thumbnails.php', 'side' );
+    $this->Add_Meta_Box($this->t('Gallery ShortCode'), Core::$plugin_folder . '/meta-boxes/show-code.php', 'side', 'high');
+    $this->Add_Meta_Box($this->t('Thumbnails'), Core::$plugin_folder . '/meta-boxes/thumbnails.php', 'side' );
 
     # Add Meta Boxes
     ForEach ($this->arr_meta_box AS $box_index => $meta_box){
@@ -353,7 +353,7 @@ class Gallery_Post_Type {
 
 	function Print_Import_Images_Form($message = ''){
 		Media_Upload_Header();
-		Include DirName(__FILE__) . '/meta-boxes/import-images-form.php';
+		Include Core::$plugin_folder . '/meta-boxes/import-images-form.php';
 	}
 
   function Update_Post_Type_Name(){

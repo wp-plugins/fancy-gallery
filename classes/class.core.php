@@ -4,7 +4,7 @@ Namespace WordPress\Plugin\Fancy_Gallery;
 class Core {
   public
     $base_url, # url to the plugin directory
-    $version = '1.5.31', # Current release number
+    $version = '1.5.32', # Current release number
     $gallery, # The current gallery object while running shortcode
     $template_dir,
     $arr_stylesheets = Array(), # Array with stylesheet urls which should be loaded asynchronously
@@ -13,8 +13,15 @@ class Core {
     $lightbox, # Pointer to the Lightbox object
     $options, # Pointer to the Options object
     $wpml; # Pointer to the WPML helper object
+  
+  public static
+    $plugin_file,
+    $plugin_folder;
 
   function __construct($plugin_file){
+    self::$plugin_file = $plugin_file;
+    self::$plugin_folder = DirName(self::$plugin_file);
+    
     # Read base
     $this->Load_Base_Url();
 
@@ -22,7 +29,7 @@ class Core {
     $this->template_dir = WP_CONTENT_DIR . '/fancy-gallery-templates';
 
     # Helper classes
-    I18n::Load_TextDomain();
+    #I18n::Load_TextDomain();
     $this->options = New Options($this);
     $this->gallery_post_type = New Gallery_Post_Type($this);
     If ($this->options->Get('lightbox') == 'on') $this->lightbox = new Lightbox($this);
@@ -33,7 +40,7 @@ class Core {
     Add_Theme_Support('post-thumbnails');
 
     # Set Hooks
-    Register_Activation_Hook($plugin_file, Array($this, 'Plugin_Activation'));
+    Register_Activation_Hook(self::$plugin_file, Array($this, 'Plugin_Activation'));
     Add_Filter('the_content', Array($this, 'Filter_Content'), 11);
     Add_Filter('the_content_feed', Array($this, 'Filter_Feed_Content'));
     Add_Filter('the_excerpt_rss', Array($this, 'Filter_Feed_Content'));
@@ -59,20 +66,19 @@ class Core {
   }
 
   public function Plugin_Activation(){
-    I18n::Load_TextDomain();
     $this->gallery_post_type->Update_Post_Type_Name();
     $this->gallery_post_type->Register_Taxonomies();
     $this->gallery_post_type->Register_Post_Type();
     Flush_Rewrite_Rules();
   }
-
+  
   private function Load_Base_Url(){
-    $absolute_plugin_folder = RealPath(DirName(__FILE__));
+    $absolute_plugin_folder = RealPath(self::$plugin_folder);
 
     If (StrPos($absolute_plugin_folder, ABSPATH) === 0)
       $this->base_url = Get_Bloginfo('wpurl').'/'.SubStr($absolute_plugin_folder, Strlen(ABSPATH));
     Else
-      $this->base_url = Plugins_Url(BaseName(DirName(__FILE__)));
+      $this->base_url = Plugins_Url(BaseName(self::$plugin_folder));
 
     $this->base_url = Str_Replace("\\", '/', $this->base_url); # Windows Workaround
   }
@@ -171,8 +177,8 @@ class Core {
 
   public function Get_Template_Files(){
     $arr_template = Array_Unique(Array_Merge (
-      (Array) Glob ( DirName(__FILE__) . '/templates/*.php' ),
-      (Array) Glob ( DirName(__FILE__) . '/templates/*/*.php' ),
+      (Array) Glob (self::$plugin_folder . '/templates/*.php' ),
+      (Array) Glob (self::$plugin_folder . '/templates/*/*.php' ),
 
       (Array) Glob ( Get_StyleSheet_Directory() . '/*.php' ),
       (Array) Glob ( Get_StyleSheet_Directory() . '/*/*.php' ),
@@ -199,8 +205,8 @@ class Core {
         $stylesheet_url = Is_File($stylesheet_file);
 
         If ($stylesheet_url){
-          If (StrPos($stylesheet_file, DirName(__FILE__)) === 0){ # the template is inside the plugin folder
-            $stylesheet_url = $this->base_url . SubStr($stylesheet_file, StrLen(DirName(__FILE__)));
+          If (StrPos($stylesheet_file, self::$plugin_folder) === 0){ # the template is inside the plugin folder
+            $stylesheet_url = $this->base_url . SubStr($stylesheet_file, StrLen(self::$plugin_folder));
           }
           ElseIf (StrPos($stylesheet_file, ABSPATH) === 0){ # the template is inside the wordpress folder
             $stylesheet_url = Get_Bloginfo('wpurl').'/'.SubStr($stylesheet_file, Strlen(ABSPATH));
@@ -250,11 +256,11 @@ class Core {
     If (Is_File($template_file)) return $template_file;
 
     # Else:
-    return DirName(__FILE__) . '/templates/default/default.php';
+    return self::$plugin_folder . '/templates/default/default.php';
   }
 
   public function Get_Default_Feed_Template(){
-    return DirName(__FILE__) . '/templates/default/default.php';
+    return self::$plugin_folder . '/templates/default/default.php';
   }
 
   public function Generate_Gallery_Attributes($attributes){

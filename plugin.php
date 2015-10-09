@@ -3,12 +3,12 @@
 Plugin Name: Fancy Gallery Lite
 Plugin URI: http://dennishoppe.de/en/wordpress-plugins/fancy-gallery
 Description: Fancy Gallery enables you to create and manage galleries and converts your galleries in post and pages to valid HTML5 blocks and associates linked images with a nice and responsive lightbox.
-Version: 1.5.31
+Version: 1.5.32
 Author: Dennis Hoppe
 Author URI: http://DennisHoppe.de
 */
 
-If (Version_Compare(PHP_VERSION, '5.3.0', '<')){
+If (Version_Compare(PHP_VERSION, '5.3.0', '<')):
 
   # Add PHP Version warning to the dashboard
   Add_Action('admin_notices', 'Fancy_Gallery_PHP53_Version_Warning');
@@ -18,24 +18,25 @@ If (Version_Compare(PHP_VERSION, '5.3.0', '<')){
     </div><?php
   }
 
-}
-Else {
+Else:
+
+  $plugin_folder = DirName(__FILE__);
 
   # Load core classes
-  Include DirName(__FILE__) . '/class.core.php';
-  Include DirName(__FILE__) . '/class.gallery-post-type.php';
-  Include DirName(__FILE__) . '/class.lightbox.php';
-  Include DirName(__FILE__) . '/class.i18n.php';
-  Include DirName(__FILE__) . '/class.mocking-bird.php';
-  Include DirName(__FILE__) . '/class.options.php';
-  Include DirName(__FILE__) . '/class.wpml.php';
+  Include $plugin_folder . '/classes/class.core.php';
+  Include $plugin_folder . '/classes/class.gallery-post-type.php';
+  Include $plugin_folder . '/classes/class.lightbox.php';
+  Include $plugin_folder . '/classes/class.i18n.php';
+  Include $plugin_folder . '/classes/class.mocking-bird.php';
+  Include $plugin_folder . '/classes/class.options.php';
+  Include $plugin_folder . '/classes/class.wpml.php';
 
   # Load widgets
-  Include DirName(__FILE__) . '/widget.random-images.php';
-  Include DirName(__FILE__) . '/widget.taxonomies.php';
-  Include DirName(__FILE__) . '/widget.taxonomy-cloud.php';
+  Include $plugin_folder . '/widgets/widget.random-images.php';
+  Include $plugin_folder . '/widgets/widget.taxonomies.php';
+  Include $plugin_folder . '/widgets/widget.taxonomy-cloud.php';
 
   # Inititalize Plugin: Would cause a synthax error in PHP < 5.3
   Eval('New WordPress\Plugin\Fancy_Gallery\Core(__FILE__);');
 
-}
+EndIf;

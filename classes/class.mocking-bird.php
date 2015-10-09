@@ -82,7 +82,7 @@ class Mocking_Bird {
           'target': '_blank'
         })
         .css({
-          'color': 'green',
+          'color': '#7ad03a',
           'font-weight': 'bold'
         });
     })(jQuery);

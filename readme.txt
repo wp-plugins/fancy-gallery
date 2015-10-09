@@ -169,6 +169,10 @@ Possibly even more important, buying the premium edition gives you access to me 
 
 == Changelog ==
 
+= 1.5.32 =
+* Moved the classes and widgets to separated folders
+* Updated i18n class
+
 = 1.5.31 =
 * Fixed: JavaScript can be loaded in header now
 * Updated: Lightbox components

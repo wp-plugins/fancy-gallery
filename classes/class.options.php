@@ -37,13 +37,13 @@ class Options {
     Add_Action ('load-' . $handle, Array($this, 'Load_Options_Page'));
 
     # Add option boxes
-    $this->Add_Option_Box($this->t('Lightbox'), DirName(__FILE__).'/options-page/lightbox.php');
-    $this->Add_Option_Box($this->t('Templates'), DirName(__FILE__).'/options-page/templates.php', 'main', 'closed');
-    $this->Add_Option_Box($this->t('User rights'), DirName(__FILE__).'/options-page/user-rights.php', 'main', 'closed');
+    $this->Add_Option_Box($this->t('Lightbox'), Core::$plugin_folder . '/options-page/lightbox.php');
+    $this->Add_Option_Box($this->t('Templates'), Core::$plugin_folder . '/options-page/templates.php', 'main', 'closed');
+    $this->Add_Option_Box($this->t('User rights'), Core::$plugin_folder . '/options-page/user-rights.php', 'main', 'closed');
 
-    $this->Add_Option_Box($this->t('Taxonomies'), DirName(__FILE__).'/options-page/taxonomies.php', 'side');
-    $this->Add_Option_Box($this->t('Gallery "Excerpts"'), DirName(__FILE__).'/options-page/excerpt.php', 'side');
-    $this->Add_Option_Box($this->t('Archive Url'), DirName(__FILE__).'/options-page/archive-link.php', 'side');
+    $this->Add_Option_Box($this->t('Taxonomies'), Core::$plugin_folder . '/options-page/taxonomies.php', 'side');
+    $this->Add_Option_Box($this->t('Gallery "Excerpts"'), Core::$plugin_folder . '/options-page/excerpt.php', 'side');
+    $this->Add_Option_Box($this->t('Archive Url'), Core::$plugin_folder . '/options-page/archive-link.php', 'side');
   }
 
   private function Get_Options_Page_Url($parameters = Array()){
