@@ -20,14 +20,10 @@ class Options {
     Add_Action('admin_menu', Array($this, 'Add_Options_Page'));
   }
 
-  private function t($text, $context = False){
-    return I18n::t($text, $context);
-  }
-
   public function Add_Options_Page(){
     $handle = Add_Options_Page (
-      $this->t('Fancy Gallery Options'),
-      $this->t('Fancy Gallery'),
+      I18n::t('Fancy Gallery Options'),
+      I18n::t('Fancy Gallery'),
       'manage_options',
       $this->page_slug,
       Array($this, 'Print_Options_Page')
@@ -37,13 +33,13 @@ class Options {
     Add_Action ('load-' . $handle, Array($this, 'Load_Options_Page'));
 
     # Add option boxes
-    $this->Add_Option_Box($this->t('Lightbox'), Core::$plugin_folder . '/options-page/lightbox.php');
-    $this->Add_Option_Box($this->t('Templates'), Core::$plugin_folder . '/options-page/templates.php', 'main', 'closed');
-    $this->Add_Option_Box($this->t('User rights'), Core::$plugin_folder . '/options-page/user-rights.php', 'main', 'closed');
+    $this->Add_Option_Box(I18n::t('Lightbox'), Core::$plugin_folder . '/options-page/lightbox.php');
+    $this->Add_Option_Box(I18n::t('Templates'), Core::$plugin_folder . '/options-page/templates.php', 'main', 'closed');
+    $this->Add_Option_Box(I18n::t('User rights'), Core::$plugin_folder . '/options-page/user-rights.php', 'main', 'closed');
 
-    $this->Add_Option_Box($this->t('Taxonomies'), Core::$plugin_folder . '/options-page/taxonomies.php', 'side');
-    $this->Add_Option_Box($this->t('Gallery "Excerpts"'), Core::$plugin_folder . '/options-page/excerpt.php', 'side');
-    $this->Add_Option_Box($this->t('Archive Url'), Core::$plugin_folder . '/options-page/archive-link.php', 'side');
+    $this->Add_Option_Box(I18n::t('Taxonomies'), Core::$plugin_folder . '/options-page/taxonomies.php', 'side');
+    $this->Add_Option_Box(I18n::t('Gallery "Excerpts"'), Core::$plugin_folder . '/options-page/excerpt.php', 'side');
+    $this->Add_Option_Box(I18n::t('Archive Url'), Core::$plugin_folder . '/options-page/archive-link.php', 'side');
   }
 
   private function Get_Options_Page_Url($parameters = Array()){
@@ -59,7 +55,7 @@ class Options {
       WP_Redirect( $this->Get_Options_Page_Url(Array('template_deleted' => 'true')) );
     }
     ElseIf (IsSet($_GET['delete'])){
-      WP_Die($this->t('Error while deleting: ' . HTMLSpecialChars($_GET['delete'])));
+      WP_Die(I18n::t('Error while deleting: ' . HTMLSpecialChars($_GET['delete'])));
     }
 
     # If the Request was redirected from a "Save Options"-Post
@@ -83,7 +79,7 @@ class Options {
   public function Print_Options_Page(){
     ?>
     <div class="wrap">
-      <h2><?php Echo $this->t('Fancy Gallery Settings') ?></h2>
+      <h2><?php Echo I18n::t('Fancy Gallery Settings') ?></h2>
 
       <?php If (IsSet($_GET['options_saved'])): ?>
       <div id="message" class="updated fade">
@@ -93,13 +89,13 @@ class Options {
 
       <?php If (IsSet($_GET['template_installed'])): ?>
       <div id="message" class="updated fade">
-        <p><strong><?php echo $this->t('Template installed.') ?></strong></p>
+        <p><strong><?php echo I18n::t('Template installed.') ?></strong></p>
       </div>
       <?php EndIf ?>
 
       <?php If (IsSet($_GET['template_deleted'])): ?>
       <div id="message" class="updated fade">
-        <p><strong><?php echo $this->t('Template deleted.') ?></strong></p>
+        <p><strong><?php echo I18n::t('Template deleted.') ?></strong></p>
       </div>
       <?php EndIf ?>
 

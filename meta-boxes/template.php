@@ -1,4 +1,5 @@
-<p><?php Echo $this->t('Please choose a template to display this gallery.') ?></p>
+<?php Namespace WordPress\Plugin\Fancy_Gallery ?>
+<p><?php Echo I18n::t('Please choose a template to display this gallery.') ?></p>
 <?php ForEach ( $this->core->Get_Template_Files() AS $name => $properties ) : ?>
 <p>
   <input type="radio" name="<?php Echo $this->Field_Name('template') ?>" id="<?php Echo Sanitize_Title($properties['file']) ?>" value="<?php Echo HTMLSpecialChars($properties['file']) ?>"
@@ -13,9 +14,9 @@
   </label>
   <?php If ($properties['version']) : ?> (<?php Echo $properties['version'] ?>)<?php Endif; ?>
   <?php If ($properties['author'] && !$properties['author_uri'] ) : ?>
-    <?php Echo $this->t('by') ?> <?php Echo $properties['author'] ?>
+    <?php Echo I18n::t('by') ?> <?php Echo $properties['author'] ?>
   <?php ElseIf ($properties['author'] && $properties['author_uri'] ) : ?>
-    <?php Echo $this->t('by') ?> <a href="<?php Echo $properties['author_uri'] ?>" target="_blank"><?php Echo $properties['author'] ?></a>
+    <?php Echo I18n::t('by') ?> <a href="<?php Echo $properties['author_uri'] ?>" target="_blank"><?php Echo $properties['author'] ?></a>
   <?php Endif; ?>
   <?php If ($properties['description']) : ?><br><?php Echo $properties['description']; Endif ?>
 </p>

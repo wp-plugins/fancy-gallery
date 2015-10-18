@@ -15,24 +15,20 @@ class Mocking_Bird {
     Add_Action('admin_bar_menu', Array($this, 'Filter_Admin_Bar_Menu'), 999);
   }
 
-  private function t($text, $context = False){
-    return I18n::t($text, $context);
-  }
-
   function Pro_Notice($message = 'setting', $output = True){
     $arr_message = Array(
-      'upgrade' => $this->t('Upgrade to Pro'),
+      'upgrade' => I18n::t('Upgrade to Pro'),
       'upgrade_url' => '%s',
-      'feature' => $this->t('This feature is available in the <a href="%s" target="_blank">premium version</a>.'),
-      'unlock' => SPrintF('<a href="%%s" title="%s" class="unlock" target="_blank"><span class="dashicons dashicons-lock"></span></a>', $this->t('Unlock this feature')),
-      'setting' => $this->t('This setting is changeable in the <a href="%s" target="_blank">premium version</a>.'),
-      'custom_tax' => $this->t('Do you need a special taxonomy for your website? No problem! Just <a href="%s" target="_blank">get in touch</a>.'),
-      'widget' => $this->t('This widget is available in the <a href="%s" target="_blank">premium version</a>. For now there will be no output in the front end of your website.'),
-      #'count_limit' => $this->t('In the <a href="%s" target="_blank">Premium Version of Fancy Gallery</a> you can take advantage of the gallery management without any limitations.'),
+      'feature' => I18n::t('This feature is available in the <a href="%s" target="_blank">premium version</a>.'),
+      'unlock' => SPrintF('<a href="%%s" title="%s" class="unlock" target="_blank"><span class="dashicons dashicons-lock"></span></a>', I18n::t('Unlock this feature')),
+      'setting' => I18n::t('This setting is changeable in the <a href="%s" target="_blank">premium version</a>.'),
+      'custom_tax' => I18n::t('Do you need a special taxonomy for your website? No problem! Just <a href="%s" target="_blank">get in touch</a>.'),
+      'widget' => I18n::t('This widget is available in the <a href="%s" target="_blank">premium version</a>. For now there will be no output in the front end of your website.'),
+      #'count_limit' => I18n::t('In the <a href="%s" target="_blank">Premium Version of Fancy Gallery</a> you can take advantage of the gallery management without any limitations.'),
     );
 
     If (IsSet($arr_message[$message])){
-      $message = SPrintF($arr_message[$message], $this->t('http://dennishoppe.de/en/wordpress-plugins/fancy-gallery', 'Link to the authors website'));
+      $message = SPrintF($arr_message[$message], I18n::t('http://dennishoppe.de/en/wordpress-plugins/fancy-gallery', 'Link to the authors website'));
       If ($output) Echo $message;
       Else return $message;
     }
@@ -65,7 +61,7 @@ class Mocking_Bird {
     WP_Die(
       SPrintF('<p>%s</p><p>%s</p>',
         $this->Pro_Notice('count_limit', False),
-        SPrintF('<a href="%s" class="button">%s</a>', Admin_URL('edit.php?post_type=' . $this->post_type), $this->t('&laquo; Back to your galleries'))
+        SPrintF('<a href="%s" class="button">%s</a>', Admin_URL('edit.php?post_type=' . $this->post_type), I18n::t('&laquo; Back to your galleries'))
       )
     );
   }

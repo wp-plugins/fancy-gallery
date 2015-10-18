@@ -31,10 +31,6 @@ class Gallery_Post_Type {
 
   }
 
-  function t($text, $context = False){
-    return $this->core->t($text, $context);
-  }
-
   function Field_Name($option_name){
     # Generates field names for the meta box
     return SPrintF('%s[%s]', $this->meta_field, $option_name);
@@ -95,15 +91,15 @@ class Gallery_Post_Type {
     # Register Post Type
     Register_Post_Type ($this->name, Array(
       'labels' => Array(
-        'name' => $this->t('Galleries'),
-        'singular_name' => $this->t('Gallery'),
-        'add_new' => $this->t('Add Gallery'),
-        'add_new_item' => $this->t('New Gallery'),
-        'edit_item' => $this->t('Edit Gallery'),
-        'view_item' => $this->t('View Gallery'),
-        'search_items' => $this->t('Search Galleries'),
-        'not_found' =>  $this->t('No Galleries found'),
-        'not_found_in_trash' => $this->t('No Galleries found in Trash'),
+        'name' => I18n::t('Galleries'),
+        'singular_name' => I18n::t('Gallery'),
+        'add_new' => I18n::t('Add Gallery'),
+        'add_new_item' => I18n::t('New Gallery'),
+        'edit_item' => I18n::t('Edit Gallery'),
+        'view_item' => I18n::t('View Gallery'),
+        'search_items' => I18n::t('Search Galleries'),
+        'not_found' =>  I18n::t('No Galleries found'),
+        'not_found_in_trash' => I18n::t('No Galleries found in Trash'),
         'parent_item_colon' => ''
         ),
       'public' => True,
@@ -112,7 +108,7 @@ class Gallery_Post_Type {
 			'map_meta_cap' => True,
 			'hierarchical' => False,
       'rewrite' => Array(
-        'slug' => $this->t('galleries', 'URL slug'),
+        'slug' => I18n::t('galleries', 'URL slug'),
         'with_front' => False
       ),
       'supports' => Array('title', 'author', 'excerpt', 'thumbnail', 'comments', 'custom-fields'),
@@ -124,40 +120,40 @@ class Gallery_Post_Type {
 
   function Updated_Messages($arr_message){
     return Array_Merge ($arr_message, Array($this->name => Array(
-      1 => SPrintF ($this->t('Gallery updated. <a href="%s">View Gallery</a>'), Get_Permalink()),
+      1 => SPrintF (I18n::t('Gallery updated. <a href="%s">View Gallery</a>'), Get_Permalink()),
       2 => __('Custom field updated.'),
       3 => __('Custom field deleted.'),
-      4 => $this->t('Gallery updated.'),
-      5 => IsSet($_GET['revision']) ? SPrintF($this->t('Gallery restored to revision from %s'), WP_Post_Revision_Title( (Int) $_GET['revision'], False ) ) : False,
-      6 => SPrintF($this->t('Gallery published. <a href="%s">View Gallery</a>'), Get_Permalink()),
-      7 => $this->t('Gallery saved.'),
-      8 => $this->t('Gallery submitted.'),
-      9 => SPrintF($this->t('Gallery scheduled. <a target="_blank" href="%s">View Gallery</a>'), Get_Permalink()),
-      10 => SPrintF($this->t('Gallery draft updated. <a target="_blank" href="%s">Preview Gallery</a>'), Add_Query_Arg('preview', 'true', Get_Permalink()))
+      4 => I18n::t('Gallery updated.'),
+      5 => IsSet($_GET['revision']) ? SPrintF(I18n::t('Gallery restored to revision from %s'), WP_Post_Revision_Title( (Int) $_GET['revision'], False ) ) : False,
+      6 => SPrintF(I18n::t('Gallery published. <a href="%s">View Gallery</a>'), Get_Permalink()),
+      7 => I18n::t('Gallery saved.'),
+      8 => I18n::t('Gallery submitted.'),
+      9 => SPrintF(I18n::t('Gallery scheduled. <a target="_blank" href="%s">View Gallery</a>'), Get_Permalink()),
+      10 => SPrintF(I18n::t('Gallery draft updated. <a target="_blank" href="%s">Preview Gallery</a>'), Add_Query_Arg('preview', 'true', Get_Permalink()))
     )));
   }
 
   function Get_Taxonomies(){
     return Array(
       'gallery_category' => Array(
-        'label' => $this->t('Gallery Categories'),
+        'label' => I18n::t('Gallery Categories'),
         'labels' => Array(
-          'name' => $this->t('Categories' ),
-          'singular_name' => $this->t('Category'),
-          'all_items' => $this->t('All Categories'),
-          'edit_item' => $this->t('Edit Category'),
-          'view_item' => $this->t('View Category'),
-          'update_item' => $this->t('Update Category'),
-          'add_new_item' => $this->t('Add New Category'),
-          'new_item_name' => $this->t('New Category'),
-          'parent_item' => $this->t('Parent Category'),
-          'parent_item_colon' => $this->t('Parent Category:'),
-          'search_items' =>  $this->t('Search Categories'),
-          'popular_items' => $this->t('Popular Categories'),
-          'separate_items_with_commas' => $this->t('Separate Categories with commas'),
-          'add_or_remove_items' => $this->t('Add or remove Categories'),
-          'choose_from_most_used' => $this->t('Choose from the most used Categories'),
-          'not_found' => $this->t('No Categories found.')
+          'name' => I18n::t('Categories' ),
+          'singular_name' => I18n::t('Category'),
+          'all_items' => I18n::t('All Categories'),
+          'edit_item' => I18n::t('Edit Category'),
+          'view_item' => I18n::t('View Category'),
+          'update_item' => I18n::t('Update Category'),
+          'add_new_item' => I18n::t('Add New Category'),
+          'new_item_name' => I18n::t('New Category'),
+          'parent_item' => I18n::t('Parent Category'),
+          'parent_item_colon' => I18n::t('Parent Category:'),
+          'search_items' =>  I18n::t('Search Categories'),
+          'popular_items' => I18n::t('Popular Categories'),
+          'separate_items_with_commas' => I18n::t('Separate Categories with commas'),
+          'add_or_remove_items' => I18n::t('Add or remove Categories'),
+          'choose_from_most_used' => I18n::t('Choose from the most used Categories'),
+          'not_found' => I18n::t('No Categories found.')
         ),
         'show_admin_column' => True,
         'hierarchical' => False,
@@ -165,29 +161,29 @@ class Gallery_Post_Type {
         'query_var' => True,
         'rewrite' => Array(
           'with_front' => False,
-          'slug' => SPrintF($this->t('%s/category', 'URL slug'), $this->t('galleries', 'URL slug'))
+          'slug' => SPrintF(I18n::t('%s/category', 'URL slug'), I18n::t('galleries', 'URL slug'))
         )
       ),
 
       'gallery_tag' => Array(
-        'label' => $this->t( 'Gallery Tags' ),
+        'label' => I18n::t( 'Gallery Tags' ),
         'labels' => Array(
-          'name' => $this->t('Tags'),
-          'singular_name' => $this->t('Tag'),
-          'all_items' => $this->t('All Tags'),
-          'edit_item' => $this->t('Edit Tag'),
-          'view_item' => $this->t('View Tag'),
-          'update_item' => $this->t('Update Tag'),
-          'add_new_item' => $this->t('Add New Tag'),
-          'new_item_name' => $this->t('New Tag'),
-          'parent_item' => $this->t('Parent Tag'),
-          'parent_item_colon' => $this->t('Parent Tag:'),
-          'search_items' =>  $this->t('Search Tags'),
-          'popular_items' => $this->t('Popular Tags'),
-          'separate_items_with_commas' => $this->t('Separate Tags with commas'),
-          'add_or_remove_items' => $this->t('Add or remove Tags'),
-          'choose_from_most_used' => $this->t('Choose from the most used Tags'),
-          'not_found' => $this->t('No Tags found.')
+          'name' => I18n::t('Tags'),
+          'singular_name' => I18n::t('Tag'),
+          'all_items' => I18n::t('All Tags'),
+          'edit_item' => I18n::t('Edit Tag'),
+          'view_item' => I18n::t('View Tag'),
+          'update_item' => I18n::t('Update Tag'),
+          'add_new_item' => I18n::t('Add New Tag'),
+          'new_item_name' => I18n::t('New Tag'),
+          'parent_item' => I18n::t('Parent Tag'),
+          'parent_item_colon' => I18n::t('Parent Tag:'),
+          'search_items' =>  I18n::t('Search Tags'),
+          'popular_items' => I18n::t('Popular Tags'),
+          'separate_items_with_commas' => I18n::t('Separate Tags with commas'),
+          'add_or_remove_items' => I18n::t('Add or remove Tags'),
+          'choose_from_most_used' => I18n::t('Choose from the most used Tags'),
+          'not_found' => I18n::t('No Tags found.')
         ),
         'show_admin_column' => True,
         'hierarchical' => False,
@@ -195,7 +191,7 @@ class Gallery_Post_Type {
         'query_var' => True,
         'rewrite' => Array(
           'with_front' => False,
-          'slug' => SPrintF($this->t('%s/tag', 'URL slug'), $this->t('galleries', 'URL slug'))
+          'slug' => SPrintF(I18n::t('%s/tag', 'URL slug'), I18n::t('galleries', 'URL slug'))
         )
       )
     );
@@ -228,17 +224,17 @@ class Gallery_Post_Type {
     $archive_feed = Get_Term_Feed_Link($tag->term_id, $taxonomy->name);
     ?>
     <tr class="form-field">
-      <th scope="row" valign="top"><?php Echo $this->t('Archive Url') ?></th>
+      <th scope="row" valign="top"><?php Echo I18n::t('Archive Url') ?></th>
       <td>
         <a href="<?php Echo $archive_url ?>" target="_blank"><?php Echo $archive_url ?></a><br>
-        <span class="description"><?php PrintF($this->t('This is the URL to the archive of this %s.'), $taxonomy->labels->singular_name) ?></span>
+        <span class="description"><?php PrintF(I18n::t('This is the URL to the archive of this %s.'), $taxonomy->labels->singular_name) ?></span>
       </td>
     </tr>
     <tr class="form-field">
-      <th scope="row" valign="top"><?php Echo $this->t('Archive Feed') ?></th>
+      <th scope="row" valign="top"><?php Echo I18n::t('Archive Feed') ?></th>
       <td>
         <a href="<?php Echo $archive_feed ?>" target="_blank"><?php Echo $archive_feed ?></a><br>
-        <span class="description"><?php PrintF($this->t('This is the URL to the feed of the archive of this %s.'), $taxonomy->labels->singular_name) ?></span>
+        <span class="description"><?php PrintF(I18n::t('This is the URL to the feed of the archive of this %s.'), $taxonomy->labels->singular_name) ?></span>
       </td>
     </tr>
     <?php
@@ -250,9 +246,9 @@ class Gallery_Post_Type {
 
   function Media_Upload_Tabs($arr_tabs){
 		return Array(
-      'type' => $this->t('Upload Images'),
+      'type' => I18n::t('Upload Images'),
       'gallery' => $arr_tabs['gallery'],
-      'import_images' => $this->t('Import from Library')
+      'import_images' => I18n::t('Import from Library')
     );
   }
 
@@ -296,18 +292,18 @@ class Gallery_Post_Type {
     #Add_Filter ( 'gettext', Array($this, 'Filter_GetText'), 10, 3 );
 
     # Register Meta Boxes
-    $this->Add_Meta_Box($this->t('Images'), Core::$plugin_folder . '/meta-boxes/images.php', 'normal', 'high');
+    $this->Add_Meta_Box(I18n::t('Images'), Core::$plugin_folder . '/meta-boxes/images.php', 'normal', 'high');
 
     If (!$this->core->options->Get('disable_excerpts'))
-      $this->Add_Meta_Box($this->t('Excerpt'), Core::$plugin_folder . '/meta-boxes/excerpt.php', 'normal', 'high');
+      $this->Add_Meta_Box(I18n::t('Excerpt'), Core::$plugin_folder . '/meta-boxes/excerpt.php', 'normal', 'high');
 
-    $this->Add_Meta_Box($this->t('Template'), Core::$plugin_folder . '/meta-boxes/template.php', 'normal', 'high');
+    $this->Add_Meta_Box(I18n::t('Template'), Core::$plugin_folder . '/meta-boxes/template.php', 'normal', 'high');
 
     If (Current_User_Can($post_type_object->cap->edit_others_posts))
-      $this->Add_Meta_Box( $this->t('Owner'), Core::$plugin_folder . '/meta-boxes/owner.php' );
+      $this->Add_Meta_Box(I18n::t('Owner'), Core::$plugin_folder . '/meta-boxes/owner.php' );
 
-    $this->Add_Meta_Box($this->t('Gallery ShortCode'), Core::$plugin_folder . '/meta-boxes/show-code.php', 'side', 'high');
-    $this->Add_Meta_Box($this->t('Thumbnails'), Core::$plugin_folder . '/meta-boxes/thumbnails.php', 'side' );
+    $this->Add_Meta_Box(I18n::t('Gallery ShortCode'), Core::$plugin_folder . '/meta-boxes/show-code.php', 'side', 'high');
+    $this->Add_Meta_Box(I18n::t('Thumbnails'), Core::$plugin_folder . '/meta-boxes/thumbnails.php', 'side' );
 
     # Add Meta Boxes
     ForEach ($this->arr_meta_box AS $box_index => $meta_box){
@@ -344,7 +340,7 @@ class Gallery_Post_Type {
 				'ID' => $attachment_id,
 				'post_parent' => $dst_post_id
 			));
-			$message = $this->t('The Attachment was moved to your gallery.');
+			$message = I18n::t('The Attachment was moved to your gallery.');
 		}
 
 		# Generate Output

@@ -1,4 +1,7 @@
-<?php
+<?php Namespace WordPress\Plugin\Fancy_Gallery;
+
+Use \WP_Query;
+
 # Current page and offset
 $current_page = $_GET['paged'] = IsSet($_GET['paged']) ? IntVal($_GET['paged']) : 1;
 
@@ -55,17 +58,17 @@ $image->move_link = Add_Query_Arg(Array('move_attachment' => $image->ID, 'move_t
 <div class="attachment" id="attachment-<?php Echo $image->ID ?>">
 	<?php Echo WP_Get_Attachment_Image( $image->ID ); ?>
 	<div class="details">
-		<div class="name"><?php PrintF($this->t('Image: "%s"'), $image->post_title) ?></div>
+		<div class="name"><?php PrintF(I18n::t('Image: "%s"'), $image->post_title) ?></div>
 		<?php If ($image->parent) : ?>
-		<div class="post"><?php PrintF($this->t('Belongs to %s: "%s"'), $image->parent->type->labels->singular_name, '<a href="'.$image->parent->link.'" target="_blank">'.$image->parent->title.'</a>') ?></div>
+		<div class="post"><?php PrintF(I18n::t('Belongs to %s: "%s"'), $image->parent->type->labels->singular_name, '<a href="'.$image->parent->link.'" target="_blank">'.$image->parent->title.'</a>') ?></div>
 		<?php Else: ?>
-		<div class="post"><?php Echo $this->t('Not attached to a post.') ?></div>
+		<div class="post"><?php Echo I18n::t('Not attached to a post.') ?></div>
 		<?php Endif ?>
 		<div class="ajax-loader hidden"><img src="<?php echo Admin_Url('images/loading.gif') ?>" alt="Loading"></div>
-		<div class="import-success hidden"><?php Echo $this->t('This image belongs to this gallery.') ?></div>
+		<div class="import-success hidden"><?php Echo I18n::t('This image belongs to this gallery.') ?></div>
 
 		<?php If (!$image->parent || $image->parent->ID != $current_gallery->ID): ?>
-		<p class="import"><a href="<?php Echo $image->move_link ?>" class="import button"><?php Echo $this->t('Import to this gallery') ?></a></p>
+		<p class="import"><a href="<?php Echo $image->move_link ?>" class="import button"><?php Echo I18n::t('Import to this gallery') ?></a></p>
 		<?php EndIf ?>
 
 	</div>

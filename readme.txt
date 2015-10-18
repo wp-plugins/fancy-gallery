@@ -169,6 +169,10 @@ Possibly even more important, buying the premium edition gives you access to me 
 
 == Changelog ==
 
+= 1.5.33 =
+* Removed PHP 5.2 check
+* Implemented static I18n translation function
+
 = 1.5.32 =
 * Moved the classes and widgets to separated folders
 * Updated i18n class

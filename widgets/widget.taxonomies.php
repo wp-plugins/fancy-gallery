@@ -13,19 +13,15 @@ class Taxonomies Extends \WP_Widget {
     # Setup the Widget data
     parent::__construct (
       'fancy-gallery-taxonomies',
-      $this->t('Gallery taxonomies'),
-      Array('description' => $this->t('Displays your gallery taxonomies like categories, tags, events, photographers, etc.'))
+      I18n::t('Gallery taxonomies'),
+      Array('description' => I18n::t('Displays your gallery taxonomies like categories, tags, events, photographers, etc.'))
     );
-  }
-
-  function t ($text, $context = False){
-    return I18n::t($text, $context);
   }
 
   function Default_Options(){
     # Default settings
     return Array(
-      'title'      => $this->t('Gallery taxonomies'),
+      'title'      => I18n::t('Gallery taxonomies'),
       'show_count' => False,
       'number'     => Null,
       'orderby'    => 'name',
@@ -63,48 +59,48 @@ class Taxonomies Extends \WP_Widget {
     <p>
       <label for="<?php Echo $this->Get_Field_Id('title') ?>"><?php _e('Title:') ?></label>
       <input type="text" id="<?php Echo $this->Get_Field_Id('title') ?>" name="<?php Echo $this->Get_Field_Name('title')?>" value="<?php Echo Esc_Attr($this->Get_Option('title')) ?>" class="widefat">
-      <small><?php Echo $this->t('Leave blank to use the widget default title.') ?></small>
+      <small><?php Echo I18n::t('Leave blank to use the widget default title.') ?></small>
     </p>
 
     <p>
-      <label for="<?php Echo $this->Get_Field_Id('taxonomy') ?>"><?php Echo $this->t('Taxonomy:') ?></label>
+      <label for="<?php Echo $this->Get_Field_Id('taxonomy') ?>"><?php Echo I18n::t('Taxonomy:') ?></label>
       <select id="<?php Echo $this->Get_Field_Id('taxonomy') ?>" name="<?php Echo $this->Get_Field_Name('taxonomy') ?>" class="widefat">
       <?php ForEach(Get_Object_Taxonomies($this->core->gallery_post_type->name) AS $taxonomy) : $taxonomy = Get_Taxonomy($taxonomy) ?>
       <option value="<?php Echo $taxonomy->name ?>" <?php Selected($this->get_option('taxonomy'), $taxonomy->name) ?>><?php Echo HTMLSpecialChars($taxonomy->labels->name) ?></option>
       <?php EndForEach ?>
       </select><br>
-      <small><?php Echo $this->t('Please choose the Taxonomy the widget should display.') ?></small>
+      <small><?php Echo I18n::t('Please choose the Taxonomy the widget should display.') ?></small>
     </p>
 
     <p>
-      <label for="<?php Echo $this->Get_Field_Id('number') ?>"><?php Echo $this->t('Number of terms:') ?></label>
+      <label for="<?php Echo $this->Get_Field_Id('number') ?>"><?php Echo I18n::t('Number of terms:') ?></label>
       <input type="number" id="<?php Echo $this->Get_Field_Id('number') ?>" name="<?php Echo $this->Get_Field_Name('number')?>" value="<?php Echo Esc_Attr($this->Get_Option('number')) ?>"><br>
-      <small><?php Echo $this->t('Leave blank to show all.') ?></small>
+      <small><?php Echo I18n::t('Leave blank to show all.') ?></small>
     </p>
 
     <p>
       <label for="<?php echo $this->Get_Field_Id('exclude') ?>"><?php _e('Exclude:') ?></label>
       <input type="text" value="<?php Echo Esc_Attr($this->Get_Option('exclude')) ?>" name="<?php Echo $this->Get_Field_Name('exclude') ?>" id="<?php Echo $this->Get_Field_Id('exclude') ?>" class="widefat">
-      <small><?php Echo $this->t('Term IDs, separated by commas.') ?></small>
+      <small><?php Echo I18n::t('Term IDs, separated by commas.') ?></small>
     </p>
 
     <p>
       <input type="checkbox" id="<?php Echo $this->Get_Field_Id('count') ?>" name="<?php Echo $this->Get_Field_Name('count') ?>" <?php Checked($this->Get_Option('count')) ?> >
-      <label for="<?php echo $this->Get_Field_Id('count') ?>"><?php Echo $this->t( 'Show Gallery counts.' ) ?></label>
+      <label for="<?php echo $this->Get_Field_Id('count') ?>"><?php Echo I18n::t( 'Show Gallery counts.' ) ?></label>
     </p>
 
     <p>
-      <label for="<?php Echo $this->Get_Field_Id('orderby') ?>"><?php Echo $this->t('Order by:') ?></label>
+      <label for="<?php Echo $this->Get_Field_Id('orderby') ?>"><?php Echo I18n::t('Order by:') ?></label>
       <select id="<?php Echo $this->Get_Field_Id('orderby') ?>" name="<?php Echo $this->Get_Field_Name('orderby') ?>" class="widefat">
       <option value="name" <?php Selected($this->Get_Option('orderby'), 'name') ?>><?php _e('Name') ?></option>
-      <option value="count" <?php Selected($this->Get_Option('orderby'), 'count') ?>><?php Echo $this->t('Gallery Count') ?></option>
+      <option value="count" <?php Selected($this->Get_Option('orderby'), 'count') ?>><?php Echo I18n::t('Gallery Count') ?></option>
       <option value="ID" <?php Selected($this->Get_Option('orderby'), 'ID') ?>>ID</option>
-      <option value="slug" <?php Selected($this->Get_Option('orderby'), 'slug') ?>><?php Echo $this->t('Slug') ?></option>
+      <option value="slug" <?php Selected($this->Get_Option('orderby'), 'slug') ?>><?php Echo I18n::t('Slug') ?></option>
       </select>
     </p>
 
     <p>
-      <label for="<?php Echo $this->Get_Field_Id('order') ?>"><?php Echo $this->t('Order:') ?></label>
+      <label for="<?php Echo $this->Get_Field_Id('order') ?>"><?php Echo I18n::t('Order:') ?></label>
       <select id="<?php Echo $this->Get_Field_Id('order') ?>" name="<?php Echo $this->Get_Field_Name('order') ?>" class="widefat">
       <option value="ASC" <?php Selected($this->Get_Option('order'), 'ASC') ?>><?php _e('Ascending') ?></option>
       <option value="DESC" <?php Selected($this->Get_Option('order'), 'DESC') ?>><?php _e('Descending') ?></option>

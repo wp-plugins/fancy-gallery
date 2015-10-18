@@ -11,13 +11,9 @@ class Random_Images Extends \WP_Widget {
     # Setup the Widget data
     parent::__construct (
       'fancy-gallery-random-images',
-      $this->t('Random Images'),
-      Array('description' => $this->t('Displays some random images from your galleries.'))
+      I18n::t('Random Images'),
+      Array('description' => I18n::t('Displays some random images from your galleries.'))
     );
-  }
-
-  function t ($text, $context = False){
-    return I18n::t($text, $context);
   }
 
   function Default_Options(){
@@ -92,45 +88,45 @@ class Random_Images Extends \WP_Widget {
     <p>
       <label for="<?php Echo $this->Get_Field_Id('title') ?>"><?php _e('Title:') ?></label>
       <input type="text" id="<?php Echo $this->Get_Field_Id('title') ?>" name="<?php Echo $this->Get_Field_Name('title')?>" value="<?php Echo Esc_Attr($this->Get_Option('title')) ?>" class="widefat">
-      <small><?php Echo $this->t('Leave blank to use the widget default title.') ?></small>
+      <small><?php Echo I18n::t('Leave blank to use the widget default title.') ?></small>
     </p>
 
     <p>
-      <label for="<?php Echo $this->Get_Field_Id('limit') ?>"><?php Echo $this->t('Number of Images:') ?></label>
+      <label for="<?php Echo $this->Get_Field_Id('limit') ?>"><?php Echo I18n::t('Number of Images:') ?></label>
       <input type="number" id="<?php Echo $this->Get_Field_Id('limit') ?>" name="<?php Echo $this->Get_Field_Name('limit')?>" value="<?php Echo Esc_Attr($this->Get_Option('limit')) ?>" class="widefat">
-      <small><?php Echo $this->t('Leave blank (or "0") to show all.') ?></small>
+      <small><?php Echo I18n::t('Leave blank (or "0") to show all.') ?></small>
     </p>
 
     <p>
-      <label for="<?php Echo $this->Get_Field_Id('link_target') ?>"><?php Echo $this->t('Link target:') ?></label>
+      <label for="<?php Echo $this->Get_Field_Id('link_target') ?>"><?php Echo I18n::t('Link target:') ?></label>
       <select name="<?php Echo $this->Get_Field_Name('link_target')?>" id="<?php Echo $this->Get_Field_Id('link_target') ?>" class="widefat">
-        <option value="file" <?php Selected($this->Get_Option('link_target'), 'file') ?>><?php Echo $this->t('Fullsize Image') ?></option>
-        <option value="gallery" <?php Selected($this->Get_Option('link_target'), 'gallery') ?>><?php Echo $this->t('Image Gallery') ?></option>
+        <option value="file" <?php Selected($this->Get_Option('link_target'), 'file') ?>><?php Echo I18n::t('Fullsize Image') ?></option>
+        <option value="gallery" <?php Selected($this->Get_Option('link_target'), 'gallery') ?>><?php Echo I18n::t('Image Gallery') ?></option>
       </select>
     </p>
 
     <p>
-      <label for="<?php Echo $this->Get_Field_Id('thumb_width') ?>"><?php Echo $this->t('Thumbnail width:') ?></label>
+      <label for="<?php Echo $this->Get_Field_Id('thumb_width') ?>"><?php Echo I18n::t('Thumbnail width:') ?></label>
       <input type="number" name="<?php Echo $this->Get_Field_Name('thumb_width') ?>" id="<?php Echo $this->Get_Field_Id('thumb_width') ?>" value="<?php Echo Esc_Attr($this->Get_Option('thumb_width')) ?>" <?php Disabled(True) ?> > px
     </p>
 
     <p>
-      <label for="<?php Echo $this->Get_Field_Id('thumb_height') ?>"><?php Echo $this->t('Thumbnail height:') ?></label>
+      <label for="<?php Echo $this->Get_Field_Id('thumb_height') ?>"><?php Echo I18n::t('Thumbnail height:') ?></label>
       <input type="number" name="<?php Echo $this->Get_Field_Name('thumb_height') ?>" id="<?php Echo $this->Get_Field_Id('thumb_height') ?>" value="<?php Echo Esc_Attr($this->Get_Option('thumb_height')) ?>" <?php Disabled(True) ?> > px
     </p>
 
     <p>
       <input type="checkbox" name="<?php Echo $this->Get_Field_Name('thumb_grayscale') ?>" id="<?php Echo $this->Get_Field_Id('thumb_grayscale') ?>" value="yes" <?php Disabled(True) ?>  >
-      <label for="<?php Echo $this->Get_Field_Id('thumb_grayscale') ?>"><?php Echo $this->t('Convert thumbnails to grayscale.') ?></label>
+      <label for="<?php Echo $this->Get_Field_Id('thumb_grayscale') ?>"><?php Echo I18n::t('Convert thumbnails to grayscale.') ?></label>
     </p>
 
     <p>
       <input type="checkbox" name="<?php Echo $this->Get_Field_Name('thumb_negate') ?>" id="<?php Echo $this->Get_Field_Id('thumb_negate') ?>" value="yes" <?php Disabled(True) ?> >
-      <label for="<?php Echo $this->Get_Field_Id('thumb_negate') ?>"><?php Echo $this->t('Negate the thumbnails.') ?></label>
+      <label for="<?php Echo $this->Get_Field_Id('thumb_negate') ?>"><?php Echo I18n::t('Negate the thumbnails.') ?></label>
     </p>
 
-    <h3><?php Echo $this->t('Template') ?></h3>
-    <p><?php Echo $this->t('Please choose a template to display this widget.') ?></p>
+    <h3><?php Echo I18n::t('Template') ?></h3>
+    <p><?php Echo I18n::t('Please choose a template to display this widget.') ?></p>
     <?php ForEach ( $this->core->Get_Template_Files() AS $name => $properties ) : ?>
     <p>
       <input type="radio" name="<?php Echo $this->Get_Field_Name('template') ?>" id="<?php Echo Sanitize_Title($properties['name']) ?>" value="<?php Echo Esc_Attr($properties['file']) ?>"
