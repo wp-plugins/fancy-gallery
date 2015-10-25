@@ -4,15 +4,14 @@ Namespace WordPress\Plugin\Fancy_Gallery;
 class Core {
   public
     $base_url, # url to the plugin directory
-    $version = '1.5.32', # Current release number
+    $version = '1.5.34', # Current release number
     $gallery, # The current gallery object while running shortcode
     $template_dir,
     $arr_stylesheets = Array(), # Array with stylesheet urls which should be loaded asynchronously
     $arr_javascripts = Array(), # Array with javascript urls which should be loaded asynchronously
     $gallery_post_type, # Pointer to the Gallery Post Type object
     $lightbox, # Pointer to the Lightbox object
-    $options, # Pointer to the Options object
-    $wpml; # Pointer to the WPML helper object
+    $options; # Pointer to the Options object
   
   public static
     $plugin_file,
@@ -33,7 +32,6 @@ class Core {
     $this->options = New Options($this);
     $this->gallery_post_type = New Gallery_Post_Type($this);
     If ($this->options->Get('lightbox') == 'on') $this->lightbox = new Lightbox($this);
-    $this->wpml = New WPML();
     $this->mocking_bird = New Mocking_Bird($this);
 
     # This Plugin supports post thumbnails

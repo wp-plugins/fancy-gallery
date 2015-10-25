@@ -169,6 +169,10 @@ Possibly even more important, buying the premium edition gives you access to me 
 
 == Changelog ==
 
+= 1.5.34 =
+* Fixed function call in WPML class
+* Updated I18n class
+
 = 1.5.33 =
 * Removed PHP 5.2 check
 * Implemented static I18n translation function
