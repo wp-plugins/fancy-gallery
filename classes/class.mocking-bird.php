@@ -9,10 +9,10 @@ class Mocking_Bird {
   public function __construct($core){
     $this->core = $core;
     $this->post_type = $this->core->gallery_post_type->name;
-    Add_Action('admin_init', Array($this, 'User_Creates_New_Post'));
-    Add_Action('untrash_post', Array($this, 'User_Untrashes_Post'));
-    Add_Action('admin_footer', Array($this, 'Change_Create_Post_Link'));
-    Add_Action('admin_bar_menu', Array($this, 'Filter_Admin_Bar_Menu'), 999);
+    Add_Action('admin_init', Array($this, 'checkCreatedPost'));
+    Add_Action('untrash_post', Array($this, 'checkUntrashedPost'));
+    Add_Action('admin_footer', Array($this, 'changeCreateGalleryLink'));
+    Add_Action('admin_bar_menu', Array($this, 'removeAdminBarCreateGalleryButton'), 999);
   }
 
   function Pro_Notice($message = 'setting', $output = True){
@@ -24,7 +24,7 @@ class Mocking_Bird {
       'setting' => I18n::t('This setting is changeable in the <a href="%s" target="_blank">premium version</a>.'),
       'custom_tax' => I18n::t('Do you need a special taxonomy for your website? No problem! Just <a href="%s" target="_blank">get in touch</a>.'),
       'widget' => I18n::t('This widget is available in the <a href="%s" target="_blank">premium version</a>. For now there will be no output in the front end of your website.'),
-      #'count_limit' => I18n::t('In the <a href="%s" target="_blank">Premium Version of Fancy Gallery</a> you can take advantage of the gallery management without any limitations.'),
+      'count_limit' => I18n::t('In the <a href="%s" target="_blank">Premium Version of Fancy Gallery</a> you can take advantage of the gallery management without any limitations.'),
     );
 
     If (IsSet($arr_message[$message])){
@@ -36,7 +36,7 @@ class Mocking_Bird {
       return False;
   }
 
-  function Count_Posts($limit = -1){
+  function getNumberOfGalleries($limit = -1){
     Static $count;
     If ($count)
       return $count;
@@ -44,20 +44,20 @@ class Mocking_Bird {
       return $count = Count(Get_Posts(Array('post_type' => $this->post_type, 'post_status' => 'any', 'numberposts' => $limit)));
   }
 
-  function Check_Post_Count(){
-    return $this->Count_Posts(3) < 3;
+  function checkGalleryCount(){
+    return $this->getNumberOfGalleries(3) < 3;
   }
 
-  function User_Creates_New_Post(){
-    If (BaseName($_SERVER['SCRIPT_NAME']) == 'post-new.php' && IsSet($_GET['post_type']) && $_GET['post_type'] == $this->post_type && !$this->Check_Post_Count())
-      $this->Print_Post_Count_Limit();
+  function checkCreatedPost(){
+    If (BaseName($_SERVER['SCRIPT_NAME']) == 'post-new.php' && IsSet($_GET['post_type']) && $_GET['post_type'] == $this->post_type && !$this->checkGalleryCount())
+      $this->printGalleryCountLimit();
   }
 
-  function User_Untrashes_Post($post_id){
-    If (Get_Post_Type($post_id) == $this->post_type && !$this->Check_Post_Count()) $this->Print_Post_Count_Limit();
+  function checkUntrashedPost($post_id){
+    If (Get_Post_Type($post_id) == $this->post_type && !$this->checkGalleryCount()) $this->printGalleryCountLimit();
   }
 
-  function Print_Post_Count_Limit(){
+  function printGalleryCountLimit(){
     WP_Die(
       SPrintF('<p>%s</p><p>%s</p>',
         $this->Pro_Notice('count_limit', False),
@@ -66,8 +66,8 @@ class Mocking_Bird {
     );
   }
 
-  function Change_Create_Post_Link(){
-    If (!$this->Check_Post_Count()): ?>
+  function changeCreateGalleryLink(){
+    If (!$this->checkGalleryCount()): ?>
     <script type="text/javascript">
     (function($){
       $('a[href*="post-new.php?post_type=<?php Echo $this->post_type ?>"]')
@@ -86,8 +86,8 @@ class Mocking_Bird {
     <?php EndIf;
   }
 
-  function Filter_Admin_Bar_Menu($admin_bar){
-    If (!$this->Check_Post_Count()) $admin_bar->Remove_Node(SPrintF('new-%s', $this->post_type));
+  function removeAdminBarCreateGalleryButton($admin_bar){
+    If (!$this->checkGalleryCount()) $admin_bar->Remove_Node(SPrintF('new-%s', $this->post_type));
   }
 
 }

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fancy Gallery\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-25 12:57+0100\n"
+"POT-Creation-Date: 2015-11-16 20:55+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Dennis Hoppe <mail@DennisHoppe.de>\n"
 "Language-Team: Dennis Hoppe <Mail@DennisHoppe.de>\n"
@@ -370,6 +370,11 @@ msgstr "Brauchen Sie eine spezielle Klassifizierung? Kein Problem. <a href=\"%s\
 #, php-format
 msgid "This widget is available in the <a href=\"%s\" target=\"_blank\">premium version</a>. For now there will be no output in the front end of your website."
 msgstr "Dieses Widget ist in der <a href=\"%s\" target=\"_blank\">Pro-Version</a> verfügbar. In dieser Version wird es keine Ausgabe generieren."
+
+#: ../classes/class.mocking-bird.php:27
+#, php-format
+msgid "In the <a href=\"%s\" target=\"_blank\">Premium Version of Fancy Gallery</a> you can take advantage of the gallery management without any limitations."
+msgstr "In der <a href=\"%s\" target=\"_blank\">Premium Version von Fancy Gallery</a> können Sie alle Vorteile des Galerie-Managements ohne Einschränkungen nutzen."
 
 #: ../classes/class.mocking-bird.php:31
 msgctxt "Link to the authors website"

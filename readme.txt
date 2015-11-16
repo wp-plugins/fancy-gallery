@@ -169,6 +169,9 @@ Possibly even more important, buying the premium edition gives you access to me 
 
 == Changelog ==
 
+= 1.5.35 =
+* Updated method names and added help texts
+
 = 1.5.34 =
 * Fixed function call in WPML class
 * Updated I18n class
