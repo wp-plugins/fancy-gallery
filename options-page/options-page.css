@@ -4,5 +4,12 @@ div.capability-selection input { margin-left: 15px; }
 div.capability-selection.highlight1 { background-color: #eee; }
 div.capability-selection.highlight2 { background-color: #ddd; }
 input[type="number"]{ width: 80px }
+.metabox-holder { overflow: hidden }
+
+@media screen and (min-width: 760px){
+  .postbox-container.left { float: left; width: 69% }
+  .postbox-container.right { float: right; width: 29% }
+}
+
 a.unlock { color: #BBB; font-size: 80%; text-decoration: none; display: inline-block }
 a.unlock .dashicons { font-size: 15px }

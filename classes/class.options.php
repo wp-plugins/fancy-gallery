@@ -79,7 +79,7 @@ class Options {
   public function Print_Options_Page(){
     ?>
     <div class="wrap">
-      <h2><?php Echo I18n::t('Fancy Gallery Settings') ?></h2>
+      <h1><?php Echo I18n::t('Fancy Gallery Settings') ?></h1>
 
       <?php If (IsSet($_GET['options_saved'])): ?>
       <div id="message" class="updated fade">
@@ -101,28 +101,31 @@ class Options {
 
       <form method="post" action="" enctype="multipart/form-data">
       <div class="metabox-holder">
-
-        <div class="postbox-container" style="width:69%;">
+        <div class="postbox-container left meta-box-sortables">
           <?php ForEach ($this->arr_option_box['main'] AS $box) : ?>
-            <div class="postbox should-be-<?php Echo $box['state'] ?>">
-              <div class="handlediv" title="<?php _e('Click to toggle') ?>"><br></div>
-              <h3 class="hndle"><span><?php Echo $box['title'] ?></span></h3>
-              <div class="inside"><?php Include $box['file'] ?></div>
-            </div>
+          <div class="postbox should-be-<?php Echo $box['state'] ?>">
+            <button type="button" class="handlediv button-link" aria-expanded="true">
+              <span class="screen-reader-text"><?php PrintF(I18n::t('Toggle panel: %s'), $box['title']) ?></span>
+              <span class="toggle-indicator" aria-hidden="true"></span>
+            </button>
+            <h3 class="hndle"><span><?php Echo $box['title'] ?></span></h3>
+            <div class="inside"><?php Include $box['file'] ?></div>
+          </div>
           <?php EndForEach ?>
         </div>
 
-        <div class="postbox-container" style="width:29%;float:right">
+        <div class="postbox-container right meta-box-sortables">
           <?php ForEach ($this->arr_option_box['side'] AS $box) : ?>
-            <div class="postbox should-be-<?php Echo $box['state'] ?>">
-              <div class="handlediv" title="<?php _e('Click to toggle') ?>"><br></div>
-              <h3 class="hndle"><span><?php Echo $box['title'] ?></span></h3>
-              <div class="inside"><?php Include $box['file'] ?></div>
-            </div>
+          <div class="postbox should-be-<?php Echo $box['state'] ?>">
+            <button type="button" class="handlediv button-link" aria-expanded="true">
+              <span class="screen-reader-text"><?php PrintF(I18n::t('Toggle panel: %s'), $box['title']) ?></span>
+              <span class="toggle-indicator" aria-hidden="true"></span>
+            </button>
+            <h3 class="hndle"><span><?php Echo $box['title'] ?></span></h3>
+            <div class="inside"><?php Include $box['file'] ?></div>
+          </div>
           <?php EndForEach ?>
         </div>
-
-        <div class="clear"></div>
       </div>
 
       <p class="submit">

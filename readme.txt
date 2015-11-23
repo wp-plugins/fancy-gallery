@@ -169,6 +169,9 @@ Possibly even more important, buying the premium edition gives you access to me 
 
 == Changelog ==
 
+= 1.5.36 =
+* Updated options page (ready for WordPress 4.4)
+
 = 1.5.35 =
 * Updated method names and added help texts
 
